@@ -1,0 +1,54 @@
+# Rename this file as slumber.changes to include changelog
+# entries in your RPM file.
+#
+# Add new changelog entries following the format below.
+# Add newest entries to the top of the list.
+# Separate entries from eachother with a blank line.
+
+# * date Author's Name <author's email> version-release
+# - Summary of changes
+
+* Fri Sep 13 2015 John Gibbon <jngibbon@gmail.com> 0.4-3
+ - new: kodimote support as "local" player (you don't need to configure Kodi in slumber AT ALL if kodimote is connected!)
+
+
+ * Fri Sep 13 2015 John Gibbon <jngibbon@gmail.com> 0.4-2
+  - annoyance fix: display correct entry in options if "shaking" was selected before v0.4
+  - packaging: app icons for future tablet release
+
+* Thu Sep 12 2015 John Gibbon <jngibbon@gmail.com> 0.4-1
+- user request: optional visual indicator before timer runs out
+- user request: stronger acceleration needed to trigger "shaking"
+- user request: new, even stronger shaking option "earthquake"
+- new option: disable bluetooth when timer runs out
+- new option: keep display lit while timer is running
+- new option: darken main application screen while timer is running
+- ui tweaks (new sub page for appearance options, VerticalScrollDecorators on options pages)
+
+* Thu Oct 30 2015 John Gibbon <jngibbon@gmail.com> 0.3-2
+- new timer action: VLC network pause + connection options
+- bugfix: query Kodi for PlayerIDs instead of guessing
+
+* Tue Oct 28 2015 John Gibbon <jngibbon@gmail.com> 0.3-1
+- new timer action: Kodi network pause + connection options
+- bugfix: do _not_ pause Accelerometer when Sound Effect is not previewing
+- some ui & translation changes
+
+* Sun Oct 26 2015 John Gibbon <jngibbon@gmail.com> 0.2-3
+- also use dbus to pause players (flowplayer compatibility)
+- removed QtQuick 2.2 dependency (harbour tools pass)
+
+* Sun Oct 25 2015 John Gibbon <jngibbon@gmail.com> 0.2-2
+- new reset option: Proximity Sensor
+
+* Sat Oct 24 2015 John Gibbon <jngibbon@gmail.com> 0.2-1
+- bugfix: Accelerometer now paused while using PushUpMenu to stop timer (PushUpMenu got disabled for a short bit while using it)
+- bugfix: Accelerometer now paused while prelistening to Sound Effect (Sound Effect gets stopped when timer is reset)
+- bugfix: Silica ProgressCircle does not change colours anymore
+- new german translation
+- smaller package: sound files downsampled
+- various ui tweaks
+
+* Fri Oct 23 2015 John Gibbon <jngibbon@gmail.com> 0.1-1
+- initial release
+
