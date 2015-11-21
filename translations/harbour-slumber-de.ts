@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="de">
 <context>
     <name>About</name>
     <message>
@@ -11,27 +11,27 @@
     <message>
         <location filename="../qml/pages/About.qml" line="50"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
-        <translation type="unfinished"></translation>
+        <translation>Slumber ist ein Sleeptimer, der dir dabei helfen soll, ohne viel Trara einzuschlafen, während du etwas hörst.</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="63"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn du eine neue Funktion brauchst oder etwas gefunden hast, dass nicht funktioniert, schreibe mir auf TMO:</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="75"/>
         <source>TMO Thread for slumber</source>
-        <translation type="unfinished"></translation>
+        <translation>TMO Thread für Slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="81"/>
         <source>Thanks!</source>
-        <translation type="unfinished"></translation>
+        <translation>Danke!</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="86"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vielen Dank an alle, die Dinge vorgeschlagen haben oder mir geholfen haben, besonders:</translation>
     </message>
 </context>
 <context>
@@ -227,11 +227,6 @@
         <translation>Funktioniert nur für native Anwendungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
-        <source>(Hint: If you use the kodimote app, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="105"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="106"/>
         <source>IP or host:port for Kodi</source>
@@ -303,6 +298,11 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="245"/>
         <source>Pause VLC</source>
         <translation>VLC pausieren</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
+        <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
+        <translation>(Tipp: Wenn du Kodimote benutzt, brauchst du hier nichts aktivieren. Das funktioniert mit &apos;lokale Medien&apos;.)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="253"/>

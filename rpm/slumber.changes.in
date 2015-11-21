@@ -8,15 +8,15 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Fri Sep 13 2015 John Gibbon <jngibbon@gmail.com> 0.4-3
- - new: kodimote support as "local" player (you don't need to configure Kodi in slumber AT ALL if kodimote is connected!)
+* Fri Nov 21 2015 John Gibbon <jngibbon@gmail.com> 0.4-3
+- new: kodimote support as "local" player (you don't need to configure Kodi in slumber AT ALL if kodimote is connected!)
+- added support for unplayer
 
+* Fri Nov 13 2015 John Gibbon <jngibbon@gmail.com> 0.4-2
+- annoyance fix: display correct entry in options if "shaking" was selected before v0.4
+- packaging: app icons for future tablet release
 
- * Fri Sep 13 2015 John Gibbon <jngibbon@gmail.com> 0.4-2
-  - annoyance fix: display correct entry in options if "shaking" was selected before v0.4
-  - packaging: app icons for future tablet release
-
-* Thu Sep 12 2015 John Gibbon <jngibbon@gmail.com> 0.4-1
+* Thu Nov 12 2015 John Gibbon <jngibbon@gmail.com> 0.4-1
 - user request: optional visual indicator before timer runs out
 - user request: stronger acceleration needed to trigger "shaking"
 - user request: new, even stronger shaking option "earthquake"
