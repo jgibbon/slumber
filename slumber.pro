@@ -74,6 +74,8 @@ CONFIG += sailfishapp_i18n
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += \
     translations/harbour-slumber-de.ts \
-    translations/harbour-slumber-sv.ts
+    translations/harbour-slumber-sv.ts \
+    translations/harbour-slumber-es.ts
+
 
 

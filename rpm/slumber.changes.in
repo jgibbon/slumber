@@ -8,6 +8,11 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Dec 04 2015 John Gibbon <jngibbon@gmail.com> 0.4-4
+- new translations:
+ - spanish (thanks CepiPerez!)
+ - swedish (thanks eson!)
+
 * Fri Nov 21 2015 John Gibbon <jngibbon@gmail.com> 0.4-3
 - new: kodimote support as "local" player (you don't need to configure Kodi in slumber AT ALL if kodimote is connected!)
 - added support for unplayer

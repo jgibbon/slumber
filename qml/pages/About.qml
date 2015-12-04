@@ -86,6 +86,7 @@ Page {
                     text: qsTr('Thanks to all users suggesting things and everyone helping me out, especially:')
                           +'<br>'
                           +'<br>CepiPerez'
+                          +'<br>eson'
                           +'<br>coderus'
                     verticalAlignment: Text.AlignBottom
 
