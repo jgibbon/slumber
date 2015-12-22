@@ -6,19 +6,21 @@ import org.nemomobile.dbus 2.0
 Item {
     id: musicControl
     property var services: [
-        "org.mpris.MediaPlayer2.jolla-mediaplayer",
-        "org.mpris.MediaPlayer2.sailfish-browser",
-        "org.mpris.MediaPlayer2.quasarmx",
-        "org.mpris.MediaPlayer2.sirensong",
-        "org.mpris.MediaPlayer2.daedalus",
-        "org.mpris.MediaPlayer2.kodimote",
         "org.mpris.MediaPlayer2.CuteSpot",
+        "org.mpris.MediaPlayer2.CuteSpotify", //legacy
+        "org.mpris.MediaPlayer2.daedalus",
         "org.mpris.MediaPlayer2.flowplayer",
-        "org.mpris.MediaPlayer2.CuteSpotify",
+        "org.mpris.MediaPlayer2.jolla-mediaplayer",
+        "org.mpris.MediaPlayer2.kodimote",
+        "org.mpris.MediaPlayer2.qtmpris", //from default example
+        "org.mpris.MediaPlayer2.quasarmx",
+        "org.mpris.MediaPlayer2.sailfish-browser",
+        "org.mpris.MediaPlayer2.sirensong",
+        "org.mpris.MediaPlayer2.talefish",
         "org.mpris.MediaPlayer2.unplayer",
         //those probably won't appear on SFOS any time soon:
-        "org.mpris.MediaPlayer2.spotify",
         "org.mpris.MediaPlayer2.rhythmbox",
+        "org.mpris.MediaPlayer2.spotify",
         "org.mpris.MediaPlayer2.vlc",
     ]
     function pause(){
