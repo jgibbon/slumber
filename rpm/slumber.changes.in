@@ -8,10 +8,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Fri Dec 04 2015 John Gibbon <jngibbon@gmail.com> 0.4-4
-- new translations:
- - spanish (thanks CepiPerez!)
- - swedish (thanks eson!)
+* Sun Jan 03 2016 John Gibbon <jngibbon@gmail.com> 0.4-5
+- new translation: finnish (thanks ria88!)
+- added support for talefish and players using the unaltered "qtmpris" name
+
+ * Fri Dec 04 2015 John Gibbon <jngibbon@gmail.com> 0.4-4
+ - new translations:
+  - spanish (thanks CepiPerez!)
+  - swedish (thanks eson!)
 
 * Fri Nov 21 2015 John Gibbon <jngibbon@gmail.com> 0.4-3
 - new: kodimote support as "local" player (you don't need to configure Kodi in slumber AT ALL if kodimote is connected!)
