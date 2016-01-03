@@ -75,7 +75,8 @@ CONFIG += sailfishapp_i18n
 TRANSLATIONS += \
     translations/harbour-slumber-de.ts \
     translations/harbour-slumber-sv.ts \
-    translations/harbour-slumber-es.ts
+    translations/harbour-slumber-es.ts \
+    translations/harbour-slumber-fi.ts
 
 
 

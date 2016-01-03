@@ -85,8 +85,9 @@ Page {
                     id: thanksLabel
                     text: qsTr('Thanks to all users suggesting things and everyone helping me out, especially:')
                           +'<br>'
-                          +'<br>CepiPerez'
-                          +'<br>eson'
+                          +'<br>CepiPerez (i18n es)'
+                          +'<br>eson (i18n se)'
+                          +'<br>ria88 (i18n fi)'
                           +'<br>coderus'
                     verticalAlignment: Text.AlignBottom
 
