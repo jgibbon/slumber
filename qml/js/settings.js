@@ -30,10 +30,10 @@ function get(setting, default_value) {
 			} else {
 				res = default_value;
 			}
-		})
+		});
 	} catch (err) {
 		console.log("Database " + err);
 		res = default_value;
-	};
-	return res
+	}
+	return res;
 }

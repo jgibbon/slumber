@@ -18,6 +18,7 @@ Item {
         "org.mpris.MediaPlayer2.sirensong",
         "org.mpris.MediaPlayer2.talefish",
         "org.mpris.MediaPlayer2.unplayer",
+        "org.mpris.MediaPlayer2.alien", //some aliendalvik/android players
         //those probably won't appear on SFOS any time soon:
         "org.mpris.MediaPlayer2.rhythmbox",
         "org.mpris.MediaPlayer2.spotify",
