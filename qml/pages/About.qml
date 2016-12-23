@@ -88,6 +88,7 @@ Page {
                           +'<br>CepiPerez (i18n es)'
                           +'<br>eson (i18n se)'
                           +'<br>ria88 (i18n fi)'
+                          +'<br>atlochowski (i18n pl)'
                           +'<br>coderus'
                     verticalAlignment: Text.AlignBottom
 
