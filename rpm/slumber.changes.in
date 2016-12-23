@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Dec 23 2016 John Gibbon <jngibbon@gmail.com> 0.5-2
+ - new translation: polish (thanks atlochowski)
+
 * Wed Dec 21 2016 John Gibbon <jngibbon@gmail.com> 0.5-1
 - added support for some android apps (not for the first jolla phone, sorry)
 
@@ -15,7 +18,7 @@
 - new translation: finnish (thanks ria88!)
 - added support for talefish and players using the unaltered "qtmpris" name
 
- * Fri Dec 04 2015 John Gibbon <jngibbon@gmail.com> 0.4-4
+* Fri Dec 04 2015 John Gibbon <jngibbon@gmail.com> 0.4-4
  - new translations:
   - spanish (thanks CepiPerez!)
   - swedish (thanks eson!)
