@@ -20,6 +20,11 @@ Note: Sounds are CC0, not GPL. [Click here for Details.](qml/assets/sound/LICENS
 - Volume will be set to a default value at program start (If you know how to easily get the current volume: please tell me!)
 - Phone Vibration might trigger Accelerometer. (Well…)
 
+## Install
+- https://openrepos.net/content/velox/slumber or warehouse (recent builds)
+- from Jolla Store (0.4-2, no i468 build)
+- build it yourself from here
+
 ## Want to help?
 ### talk
 Please let me know if it works for your favourite player and feel free to discuss: http://talk.maemo.org/showthread.php?p=1486493.
