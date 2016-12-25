@@ -89,6 +89,7 @@ Page {
                           +'<br>eson (i18n se)'
                           +'<br>ria88 (i18n fi)'
                           +'<br>atlochowski (i18n pl)'
+                          +'<br>ancelad (i18n ru)'
                           +'<br>coderus'
                     verticalAlignment: Text.AlignBottom
 

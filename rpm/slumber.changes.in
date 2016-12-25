@@ -8,8 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Dec 25 2016 John Gibbon <jngibbon@gmail.com> 0.5-3
+ - new translation: russian (thanks ancelad)
+ - translation update polish (thanks atlochowski)
+
 * Fri Dec 23 2016 John Gibbon <jngibbon@gmail.com> 0.5-2
- - new translation: polish (thanks atlochowski)
+  - new translation: polish (thanks atlochowski)
 
 * Wed Dec 21 2016 John Gibbon <jngibbon@gmail.com> 0.5-1
 - added support for some android apps (not for the first jolla phone, sorry)

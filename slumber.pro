@@ -77,7 +77,8 @@ TRANSLATIONS += \
     translations/harbour-slumber-sv.ts \
     translations/harbour-slumber-es.ts \
     translations/harbour-slumber-fi.ts \
-    translations/harbour-slumber-pl.ts
+    translations/harbour-slumber-pl.ts \
+    translations/harbour-slumber-ru.ts
 
 
 
