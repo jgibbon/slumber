@@ -302,7 +302,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation type="unfinished"></translation>
+        <translation>(Tips: Om du använder Kodimote, behöver du inte aktivera det här. Den fungerar som en lokal spelare.)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="253"/>
