@@ -24,7 +24,7 @@ Item {
     }
     Timer { //request seems to time out after a while:
         running: parent.enabled
-        interval: 30000 //minimum setting for blank display is 30s
+        interval: 15000 //minimum setting for blank display is 15s
         repeat: true
         onTriggered: {
             if(parent.enabled) {
