@@ -118,7 +118,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation>Действия таймера, такие как &quot;Пауза медиа&quot;, выполняются, когда таймер заканчивается.</translation>
+        <translation>Действия, выполняемые при завершении работы таймера.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="148"/>
@@ -176,7 +176,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
-        <translation>Показывает ярлык к настройкам на главном экране во время работы таймера. Иначе, вам придется сначала остановить таймер, чтобы попасть туда.</translation>
+        <translation>Показывает ярлык к настройкам на главном экране во время работы таймера. Иначе вам придется сначала остановить таймер, чтобы попасть туда.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
