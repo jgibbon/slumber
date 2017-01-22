@@ -73,16 +73,6 @@ Rectangle {
 
     }
 
-//    PersistentObject {
-//        id: appstate
-//        objectName: 'appstate'
-//        doPersist: true
-
-//        //timer
-//        property bool timerRunning: false
-
-//    }
-
     ScreenBlank {
         enabled: options.timerInhibitScreensaverEnabled && sleepTimer.running
     }
@@ -113,10 +103,6 @@ Rectangle {
         id:actionPauseByDbus
     }
 
-    //    ActionLockScreen{
-    //        id: actionLockScreen
-    //        enabled: options.timerLockScreenEnabled
-    //    }
     ActionDisableBluetooth {
         id: actionDisableBluetooth
         enabled: options.timerDisableBluetoothEnabled
@@ -141,11 +127,6 @@ Rectangle {
 //        id: volumeFade
 //    }
 
-//        Component.onCompleted: {
-//            volumeFade.start()
-    //actionDisableBluetooth.pause()
-    //        actionLockScreen.pause()
-//        }
 
     CountDownTimer {
         id: sleepTimer
@@ -186,10 +167,9 @@ Rectangle {
         Item {
             id: fadeOutSound
             property string file: options.timerFadeSoundEffectFile
-            property var effect:null
+            property SoundEffect effect
             property alias volume: options.timerFadeSoundEffectVolume
 
-            //            property alias playing: effect.playing
             onFileChanged: {
                 stop()
                 if(file === "cassette-noise") {
@@ -198,14 +178,6 @@ Rectangle {
                     effect = fadeOutSoundTicking;
                 } else if(file === "sea-waves") {
                     effect = fadeOutSoundSea;
-                }
-                if(effect){
-                    effect.volume = volume;
-                }
-            }
-            onVolumeChanged: {
-                if(effect){
-                    effect.volume = volume;
                 }
             }
 
@@ -224,6 +196,7 @@ Rectangle {
 
             SoundEffect {
                 id:fadeOutSoundCassette
+                category: 'slumber'
                 source: '../assets/sound/cassette-noise.wav'
                 volume: options.timerFadeSoundEffectVolume
                 onPlayingChanged: {
@@ -234,6 +207,7 @@ Rectangle {
 
             SoundEffect {
                 id:fadeOutSoundTicking
+                category: 'slumber'
                 source: '../assets/sound/clock-ticking.wav'
                 volume: options.timerFadeSoundEffectVolume
                 onPlayingChanged: {
@@ -243,6 +217,7 @@ Rectangle {
 
             SoundEffect {
                 id:fadeOutSoundSea
+                category: 'slumber'
                 source: '../assets/sound/sea-waves.wav'
                 volume: options.timerFadeSoundEffectVolume
                 onPlayingChanged: {

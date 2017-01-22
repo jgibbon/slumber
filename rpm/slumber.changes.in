@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Jan 14 2016 John Gibbon <jngibbon@gmail.com> 0.6-1
+ - bugfix: app start does not change system volume anymore
+
 * Sat Jan 14 2016 John Gibbon <jngibbon@gmail.com> 0.5-6
  - enhancement: "keep display lit" timer duration decrease
  - translation update russian (thanks ancelad)

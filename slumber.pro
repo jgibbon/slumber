@@ -80,6 +80,11 @@ TRANSLATIONS += \
     translations/harbour-slumber-pl.ts \
     translations/harbour-slumber-ru.ts
 
+DISTFILES += \
+    qml/lib/ImageLabelButton.qml \
+    qml/lib/Options.qml \
+    qml/lib/VolumeFade.qml
+
 
 
 
