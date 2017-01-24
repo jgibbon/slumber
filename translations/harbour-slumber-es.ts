@@ -412,7 +412,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="43"/>
         <source>Reset Timer by moving the device</source>
-        <translation>Reiniciar el temporizador por sacudida</translation>
+        <translation>Reiniciar el temporizador al sacudir</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="70"/>
