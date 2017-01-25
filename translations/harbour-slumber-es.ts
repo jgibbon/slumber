@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="75"/>
         <source>TMO Thread for slumber</source>
-        <translation>Tema en TMO para slumber</translation>
+        <translation>Hilo TMO para slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="81"/>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="233"/>
         <source>Tap to restart,</source>
-        <translation>Presione para reiniciar</translation>
+        <translation>Presione para restaurar</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="233"/>
@@ -65,12 +65,12 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="241"/>
         <source>pull down for options</source>
-        <translation>tire hacia abajo para opciones</translation>
+        <translation>Deslizar hacia abajo para opciones</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="241"/>
         <source>pull up or down to stop</source>
-        <translation>Tire hacia arriba o abajo para detener</translation>
+        <translation>Deslizar hacia arriba o abajo para detener</translation>
     </message>
 </context>
 <context>
@@ -78,7 +78,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation>Acerca</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation>Mantenga Display iluminado</translation>
+        <translation>Mantener pantalla iluminada</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="159"/>
         <source>Reset the timer while you are awake.</source>
-        <translation>Reiniciar el temporizador mientras Usted está despierto.</translation>
+        <translation>Reiniciar el temporizador mientras usted está despierto.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="182"/>
@@ -181,12 +181,12 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
         <source>Darken main screen</source>
-        <translation>Oscurecer pantalla princial</translation>
+        <translation>Oscurecer pantalla principal</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
         <source>Use darker colours while the timer is running</source>
-        <translation>Usar colores oscuros mientras el temporizador está en ejecución.</translation>
+        <translation>Usar colores oscuros mientras el temporizador está en ejecución</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
         <source>play current sound</source>
-        <translation>Reproducir sonido</translation>
+        <translation>Reproducir sonido actual</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="418"/>
@@ -412,7 +412,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="43"/>
         <source>Reset Timer by moving the device</source>
-        <translation>Resetear el temporizador moviendo el dispositivo</translation>
+        <translation>Reiniciar el temporizador al sacudir</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="70"/>
