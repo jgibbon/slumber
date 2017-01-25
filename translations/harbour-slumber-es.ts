@@ -16,7 +16,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="63"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
-        <translation>Si usted necesita alguna característica o ha encontrado algo que no funciona, siéntase libre de reportarlo en TMO:</translation>
+        <translation>Si Usted necesita alguna característica o ha encontrado algo que no funciona, siéntase libre de reportarlo en TMO:</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="75"/>
