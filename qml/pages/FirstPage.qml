@@ -135,6 +135,36 @@ Page {
             onClicked: {
                 sleepTimer.start()
             }
+            onPressAndHold: {
+               var minutes = (options.timerSeconds / 60);
+               var selectedHour, selectedMinute
+                if(options.timerSeconds === 30){
+                    selectedHour = 0;
+                    selectedMinute = 0.5
+                } else {
+                    selectedHour =  Math.floor(minutes /60);
+                    selectedMinute = minutes - selectedHour * 60;
+                }
+                var dialog = pageStack.push("Sailfish.Silica.TimePickerDialog", {
+                                                hourMode:  DateTime.TwentyFourHours,
+                                                hour: selectedHour,
+                                                minute: selectedMinute
+                                            })
+
+                dialog.accepted.connect(function() {
+                    if(!dialog.hour && !dialog.minute) {//don't set zero-length timer, but don't make a fuss about it
+                        selectedHour = 0
+                        selectedMinute = 0
+                        options.timerSeconds = 30
+                        return;
+                    }
+
+                    selectedHour = dialog.hour
+                    selectedMinute = dialog.minute
+                    options.timerSeconds = (selectedHour * 60 + selectedMinute)*60;
+
+                })
+            }
         }
 
         IconButton {

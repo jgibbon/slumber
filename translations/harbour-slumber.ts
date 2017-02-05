@@ -53,22 +53,22 @@
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="233"/>
+        <location filename="../qml/pages/FirstPage.qml" line="263"/>
         <source>Tap to restart,</source>
         <translation>Tap to restart,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="233"/>
+        <location filename="../qml/pages/FirstPage.qml" line="263"/>
         <source>Tap to start,</source>
         <translation>Tap to start,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="241"/>
+        <location filename="../qml/pages/FirstPage.qml" line="271"/>
         <source>pull down for options</source>
         <translation>pull down for options</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="241"/>
+        <location filename="../qml/pages/FirstPage.qml" line="271"/>
         <source>pull up or down to stop</source>
         <translation>pull up or down to stop</translation>
     </message>

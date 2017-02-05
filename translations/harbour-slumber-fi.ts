@@ -53,22 +53,22 @@
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="233"/>
+        <location filename="../qml/pages/FirstPage.qml" line="263"/>
         <source>Tap to restart,</source>
         <translation>Käynnistä uudelleen koskettamalla,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="233"/>
+        <location filename="../qml/pages/FirstPage.qml" line="263"/>
         <source>Tap to start,</source>
         <translation>Käynnistä koskettamalla,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="241"/>
+        <location filename="../qml/pages/FirstPage.qml" line="271"/>
         <source>pull down for options</source>
         <translation>avaa asetukset vetämällä alas</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="241"/>
+        <location filename="../qml/pages/FirstPage.qml" line="271"/>
         <source>pull up or down to stop</source>
         <translation>pysäytä vetämällä ylös tai alas</translation>
     </message>

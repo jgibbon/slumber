@@ -53,22 +53,22 @@
         <translation>drzemka</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="233"/>
+        <location filename="../qml/pages/FirstPage.qml" line="263"/>
         <source>Tap to restart,</source>
         <translation>Dotknij aby zrestartować,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="233"/>
+        <location filename="../qml/pages/FirstPage.qml" line="263"/>
         <source>Tap to start,</source>
         <translation>Dotknij aby uruchomić,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="241"/>
+        <location filename="../qml/pages/FirstPage.qml" line="271"/>
         <source>pull down for options</source>
         <translation>przeciągnij w dół aby zobaczyć opcje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="241"/>
+        <location filename="../qml/pages/FirstPage.qml" line="271"/>
         <source>pull up or down to stop</source>
         <translation>przeciągnij w górę lub w dół aby zatrzymać</translation>
     </message>
