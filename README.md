@@ -17,7 +17,6 @@ Note: Sounds are CC0, not GPL. [Click here for Details.](qml/assets/sound/LICENS
 - Does not work with Android media players on jolla1 phone.
 - Does not work in Sailfish Browser (working alternative: WebPirate Browser)
 - Sensors won't work when Display is off. But there is an option to keep it on while the timer runs. (If you know how to fix: please tell me!)
-- Volume will be set to a default value at program start (If you know how to easily get the current volume: please tell me!)
 - Phone Vibration might trigger Accelerometer. (Well…)
 
 ## Install
