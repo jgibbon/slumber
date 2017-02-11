@@ -78,7 +78,8 @@ TRANSLATIONS += \
     translations/harbour-slumber-es.ts \
     translations/harbour-slumber-fi.ts \
     translations/harbour-slumber-pl.ts \
-    translations/harbour-slumber-ru.ts
+    translations/harbour-slumber-ru.ts \
+    translations/harbour-slumber-sl.ts
 
 DISTFILES += \
     qml/lib/ImageLabelButton.qml \

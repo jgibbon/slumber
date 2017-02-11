@@ -90,6 +90,7 @@ Page {
                           +'<br>ria88 (i18n fi)'
                           +'<br>atlochowski (i18n pl)'
                           +'<br>ancelad (i18n ru)'
+                          +'<br>sponka (i18n sl)'
                           +'<br>coderus'
                     verticalAlignment: Text.AlignBottom
 
