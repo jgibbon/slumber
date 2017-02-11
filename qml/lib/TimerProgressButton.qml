@@ -24,6 +24,7 @@ Item {
     property real busyborder: width * 0.02
     property real progresssize: width
     property int fontSize: Theme.fontSizeMedium
+    property real lineHeight: 1.0
     property real progressborder: ((progresssize - busysize) / 2) + busyborder*0.5
 
     property alias busyindicator: busyindicatorrect
@@ -125,10 +126,7 @@ Item {
         anchors.horizontalCenter: progressCircleContainer.horizontalCenter
 
         anchors.verticalCenter: progressCircleContainer.verticalCenter
-//        Component.onCompleted: {
-//            console.log('format short', sleepTimerWidget.timeFormatShort)
-//        }
-//        anchors.fill: parent
+
         Text
         {
 
@@ -150,8 +148,8 @@ Item {
             id:longDisplayText
             property string mainTag: '<span>'
             property string mainTagEnd: '</span>'
-            property string smallTag: '<font color="'+secondarytextcolor+'"><sub>'
-            property string smallTagEnd: '</sub></font>'
+            property string smallTag: '<font color="'+secondarytextcolor+'" size="1">'
+            property string smallTagEnd: '</font>'
 
             // couldn't think of something clever, so:
             Item {
@@ -177,7 +175,6 @@ Item {
                 property string minute: timeFomatAbbreviateIfLong ? abbrMinute : verboseMinute
                 property string seconds: timeFomatAbbreviateIfLong ? abbrSeconds : verboseSeconds
                 property string second: timeFomatAbbreviateIfLong ? abbrSecond : verboseSecond
-
             }
 
 
@@ -189,6 +186,7 @@ Item {
             textFormat: Text.RichText
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+
             //                       qsTr("text")
             text: mainTag
 //            + secondarytextcolor + ' ' + textcolor + '<br>'
@@ -214,6 +212,7 @@ Item {
                                   +smallTagEnd:'')
                   + mainTagEnd
             font.pixelSize: sleepTimerWidget.fontSize
+            lineHeight: selectedHour && showSecond ? sleepTimerWidget.lineHeight: 1.0
         }
         Item {
             width: parent.width

@@ -53,22 +53,22 @@
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="263"/>
+        <location filename="../qml/pages/FirstPage.qml" line="203"/>
         <source>Tap to restart,</source>
         <translation>Presione para restaurar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="263"/>
+        <location filename="../qml/pages/FirstPage.qml" line="203"/>
         <source>Tap to start,</source>
         <translation>Presione para iniciar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="271"/>
+        <location filename="../qml/pages/FirstPage.qml" line="211"/>
         <source>pull down for options</source>
         <translation>Deslizar hacia abajo para opciones</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="271"/>
+        <location filename="../qml/pages/FirstPage.qml" line="211"/>
         <source>pull up or down to stop</source>
         <translation>Deslizar hacia arriba o abajo para detener</translation>
     </message>
@@ -473,55 +473,55 @@
 <context>
     <name>TimerProgressButton</name>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="145"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="143"/>
         <source>s</source>
         <translation>s</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="159"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="157"/>
         <source>Hour</source>
         <translation>Hora</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="160"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="158"/>
         <source>Hours</source>
         <translation>Horas</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="161"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="159"/>
         <source>Minute</source>
         <translation>Minuto</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="162"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="160"/>
         <source>Minutes</source>
         <translation>Minutos</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="163"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="161"/>
         <source>Second</source>
         <translation>Segundo</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="164"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="162"/>
         <source>Seconds</source>
         <translation>Segundos</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="166"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="167"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="164"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="165"/>
         <source>Hrs</source>
         <translation>Hrs</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="168"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="169"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="166"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="167"/>
         <source>Min</source>
         <translation>Min</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="170"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="171"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="168"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="169"/>
         <source>Sec</source>
         <translation>Seg</translation>
     </message>

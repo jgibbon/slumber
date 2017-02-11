@@ -128,7 +128,8 @@ Page {
                 timeFormatShort: options.viewTimeFormatShort
                 timer: sleepTimer
                 value: sleepTimer.milliSecondsLeft / (options.timerSeconds*1000)
-                fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*2 : Theme.fontSizeMedium
+                fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*1.2 : Theme.fontSizeMedium
+                lineHeight: Screen.sizeCategory >= Screen.Large ? 0.8 : 1.0
 
             }
 
@@ -176,72 +177,11 @@ Page {
             anchors.verticalCenter: pageHeader.verticalCenter
             anchors.right: parent.right
             height: pageHeader.height
-//            width: active ? pageHeader.height: 0
 
-//                PropertyAnimation { target: optionsButton; property: "width"}
-//                NumberAnimation on width {
-//                    running: optionsButton.active;
-//                    from:0;to:pageHeader.height
-//                }
-
-//                NumberAnimation on width {
-//                    running: !optionsButton.active;
-//                    from:pageHeader.height; to:0;
-//                }
             onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {options:options, firstPage: page})
 //            anchors.left: pageHeader.right
         }
 
-//            Row {
-
-//                spacing: Theme.paddingMedium
-//                x: Theme.paddingLarge
-
-//                width: parent.width - (Theme.paddingLarge * 2)
-
-//                Button {
-//                    text: (sleepTimer.running?'re':'') + 'start'
-//                    width: sleepTimer.running ? (parent.width/2 - (Theme.paddingMedium /3) ) : (parent.width)
-
-//                    onClicked: {
-//                        sleepTimer.start()
-//                    }
-//                }
-//                Button {
-
-//                    visible: sleepTimer.running
-//                    text: "stop"
-//                    onClicked:{
-
-//                        sleepTimer.stop()
-//                    }
-//                    x: Theme.paddingLarge
-//                    width: parent.width/2 - (Theme.paddingMedium/3)
-//                }
-//            }
-
-
-
-
-//            TextField {
-//                id:dbusproptextfield
-//                width:parent.width
-////                focus: true
-//                text: "Volume"
-//                placeholderText: "Enter DBus Property like 'Volume'"
-//                label: "DBus Property"
-//            }
-//            Button{
-//                property var dbusval:null
-//                property alias dbusprop: dbusproptextfield.text
-//                text: 'get '+dbusprop+' ' + dbusval
-//                onClicked: {
-//                    console.log('getting', dbusprop)
-//                    var dings = volume.get(dbusprop)
-//                    console.log('-> ', dings);
-//                    dbusval = dings
-//                }
-//            }
 
             Item{
     //            _backgroundColor: Theme.highlightColor
