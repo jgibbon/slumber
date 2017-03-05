@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Mar 05 2017 John Gibbon <jngibbon@gmail.com> 0.6-3
+- new translation: Dutch (thanks pljmn!)
+
 * Sat Feb 11 2017 John Gibbon <jngibbon@gmail.com> 0.6-2
 - new translation: Slovenian (thanks sponka!)
 - user request: Long press in main view opens timepicker (no need to go through settings anymore)
