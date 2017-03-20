@@ -123,9 +123,11 @@ Rectangle {
         user: options.timerVLCPauseUser
         password: options.timerVLCPausePassword
     }
-//    VolumeFade {
-//        id: volumeFade
-//    }
+    VolumeFade {
+        id: volumeFade
+        duration: sleepTimer.triggerBeforeIntervalDuration
+        doReset: options.timerFadeResetEnabled
+    }
 
 
     CountDownTimer {
@@ -138,6 +140,10 @@ Rectangle {
             if(options.timerFadeEnabled) {
                 if(options.timerFadeSoundEffectEnabled) {
                     fadeOutSound.play();
+                }
+                if(options.timerFadeEnabled) {
+                    console.log('starting fade')
+                    volumeFade.start();
                 }
             }
         }
@@ -158,10 +164,16 @@ Rectangle {
             });
 
             sleepTimer.stop()
+            if(options.timerFadeEnabled) {
+                volumeFade.reset()
+            }
         }
         onReset:function(){
 
             fadeOutSound.stop();
+            if(options.timerFadeEnabled) {
+                volumeFade.reset()
+            }
         }
 
         Item {

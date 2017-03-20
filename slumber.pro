@@ -14,8 +14,10 @@ TARGET = harbour-slumber
 
 CONFIG += sailfishapp
 
-SOURCES += src/slumber.cpp
+SOURCES += src/slumber.cpp \
+    src/lib/volumecontrol.cpp
 
+QT += dbus
 appicons.path = /usr/share/icons/hicolor
 appicons.files = appicons/*
 INSTALLS += appicons
@@ -86,6 +88,9 @@ DISTFILES += \
     qml/lib/ImageLabelButton.qml \
     qml/lib/Options.qml \
     qml/lib/VolumeFade.qml
+
+HEADERS += \
+    src/lib/volumecontrol.h
 
 
 

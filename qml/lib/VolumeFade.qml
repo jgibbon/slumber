@@ -1,60 +1,43 @@
 import QtQuick 2.0
 
-import QtMultimedia 5.0
-
-import org.nemomobile.dbus 2.0
 
 Item {
     id:root
 
     property double duration: 1000
+    property bool doReset: true
 
     property double resetToVolume
+    property bool isIdle: true
 
-    function start() {audiofadeout.start()}
-
-    SoundEffect {
-        id: volumeReadout
-    }
+    function start() {
+           audiofadeout.from = VolumeControl.volume
+           audiofadeout.start()
+      }
+    function reset() {
+       if(!root.isIdle) {
+          if(doReset) {
+          resetTimer.start()
+          }
+           audiofadeout.stop()
+       }
+     }
 
     Item {
         id: volumeSet
-        volume: volumeReadout.volume
+        property int volume: VolumeControl.volume
         onVolumeChanged: {
-            console.log('volume changed', volume);
+            if(!isIdle) {
+                VolumeControl.volume = volume
+            }
         }
 
     }
-//    dbus-send --print-reply --type=method_call --address='unix:path=/run/user/100000/pulse/dbus-socket' --dest=org.Meego.MainVolume2 /com/meego/mainvolume2 org.freedesktop.DBus.Properties.GetAll string:com.Meego.MainVolume2
-/*
-dbus-send --type=method_call --print-reply  --address='unix:path=/run/user/100000/pulse/dbus-socket' --dest=org.Meego.MainVolume2 /com/meego/mainvolume2 org.freedesktop.DBus.Introspectable.Introspect
-
-
--> Set
-
-
-
-*/
-    DBusInterface {
-        id:dbif
-        bus: DBus.SystemBus
-        service: 'com.Meego'
-        path: '/com/meego/mainvolume2'
-        iface: 'com.Meego.MainVolume2'
-        function enable(){
-            var valueVariant = true;
-            dbif.typedCall('SetProperty', [
-                {'type':'s', 'value': 'Powered'},
-                {'type':'v', 'value': valueVariant}
-            ]);
-        }
-
-        function disable(){
-            var valueVariant = false;
-            dbif.typedCall('SetProperty', [
-                {'type':'s', 'value': 'Powered'},
-                {'type':'v', 'value': valueVariant}
-            ]);
+    Timer {
+        id: resetTimer
+        interval: 150
+        onTriggered: {
+            VolumeControl.volume = resetToVolume
         }
     }
 
@@ -62,16 +45,17 @@ dbus-send --type=method_call --print-reply  --address='unix:path=/run/user/10000
         id:audiofadeout;
         target: volumeSet;
         property: "volume";
-        from:volumeReadout.volume;
+        from:0
         to: 0;
         duration:root.duration
         onStarted: {
-            root.resetToVolume = volumeReadout
+            isIdle = false
+            resetToVolume = VolumeControl.volume
         }
         onStopped: {
-            volumeSet.volume = resetToVolume
+            reset()
+            isIdle = true
         }
     }
-
 }
 

@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Mar 20 2017 John Gibbon <jngibbon@gmail.com> 0.7-1
+- user request: fade local volume to zero
+
 * Sun Mar 05 2017 John Gibbon <jngibbon@gmail.com> 0.6-3
 - new translation: Dutch (thanks pljmn!)
 
