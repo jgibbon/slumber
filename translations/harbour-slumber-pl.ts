@@ -11,7 +11,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="50"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
-        <translation>Slumber to regulator snu, który pomorze Ci zasnąć bez większych kłopotów podczas słuchania muzyki czy filmów.</translation>
+        <translation>Slumber to regulator drzemki, który pomorze Ci zasnąć bez większych kłopotów podczas słuchania muzyki czy filmów.</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="63"/>
@@ -83,7 +83,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation>Opcje snu</translation>
+        <translation>Opcje drzemki</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
@@ -113,7 +113,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="125"/>
         <source>Configure Actions</source>
-        <translation>Konfiguruj akcje</translation>
+        <translation>Konfiguracja akcji</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
@@ -156,7 +156,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="33"/>
         <source>slumber Appearance</source>
-        <translation>Wygląd sllumbera</translation>
+        <translation>Wygląd slumbera</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="38"/>
@@ -302,7 +302,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation type="unfinished"></translation>
+        <translation>(Porada: Jeśli używasz aplikacji kodimote, nie musisz tego włączać. To działa jako &quot;lokalny&quot; odtwarzać.)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="253"/>
@@ -340,6 +340,26 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Miganie ekranem głównym kiedy Timer kończy odliczać</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <source>Fade out when falling asleep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <source>Reset Volume afterwards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>

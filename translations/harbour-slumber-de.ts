@@ -342,6 +342,26 @@
         <translation>Lässt den Hauptbildschirm blinken, bevor der Timer abläuft</translation>
     </message>
     <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <source>Fade out when falling asleep</source>
+        <translation>Lautstärke beim Einschlafen ausblenden</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
+        <translation>Verringert die Systemlautstärke auf 0 (in den letzten ~10s des Timers)</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <source>Reset Volume afterwards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
+        <translation>Stellt die Systemlautstärke hinterher wieder her. Sollte für die meisten Fälle aktiviert bleiben.</translation>
+    </message>
+    <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
         <source>Sound Effect</source>
         <translation>Geräusch abspielen</translation>

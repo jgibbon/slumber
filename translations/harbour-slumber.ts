@@ -342,6 +342,26 @@
         <translation>Flashes the main screen before the Timer is running out</translation>
     </message>
     <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <source>Fade out when falling asleep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <source>Reset Volume afterwards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
         <source>Sound Effect</source>
         <translation>Sound Effect</translation>

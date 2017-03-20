@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="75"/>
         <source>TMO Thread for slumber</source>
-        <translation>Hilo TMO para slumber</translation>
+        <translation>Tema en TMO para slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="81"/>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="203"/>
         <source>Tap to restart,</source>
-        <translation>Presione para restaurar</translation>
+        <translation>Presione para reiniciar</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="203"/>
@@ -65,12 +65,12 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="211"/>
         <source>pull down for options</source>
-        <translation>Deslizar hacia abajo para opciones</translation>
+        <translation>tire hacia abajo para opciones</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="211"/>
         <source>pull up or down to stop</source>
-        <translation>Deslizar hacia arriba o abajo para detener</translation>
+        <translation>Tire hacia arriba o abajo para detener</translation>
     </message>
 </context>
 <context>
@@ -78,7 +78,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation>Acerca de</translation>
+        <translation>Acerca</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation>Mantener pantalla iluminada</translation>
+        <translation>Mantenga Display iluminado</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="159"/>
         <source>Reset the timer while you are awake.</source>
-        <translation>Reiniciar el temporizador mientras usted está despierto.</translation>
+        <translation>Reiniciar el temporizador mientras Usted está despierto.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="182"/>
@@ -181,12 +181,12 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
         <source>Darken main screen</source>
-        <translation>Oscurecer pantalla principal</translation>
+        <translation>Oscurecer pantalla princial</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
         <source>Use darker colours while the timer is running</source>
-        <translation>Usar colores oscuros mientras el temporizador está en ejecución</translation>
+        <translation>Usar colores oscuros mientras el temporizador está en ejecución.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
@@ -302,7 +302,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation type="unfinished"></translation>
+        <translation>(Consejo: Si Usted usa la aplicación kodimote, no necesita habilitar esto, ya que funciona como un reproductor local.)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="253"/>
@@ -340,6 +340,26 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Parpadea la pantalla principal antes de que el temporizador finalize</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <source>Fade out when falling asleep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <source>Reset Volume afterwards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
@@ -384,7 +404,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
         <source>play current sound</source>
-        <translation>Reproducir sonido actual</translation>
+        <translation>Reproducir sonido</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="418"/>
@@ -412,7 +432,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="43"/>
         <source>Reset Timer by moving the device</source>
-        <translation>Reiniciar el temporizador al sacudir</translation>
+        <translation>Resetear el temporizador moviendo el dispositivo</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="70"/>

@@ -319,7 +319,7 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="306"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="307"/>
         <source>VLC password</source>
-        <translation>VLC lösenord</translation>
+        <translation>VLC-lösenord</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="344"/>
@@ -340,6 +340,26 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Huvudfönstret blinkar innan tiden gått ut</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <source>Fade out when falling asleep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <source>Reset Volume afterwards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>

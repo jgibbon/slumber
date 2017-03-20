@@ -302,7 +302,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation type="unfinished"></translation>
+        <translation>(Совет: если вы используете приложение kodimote, то вам не надо включать эту опцию. Он работает как &apos;родной&apos; плеер.)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="253"/>
@@ -340,6 +340,26 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Включает подсветку главного экрана перед завершением работы таймера</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <source>Fade out when falling asleep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <source>Reset Volume afterwards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
