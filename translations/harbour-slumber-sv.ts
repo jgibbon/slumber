@@ -342,67 +342,67 @@
         <translation>Huvudfönstret blinkar innan tiden gått ut</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
         <source>Fade out when falling asleep</source>
         <translation>Tona ut vid insomning</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation>Sänker sakta systemvolymen till 0 (under de 10 sista sekunderna)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Återställ systemvolymen till föregående nivå efteråt. Bör i de flesta falla vara aktiverad.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
         <source>Sound Effect</source>
         <translation>Ljudeffekt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="485"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>To alert you that the Timer is running out</source>
         <translation>För att avisera att tiden går ut</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="493"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="443"/>
         <source>Sound</source>
         <translation>Ljud</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="508"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
         <source>cassette noise</source>
         <translation>kassetbrus</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="510"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="460"/>
         <source>clock ticking</source>
         <translation>tickande klocka</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="511"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="461"/>
         <source>sail a jolla</source>
         <translation>segla en jolle</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="544"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
         <source>Sound Effect volume</source>
         <translation>Ljudeffektvolym</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>stop playing</source>
         <translation>Sluta spela</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>play current sound</source>
         <translation>Spela upp ljudet</translation>
     </message>

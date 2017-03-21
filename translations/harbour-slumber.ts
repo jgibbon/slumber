@@ -342,67 +342,67 @@
         <translation>Flashes the main screen before the Timer is running out</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
         <source>Fade out when falling asleep</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
         <source>Sound Effect</source>
         <translation>Sound Effect</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="485"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>To alert you that the Timer is running out</source>
         <translation>To alert you that the Timer is running out</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="493"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="443"/>
         <source>Sound</source>
         <translation>Sound</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="508"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
         <source>cassette noise</source>
         <translation>cassette noise</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="510"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="460"/>
         <source>clock ticking</source>
         <translation>clock ticking</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="511"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="461"/>
         <source>sail a jolla</source>
         <translation>sail a jolla</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="544"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
         <source>Sound Effect volume</source>
         <translation>Sound Effect volume</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>stop playing</source>
         <translation>stop playing</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>play current sound</source>
         <translation>play current sound</translation>
     </message>

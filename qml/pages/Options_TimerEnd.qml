@@ -425,56 +425,6 @@ Page {
             }
 
             TextSwitch {
-                id:timerFadeEnabledSwitch
-                text: qsTr('Fade out when falling asleep')
-
-//                visible: timerEnabledSwitch.checked
-                checked: options.timerFadeEnabled
-                onClicked: {
-                    if(checked){
-                        timerFadeResetEnabledSwitch.height = 0
-                        timerFadeResetEnabledSwitch.opacity = 0
-
-                        timerFadeResetEnabledSwitch.visible = true
-                        timerFadeResetEnabledSwitchFadein.start()
-                        timerFadeResetEnabledSwitchHeightin.start()
-                    } else {
-                        timerFadeResetEnabledSwitch.visible = true
-                        timerFadeResetEnabledSwitchFadeout.start()
-                        timerFadeResetEnabledSwitchHeightout.start()
-                    }
-
-                    options.timerFadeEnabled = checked
-                }
-                description: qsTr('Lowers System Volume to 0 (ca the last 10 seconds of the timer)')
-            }
-            TextSwitch {
-                id:timerFadeResetEnabledSwitch
-                text: qsTr('Reset Volume afterwards')
-
-                visible: timerFadeEnabledSwitch.checked
-                height: timerFadeResetEnabledSwitch.checked ? timerFadeResetEnabledSwitch.implicitHeight:0;
-                opacity: checked ? 1:0;
-
-                PropertyAnimation {id: timerFadeResetEnabledSwitchFadeout; target: timerFadeResetEnabledSwitch; properties: "opacity"; to: 0.0; duration: 200}
-                PropertyAnimation {id: timerFadeResetEnabledSwitchFadein; target: timerFadeResetEnabledSwitch; properties: "opacity";
-                    to: 1.0;
-                    duration: 200}
-
-                PropertyAnimation {id: timerFadeResetEnabledSwitchHeightout; target: timerFadeResetEnabledSwitch; properties: "height"; to: 0.0; duration: 200}
-                PropertyAnimation {id: timerFadeResetEnabledSwitchHeightin; target: timerFadeResetEnabledSwitch; properties: "height";
-                    to: timerFadeResetEnabledSwitch.implicitHeight;
-                    duration: 200}
-
-
-
-                checked: options.timerFadeResetEnabled
-                onClicked: {
-                    options.timerFadeResetEnabled = checked
-                }
-                description: qsTr('Reset System Volume to previous level afterwards. Should be enabled for most use cases.')
-            }
-            TextSwitch {
                 id:timerFadeSoundEnabledSwitch
                 text: qsTr('Sound Effect')
 
@@ -568,6 +518,56 @@ Page {
 
             }
 
+            TextSwitch {
+                id:timerFadeEnabledSwitch
+                text: qsTr('Fade out when falling asleep')
+
+//                visible: timerEnabledSwitch.checked
+                checked: options.timerFadeEnabled
+                onClicked: {
+                    if(checked){
+                        timerFadeResetEnabledSwitch.height = 0
+                        timerFadeResetEnabledSwitch.opacity = 0
+
+                        timerFadeResetEnabledSwitch.visible = true
+                        timerFadeResetEnabledSwitchFadein.start()
+                        timerFadeResetEnabledSwitchHeightin.start()
+                    } else {
+                        timerFadeResetEnabledSwitch.visible = true
+                        timerFadeResetEnabledSwitchFadeout.start()
+                        timerFadeResetEnabledSwitchHeightout.start()
+                    }
+
+                    options.timerFadeEnabled = checked
+                }
+                description: qsTr('Lowers System Volume to 0 (ca the last 10 seconds of the timer)')
+            }
+            TextSwitch {
+                id:timerFadeResetEnabledSwitch
+                text: qsTr('Reset Volume afterwards')
+
+                visible: timerFadeEnabledSwitch.checked
+                height: timerFadeEnabledSwitch.checked ? timerFadeResetEnabledSwitch.implicitHeight:0;
+                opacity: checked ? 1:0;
+
+                PropertyAnimation {id: timerFadeResetEnabledSwitchFadeout; target: timerFadeResetEnabledSwitch; properties: "opacity"; to: 0.0; duration: 200}
+                PropertyAnimation {id: timerFadeResetEnabledSwitchFadein; target: timerFadeResetEnabledSwitch; properties: "opacity";
+                    to: 1.0;
+                    duration: 200}
+
+                PropertyAnimation {id: timerFadeResetEnabledSwitchHeightout; target: timerFadeResetEnabledSwitch; properties: "height"; to: 0.0; duration: 200}
+                PropertyAnimation {id: timerFadeResetEnabledSwitchHeightin; target: timerFadeResetEnabledSwitch; properties: "height";
+                    to: timerFadeResetEnabledSwitch.implicitHeight;
+                    duration: 200}
+
+
+
+                checked: options.timerFadeResetEnabled
+                onClicked: {
+                    options.timerFadeResetEnabled = checked
+                }
+                description: qsTr('Reset System Volume to previous level afterwards. Should be enabled for most use cases.')
+            }
 
             Item {
                 width:parent.width

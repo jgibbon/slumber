@@ -342,67 +342,67 @@
         <translation>Flitst het hoofdscherm vooraleer de timer afloopt.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
         <source>Fade out when falling asleep</source>
         <translation>Vervagen bij in slaap vallen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation>Verlaagt systeemvolume naar 0 (ongeveer de laatste 10 seconden van de timer)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Herstelt nadien systeemvolume naar vorig niveau. Voor de meeste gebruiken moet dit ingeschakeld zijn.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
         <source>Sound Effect</source>
         <translation>Geluidseffect</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="485"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>To alert you that the Timer is running out</source>
         <translation>Om je te waarschuwen dat de timer afloopt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="493"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="443"/>
         <source>Sound</source>
         <translation>Geluid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="508"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
         <source>cassette noise</source>
         <translation>cassettegeluid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="510"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="460"/>
         <source>clock ticking</source>
         <translation>tikken van een klok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="511"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="461"/>
         <source>sail a jolla</source>
         <translation>zeilen met een jolla</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="544"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
         <source>Sound Effect volume</source>
         <translation>Volume van geluidseffect</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>stop playing</source>
         <translation>stoppen met afspelen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="555"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>play current sound</source>
         <translation>huidig geluid afspelen</translation>
     </message>
