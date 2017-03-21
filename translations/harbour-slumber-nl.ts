@@ -344,12 +344,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
         <source>Fade out when falling asleep</source>
-        <translation type="unfinished"></translation>
+        <translation>Vervagen bij in slaap vallen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="449"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlaagt systeemvolume naar 0 (ongeveer de laatste 10 seconden van de timer)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstelt nadien systeemvolume naar vorig niveau. Voor de meeste gebruiken moet dit ingeschakeld zijn.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="479"/>
