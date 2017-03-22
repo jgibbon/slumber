@@ -354,7 +354,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
-        <translation type="unfinished"></translation>
+        <translation>Setze Lautstärke danach zurück</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
