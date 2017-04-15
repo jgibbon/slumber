@@ -176,12 +176,12 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
-        <translation>Mostrar un acceso directo a Opciones en la pantalla principal mientras el temporizador está en ejecución. De otro modo, deberá detener el mismo para llegar aquí.</translation>
+        <translation>Mostrar un acceso directo a opciones en la pantalla principal mientras el temporizador está en ejecución. De otro modo, deberá detener el mismo para llegar aquí.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
         <source>Darken main screen</source>
-        <translation>Oscurecer pantalla princial</translation>
+        <translation>Oscurecer pantalla principal</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
@@ -334,7 +334,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="412"/>
         <source>ten seconds before end</source>
-        <translation>diez segundos antes de finalizar</translation>
+        <translation>10 segundos antes de finalizar</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
@@ -344,22 +344,22 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
         <source>Fade out when falling asleep</source>
-        <translation type="unfinished"></translation>
+        <translation>Desvanecer al caer dormido</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
-        <translation type="unfinished"></translation>
+        <translation>Reduce el volumen a 0 los últimos 10 segundos del temporizador</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
-        <translation type="unfinished"></translation>
+        <translation>Reiniciar el volumen después</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
-        <translation type="unfinished"></translation>
+        <translation>Reiniciar volumen del sistema al nivel anterior. Debe estar habilitado en la mayoría de los casos de uso.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
