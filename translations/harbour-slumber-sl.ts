@@ -344,22 +344,22 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
         <source>Fade out when falling asleep</source>
-        <translation type="unfinished"></translation>
+        <translation>Počasi znužuj glasnost</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmanjša glasnost na 0 (približno zadnjih 10 skund)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponastavi glasnost</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponastavi glasnost na prejšnje vrednosti. Naj bi bilo vključeno za večino načinov uporabe.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
