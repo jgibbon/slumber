@@ -42,7 +42,6 @@ Page {
         opacity: page.isDarkScreen ? options.viewDarkenMainScreenAmount*0.8 : 0
 
                 _backgroundColor:'black'
-        //        _backgroundColor: options.viewDarkenMainSceen ? 'black' : 'transparent';
 
                 Behavior on opacity {
                     NumberAnimation { duration: 1000 }
@@ -58,8 +57,6 @@ Page {
 
             PropertyAnimation {from:0; to: 0.8; duration: 1000 }
             PropertyAnimation {from:0.8; to: 0; duration: 1000 }
-            //            from: 0; to: 360
-            //            duration: 20000
             running: (sleepTimer.nearlyDone) && options.timerFadeVisualEffectEnabled && Qt.application.active
             loops: Animation.Infinite
         }
@@ -105,7 +102,7 @@ Page {
         contentHeight: page.height
         PageHeader {
             id: pageHeader
-            title: qsTr("slumber") //+ (optionsButton.visible ? '        ' :'')
+            title: qsTr("slumber")
             anchors.right: options.viewActiveOptionsButtonEnabled? optionsButton.left: parent.right
 
         }
@@ -179,13 +176,10 @@ Page {
             height: pageHeader.height
 
             onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {options:options, firstPage: page})
-//            anchors.left: pageHeader.right
         }
 
 
             Item{
-    //            _backgroundColor: Theme.highlightColor
-
                 width: parent.width
                 height: text2.height
 

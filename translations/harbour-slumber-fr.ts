@@ -4,32 +4,32 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="41"/>
+        <location filename="../qml/pages/About.qml" line="28"/>
         <source>/ˈslʌmbə/</source>
         <translation>/ˈslʌmbə/</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="50"/>
+        <location filename="../qml/pages/About.qml" line="35"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
         <translation>&quot;slumber&quot; est un minuteur spécialement conçu pour gérer à votre place les lecteurs audio actifs lorsque vous tombez dans les bras de Morphée.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="63"/>
+        <location filename="../qml/pages/About.qml" line="43"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
         <translation>Pour suggérer de nouvelles fonctionnalités ou signaler un élément qui ne fonctionne pas, merci de passer par TMO :</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="75"/>
+        <location filename="../qml/pages/About.qml" line="52"/>
         <source>TMO Thread for slumber</source>
         <translation>Topic TMO pour slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="81"/>
+        <location filename="../qml/pages/About.qml" line="58"/>
         <source>Thanks!</source>
         <translation>Remerciements</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="86"/>
+        <location filename="../qml/pages/About.qml" line="62"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
         <translation>Un grand merci à tous les utilisateurs qui m&apos;ont apporté leur soutien, en particulier :</translation>
     </message>
@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="84"/>
+        <location filename="../qml/pages/FirstPage.qml" line="81"/>
         <source>Options</source>
         <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="88"/>
-        <location filename="../qml/pages/FirstPage.qml" line="100"/>
+        <location filename="../qml/pages/FirstPage.qml" line="85"/>
+        <location filename="../qml/pages/FirstPage.qml" line="97"/>
         <source>Stop Timer</source>
         <translation>Arrêter le minuteur</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="108"/>
+        <location filename="../qml/pages/FirstPage.qml" line="105"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="203"/>
+        <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to restart,</source>
-        <translation>Touchez pour recommencer,</translation>
+        <translation>Appuyez pour recommencer,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="203"/>
+        <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to start,</source>
-        <translation>Touchez pour commencer,</translation>
+        <translation>Appuyez pour commencer,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="211"/>
+        <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull down for options</source>
         <translation>tirez vers le bas pour afficher les paramètres.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="211"/>
+        <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull up or down to stop</source>
         <translation>tirez vers le haut ou le bas pour arrêter.</translation>
     </message>
@@ -224,7 +224,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="61"/>
         <source>Only works in native Applications</source>
-        <translation>Fonctionne uniquement avec des applis natives.</translation>
+        <translation>Fonctionne uniquement avec les applis natives.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="105"/>
@@ -472,7 +472,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="124"/>
         <source>Using the Accelerometer may have an impact on power consumption while playing and only works when the Display is lit. You can Tap thrice to wake up your Device and trigger the Accelerometer.</source>
-        <translation>Utiliser l&apos;accéléromètre peut avoir un impact sur votre consommation d&apos;énergie et ne fonctionne que lorsque l&apos;écran est allumé. Vous pourrez toujours tapotez deux fois l&apos;écran pour sortir de veille et ainsi utiliser l&apos;accéléromètre.</translation>
+        <translation>Utiliser l&apos;accéléromètre peut avoir un impact sur votre consommation d&apos;énergie et ne fonctionne que lorsque l&apos;écran est allumé. Vous pourrez toujours tapoter l&apos;écran deux fois pour sortir de veille et ainsi utiliser l&apos;accéléromètre.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="130"/>
@@ -487,7 +487,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="140"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
-        <translation>Réinitialise le minuteur lorsque votre main est placée près de l&apos;écran.</translation>
+        <translation>Réinitialise le minuteur lorsque votre main est placée près du capteur de proximité.</translation>
     </message>
 </context>
 <context>

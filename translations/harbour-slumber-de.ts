@@ -4,32 +4,32 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="41"/>
+        <location filename="../qml/pages/About.qml" line="28"/>
         <source>/ˈslʌmbə/</source>
         <translation>/ˈslʌmbə/</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="50"/>
+        <location filename="../qml/pages/About.qml" line="35"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
         <translation>Slumber ist ein Sleeptimer, der dir dabei helfen soll, ohne viel Trara einzuschlafen, während du etwas hörst.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="63"/>
+        <location filename="../qml/pages/About.qml" line="43"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
         <translation>Wenn du eine neue Funktion brauchst oder etwas gefunden hast, dass nicht funktioniert, schreibe mir auf TMO:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="75"/>
+        <location filename="../qml/pages/About.qml" line="52"/>
         <source>TMO Thread for slumber</source>
         <translation>TMO Thread für Slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="81"/>
+        <location filename="../qml/pages/About.qml" line="58"/>
         <source>Thanks!</source>
         <translation>Danke!</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="86"/>
+        <location filename="../qml/pages/About.qml" line="62"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
         <translation>Vielen Dank an alle, die Dinge vorgeschlagen haben oder mir geholfen haben, besonders:</translation>
     </message>
@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="84"/>
+        <location filename="../qml/pages/FirstPage.qml" line="81"/>
         <source>Options</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="88"/>
-        <location filename="../qml/pages/FirstPage.qml" line="100"/>
+        <location filename="../qml/pages/FirstPage.qml" line="85"/>
+        <location filename="../qml/pages/FirstPage.qml" line="97"/>
         <source>Stop Timer</source>
         <translation>Timer anhalten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="108"/>
+        <location filename="../qml/pages/FirstPage.qml" line="105"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="203"/>
+        <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to restart,</source>
         <translation>Patsche, um neuzustarten,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="203"/>
+        <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to start,</source>
         <translation>Patsche, um herunterzuzählen,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="211"/>
+        <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull down for options</source>
         <translation>ziehe herunter für Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="211"/>
+        <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull up or down to stop</source>
         <translation>ziehe hoch oder herunter zum stoppen</translation>
     </message>
