@@ -53,6 +53,7 @@ CoverBackground {
         anchors.centerIn: parent;
         width: parent.width - Theme.paddingMedium * 2
         busyindicator.visible: false
+        textcolor: Theme.primaryColor
     }
 
     CoverActionList {
