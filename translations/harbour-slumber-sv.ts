@@ -482,12 +482,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
         <source>Notification</source>
-        <translation type="unfinished"></translation>
+        <translation>Avisering</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="151"/>
         <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa en avisering strax innan tiden rinner ut. Aviseringar aktiverar skärmen och med den, accelerometeravläsning.</translation>
     </message>
 </context>
 <context>
@@ -496,7 +496,7 @@
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
         <source>Timer triggering soon</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidtagningslarm snart</translation>
     </message>
 </context>
 <context>
