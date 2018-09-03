@@ -140,7 +140,16 @@ Page {
                 description: qsTr('Reset the timer by holding your hand in front of the screen.')
             }
 
+            TextSwitch {
+                id:timerNotificationEnabledSwitch
+                text: qsTr( "Notification")
 
+                checked: options.timerNotificationTriggerEnabled
+                onClicked: {
+                    options.timerNotificationTriggerEnabled = checked
+                }
+                description: qsTr('Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.')
+            }
 
             Item {
                 width:parent.width

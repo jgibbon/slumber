@@ -118,7 +118,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation>Timeracties zoals &quot;Media pauzeren&quot; worden uitgevoerd wanneer de timer afloopt.</translation>
+        <translation>Timeracties zoals ‘Media pauzeren’ worden uitgevoerd wanneer de timer afloopt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="148"/>
@@ -285,16 +285,6 @@
         <translation>Je kan de huidige Kodi-configuratie proberen pingen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="397"/>
-        <source>Disable Bluetooth</source>
-        <translation>Bluetooth uitschakelen</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="403"/>
-        <source>Useful if you&apos;re low on power</source>
-        <translation>Handig als je batterij bijna leeg is</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="245"/>
         <source>Pause VLC</source>
         <translation>VLC pauzeren</translation>
@@ -354,12 +344,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
-        <translation>Stel volume nadien opnieuw in</translation>
+        <translation>Stel volume daarna opnieuw in</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
-        <translation>Herstelt nadien systeemvolume naar vorig niveau. Voor de meeste gebruiken moet dit ingeschakeld zijn.</translation>
+        <translation>Herstelt daarna systeemvolume naar vorig niveau. Voor de meeste gebruiken moet dit ingeschakeld zijn.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
@@ -489,6 +479,25 @@
         <source>Reset the timer by holding your hand in front of the screen.</source>
         <translation>Stel de timer opnieuw in door je hand voor je scherm te houden.</translation>
     </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
+        <source>Notification</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="151"/>
+        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TimerNotificationTrigger</name>
+    <message>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
+        <source>Timer triggering soon</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TimerProgressButton</name>
@@ -505,7 +514,7 @@
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="158"/>
         <source>Hours</source>
-        <translation>uur</translation>
+        <translation>uren</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="159"/>

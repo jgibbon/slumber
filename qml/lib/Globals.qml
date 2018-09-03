@@ -49,6 +49,7 @@ Rectangle {
         property string timerVLCPauseUser: ''
         property string timerVLCPausePassword: ''
 
+        property bool timerNotificationTriggerEnabled: false
         property bool timerFadeEnabled: true // todo reimplement fadeout volume
         property bool timerFadeResetEnabled: true //todo reset volume afterwards
 
@@ -103,10 +104,10 @@ Rectangle {
         id:actionPauseByDbus
     }
 
-    ActionDisableBluetooth {
-        id: actionDisableBluetooth
-        enabled: options.timerDisableBluetoothEnabled
-    }
+//    ActionDisableBluetooth {
+//        id: actionDisableBluetooth
+//        enabled: options.timerDisableBluetoothEnabled
+//    }
 
     ActionNetworkKodi{
         id: actionPauseKodi
@@ -128,7 +129,15 @@ Rectangle {
         duration: sleepTimer.triggerBeforeIntervalDuration
         doReset: options.timerFadeResetEnabled
     }
+    TimerNotificationTrigger {
+        id: timerNotificationTrigger
+        onTriggered: function(){
 
+            console.log('onTriggered globals')
+            sleepTimer.stop()
+        }
+
+    }
 
     CountDownTimer {
         id: sleepTimer
@@ -146,6 +155,9 @@ Rectangle {
                     volumeFade.start();
                 }
             }
+            if(options.timerNotificationTriggerEnabled) {
+                timerNotificationTrigger.start()
+            }
         }
         onTriggered:function() {
             console.log('sleep timer fired!');
@@ -155,7 +167,7 @@ Rectangle {
                 //gpodder, maybe others
                 actionPauseByPlayingVoid.pause()
             }
-            actionDisableBluetooth.pause()
+//            actionDisableBluetooth.pause()
             actionPauseKodi.action(function(o, success){
                 console.log('Kodi: success', success)
             });
@@ -163,17 +175,19 @@ Rectangle {
                 console.log('VLC: success', success)
             });
 
+            timerNotificationTrigger.reset()
             sleepTimer.stop()
             if(options.timerFadeEnabled) {
                 volumeFade.reset()
             }
         }
         onReset:function(){
-
+            console.log('reset whole timer');
             fadeOutSound.stop();
             if(options.timerFadeEnabled) {
                 volumeFade.reset()
             }
+            timerNotificationTrigger.reset()
         }
 
         Item {

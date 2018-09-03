@@ -83,13 +83,15 @@ TRANSLATIONS += \
     translations/harbour-slumber-ru.ts \
     translations/harbour-slumber-sl.ts \
     translations/harbour-slumber-nl.ts \
+    translations/harbour-slumber-nl_be.ts \
     translations/harbour-slumber-fr.ts \
     translations/harbour-slumber-it.ts
 
 DISTFILES += \
     qml/lib/ImageLabelButton.qml \
     qml/lib/Options.qml \
-    qml/lib/VolumeFade.qml
+    qml/lib/VolumeFade.qml \
+    qml/lib/TimerNotificationTrigger.qml
 
 HEADERS += \
     src/lib/volumecontrol.h

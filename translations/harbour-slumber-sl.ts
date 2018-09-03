@@ -285,16 +285,6 @@
         <translation>Lako poskusite pingati trenuntni Kodi naslov</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="397"/>
-        <source>Disable Bluetooth</source>
-        <translation>Onemogoči Bluetooth</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="403"/>
-        <source>Useful if you&apos;re low on power</source>
-        <translation>Uporabno ko vam je preostalo malo baterije</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="245"/>
         <source>Pause VLC</source>
         <translation>Ustavi predvajanje VLC</translation>
@@ -488,6 +478,25 @@
         <location filename="../qml/pages/Options_TimerReset.qml" line="140"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
         <translation>Za ponastavitev odštevalnika za trenute zadržite roko pred zaslonom</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
+        <source>Notification</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="151"/>
+        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TimerNotificationTrigger</name>
+    <message>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
+        <source>Timer triggering soon</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

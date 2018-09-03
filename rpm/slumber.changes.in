@@ -8,6 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Sep 03 2018 John Gibbon <jngibbon@gmail.com> 0.8-3
+- remove bluetooth switch (blocked in current SFOS)
+- added notification option to switch on display
+- appearance: change cover font color
+- translation updates
+
 * Thu Feb 15 2018 John Gibbon <jngibbon@gmail.com> 0.8-2
 - translation update French (thanks lutinotmalin)
 

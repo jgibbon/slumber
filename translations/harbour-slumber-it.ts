@@ -285,16 +285,6 @@
         <translation>Puoi effettuare il ping per la configurazione di Kodi attuale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="397"/>
-        <source>Disable Bluetooth</source>
-        <translation>Disattiva Bluetooth</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="403"/>
-        <source>Useful if you&apos;re low on power</source>
-        <translation>Utile se hai la batteria scarica</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="245"/>
         <source>Pause VLC</source>
         <translation>Pausa VLC</translation>
@@ -488,6 +478,25 @@
         <location filename="../qml/pages/Options_TimerReset.qml" line="140"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
         <translation>Riavvia il timer passando con la mano di fronte allo schermo.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
+        <source>Notification</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="151"/>
+        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TimerNotificationTrigger</name>
+    <message>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
+        <source>Timer triggering soon</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

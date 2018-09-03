@@ -285,16 +285,6 @@
         <translation>Hier kannst du die aktuelle Kodikonfiguration testen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="397"/>
-        <source>Disable Bluetooth</source>
-        <translation>Bluetooth ausschalten</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="403"/>
-        <source>Useful if you&apos;re low on power</source>
-        <translation>Nützlich, wenn der Strom knapp wird</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="245"/>
         <source>Pause VLC</source>
         <translation>VLC pausieren</translation>
@@ -488,6 +478,25 @@
         <location filename="../qml/pages/Options_TimerReset.qml" line="140"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
         <translation>Starte den Timer neu, indem du die Hand vor den Näherungssensor hältst.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
+        <source>Notification</source>
+        <translation>Benachrichtigung</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="151"/>
+        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
+        <translation>Zeige kurz bevor der Timer abläuft eine Benachrichtigung. Benachrichtigungen aktivieren den Bildschirm und, mit ihm, den Bewegungssensor.</translation>
+    </message>
+</context>
+<context>
+    <name>TimerNotificationTrigger</name>
+    <message>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
+        <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
+        <source>Timer triggering soon</source>
+        <translation>Timer läuft bald ab</translation>
     </message>
 </context>
 <context>

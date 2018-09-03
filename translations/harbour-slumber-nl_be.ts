@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<TS version="2.1" language="nl_BE">
 <context>
     <name>About</name>
     <message>
@@ -11,27 +11,27 @@
     <message>
         <location filename="../qml/pages/About.qml" line="35"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
-        <translation>Slumber är en insomningstimer som låter dig slumra till utan för mycket krångel, medan du lyssnar på något.</translation>
+        <translation>Slumber is een slaaptimerprogramma om u te helpen in slaap te vallen terwijl ge dingen beluistert, zonder veel gedoe.</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="43"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
-        <translation>Om du saknar någon funktion eller hittat något som inte fungerar, får du gärna posta ett inlägg på TMO:</translation>
+        <translation>Als ge een functie nodig hebt of iets vindt dat niet werkt, beschrijf het dan op TMO:</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="52"/>
         <source>TMO Thread for slumber</source>
-        <translation>TMO-tråd för slumber</translation>
+        <translation>TMO-draad voor slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="58"/>
         <source>Thanks!</source>
-        <translation>Tack!</translation>
+        <translation>Merci!</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="62"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
-        <translation>Tack till alla användare som föreslår saker och till alla som hjälper mig, särskilt:</translation>
+        <translation>Merci aan alle gebruikers voor hun voorstellen en aan iedereen die mij heeft geholpen, in het bijzonder:</translation>
     </message>
 </context>
 <context>
@@ -39,13 +39,13 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="81"/>
         <source>Options</source>
-        <translation>Inställningar</translation>
+        <translation>Opties</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="85"/>
         <location filename="../qml/pages/FirstPage.qml" line="97"/>
         <source>Stop Timer</source>
-        <translation>Stoppa tiduret</translation>
+        <translation>Timer stoppen</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="105"/>
@@ -55,22 +55,22 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to restart,</source>
-        <translation>Tryck för att starta om,</translation>
+        <translation>Tik voor opnieuw te beginnen,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to start,</source>
-        <translation>Tryck för att starta,</translation>
+        <translation>Tik voor te beginnen,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull down for options</source>
-        <translation>dra ner för alternativ</translation>
+        <translation>trek omlaag voor opties</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull up or down to stop</source>
-        <translation>Dra ner eller upp för att stoppa</translation>
+        <translation>Trek omhoog of omlaag voor te stoppen</translation>
     </message>
 </context>
 <context>
@@ -78,77 +78,77 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation>Om</translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation>slumber-inställningar</translation>
+        <translation>Opties voor slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation>Sov efter</translation>
+        <translation>Slaap na</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation>Ange en tid längre än 0:00</translation>
+        <translation>Stel den timer in op langer dan 0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation>Håll skärmen tänd</translation>
+        <translation>Hou scherm aan</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation>Håller skärmen tänd medan nedräkning pågår.</translation>
+        <translation>Houdt uw scherm aan terwijl den timer loopt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="122"/>
         <source>Actions</source>
-        <translation>Åtgärder</translation>
+        <translation>Acties</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="125"/>
         <source>Configure Actions</source>
-        <translation>Åtgärder</translation>
+        <translation>Acties configureren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation>Tidtagningsåtgärder som &quot;Pausa media&quot; verkställs när tiden gått ut.</translation>
+        <translation>Timeracties gelijk ‘Media pauzeren’ worden uitgevoerd wanneer dat den timer afloopt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="148"/>
         <source>Timer Reset</source>
-        <translation>Tidursåterställning</translation>
+        <translation>Timer opnieuw instellen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="152"/>
         <source>Configure Reset</source>
-        <translation>Återställning</translation>
+        <translation>Opnieuw instellen configureren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="159"/>
         <source>Reset the timer while you are awake.</source>
-        <translation>Återställ tiduret medan du är vaken.</translation>
+        <translation>Stel den timer opnieuw in terwijl ge wakker zijt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="182"/>
         <source>Appearance</source>
-        <translation>Utseende</translation>
+        <translation>Uiterlijk</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="187"/>
         <source>Configure Appearance</source>
-        <translation>Utseende</translation>
+        <translation>Uiterlijk configureren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="194"/>
         <source>Change this application&apos;s look and feel.</source>
-        <translation>Ändra programmets utseende och känsla.</translation>
+        <translation>Pas het uiterlijk van deze toepassing aan.</translation>
     </message>
 </context>
 <context>
@@ -156,42 +156,42 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="33"/>
         <source>slumber Appearance</source>
-        <translation>slumber-utseende</translation>
+        <translation>Uiterlijk van slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="38"/>
         <source>Show indicator</source>
-        <translation>Visa indikator</translation>
+        <translation>Toon aanwijzing</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="44"/>
         <source>Show a rotating indicator on the main screen while the timer is running.</source>
-        <translation>Visa roterande indikator i huvudfönstret medan nedräkning pågår.</translation>
+        <translation>Toon een draaiende aanwijzing op het hoofdscherm terwijl den timer loopt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="48"/>
         <source>Show Options Button</source>
-        <translation>Visa knapp för Inställningar</translation>
+        <translation>Toon knop voor opties</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
-        <translation>Visa en genväg till Inställningar, i huvudfönstret, medan nedräkning pågår. Annars måste du stoppa nedräkningen innan du kan komma dit.</translation>
+        <translation>Toon een snelkoppeling naar Opties op het hoofdscherm terwijl den timer loopt. Anders moet ge den timer eerst stoppen om hier te geraken.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
         <source>Darken main screen</source>
-        <translation>Dämpa huvudfönstret</translation>
+        <translation>Maak hoofdscherm donkerder</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
         <source>Use darker colours while the timer is running</source>
-        <translation>Gör skärmen mörkare medan nedräkning pågår.</translation>
+        <translation>Gebruik donkerdere kleuren terwijl den timer loopt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
         <source>Display compact time format</source>
-        <translation>Visa kompakt tidsformat</translation>
+        <translation>Tijd weergeven in compact formaat</translation>
     </message>
 </context>
 <context>
@@ -199,207 +199,207 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="42"/>
         <source>slumber Actions</source>
-        <translation>slumber-åtgärder</translation>
+        <translation>Acties voor slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="70"/>
         <source>Pause Kodi</source>
-        <translation>Pausa Kodi</translation>
+        <translation>Kodi pauzeren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="78"/>
         <source>Pauses Kodi on your local network</source>
-        <translation>Pausa Kodi i ditt lokala nätverk</translation>
+        <translation>Pauzeert Kodi op uw lokaal netwerk</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="47"/>
         <source>when the timer runs out</source>
-        <translation>när tiden gått ut</translation>
+        <translation>wanneer den timer afloopt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="55"/>
         <source>Pause local media</source>
-        <translation>Pausa lokal media</translation>
+        <translation>Lokale media pauzeren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="61"/>
         <source>Only works in native Applications</source>
-        <translation>Fungerar endast i Jolla-appar</translation>
+        <translation>Werkt enkel voor Sailfish-toepassingen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="105"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="106"/>
         <source>IP or host:port for Kodi</source>
-        <translation>IP eller värddator:port för Kodi</translation>
+        <translation>IP-adres of hostnaam:poort voor Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="126"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="127"/>
         <source>Kodi username</source>
-        <translation>Kodi användarnamn</translation>
+        <translation>Gebruikersnaam voor Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="147"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="148"/>
         <source>Kodi password</source>
-        <translation>Kodi lösenord</translation>
+        <translation>Paswoord voor Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="169"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="328"/>
         <source>Check Host</source>
-        <translation>Kontrollera värddator</translation>
+        <translation>Host controleren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="180"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="339"/>
         <source>Host works fine!</source>
-        <translation>Värddatorn fungerar fint!</translation>
+        <translation>Host werkt correct!</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="183"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="342"/>
         <source>No response from host</source>
-        <translation>Inget svar från värddatorn</translation>
+        <translation>Geen antwoord van host</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="185"/>
         <source>Kodi not found on host</source>
-        <translation>Kodi kunde inte hittas på värddatorn</translation>
+        <translation>Kodi niet gevonden op host</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="187"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="346"/>
         <source>Username/Password incorrect</source>
-        <translation>Fel användarnamn/lösenord</translation>
+        <translation>Gebruikersnaam/paswoord verkeerd</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="189"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="348"/>
         <source>Unknown Error</source>
-        <translation>Okänt fel</translation>
+        <translation>Onbekende fout</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="214"/>
         <source>You can try to ping the current Kodi configuration</source>
-        <translation>Du kan försöka pinga aktuell Kodi-konfiguration</translation>
+        <translation>Ge kunt de huidige Kodi-configuratie proberen pingen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="245"/>
         <source>Pause VLC</source>
-        <translation>Pausa VLC</translation>
+        <translation>VLC pauzeren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation>(Tips: Om du använder Kodimote, behöver du inte aktivera det här. Den fungerar som en lokal spelare.)</translation>
+        <translation>(Tip: als ge ‘Kodimote’ gebruikt hoeft ge dit niet in te schakelen. Kodimote werkt gelijk ne ‘lokale’ mediaspeler.)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="253"/>
         <source>Pauses VLC on your local network</source>
-        <translation>Pausar VLC i ditt lokala nätverk</translation>
+        <translation>Pauzeert VLC op uw lokaal netwerk</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="264"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="265"/>
         <source>IP or host:port for VLC</source>
-        <translation>IP eller värddator:port för VLC</translation>
+        <translation>IP-adres of hostnaam:poort voor VLC</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="306"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="307"/>
         <source>VLC password</source>
-        <translation>VLC-lösenord</translation>
+        <translation>Wachtwoord voor VLC</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="344"/>
         <source>VLC not found on host</source>
-        <translation>VLC kunde inte hittas på värddatorn</translation>
+        <translation>VLC niet gevonden op host</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="373"/>
         <source>You can try to ping the current VLC configuration</source>
-        <translation>Du kan försöka pinga aktuell VLC-konfiguration</translation>
+        <translation>Ge kunt de huidige VLC-configuratie proberen pingen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="412"/>
         <source>ten seconds before end</source>
-        <translation>10 sekunder innan slutet</translation>
+        <translation>tien seconden voor einde</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
         <source>Flashes the main screen before the Timer is running out</source>
-        <translation>Huvudfönstret blinkar innan tiden gått ut</translation>
+        <translation>Flitst het hoofdscherm vooraleer den timer afloopt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
         <source>Fade out when falling asleep</source>
-        <translation>Tona ut vid insomning</translation>
+        <translation>Vervagen bij in slaap vallen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
-        <translation>Sänker sakta systemvolymen till 0 (under de 10 sista sekunderna)</translation>
+        <translation>Verlaagt systeemvolume naar 0 (ongeveer de laatste 10 seconden van den timer)</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>Reset Volume afterwards</source>
-        <translation>Återställ volymen efteråt</translation>
+        <translation>Stel volume nadien opnieuw in</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
-        <translation>Återställ systemvolymen till föregående nivå efteråt. Bör i de flesta falla vara aktiverad.</translation>
+        <translation>Herstelt nadien systeemvolume naar vorig niveau. Voor de meeste gebruiken moet dit ingeschakeld zijn.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
         <source>Sound Effect</source>
-        <translation>Ljudeffekt</translation>
+        <translation>Geluidseffect</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>To alert you that the Timer is running out</source>
-        <translation>För att avisera att tiden går ut</translation>
+        <translation>Om u te waarschuwen dat den timer subiet afloopt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="443"/>
         <source>Sound</source>
-        <translation>Ljud</translation>
+        <translation>Geluid</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
         <source>cassette noise</source>
-        <translation>kassetbrus</translation>
+        <translation>cassettegeluid</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="460"/>
         <source>clock ticking</source>
-        <translation>tickande klocka</translation>
+        <translation>tikken van ne klok</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="461"/>
         <source>sail a jolla</source>
-        <translation>segla en jolle</translation>
+        <translation>zeilen met een jolla</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
         <source>Sound Effect volume</source>
-        <translation>Ljudeffektvolym</translation>
+        <translation>Volume van geluidseffect</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>stop playing</source>
-        <translation>Sluta spela</translation>
+        <translation>stoppen met afspelen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
         <source>play current sound</source>
-        <translation>Spela upp ljudet</translation>
+        <translation>huidig geluid afspelen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="418"/>
         <source>Visual Indicator</source>
-        <translation>Visuell indikator</translation>
+        <translation>Visuele aanwijzing</translation>
     </message>
 </context>
 <context>
@@ -407,77 +407,77 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="33"/>
         <source>slumber Reset</source>
-        <translation>slumber-återställning</translation>
+        <translation>Slumber opnieuw instellen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="36"/>
         <source>Accelerometer</source>
-        <translation>Accelerometer</translation>
+        <translation>Versnellingsmeter</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="43"/>
         <source>Reset after</source>
-        <translation>Återställ efter</translation>
+        <translation>Opnieuw instellen na</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="43"/>
         <source>Reset Timer by moving the device</source>
-        <translation>Återställ genom att röra enheten</translation>
+        <translation>Timer opnieuw instellen door het apparaat te bewegen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="70"/>
         <source>off</source>
-        <translation>av</translation>
+        <translation>uit</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="72"/>
         <source>tiniest sign of life</source>
-        <translation>minsta livstecken</translation>
+        <translation>minste teken van leven</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="74"/>
         <source>slight bump</source>
-        <translation>lätt stöt</translation>
+        <translation>lichte schok</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="76"/>
         <source>a bit of movement</source>
-        <translation>lite rörelse</translation>
+        <translation>een beetje beweging</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="78"/>
         <source>some acceleration</source>
-        <translation>en aning acceleration</translation>
+        <translation>lichte versnelling</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="80"/>
         <source>shaking</source>
-        <translation>skakning</translation>
+        <translation>schudden</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="82"/>
         <source>earthquake</source>
-        <translation>jordbävning</translation>
+        <translation>aardbeving</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="124"/>
         <source>Using the Accelerometer may have an impact on power consumption while playing and only works when the Display is lit. You can Tap thrice to wake up your Device and trigger the Accelerometer.</source>
-        <translation>Accelerometeranvändning kan påverka energiåtgången vid uppspelning och fungerar endast när skärmen är tänd. Du kan knacka två gånger för att väcka din enhet och aktivera accelerometern.</translation>
+        <translation>Gebruik van de versnellingsmeter kan een invloed hebben op batterijverbruik tijdens afspelen en werkt enkel wanneer het scherm is ingeschakeld. Ge kunt drie keer tikken voor uw apparaat te wekken en de versnellingsmeter te activeren.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="130"/>
         <source>Proximity Sensor</source>
-        <translation>Närhetssensor</translation>
+        <translation>Nabijheidssensor</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="134"/>
         <source>Wave in front of screen</source>
-        <translation>Vifta framför skärmen</translation>
+        <translation>Zwaaien voor scherm</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="140"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
-        <translation>Återställ nedräkningen genom att hålla handen framför skärmen.</translation>
+        <translation>Stel den timer opnieuw in door uw hand voor uw scherm te houden.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
@@ -509,50 +509,50 @@
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="157"/>
         <source>Hour</source>
-        <translation>Timma</translation>
+        <translation>uur</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="158"/>
         <source>Hours</source>
-        <translation>Timmar</translation>
+        <translation>uur</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="159"/>
         <source>Minute</source>
-        <translation>Minut</translation>
+        <translation>minuut</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="160"/>
         <source>Minutes</source>
-        <translation>Minuter</translation>
+        <translation>minuten</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="161"/>
         <source>Second</source>
-        <translation>Sekund</translation>
+        <translation>seconde</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="162"/>
         <source>Seconds</source>
-        <translation>Sekunder</translation>
+        <translation>seconden</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="164"/>
         <location filename="../qml/lib/TimerProgressButton.qml" line="165"/>
         <source>Hrs</source>
-        <translation>Tim</translation>
+        <translation>u</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="166"/>
         <location filename="../qml/lib/TimerProgressButton.qml" line="167"/>
         <source>Min</source>
-        <translation>Min</translation>
+        <translation>m</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="168"/>
         <location filename="../qml/lib/TimerProgressButton.qml" line="169"/>
         <source>Sec</source>
-        <translation>Sek</translation>
+        <translation>s</translation>
     </message>
 </context>
 </TS>

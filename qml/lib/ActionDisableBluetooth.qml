@@ -1,6 +1,11 @@
 import QtQuick 2.0
 
 import org.nemomobile.dbus 2.0
+/*
+* This method does not work anymore, connman requests are
+* blocked in current SFOS versions. Leaving it in here in
+* case that changes any time.
+*/
 Item {
     property bool enabled
     id:root

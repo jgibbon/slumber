@@ -390,19 +390,19 @@ Page {
             }
 
 
-            Column {
-                width: parent.width
-                TextSwitch {
-                    id:timerbtEnabledSwitch
-                    text: qsTr( "Disable Bluetooth")
+//            Column {
+//                width: parent.width
+//                TextSwitch {
+//                    id:timerbtEnabledSwitch
+//                    text: qsTr( "Disable Bluetooth")
 
-                    checked: options.timerDisableBluetoothEnabled
-                    onClicked: {
-                        options.timerDisableBluetoothEnabled = checked
-                    }
-                    description: qsTr('Useful if you\'re low on power')
-                }
-            }
+//                    checked: options.timerDisableBluetoothEnabled
+//                    onClicked: {
+//                        options.timerDisableBluetoothEnabled = checked
+//                    }
+//                    description: qsTr('Useful if you\'re low on power')
+//                }
+//            }
 
 
 
@@ -573,6 +573,7 @@ Page {
                 width:parent.width
                 height: Theme.paddingLarge
             }
+
 
 
 
