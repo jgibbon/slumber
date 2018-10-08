@@ -482,12 +482,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
         <source>Notification</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifications</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="151"/>
         <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Affiche une notification peu avant que le minuteur ne cesse de tourner. La notification allume l&apos;écran et, par conséquent, les données relatives à l&apos;accéléromètre.</translation>
     </message>
 </context>
 <context>
@@ -496,7 +496,7 @@
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
         <source>Timer triggering soon</source>
-        <translation type="unfinished"></translation>
+        <translation>Le décompte est bientôt terminé</translation>
     </message>
 </context>
 <context>
