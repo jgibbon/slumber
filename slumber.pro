@@ -76,6 +76,7 @@ CONFIG += sailfishapp_i18n
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += \
     translations/harbour-slumber-de.ts \
+    translations/harbour-slumber-en.ts \
     translations/harbour-slumber-sv.ts \
     translations/harbour-slumber-es.ts \
     translations/harbour-slumber-fi.ts \
@@ -85,7 +86,8 @@ TRANSLATIONS += \
     translations/harbour-slumber-nl.ts \
     translations/harbour-slumber-nl_be.ts \
     translations/harbour-slumber-fr.ts \
-    translations/harbour-slumber-it.ts
+    translations/harbour-slumber-it.ts \
+    translations/harbour-slumber-zh.ts
 
 DISTFILES += \
     qml/lib/ImageLabelButton.qml \

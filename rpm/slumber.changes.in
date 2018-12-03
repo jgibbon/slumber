@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* TBD John Gibbon <jngibbon@gmail.com> 0.8-4
+ - translation updates: nl/nl_be
+ - new Translation: zh
+
 * Mon Sep 03 2018 John Gibbon <jngibbon@gmail.com> 0.8-3
 - remove bluetooth switch (blocked in current SFOS)
 - added notification option to switch on display
