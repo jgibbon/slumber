@@ -1,5 +1,4 @@
 import QtQuick 2.0
-
 import QtMultimedia 5.0
 
 Rectangle {
@@ -18,13 +17,6 @@ Rectangle {
         id: options
         objectName: 'options'
         doPersist: true
-
-        //milliseconds:
-        property int skipDurationSmall: 10000 //10s
-        property int skipDurationNormal: 60000 //1m
-
-        property real playbackRate:1
-
 
         //timer
         property bool timerEnabled: false
@@ -57,20 +49,13 @@ Rectangle {
         property string timerFadeSoundEffectFile: 'cassette-noise'
         property bool timerFadeVisualEffectEnabled: false
 
-
-
         property real timerFadeSoundEffectVolume: 0.5
 
         property real viewDarkenMainScreenAmount: 0.7
         property bool viewDarkenMainSceen:false
-        //            property bool viewDarkenMainSceenOnlyWhenRunning:true
         property bool viewTimeFormatShort:false
         property bool viewActiveIndicatorEnabled: true
         property bool viewActiveOptionsButtonEnabled: false
-
-
-        //cover options
-        property bool appCoverAnimateEnabled: true
 
     }
 
@@ -100,10 +85,9 @@ Rectangle {
             source: '../assets/sound/void.mp3'
         }
     }
-    DBusPauseMediaplayers {
+    ActionDBusPauseMediaplayers {
         id:actionPauseByDbus
     }
-
 //    ActionDisableBluetooth {
 //        id: actionDisableBluetooth
 //        enabled: options.timerDisableBluetoothEnabled
@@ -132,8 +116,6 @@ Rectangle {
     TimerNotificationTrigger {
         id: timerNotificationTrigger
         onTriggered: function(){
-
-            console.log('onTriggered globals')
             sleepTimer.stop()
         }
 
@@ -161,13 +143,11 @@ Rectangle {
         }
         onTriggered:function() {
             console.log('sleep timer fired!');
-            //            actionLockScreen.pause()
             if(options.timerPauseEnabled) {
                 actionPauseByDbus.pause()
                 //gpodder, maybe others
                 actionPauseByPlayingVoid.pause()
             }
-//            actionDisableBluetooth.pause()
             actionPauseKodi.action(function(o, success){
                 console.log('Kodi: success', success)
             });
@@ -183,6 +163,7 @@ Rectangle {
         }
         onReset:function(){
             console.log('reset whole timer');
+
             fadeOutSound.stop();
             if(options.timerFadeEnabled) {
                 volumeFade.reset()
@@ -254,10 +235,7 @@ Rectangle {
 
         }
 
-
-
     }
-
 
 }
 

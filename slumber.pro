@@ -53,7 +53,6 @@ OTHER_FILES += \
     qml/pages/Options_TimerEnd.qml \
     qml/pages/Options_Appearance.qml \
     qml/assets/moon.png \
-    qml/lib/DBusPauseMediaplayers.qml \
     qml/lib/ActionNetworkKodi.qml \
     qml/lib/ActionNetwork.qml \
     qml/lib/ActionNetworkVLC.qml \
@@ -93,7 +92,8 @@ DISTFILES += \
     qml/lib/ImageLabelButton.qml \
     qml/lib/Options.qml \
     qml/lib/VolumeFade.qml \
-    qml/lib/TimerNotificationTrigger.qml
+    qml/lib/TimerNotificationTrigger.qml \
+    qml/lib/ActionDBusPauseMediaplayers.qml
 
 HEADERS += \
     src/lib/volumecontrol.h
