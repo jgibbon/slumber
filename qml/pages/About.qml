@@ -68,8 +68,9 @@ Page {
                           +'<br>ancelad (i18n ru)'
                           +'<br>sponka (i18n sl)'
                           +'<br>pljmn (i18n nl)'
-                          +'<br>fravaccaro (i18n nl)'
+                          +'<br>fravaccaro (i18n it)'
                           +'<br>lutinotmalin (i18n fr)'
+                          +'<br>rui kon (i18n cn)'
                           +'<br>coderus'
                     verticalAlignment: Text.AlignBottom
 
