@@ -322,84 +322,102 @@
         <translation>你可以尝试检索目前的VLC 配置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="412"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="397"/>
+        <source>Disable Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="403"/>
+        <source>Useful if you&apos;re low on power</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="422"/>
         <source>ten seconds before end</source>
         <translation>结束之前10秒</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="434"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>在定时器跑完之前闪烁主屏幕</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="533"/>
         <source>Fade out when falling asleep</source>
         <translation>当睡不着时渐弱</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="553"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation>减弱系统音量到0（定时器最后的十秒）</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="557"/>
         <source>Reset Volume afterwards</source>
         <translation>重设以后的音量</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="579"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>之后重设系统音量到以前的大小。应当在大部分使用情景中被激活。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="439"/>
         <source>Sound Effect</source>
         <translation>声音效果</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="445"/>
         <source>To alert you that the Timer is running out</source>
         <translation>提醒你定时器正在跑动</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="443"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
         <source>Sound</source>
         <translation>声音</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="468"/>
         <source>cassette noise</source>
         <translation>磁带噪音</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="460"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="470"/>
         <source>clock ticking</source>
         <translation>时钟滴答声</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="461"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="471"/>
         <source>sail a jolla</source>
         <translation>划小船</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="504"/>
         <source>Sound Effect volume</source>
         <translation>声效大小</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="515"/>
         <source>stop playing</source>
         <translation>停止播放</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="515"/>
         <source>play current sound</source>
         <translation>播放目前的声音</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="418"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="428"/>
         <source>Visual Indicator</source>
         <translation>虚拟指示器</translation>
+    </message>
+</context>
+<context>
+    <name>Options_TimerEnd_Programs</name>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="27"/>
+        <source>Run Programs</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

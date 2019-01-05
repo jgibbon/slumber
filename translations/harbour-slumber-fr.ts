@@ -322,84 +322,102 @@
         <translation>Vous pouvez essayer de ping la configuration actuelle de VLC</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="412"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="397"/>
+        <source>Disable Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="403"/>
+        <source>Useful if you&apos;re low on power</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="422"/>
         <source>ten seconds before end</source>
         <translation>lors des dix dernières secondes</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="434"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Fait clignoter l&apos;écran principal pour signaler la fin imminente du décompte.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="523"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="533"/>
         <source>Fade out when falling asleep</source>
         <translation>Estomper le son au moment de l&apos;arrêt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="543"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="553"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation>Abaisse le volume à 0 (pour les 10 dernières secondes du décompte).</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="557"/>
         <source>Reset Volume afterwards</source>
         <translation>Restaurer le volume après-coup</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="579"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Restaure le volume système après la fin du décompte. Utile dans la plupart des cas.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="429"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="439"/>
         <source>Sound Effect</source>
         <translation>Effet sonore</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="445"/>
         <source>To alert you that the Timer is running out</source>
         <translation>Pour vous alerter lorsque la fin du décompte est proche.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="443"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
         <source>Sound</source>
         <translation>Sons</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="468"/>
         <source>cassette noise</source>
         <translation>bruit blanc de k7</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="460"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="470"/>
         <source>clock ticking</source>
         <translation>tic-tac</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="461"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="471"/>
         <source>sail a jolla</source>
         <translation>vagues &amp; écume</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="504"/>
         <source>Sound Effect volume</source>
         <translation>Volume</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="515"/>
         <source>stop playing</source>
         <translation>arrêter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="515"/>
         <source>play current sound</source>
         <translation>jouer le son sélectionné</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="418"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="428"/>
         <source>Visual Indicator</source>
         <translation>Indicateur visuel</translation>
+    </message>
+</context>
+<context>
+    <name>Options_TimerEnd_Programs</name>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="27"/>
+        <source>Run Programs</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

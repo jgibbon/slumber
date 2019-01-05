@@ -30,6 +30,7 @@ Rectangle {
         property bool timerPauseEnabled: true
 
         property bool timerDisableBluetoothEnabled: false
+        property var timerActionRunCommands: []//todo
 
         property bool timerKodiPauseEnabled: false
         property string timerKodiPauseHost: ''
@@ -88,10 +89,10 @@ Rectangle {
     ActionDBusPauseMediaplayers {
         id:actionPauseByDbus
     }
-//    ActionDisableBluetooth {
-//        id: actionDisableBluetooth
-//        enabled: options.timerDisableBluetoothEnabled
-//    }
+    ActionDisableBluetooth {
+        id: actionDisableBluetooth
+        enabled: options.timerDisableBluetoothEnabled
+    }
 
     ActionNetworkKodi{
         id: actionPauseKodi
@@ -154,6 +155,7 @@ Rectangle {
             actionPauseVLC.action(function(o, success){
                 console.log('VLC: success', success)
             });
+            actionDisableBluetooth.pause()
 
             timerNotificationTrigger.reset()
             sleepTimer.stop()

@@ -34,6 +34,7 @@
 
 #include <sailfishapp.h>
 #include "src/lib/volumecontrol.h"
+#include "lib/launcher.h"
 
 
 int main(int argc, char *argv[])
@@ -46,6 +47,8 @@ int main(int argc, char *argv[])
 
 //    QScopedPointer<QGuiApplication> app(Sailfish::createApplication(argc, argv));
     QScopedPointer<QQuickView> v(SailfishApp::createView());
+
+    qmlRegisterType<Launcher>("Launcher", 1 , 0 , "Launcher");
     v->rootContext()->setContextProperty("VolumeControl", &vc);
     // Start the application.
     v->setSource(SailfishApp::pathTo("qml/harbour-slumber.qml"));

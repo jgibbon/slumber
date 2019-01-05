@@ -390,22 +390,32 @@ Page {
             }
 
 
+            Column {
+                width: parent.width
+                TextSwitch {
+                    id:timerbtEnabledSwitch
+                    text: qsTr( "Disable Bluetooth")
+
+                    checked: options.timerDisableBluetoothEnabled
+                    onClicked: {
+                        options.timerDisableBluetoothEnabled = checked
+                    }
+                    description: qsTr('Useful if you\'re low on power')
+                }
+            }
+
+
+
 //            Column {
 //                width: parent.width
-//                TextSwitch {
-//                    id:timerbtEnabledSwitch
-//                    text: qsTr( "Disable Bluetooth")
-
-//                    checked: options.timerDisableBluetoothEnabled
-//                    onClicked: {
-//                        options.timerDisableBluetoothEnabled = checked
-//                    }
-//                    description: qsTr('Useful if you\'re low on power')
+//                Button {
+//                    text: "Launch Programs ("+options.timerActionRunCommands.length+")"
+//                    onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd_Programs.qml"), {options:options, firstPage:page})
+//                    x:Theme.paddingLarge
+//                    anchors.leftMargin: Theme.paddingLarge
+//                    anchors.rightMargin: Theme.paddingLarge
 //                }
 //            }
-
-
-
             SectionHeader {
 
 //                visible: timerEnabledSwitch.checked

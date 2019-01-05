@@ -15,7 +15,8 @@ TARGET = harbour-slumber
 CONFIG += sailfishapp
 
 SOURCES += src/slumber.cpp \
-    src/lib/volumecontrol.cpp
+    src/lib/volumecontrol.cpp \
+    src/lib/launcher.cpp
 
 QT += dbus
 appicons.path = /usr/share/icons/hicolor
@@ -93,10 +94,13 @@ DISTFILES += \
     qml/lib/Options.qml \
     qml/lib/VolumeFade.qml \
     qml/lib/TimerNotificationTrigger.qml \
-    qml/lib/ActionDBusPauseMediaplayers.qml
+    qml/lib/ActionDBusPauseMediaplayers.qml \
+    qml/lib/ActionLaunchProgram.qml \
+    qml/pages/Options_TimerEnd_Programs.qml
 
 HEADERS += \
-    src/lib/volumecontrol.h
+    src/lib/volumecontrol.h \
+    src/lib/launcher.h
 
 
 
