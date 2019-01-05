@@ -35,7 +35,7 @@ Item {
     }
     Timer {
         id: resetTimer
-        interval: 150
+        interval: 450
         onTriggered: {
             VolumeControl.volume = resetToVolume
         }

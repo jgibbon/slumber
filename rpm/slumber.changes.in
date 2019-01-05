@@ -8,11 +8,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* TBD John Gibbon <jngibbon@gmail.com> 0.8-4
- - enhancement: query dbus for any active mpris players
- - appearance: cover font (secondary) color change
- - translation updates: nl/nl_be
- - new Translation: zh
+* Sat Jan 05 2019 John Gibbon <jngibbon@gmail.com> 0.8-5
+ - enhancement: reset volume a bit later (for slower players like hutspot)
+
+ * Sat Jan 05 2019 John Gibbon <jngibbon@gmail.com> 0.8-4
+  - enhancement: query dbus for any active mpris players
+  - appearance: cover font (secondary) color change
+  - translation updates: nl/nl_be
+  - new Translation: zh (thanks rui kon)
 
 * Mon Sep 03 2018 John Gibbon <jngibbon@gmail.com> 0.8-3
 - remove bluetooth switch (blocked in current SFOS)
