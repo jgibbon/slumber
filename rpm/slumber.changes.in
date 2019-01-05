@@ -9,6 +9,8 @@
 # - Summary of changes
 
 * TBD John Gibbon <jngibbon@gmail.com> 0.8-4
+ - enhancement: query dbus for any active mpris players
+ - appearance: cover font (secondary) color change
  - translation updates: nl/nl_be
  - new Translation: zh
 
