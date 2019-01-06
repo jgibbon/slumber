@@ -233,8 +233,6 @@ Rectangle {
                     if(!playing) { accelerometerTrigger.paused = false}
                 }
             }
-
-
         }
 
     }

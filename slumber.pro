@@ -49,7 +49,6 @@ OTHER_FILES += \
     harbour-slumber.desktop \
     rpm/harbour-slumber.spec \
     qml/harbour-slumber.qml \
-    qml/assets/sound/sea-waves.wav \
     qml/pages/Options_TimerReset.qml \
     qml/pages/Options_TimerEnd.qml \
     qml/pages/Options_Appearance.qml \
