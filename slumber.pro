@@ -95,7 +95,8 @@ DISTFILES += \
     qml/lib/TimerNotificationTrigger.qml \
     qml/lib/ActionDBusPauseMediaplayers.qml \
     qml/lib/ActionLaunchProgram.qml \
-    qml/pages/Options_TimerEnd_Programs.qml
+    qml/pages/Options_TimerEnd_Programs.qml \
+    qml/lib/MprisPlayingScanner.qml
 
 HEADERS += \
     src/lib/volumecontrol.h \

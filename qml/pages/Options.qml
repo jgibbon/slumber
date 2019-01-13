@@ -110,6 +110,17 @@ Page {
                 description: qsTr('Keeps your Display lit while the timer is running.')
             }
 
+            TextSwitch {
+                id:timerAutostartOnPlaybackDetectionEnabledSwitch
+                text: qsTr('Start Timer if Playback is detected')
+
+                checked: options.timerAutostartOnPlaybackDetection
+                onClicked: {
+                    options.timerAutostartOnPlaybackDetection = checked
+                }
+                description: qsTr('Automatically start timer when playback is detected. Slumber has to be open for this to work.')
+            }
+
             Column {
                 width: parent.width
                 spacing: Theme.paddingMedium

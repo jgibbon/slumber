@@ -52,6 +52,9 @@ Rectangle {
 
         property real timerFadeSoundEffectVolume: 0.5
 
+        property bool timerAutostartOnPlaybackDetection: false
+
+
         property real viewDarkenMainScreenAmount: 0.7
         property bool viewDarkenMainSceen:false
         property bool viewTimeFormatShort:false
@@ -235,6 +238,19 @@ Rectangle {
             }
         }
 
+    }
+    Loader {
+        active: options.timerAutostartOnPlaybackDetection
+        sourceComponent: scannerComponent
+        Component {
+            id: scannerComponent
+            MprisPlayingScanner {
+                enabled: !sleepTimer.running && options.timerAutostartOnPlaybackDetection
+                onTriggered: {
+                    sleepTimer.start()
+                }
+            }
+        }
     }
 
 }
