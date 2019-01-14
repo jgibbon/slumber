@@ -5,45 +5,7 @@ import Nemo.Notifications 1.0
 Item {
     id: scanner
     property bool enabled: true //generally enabled
-    //this should be tested!
-//    property bool enabledByTime: false //only enabled when time is right
-//    property date enabledAfter
-//    property date enabledBefore
-
-//    property bool timeIsRight: false
-
-//    function checkEnabledTime(){
-//        if(enabled && enabledByTime) {
-//            var current = new Date();
-//            current.setFullYear(1970);
-//            current.setMonth(1,1);
-//            var checkAgainIn;
-
-//            if(enabledBefore < enabledAfter) {
-//                //assume 'before' is next day
-//                timeIsRight = current > enabledAfter || current < enabledBefore
-//                if(timeIsRight) {
-//                    //check at enabledBefore…
-//                    checkAgainIn = (current - enabledBefore) + 86400000;
-//                } else {
-//                    checkAgainIn = (enabledAfter - current);
-//                }
-//            } else {
-//                timeIsRight = current > enabledAfter && current < enabledBefore
-//                if(timeIsRight) {
-//                    checkAgainIn = (enabledBefore - current);
-//                } else {
-//                    checkAgainIn = (enabledAfter - current);
-//                }
-//            }
-//            recheckEnabledTimer.interval = checkAgainIn;
-//            recheckEnabledTimer.start();
-//        } else {
-//            recheckEnabledTimer.stop();
-//        }
-//    }
     Component.onCompleted: {
-//        checkEnabledTime();
         playerQuery.query();
     }
 
@@ -100,9 +62,6 @@ Item {
                 playersModel.append({dbusService: el});
                 console.log('found new mpris player', el);
             }
-//            else {
-//                console.log('mpris player already known:', el);
-//            }
         });
     }
     Repeater {
@@ -152,10 +111,6 @@ Item {
         repeat: true
         onTriggered: playerQuery.query()
     }
-//    Timer {
-//        id: recheckEnabledTimer
-//        onTriggered: checkEnabledTime()
-//    }
 
     Notification {
         id: notificationComponent
