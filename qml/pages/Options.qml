@@ -11,7 +11,6 @@ Page {
     id: page
 
     property Options options
-//    property Appstate  appstate
     property FirstPage firstPage
 
 
