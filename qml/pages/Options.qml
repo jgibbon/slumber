@@ -9,9 +9,10 @@ import "../lib/"
 
 Page {
     id: page
-    property var options
-    property var appstate
-    property var firstPage
+
+    property Options options
+//    property Appstate  appstate
+    property FirstPage firstPage
 
 
 
@@ -30,7 +31,7 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("About")
-                onClicked: pageStack.push(Qt.resolvedUrl("About.qml"), {options:options, firstPage:page})
+                onClicked: pageStack.push(Qt.resolvedUrl("About.qml"), {options:options, firstPage:firstPage})
             }
         }
         VerticalScrollDecorator{
@@ -134,7 +135,7 @@ Page {
                     }
                     Button {
                         text: qsTr("Configure Actions");
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd.qml"), {options:options, firstPage:page})
+                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd.qml"), {options:options, firstPage:firstPage})
                         //                    anchors.horizontalCenter: parent.horizontalCenter
                         x:Theme.paddingLarge
                         anchors.leftMargin: Theme.paddingLarge
@@ -162,7 +163,7 @@ Page {
                     Button {
                         text: qsTr("Configure Reset");
                         x:Theme.paddingLarge
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerReset.qml"), {options:options, firstPage:page})
+                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerReset.qml"), {options:options, firstPage:firstPage})
                         //                    anchors.horizontalCenter: parent.horizontalCenter
 
                     }
@@ -197,7 +198,7 @@ Page {
                     Button {
                         text: qsTr("Configure Appearance");
                         x:Theme.paddingLarge
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_Appearance.qml"), {options:options, firstPage:page})
+                        onClicked: pageStack.push(Qt.resolvedUrl("Options_Appearance.qml"), {options:options, firstPage:firstPage})
                         //                    anchors.horizontalCenter: parent.horizontalCenter
 
                     }
@@ -214,7 +215,7 @@ Page {
                     }
                     //                Button {
                     //                    text: qsTr("Configure Appearance");
-                    //                    onClicked: pageStack.push(Qt.resolvedUrl("Options_Appearance.qml"), {options:options, firstPage:page})
+                    //                    onClicked: pageStack.push(Qt.resolvedUrl("Options_Appearance.qml"), {options:options, firstPage:firstPage})
                     //                    anchors.horizontalCenter: parent.horizontalCenter
                     //                }
                     //                Label {

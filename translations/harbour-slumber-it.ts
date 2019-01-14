@@ -4,32 +4,32 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="28"/>
+        <location filename="../qml/pages/About.qml" line="29"/>
         <source>/ˈslʌmbə/</source>
         <translation>/ˈslʌmbə/</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="35"/>
+        <location filename="../qml/pages/About.qml" line="36"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
         <translation>Slumber è un&apos;app per programmare lo spegnimento automatico di audio o video mentre ti rilassi.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="43"/>
+        <location filename="../qml/pages/About.qml" line="44"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
         <translation>Se vuoi richiedere una nuova funzionalità o segnalare un problema, puoi postare su TMO:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="52"/>
+        <location filename="../qml/pages/About.qml" line="53"/>
         <source>TMO Thread for slumber</source>
         <translation>Discussione per Slumber su TMO</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="58"/>
+        <location filename="../qml/pages/About.qml" line="59"/>
         <source>Thanks!</source>
         <translation>Grazie!</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="62"/>
+        <location filename="../qml/pages/About.qml" line="63"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
         <translation>Grazie a tutti gli utenti che segnalano problemi e a tutti quelli che mi hanno aiutato, in particolar modo:</translation>
     </message>
@@ -76,12 +76,12 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="163"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
         <source>%1 Playback detected: Timer autostart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="171"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
         <source>Autostart: %1 is playing</source>
         <translation type="unfinished"></translation>
     </message>
@@ -89,87 +89,87 @@
 <context>
     <name>Options</name>
     <message>
-        <location filename="../qml/pages/Options.qml" line="32"/>
+        <location filename="../qml/pages/Options.qml" line="33"/>
         <source>About</source>
         <translation>Info su</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="43"/>
+        <location filename="../qml/pages/Options.qml" line="44"/>
         <source>slumber Options</source>
         <translation>Opzioni di Slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="79"/>
+        <location filename="../qml/pages/Options.qml" line="80"/>
         <source>Sleep after</source>
         <translation>Ferma dopo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="95"/>
+        <location filename="../qml/pages/Options.qml" line="96"/>
         <source>Please set Timer longer than 0:00</source>
         <translation>Imposta un tempo più lungo di 0:00</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="104"/>
+        <location filename="../qml/pages/Options.qml" line="105"/>
         <source>Keep Display on</source>
         <translation>Tieni lo schermo acceso</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="110"/>
+        <location filename="../qml/pages/Options.qml" line="111"/>
         <source>Keeps your Display lit while the timer is running.</source>
         <translation>Previene lo spegnimento dello schermo durante l&apos;esecuzione del timer.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="115"/>
+        <location filename="../qml/pages/Options.qml" line="116"/>
         <source>Start Timer if Playback is detected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="121"/>
+        <location filename="../qml/pages/Options.qml" line="122"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="133"/>
+        <location filename="../qml/pages/Options.qml" line="134"/>
         <source>Actions</source>
         <translation>Azioni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="136"/>
+        <location filename="../qml/pages/Options.qml" line="137"/>
         <source>Configure Actions</source>
         <translation>Configura azioni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="144"/>
+        <location filename="../qml/pages/Options.qml" line="145"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
         <translation>Azioni come &apos;Pausa media&apos; vengono eseguite al termine del timer.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="159"/>
+        <location filename="../qml/pages/Options.qml" line="160"/>
         <source>Timer Reset</source>
         <translation>Riavvio timer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="163"/>
+        <location filename="../qml/pages/Options.qml" line="164"/>
         <source>Configure Reset</source>
         <translation>Configura riavvio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="170"/>
+        <location filename="../qml/pages/Options.qml" line="171"/>
         <source>Reset the timer while you are awake.</source>
         <translation>Riavvia il timer se sei ancora sveglio.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="193"/>
+        <location filename="../qml/pages/Options.qml" line="194"/>
         <source>Appearance</source>
         <translation>Aspetto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="198"/>
+        <location filename="../qml/pages/Options.qml" line="199"/>
         <source>Configure Appearance</source>
         <translation>Configura aspetto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="205"/>
+        <location filename="../qml/pages/Options.qml" line="206"/>
         <source>Change this application&apos;s look and feel.</source>
         <translation>Cambia il look and feel dell&apos;app.</translation>
     </message>
@@ -177,42 +177,42 @@
 <context>
     <name>Options_Appearance</name>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="33"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="34"/>
         <source>slumber Appearance</source>
         <translation>Aspetto di Slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="38"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="39"/>
         <source>Show indicator</source>
         <translation>Mostra indicatore</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="44"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="45"/>
         <source>Show a rotating indicator on the main screen while the timer is running.</source>
         <translation>Mostra un indicatore animato nella schermata principale durante l&apos;esecuzione del timer.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="48"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="49"/>
         <source>Show Options Button</source>
         <translation>Mostra pulsante opzioni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="55"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
         <translation>Mostra una scorciatoia per le opzioni nella schermata principale durante l&apos;esecuzione del timer. Se non selezionato, dovrai prima fermare il timer per accedere alle opzioni.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="59"/>
         <source>Darken main screen</source>
         <translation>Scurisci schermata principale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="120"/>
         <source>Use darker colours while the timer is running</source>
         <translation>Utilizza colori più scuri durante l&apos;esecuzione del timer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="139"/>
         <source>Display compact time format</source>
         <translation>Mostra timer compatto</translation>
     </message>

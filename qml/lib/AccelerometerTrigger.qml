@@ -11,7 +11,7 @@ Item {
     property alias reading: accel.reading
     property bool paused: false
     property alias proximityActive: proxi.active
-    property var onTriggered: function(){}
+    signal triggered()
 
     property double tmpmaxamount: 0 //maximum acceleration while triggered (for a duration of [throttleTrigger]), else 0. in case you want to know.
     property double amount:0 //current acceleration
@@ -34,7 +34,7 @@ Item {
         onReadingChanged: {
             var prox = (proxi.active ? (proxi.reading.near ? "Near" : "Far") : "Unknown");
             if(prox === 'Near'){
-                accelerometerTrigger.onTriggered()
+                accelerometerTrigger.triggered()
             }
         }
     }
@@ -54,7 +54,7 @@ Item {
                 tmpmaxamount = amount;
                 if(!delaytimer.running) {
                     delaytimer.start();
-                    accelerometerTrigger.onTriggered()
+                    accelerometerTrigger.triggered()
                 }
             }
 

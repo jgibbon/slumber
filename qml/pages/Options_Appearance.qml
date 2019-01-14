@@ -9,9 +9,10 @@ import "../lib/"
 
 Page {
     id: page
-    property var options
-    property var appstate
-    property var firstPage
+
+    property Options options
+//    property Appstate  appstate
+    property FirstPage firstPage
 
 
 

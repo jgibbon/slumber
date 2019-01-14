@@ -4,32 +4,32 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="28"/>
+        <location filename="../qml/pages/About.qml" line="29"/>
         <source>/ˈslʌmbə/</source>
         <translation>/ˈslʌmbə/</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="35"/>
+        <location filename="../qml/pages/About.qml" line="36"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
         <translation>Slumber on uniajastin, joka mahdollistaa nukahtamisesi ilman ylimääräistä vaivaa kuunnellessasi ohjelmia.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="43"/>
+        <location filename="../qml/pages/About.qml" line="44"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
         <translation>Jos kaipaat lisäominaisuuksia tai löysit jotain, mikä ei toimi, lähetä viesti TMO:ssa:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="52"/>
+        <location filename="../qml/pages/About.qml" line="53"/>
         <source>TMO Thread for slumber</source>
         <translation>Slumberin viestiketju TMO:ssa</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="58"/>
+        <location filename="../qml/pages/About.qml" line="59"/>
         <source>Thanks!</source>
         <translation>Kiitokset!</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="62"/>
+        <location filename="../qml/pages/About.qml" line="63"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
         <translation>Kiitos kaikille käyttäjille, jotka ovat esittäneet palautetta ja auttaneet minua, erityisesti:</translation>
     </message>
@@ -76,12 +76,12 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="163"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
         <source>%1 Playback detected: Timer autostart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="171"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
         <source>Autostart: %1 is playing</source>
         <translation type="unfinished"></translation>
     </message>
@@ -89,87 +89,87 @@
 <context>
     <name>Options</name>
     <message>
-        <location filename="../qml/pages/Options.qml" line="32"/>
+        <location filename="../qml/pages/Options.qml" line="33"/>
         <source>About</source>
         <translation>Tietoja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="43"/>
+        <location filename="../qml/pages/Options.qml" line="44"/>
         <source>slumber Options</source>
         <translation>slumberin asetukset</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="79"/>
+        <location filename="../qml/pages/Options.qml" line="80"/>
         <source>Sleep after</source>
         <translation>Nukahtamisaika</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="95"/>
+        <location filename="../qml/pages/Options.qml" line="96"/>
         <source>Please set Timer longer than 0:00</source>
         <translation>Nukahtamisajan asetus ei voi olla 0:00</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="104"/>
+        <location filename="../qml/pages/Options.qml" line="105"/>
         <source>Keep Display on</source>
         <translation>Pidä näyttö päällä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="110"/>
+        <location filename="../qml/pages/Options.qml" line="111"/>
         <source>Keeps your Display lit while the timer is running.</source>
         <translation>Pitää näyttösi päällä, kun ajastin käy.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="115"/>
+        <location filename="../qml/pages/Options.qml" line="116"/>
         <source>Start Timer if Playback is detected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="121"/>
+        <location filename="../qml/pages/Options.qml" line="122"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="133"/>
+        <location filename="../qml/pages/Options.qml" line="134"/>
         <source>Actions</source>
         <translation>Toiminnot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="136"/>
+        <location filename="../qml/pages/Options.qml" line="137"/>
         <source>Configure Actions</source>
         <translation>Määritä toiminnot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="144"/>
+        <location filename="../qml/pages/Options.qml" line="145"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
         <translation>Ajastimen toiminnot, kuten &quot;Keskeytä toisto&quot; käynnistetään, kun ajastin on käynyt loppuun.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="159"/>
+        <location filename="../qml/pages/Options.qml" line="160"/>
         <source>Timer Reset</source>
         <translation>Ajastimen nollaus</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="163"/>
+        <location filename="../qml/pages/Options.qml" line="164"/>
         <source>Configure Reset</source>
         <translation>Määritä uudelleenkäynnistys</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="170"/>
+        <location filename="../qml/pages/Options.qml" line="171"/>
         <source>Reset the timer while you are awake.</source>
         <translation>Nollaa ajastin, kun olet hereillä.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="193"/>
+        <location filename="../qml/pages/Options.qml" line="194"/>
         <source>Appearance</source>
         <translation>Ulkoasu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="198"/>
+        <location filename="../qml/pages/Options.qml" line="199"/>
         <source>Configure Appearance</source>
         <translation>Säädä ulkoasua</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="205"/>
+        <location filename="../qml/pages/Options.qml" line="206"/>
         <source>Change this application&apos;s look and feel.</source>
         <translation>Muuta sovelluksen ulkoasua ja tunnelmaa.</translation>
     </message>
@@ -177,42 +177,42 @@
 <context>
     <name>Options_Appearance</name>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="33"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="34"/>
         <source>slumber Appearance</source>
         <translation>Slumberin ulkoasu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="38"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="39"/>
         <source>Show indicator</source>
         <translation>Näytä osoitin</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="44"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="45"/>
         <source>Show a rotating indicator on the main screen while the timer is running.</source>
         <translation>Näytä pyörivä osoitin päänäytöllä, kun ajastin on käynnissä.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="48"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="49"/>
         <source>Show Options Button</source>
         <translation>Näytä asetuspainike</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="55"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
         <translation>Näytä pikalinkki asetuksiin päänäytöllä, kun ajastin on käynnissä. Muuten ajastin täytyy pysäyttää päästäksesi asetuksiin.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="59"/>
         <source>Darken main screen</source>
         <translation>Himmennä päänäyttö</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="120"/>
         <source>Use darker colours while the timer is running</source>
         <translation>Näytä tummia värejä ajastimen käydessä.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="139"/>
         <source>Display compact time format</source>
         <translation>Näytä tiivistetty ajan muoto</translation>
     </message>

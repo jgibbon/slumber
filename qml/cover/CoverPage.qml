@@ -32,7 +32,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import '../lib'
 CoverBackground {
-    property var timer
+    property CountDownTimer timer
     Image {
         opacity: 0.2
         source: "../assets/moon.png"

@@ -4,7 +4,7 @@ import Sailfish.Silica 1.0
 Item {
     id:sleepTimerWidget
 
-    property var timer
+    property CountDownTimer timer
     property real value: 0.0
     property bool running: true
     property bool timeFormatShort: false //one line
