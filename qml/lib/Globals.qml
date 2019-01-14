@@ -131,7 +131,7 @@ Rectangle {
         enabled: true
         property double targetVolume: 1
         triggerBeforeIntervalDuration: 10000
-        triggerBeforeInterval: function(){
+        onTriggerBeforeInterval: {
             if(options.timerFadeEnabled) {
                 if(options.timerFadeSoundEffectEnabled) {
                     fadeOutSound.play();
@@ -145,7 +145,7 @@ Rectangle {
                 timerNotificationTrigger.start()
             }
         }
-        onTriggered:function() {
+        onTriggered: {
             console.log('sleep timer fired!');
             if(options.timerPauseEnabled) {
                 actionPauseByDbus.pause()
@@ -166,7 +166,7 @@ Rectangle {
                 volumeFade.reset()
             }
         }
-        onReset:function(){
+        onReset: {
             console.log('reset whole timer');
 
             fadeOutSound.stop();

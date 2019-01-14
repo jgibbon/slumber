@@ -18,7 +18,6 @@ Rectangle {
     property int milliSecondsLeft: countdownTimer.interval
     //methods
     function restart () {
-//        console.log('try to restart timer')
         if(!enabled) {
             return stop();
         }
@@ -26,7 +25,7 @@ Rectangle {
         countdownTimer.restart();
         milliSecondsLeft = interval;
         nearlyDone = false;
-        onReset();
+        reset();
     }
     function start () {
         restart();
@@ -36,26 +35,20 @@ Rectangle {
         countdownTimer.stop();
         nearlyDone = false;
         milliSecondsLeft = interval;
-        onReset();
+        reset();
     }
-    //settable methods
-    property var triggerBeforeInterval: function(){}
-    property var onTriggered: function(){}//dirty? likey?
-    property var onReset: function(){}//dirty? likey?
+    signal triggerBeforeInterval
+    signal triggered
+    signal reset
+
     Timer{
         id: countdownTimer
         repeat: false
         running: false
-//        onRunningChanged: {
-//            if(running){
-
-//            }
-//            console.log('timer running changed: '+running);
-//        }
         onTriggered: {
 
             timerComponent.nearlyDone = false;
-            timerComponent.onTriggered()
+            timerComponent.triggered()
 
         }
         onIntervalChanged: {
@@ -72,7 +65,7 @@ Rectangle {
         repeat: true
         interval: countdownTimer.interval - triggerBeforeIntervalDuration
         onTriggered: {
-            triggerBeforeInterval();
+            timerComponent.triggerBeforeInterval();
             timerComponent.nearlyDone = true;
         }
 
@@ -84,7 +77,6 @@ Rectangle {
         repeat: true
         interval: 1000
         onTriggered: {
-//            console.log('secondstimer - '+milliSecondsLeft);
             timerComponent.milliSecondsLeft = timerComponent.milliSecondsLeft - interval
 
         }
