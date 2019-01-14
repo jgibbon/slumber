@@ -10,6 +10,8 @@
 
 * Mon Jan 14 2019 velox 0.9-1
  - new option: detect playback (mpris) to start timer
+ - performance/style: some minor refactoring
+ - dev convenience: rename translations
 
 * Sat Jan 05 2019 velox 0.8-5
  - enhancement: reset volume a bit later (for slower players like hutspot)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en">
+<TS version="2.1" language="hu">
 <context>
     <name>About</name>
     <message>
@@ -11,27 +11,27 @@
     <message>
         <location filename="../qml/pages/About.qml" line="35"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
-        <translation>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="43"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
-        <translation>If you need a feature or found something that is not working, feel free to post at TMO:</translation>
+        <translation>Ha szeretnél valamilyen funkciót, vagy találtál valamit ami nem működik, kérlek nyugodtan posztold a TMO-n:</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="52"/>
         <source>TMO Thread for slumber</source>
-        <translation>TMO Thread for slumber</translation>
+        <translation>TMO szál a Slumber-hez</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="58"/>
         <source>Thanks!</source>
-        <translation>Thanks!</translation>
+        <translation>Köszi!</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="62"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
-        <translation>Thanks to all users suggesting things and everyone helping me out, especially:</translation>
+        <translation>Köszönet minden felhasználónak a javaslatokért, és mindenkinek, aki kisegített, különösen:</translation>
     </message>
 </context>
 <context>
@@ -39,13 +39,13 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="81"/>
         <source>Options</source>
-        <translation>Options</translation>
+        <translation>Beállítások</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="85"/>
         <location filename="../qml/pages/FirstPage.qml" line="97"/>
         <source>Stop Timer</source>
-        <translation>Stop Timer</translation>
+        <translation>Időzítő leállítása</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="105"/>
@@ -55,22 +55,22 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to restart,</source>
-        <translation>Tap to restart,</translation>
+        <translation>Érintsd meg az újraindításhoz,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to start,</source>
-        <translation>Tap to start,</translation>
+        <translation>Érintsd meg az indításhoz,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull down for options</source>
-        <translation>pull down for options</translation>
+        <translation>húzd lefelé az beállításokhoz</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull up or down to stop</source>
-        <translation>pull up or down to stop</translation>
+        <translation>húzd le vagy fel a megállításhoz</translation>
     </message>
 </context>
 <context>
@@ -91,32 +91,32 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation>About</translation>
+        <translation>Névjegy</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation>slumber Options</translation>
+        <translation>slumber Beállítások</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation>Sleep after</translation>
+        <translation>Elalvás ez után: </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation>Please set Timer longer than 0:00</translation>
+        <translation>Kérlek állítsd az időzítőt 0:00-nál hosszabbra</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation>Keep Display on</translation>
+        <translation>Kijelző ébrentartása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation>Keeps your Display lit while the timer is running.</translation>
+        <translation>A kijelző világos marad, amíg az időzítő fut.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
@@ -131,47 +131,47 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
         <source>Actions</source>
-        <translation>Actions</translation>
+        <translation>Műveletek</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="136"/>
         <source>Configure Actions</source>
-        <translation>Configure Actions</translation>
+        <translation>Műveletek beállítása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="144"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="159"/>
         <source>Timer Reset</source>
-        <translation>Timer Reset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="163"/>
         <source>Configure Reset</source>
-        <translation>Configure Reset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="170"/>
         <source>Reset the timer while you are awake.</source>
-        <translation>Reset the timer while you are awake.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="193"/>
         <source>Appearance</source>
-        <translation>Appearance</translation>
+        <translation>Megjelenés</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="198"/>
         <source>Configure Appearance</source>
-        <translation>Configure Appearance</translation>
+        <translation>Megjelenés beállítása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="205"/>
         <source>Change this application&apos;s look and feel.</source>
-        <translation>Change this application&apos;s look and feel.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -179,42 +179,42 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="33"/>
         <source>slumber Appearance</source>
-        <translation>slumber Appearance</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="38"/>
         <source>Show indicator</source>
-        <translation>Show indicator</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="44"/>
         <source>Show a rotating indicator on the main screen while the timer is running.</source>
-        <translation>Show a rotating indicator on the main screen while the timer is running.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="48"/>
         <source>Show Options Button</source>
-        <translation>Show Options Button</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
-        <translation>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
         <source>Darken main screen</source>
-        <translation>Darken main screen</translation>
+        <translation>Fő képernyő elsötétítése</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
         <source>Use darker colours while the timer is running</source>
-        <translation>Use darker colours while the timer is running</translation>
+        <translation>Sötétebb színek használata, mialatt az időzítő fut</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
         <source>Display compact time format</source>
-        <translation>Display compact time format</translation>
+        <translation>Kompakt időformátum megjelenítése</translation>
     </message>
 </context>
 <context>
@@ -222,147 +222,147 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="41"/>
         <source>slumber Actions</source>
-        <translation>slumber Actions</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="69"/>
         <source>Pause Kodi</source>
-        <translation>Pause Kodi</translation>
+        <translation>Kodi szüneteltetése</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="77"/>
         <source>Pauses Kodi on your local network</source>
-        <translation>Pauses Kodi on your local network</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="46"/>
         <source>when the timer runs out</source>
-        <translation>when the timer runs out</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="54"/>
         <source>Pause local media</source>
-        <translation>Pause local media</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="60"/>
         <source>Only works in native Applications</source>
-        <translation>Only works in native Applications</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="104"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="105"/>
         <source>IP or host:port for Kodi</source>
-        <translation>IP or host:port for Kodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="125"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="126"/>
         <source>Kodi username</source>
-        <translation>Kodi username</translation>
+        <translation>Kodi felhasználónév</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="146"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="147"/>
         <source>Kodi password</source>
-        <translation>Kodi password</translation>
+        <translation>Kodi jelszó</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="168"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="327"/>
         <source>Check Host</source>
-        <translation>Check Host</translation>
+        <translation>Kiszolgáló ellenőrzése</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="179"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="338"/>
         <source>Host works fine!</source>
-        <translation>Host works fine!</translation>
+        <translation>A kiszolgáló jól működik!</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="182"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="341"/>
         <source>No response from host</source>
-        <translation>No response from host</translation>
+        <translation>A kiszolgáló nem válaszol</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="184"/>
         <source>Kodi not found on host</source>
-        <translation>Kodi not found on host</translation>
+        <translation>A Kodi nem található a kiszolgálón</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="186"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="345"/>
         <source>Username/Password incorrect</source>
-        <translation>Username/Password incorrect</translation>
+        <translation>A felhasználónév/jelszó helytelen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="188"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="347"/>
         <source>Unknown Error</source>
-        <translation>Unknown Error</translation>
+        <translation>Ismeretlen hiba</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="213"/>
         <source>You can try to ping the current Kodi configuration</source>
-        <translation>You can try to ping the current Kodi configuration</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="244"/>
         <source>Pause VLC</source>
-        <translation>Pause VLC</translation>
+        <translation>VLC szüneteltetése</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="88"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="252"/>
         <source>Pauses VLC on your local network</source>
-        <translation>Pauses VLC on your local network</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="263"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="264"/>
         <source>IP or host:port for VLC</source>
-        <translation>IP or host:port for VLC</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="305"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="306"/>
         <source>VLC password</source>
-        <translation>VLC password</translation>
+        <translation>VLC jelszó</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="343"/>
         <source>VLC not found on host</source>
-        <translation>VLC not found on host</translation>
+        <translation>A VLC nem található a kiszolgálón</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="372"/>
         <source>You can try to ping the current VLC configuration</source>
-        <translation>You can try to ping the current VLC configuration</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="396"/>
         <source>Disable Bluetooth</source>
-        <translation type="unfinished"></translation>
+        <translation>Bluetooth kikapcsolása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="402"/>
         <source>Useful if you&apos;re low on power</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasznos, ha kicsi a töltöttség</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="421"/>
         <source>ten seconds before end</source>
-        <translation>ten seconds before end</translation>
+        <translation>tíz másodperccel a vége előtt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="433"/>
         <source>Flashes the main screen before the Timer is running out</source>
-        <translation>Flashes the main screen before the Timer is running out</translation>
+        <translation>A főképernyő villog mielőtt kifut az időzítő</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="532"/>
@@ -387,52 +387,52 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="438"/>
         <source>Sound Effect</source>
-        <translation>Sound Effect</translation>
+        <translation>Hangeffektus</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="444"/>
         <source>To alert you that the Timer is running out</source>
-        <translation>To alert you that the Timer is running out</translation>
+        <translation>Hogy figyelmeztessen, ha az időzítő lejár</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="452"/>
         <source>Sound</source>
-        <translation>Sound</translation>
+        <translation>Hang</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="467"/>
         <source>cassette noise</source>
-        <translation>cassette noise</translation>
+        <translation>kazetta zaj</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
         <source>clock ticking</source>
-        <translation>clock ticking</translation>
+        <translation>óra tiktak</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="470"/>
         <source>sail a jolla</source>
-        <translation>sail a jolla</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="503"/>
         <source>Sound Effect volume</source>
-        <translation>Sound Effect volume</translation>
+        <translation>Hangeffektus erőssége</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="514"/>
         <source>stop playing</source>
-        <translation>stop playing</translation>
+        <translation>lejátszás legállítása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="514"/>
         <source>play current sound</source>
-        <translation>play current sound</translation>
+        <translation>jelenlegi hang lejátszása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
         <source>Visual Indicator</source>
-        <translation>Visual Indicator</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -448,77 +448,77 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="32"/>
         <source>slumber Reset</source>
-        <translation>slumber Reset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="35"/>
         <source>Accelerometer</source>
-        <translation>Accelerometer</translation>
+        <translation>Gyorsulásmérő</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="42"/>
         <source>Reset after</source>
-        <translation>Reset after</translation>
+        <translation>Visszaállítás ez után:</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="42"/>
         <source>Reset Timer by moving the device</source>
-        <translation>Reset Timer by moving the device</translation>
+        <translation>Időzítő visszaállítása a készülék mozgatásával</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="69"/>
         <source>off</source>
-        <translation>off</translation>
+        <translation>ki</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="71"/>
         <source>tiniest sign of life</source>
-        <translation>tiniest sign of life</translation>
+        <translation>az élet legkisebb jele</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="73"/>
         <source>slight bump</source>
-        <translation>slight bump</translation>
+        <translation>enyhe lökés</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="75"/>
         <source>a bit of movement</source>
-        <translation>a bit of movement</translation>
+        <translation>egy kis mozgás</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="77"/>
         <source>some acceleration</source>
-        <translation>some acceleration</translation>
+        <translation>némi gyorsulás</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="79"/>
         <source>shaking</source>
-        <translation>shaking</translation>
+        <translation>rázás</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="81"/>
         <source>earthquake</source>
-        <translation>earthquake</translation>
+        <translation>földrengés</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="123"/>
         <source>Using the Accelerometer may have an impact on power consumption while playing and only works when the Display is lit. You can Tap thrice to wake up your Device and trigger the Accelerometer.</source>
-        <translation>Using the Accelerometer may have an impact on power consumption while playing and only works when the Display is lit. You can Tap thrice to wake up your Device and trigger the Accelerometer.</translation>
+        <translation>A gyorsulásmérő használata hatással lehet a lejátszás alatti energiafelhasználásra, és csak akkor működik, ha a képernyő világít. Megérintheted háromszor, hogy felébreszd a készüléket, és beindítsd a gyorsulásmérőt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="129"/>
         <source>Proximity Sensor</source>
-        <translation>Proximity Sensor</translation>
+        <translation>Közelségérzékelő</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="133"/>
         <source>Wave in front of screen</source>
-        <translation>Wave in front of screen</translation>
+        <translation>Hullám a képernyő előtt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="139"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
-        <translation>Reset the timer by holding your hand in front of the screen.</translation>
+        <translation>Az időzítő visszaállítása a kezed képernyő előtti tartásával.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="144"/>
@@ -545,55 +545,55 @@
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="143"/>
         <source>s</source>
-        <translation>s</translation>
+        <translation>mp</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="157"/>
         <source>Hour</source>
-        <translation>Hour</translation>
+        <translation>Óra</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="158"/>
         <source>Hours</source>
-        <translation>Hours</translation>
+        <translation>Óra</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="159"/>
         <source>Minute</source>
-        <translation>Minute</translation>
+        <translation>Perc</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="160"/>
         <source>Minutes</source>
-        <translation>Minutes</translation>
+        <translation>Perc</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="161"/>
         <source>Second</source>
-        <translation>Second</translation>
+        <translation>Másodperc</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="162"/>
         <source>Seconds</source>
-        <translation>Seconds</translation>
+        <translation>Másodperc</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="164"/>
         <location filename="../qml/lib/TimerProgressButton.qml" line="165"/>
         <source>Hrs</source>
-        <translation>Hrs</translation>
+        <translation>Ó.</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="166"/>
         <location filename="../qml/lib/TimerProgressButton.qml" line="167"/>
         <source>Min</source>
-        <translation>Min</translation>
+        <translation>P.</translation>
     </message>
     <message>
         <location filename="../qml/lib/TimerProgressButton.qml" line="168"/>
         <location filename="../qml/lib/TimerProgressButton.qml" line="169"/>
         <source>Sec</source>
-        <translation>Sec</translation>
+        <translation>Mp.</translation>
     </message>
 </context>
 </TS>
