@@ -10,17 +10,19 @@
 
 * Mon Jan 14 2019 velox 0.9-1
  - new option: detect playback (mpris) to start timer
- - performance/style: some minor refactoring
+ - audio: optimize clock sound effect (more click, less noise)
+ - feature: re-introduce bluetooth disable action
+ - performance: some minor refactoring
  - dev convenience: rename translations
 
 * Sat Jan 05 2019 velox 0.8-5
  - enhancement: reset volume a bit later (for slower players like hutspot)
 
- * Sat Jan 05 2019 velox 0.8-4
-  - enhancement: query dbus for any active mpris players
-  - appearance: cover font (secondary) color change
-  - translation updates: nl/nl_be
-  - new Translation: zh (thanks rui kon)
+* Sat Jan 05 2019 velox 0.8-4
+- enhancement: query dbus for any active mpris players
+- appearance: cover font (secondary) color change
+- translation updates: nl/nl_be
+- new Translation: zh (thanks rui kon)
 
 * Mon Sep 03 2018 velox 0.8-3
 - remove bluetooth switch (blocked in current SFOS)
