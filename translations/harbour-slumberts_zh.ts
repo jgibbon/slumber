@@ -78,12 +78,12 @@
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
         <source>%1 Playback detected: Timer autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>侦测到 %1 播放: 定时器自动启动</translation>
     </message>
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
         <source>Autostart: %1 is playing</source>
-        <translation type="unfinished"></translation>
+        <translation>自动启动: 正在播放 %1 </translation>
     </message>
 </context>
 <context>
@@ -121,12 +121,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>如果侦测到播放则自动启动计时器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>当侦测到播放，自动启动计时器。必须打开Slumber 以执行此操作。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
@@ -347,12 +347,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="396"/>
         <source>Disable Bluetooth</source>
-        <translation type="unfinished"></translation>
+        <translation>禁用蓝牙</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="402"/>
         <source>Useful if you&apos;re low on power</source>
-        <translation type="unfinished"></translation>
+        <translation>电量低时可用</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="421"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="26"/>
         <source>Run Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>运行程序</translation>
     </message>
 </context>
 <context>

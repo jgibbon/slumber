@@ -78,12 +78,12 @@
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
         <source>%1 Playback detected: Timer autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 riproduzione rilevata: autostart timer</translation>
     </message>
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
         <source>Autostart: %1 is playing</source>
-        <translation type="unfinished"></translation>
+        <translation>Autostart: %1 in riproduzione</translation>
     </message>
 </context>
 <context>
@@ -121,12 +121,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvia timer se riproduzione rilevata</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvia timer automaticamente se è rilevata la riproduzione di contenuti. Slumber deve essere aperto per utilizzare questa funzione.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="26"/>
         <source>Run Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvia app</translation>
     </message>
 </context>
 <context>
@@ -523,12 +523,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="144"/>
         <source>Notification</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifica</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="150"/>
         <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra una notifica prima della scadenza del timer. Le notifiche attivano lo schermo e l&apos;accelerometro.</translation>
     </message>
 </context>
 <context>
@@ -537,7 +537,7 @@
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
         <source>Timer triggering soon</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifica poco prima</translation>
     </message>
 </context>
 <context>
