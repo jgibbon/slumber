@@ -62,7 +62,8 @@ OTHER_FILES += \
     appicons/86x86/apps/harbour-slumber.png \
     appicons/108x108/apps/harbour-slumber.png \
     appicons/128x128/apps/harbour-slumber.png \
-    appicons/256x256/apps/harbour-slumber.png
+    appicons/256x256/apps/harbour-slumber.png \
+    translations/*
 #    qml/lib/VolumeFade.qml
 
 # to disable building translations every time, comment out the
@@ -74,7 +75,7 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += \
-    translations/harbour-slumberts_*.ts
+    translations/harbour-slumber-*.ts
 
 DISTFILES += \
     qml/lib/ImageLabelButton.qml \

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fi" version="2.1">
 <context>
     <name>About</name>
     <message>
@@ -76,14 +74,14 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="163"/>
         <source>%1 Playback detected: Timer autostart</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="171"/>
         <source>Autostart: %1 is playing</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -121,12 +119,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
@@ -220,217 +218,217 @@
 <context>
     <name>Options_TimerEnd</name>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="41"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="42"/>
         <source>slumber Actions</source>
         <translation>Slumberin toiminnot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="69"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="70"/>
         <source>Pause Kodi</source>
         <translation>Keskeytä Kodi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="77"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="78"/>
         <source>Pauses Kodi on your local network</source>
         <translation>Keskeytä Kodi lähiverkossasi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="46"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="47"/>
         <source>when the timer runs out</source>
         <translation>kun ajastin sammuu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="54"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="55"/>
         <source>Pause local media</source>
         <translation>Keskeytä paikallinen media</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="60"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="61"/>
         <source>Only works in native Applications</source>
         <translation>Toimii vain natiiveilla sovelluksilla.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="104"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="105"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="106"/>
         <source>IP or host:port for Kodi</source>
         <translation>Kodin IP tai palvelin:portti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="125"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="126"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="127"/>
         <source>Kodi username</source>
         <translation>Kodi-käyttäjätunnus</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="146"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="147"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="148"/>
         <source>Kodi password</source>
         <translation>Kodi-salasana</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="168"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="327"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="169"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="328"/>
         <source>Check Host</source>
         <translation>Tarkista palvelin</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="179"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="338"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="180"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="339"/>
         <source>Host works fine!</source>
         <translation>Palvelin toimii hienosti!</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="182"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="341"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="183"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="342"/>
         <source>No response from host</source>
         <translation>Palvelin ei vastaa</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="184"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="185"/>
         <source>Kodi not found on host</source>
         <translation>Kodia ei löytynyt palvelimelta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="186"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="345"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="187"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="346"/>
         <source>Username/Password incorrect</source>
         <translation>Käyttäjätunnus tai salasana väärä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="188"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="347"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="189"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="348"/>
         <source>Unknown Error</source>
         <translation>Tuntematon virhe</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="213"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="214"/>
         <source>You can try to ping the current Kodi configuration</source>
         <translation>Voit yrittää pingata Kodin konfiguraation</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="244"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="245"/>
         <source>Pause VLC</source>
         <translation>Keskeytä VLC</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="88"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="89"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
         <translation>(Vihje: Jos käytät Kodimote-sovellusta, tätä ei tarvitse sallia. Kodimote toimii &apos;paikallisena&apos; soittimena.)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="252"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="253"/>
         <source>Pauses VLC on your local network</source>
         <translation>Keskeyttää VLC:n paikallisverkossasi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="263"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="264"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="265"/>
         <source>IP or host:port for VLC</source>
         <translation>VLC:n IP tai palvelin:portti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="305"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="306"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="307"/>
         <source>VLC password</source>
         <translation>VLC:n salasana</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="343"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="344"/>
         <source>VLC not found on host</source>
         <translation>VLC:tä ei löydetty palvelimelta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="372"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="373"/>
         <source>You can try to ping the current VLC configuration</source>
         <translation>Voit yrittää pingata VLC:n konfiguraation</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="396"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="397"/>
         <source>Disable Bluetooth</source>
         <translation>Sulje Bluetooth</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="402"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="403"/>
         <source>Useful if you&apos;re low on power</source>
         <translation>Hyödyllinen, jos virta on vähissä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="421"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="422"/>
         <source>ten seconds before end</source>
         <translation>kymmenen sekuntia ennen päättymistä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="433"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="434"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Väläyttää näyttöä ennen kuin ajastin on käynyt loppuun</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="532"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="533"/>
         <source>Fade out when falling asleep</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="552"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="553"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="556"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="557"/>
         <source>Reset Volume afterwards</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="578"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="579"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="438"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="439"/>
         <source>Sound Effect</source>
         <translation>Ääniefekti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="444"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="445"/>
         <source>To alert you that the Timer is running out</source>
         <translation>Hälyttää, kun ajastin on käymässä loppuun</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="452"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
         <source>Sound</source>
         <translation>Ääni,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="467"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="468"/>
         <source>cassette noise</source>
         <translation>kasetin ääni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="470"/>
         <source>clock ticking</source>
         <translation>kellon tikitys</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="470"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="471"/>
         <source>sail a jolla</source>
         <translation>purjehtimassa jollalla</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="503"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="504"/>
         <source>Sound Effect volume</source>
         <translation>Ääniefektin voimakkuus</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="514"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="515"/>
         <source>stop playing</source>
         <translation>pysäytä soitto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="514"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="515"/>
         <source>play current sound</source>
         <translation>kuuntele ääni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="428"/>
         <source>Visual Indicator</source>
         <translation>Visuaali-ilmaisu</translation>
     </message>
@@ -438,97 +436,97 @@
 <context>
     <name>Options_TimerEnd_Programs</name>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="26"/>
+        <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="27"/>
         <source>Run Programs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Options_TimerReset</name>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="32"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="33"/>
         <source>slumber Reset</source>
         <translation>Slumberin uudelleenkäynnistys</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="35"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="36"/>
         <source>Accelerometer</source>
         <translation>Kiihtyvyysanturi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="42"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="43"/>
         <source>Reset after</source>
         <translation>Käynnistä uudelleen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="42"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="43"/>
         <source>Reset Timer by moving the device</source>
         <translation>Käynnistä ajastin uudelleen liikuttamalla laitetta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="69"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="70"/>
         <source>off</source>
         <translation>Ei</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="71"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="72"/>
         <source>tiniest sign of life</source>
         <translation>pienellä henkäyksellä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="73"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="74"/>
         <source>slight bump</source>
         <translation>napautuksella</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="75"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="76"/>
         <source>a bit of movement</source>
         <translation>liikauttamalla</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="77"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="78"/>
         <source>some acceleration</source>
         <translation>heilauttamalla</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="79"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="80"/>
         <source>shaking</source>
         <translation>ravistamalla</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="81"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="82"/>
         <source>earthquake</source>
         <translation>maanjäristyksellä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="123"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="124"/>
         <source>Using the Accelerometer may have an impact on power consumption while playing and only works when the Display is lit. You can Tap thrice to wake up your Device and trigger the Accelerometer.</source>
         <translation>Kiihtyvyysanturin käytöllä voi olla vaikutus virrankulutukseen ja se toimii vain kun näyttö on päällä. Voit herättää laitteesi ja kiihtyvyysanturin kolmoisnapautuksella. </translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="129"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="130"/>
         <source>Proximity Sensor</source>
         <translation>Läheisyysanturi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="133"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="134"/>
         <source>Wave in front of screen</source>
         <translation>Heilauta näytön edessä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="139"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="140"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
         <translation>Käynnistä ajastin uudelleen heilauttamalla kättäsi näytön edessä.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="144"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
         <source>Notification</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="150"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="151"/>
         <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -537,7 +535,7 @@
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
         <source>Timer triggering soon</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
