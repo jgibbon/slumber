@@ -116,6 +116,14 @@ Rectangle {
         id: volumeFade
         duration: sleepTimer.triggerBeforeIntervalDuration
         doReset: options.timerFadeResetEnabled
+        onVolumeResetDone: {
+            /*
+              There is a delay to reset volume for "slower" media players.
+              We don't want BT to be disabled before this is done, or
+              it will start with 0 volume on next connect.
+            */
+            actionDisableBluetooth.pause()
+        }
     }
     TimerNotificationTrigger {
         id: timerNotificationTrigger
@@ -158,12 +166,13 @@ Rectangle {
             actionPauseVLC.action(function(o, success){
                 console.log('VLC: success', success)
             });
-            actionDisableBluetooth.pause()
 
             timerNotificationTrigger.reset()
             sleepTimer.stop()
             if(options.timerFadeEnabled) {
-                volumeFade.reset()
+                volumeFade.reset() // triggers BT after it's done
+            } else { // disable bt directly
+                actionDisableBluetooth.pause()
             }
         }
         onReset: {

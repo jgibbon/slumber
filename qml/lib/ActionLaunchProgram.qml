@@ -13,7 +13,6 @@ Launcher {
                 console.log('launching', commands[i]);
                 console.log(launch(commands[i]));
             }
-
         }
     }
 }

@@ -9,6 +9,7 @@ Item {
 
     property double resetToVolume
     property bool isIdle: true
+    signal volumeResetDone // to trigger bt disable only after it's done
 
     function start() {
            audiofadeout.from = VolumeControl.volume
@@ -38,6 +39,7 @@ Item {
         interval: 450
         onTriggered: {
             VolumeControl.volume = resetToVolume
+            volumeResetDone()
         }
     }
 
