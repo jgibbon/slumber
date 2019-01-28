@@ -78,12 +78,12 @@
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
         <source>%1 Playback detected: Timer autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>% lecture détectée : démarrage automatique du minuteur</translation>
     </message>
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
         <source>Autostart: %1 is playing</source>
-        <translation type="unfinished"></translation>
+        <translation>Démarrage auto : %1 est en train d&apos;être joué</translation>
     </message>
 </context>
 <context>
@@ -121,12 +121,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Lancer le minuteur si une lecture est détectée</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le minuteur se lance automatiquement dès qu&apos;une appli de lecture musicale entre en action. Slumber doit être actif pour que cela fonctionne.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="26"/>
         <source>Run Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Lancement des programmes</translation>
     </message>
 </context>
 <context>

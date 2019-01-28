@@ -78,12 +78,12 @@
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
         <source>%1 Playback detected: Timer autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 afspelen gedetecteerd: timer autostart</translation>
     </message>
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
         <source>Autostart: %1 is playing</source>
-        <translation type="unfinished"></translation>
+        <translation>Autostart: %1 wordt afgespeeld</translation>
     </message>
 </context>
 <context>
@@ -121,12 +121,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Timer starten wanneer afspelen gedetecteerd wordt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>Start de timer automatisch wanneer afspelen gedetecteerd wordt. Dit werkt enkel wanneer Slumber geopend is.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Programs.qml" line="26"/>
         <source>Run Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Programma’s uitvoeren</translation>
     </message>
 </context>
 <context>
