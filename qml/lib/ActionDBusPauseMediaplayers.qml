@@ -4,19 +4,24 @@ import Nemo.DBus 2.0
 Item {
     id: musicControl
     property var services: []
-    function pause(){
-        playerQuery.typedCall('ListNames', undefined, filterDbusServicesAndPause, function(err){console.log('error query', err)})
+    function pause(cb){
+        playerQuery.typedCall('ListNames', undefined, replyFactory(cb), function(err){console.log('error query', err)})
     }
-
-    function filterDbusServicesAndPause(dbusReply) {
-        var filtered = dbusReply.filter(function(entry) {
-            return entry.indexOf('org.mpris.MediaPlayer2.') === 0
-        });
-        filtered.forEach(function(el, i){
-            console.log('found mpris player', el);
-            dbif.service = el;
-            dbif.call('Pause', undefined);
-        });
+    function replyFactory(cb) {
+        return function filterDbusServicesAndPause(dbusReply) {
+            var filtered = dbusReply.filter(function(entry) {
+                return entry.indexOf('org.mpris.MediaPlayer2.') === 0
+            });
+            filtered.forEach(function(el, i){
+                console.log('found mpris player', el);
+                dbif.service = el;
+                dbif.call('Pause', undefined);
+            });
+            console.log('mpris done, running callback')
+            if(cb) {
+                cb();
+            }
+        }
     }
 
     DBusInterface {

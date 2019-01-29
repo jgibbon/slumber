@@ -156,9 +156,10 @@ Rectangle {
         onTriggered: {
             console.log('sleep timer fired!');
             if(options.timerPauseEnabled) {
-                actionPauseByDbus.pause()
-                //gpodder, maybe others
-                actionPauseByPlayingVoid.pause()
+                actionPauseByDbus.pause(function(){ //only use the fallback after async mpris scanning is done
+                    //gpodder, maybe others
+                    actionPauseByPlayingVoid.pause()
+                });
             }
             actionPauseKodi.action(function(o, success){
                 console.log('Kodi: success', success)
