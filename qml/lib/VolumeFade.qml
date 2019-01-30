@@ -9,7 +9,11 @@ Item {
 
     property double resetToVolume
     property bool isIdle: true
+    property bool isDone: false
     signal volumeResetDone // to trigger bt disable only after it's done
+    onVolumeResetDone: {
+        isDone = false
+    }
 
     function start() {
            audiofadeout.from = VolumeControl.volume
@@ -18,11 +22,15 @@ Item {
     function reset() {
        if(!root.isIdle) {
           if(doReset) {
-          resetTimer.start()
+            resetTimer.start()
           }
            audiofadeout.stop()
        }
      }
+    function finish(){ //called when sleep timer is triggered to reset and fire event
+        isDone = true;
+        reset()
+    }
 
     Item {
         id: volumeSet
@@ -39,7 +47,9 @@ Item {
         interval: 450
         onTriggered: {
             VolumeControl.volume = resetToVolume
-            volumeResetDone()
+            if(root.isDone) {
+                volumeResetDone()
+            }
         }
     }
 

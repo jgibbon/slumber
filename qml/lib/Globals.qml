@@ -171,7 +171,7 @@ Rectangle {
             timerNotificationTrigger.reset()
             sleepTimer.stop()
             if(options.timerFadeEnabled) {
-                volumeFade.reset() // triggers BT after it's done
+                volumeFade.finish() // triggers BT after it's done
             } else { // disable bt directly
                 actionDisableBluetooth.pause()
             }
