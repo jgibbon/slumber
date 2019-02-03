@@ -8,6 +8,13 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Feb 03 2019 velox 0.9-2
+ - bugfix: fix broken translations
+ - bugfix: only disable bluetooth after volume is restored
+ - translation updates: es/zh/fr/nl/nl_be/sl
+ - enhancement: always reset volume while canceling (even if reset not enabled)
+ - enhancement: only trigger "void" fallback after mpris handling is done
+
 * Mon Jan 14 2019 velox 0.9-1
  - new option: detect playback (mpris) to start timer
  - audio: optimize clock sound effect (more click, less noise)
