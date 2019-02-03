@@ -19,9 +19,9 @@ Item {
            audiofadeout.from = VolumeControl.volume
            audiofadeout.start()
       }
-    function reset() {
+    function reset(forceReset) {
        if(!root.isIdle) {
-          if(doReset) {
+          if(doReset || forceReset) {
             resetTimer.start()
           }
            audiofadeout.stop()
