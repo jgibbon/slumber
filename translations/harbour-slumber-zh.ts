@@ -16,7 +16,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="43"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
-        <translation>如果你需要新的功能或者发现哪里不工作，欢迎在TMO发帖。</translation>
+        <translation>如果你需要新的功能或者发现哪里出现问题，欢迎在TMO发帖。</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="52"/>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="81"/>
         <source>Options</source>
-        <translation>操作</translation>
+        <translation>选项</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="85"/>
@@ -65,7 +65,7 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull down for options</source>
-        <translation>下拉以选择</translation>
+        <translation>下拉以设置</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="205"/>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation>slumber 操作</translation>
+        <translation>slumber 选项</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation>睡后</translation>
+        <translation>入睡时间</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation>请设置定时器长于0:00</translation>
+        <translation>定时器时长设置应长于0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
@@ -116,7 +116,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation>当定时器运行之时请保持显示常亮。</translation>
+        <translation>当定时器运行之时保持显示常亮。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
@@ -141,7 +141,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="144"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation>当定时器跑完之时，像“停止媒体”这样的定时器功能执行完成。</translation>
+        <translation>当定时结束时执行“停止媒体”等定时功能。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="159"/>
@@ -156,7 +156,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="170"/>
         <source>Reset the timer while you are awake.</source>
-        <translation>当你醒后，重设定时器。</translation>
+        <translation>当你醒来后，重设定时器。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="193"/>
@@ -184,7 +184,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="38"/>
         <source>Show indicator</source>
-        <translation>展示指示器</translation>
+        <translation>显示指示器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="44"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="48"/>
         <source>Show Options Button</source>
-        <translation>展示操作按钮</translation>
+        <translation>显示操作按钮</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
@@ -204,17 +204,17 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
         <source>Darken main screen</source>
-        <translation>变暗主屏幕</translation>
+        <translation>调暗主屏幕</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
         <source>Use darker colours while the timer is running</source>
-        <translation>当定时器运行之时使用更黑的颜色</translation>
+        <translation>当定时器运行之时使用较暗的颜色</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
         <source>Display compact time format</source>
-        <translation>展示紧凑的时间版式</translation>
+        <translation>使用紧凑的时间版式</translation>
     </message>
 </context>
 <context>
@@ -227,22 +227,22 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="69"/>
         <source>Pause Kodi</source>
-        <translation>停止</translation>
+        <translation>暂停Kodi播放器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="77"/>
         <source>Pauses Kodi on your local network</source>
-        <translation>在本地网络停止</translation>
+        <translation>暂停本地网络上的Kodi播放器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="46"/>
         <source>when the timer runs out</source>
-        <translation>当定时器跑完</translation>
+        <translation>当定时结束时</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="54"/>
         <source>Pause local media</source>
-        <translation>停止本地媒体</translation>
+        <translation>暂停本地媒体</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="60"/>
@@ -277,18 +277,18 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="179"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="338"/>
         <source>Host works fine!</source>
-        <translation>Host 运行地很好!</translation>
+        <translation>Host 运行正常</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="182"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="341"/>
         <source>No response from host</source>
-        <translation>没有来自host的回应</translation>
+        <translation>主机无响应</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="184"/>
         <source>Kodi not found on host</source>
-        <translation>在 host没有发现kodi</translation>
+        <translation>没有在主机上发现kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="186"/>
@@ -352,7 +352,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="402"/>
         <source>Useful if you&apos;re low on power</source>
-        <translation>电量低时可用</translation>
+        <translation>低电量时会有所帮助</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="421"/>
@@ -362,17 +362,17 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="433"/>
         <source>Flashes the main screen before the Timer is running out</source>
-        <translation>在定时器跑完之前闪烁主屏幕</translation>
+        <translation>在定时结束之前闪烁主屏幕</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="532"/>
         <source>Fade out when falling asleep</source>
-        <translation>当睡不着时渐弱</translation>
+        <translation>当睡着时渐弱</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="552"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
-        <translation>减弱系统音量到0（定时器最后的十秒）</translation>
+        <translation>减弱系统音量到0（在定时器最后10秒内）</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="556"/>
@@ -382,7 +382,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="578"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
-        <translation>之后重设系统音量到以前的大小。应当在大部分使用情景中被激活。</translation>
+        <translation>在之后重设系统音量到以前的大小。应当在大部分使用情景中被激活。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="438"/>
@@ -392,7 +392,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="444"/>
         <source>To alert you that the Timer is running out</source>
-        <translation>提醒你定时器正在跑动</translation>
+        <translation>定时结束时发出提示音</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="452"/>
@@ -448,17 +448,17 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="32"/>
         <source>slumber Reset</source>
-        <translation>slumber 重置</translation>
+        <translation>重置slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="35"/>
         <source>Accelerometer</source>
-        <translation>加速针</translation>
+        <translation>加速传感器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="42"/>
         <source>Reset after</source>
-        <translation>重置后</translation>
+        <translation>重置触发于</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="42"/>
@@ -473,7 +473,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="71"/>
         <source>tiniest sign of life</source>
-        <translation>生命的极小迹象</translation>
+        <translation>极小的生命迹象</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="73"/>
@@ -503,7 +503,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="123"/>
         <source>Using the Accelerometer may have an impact on power consumption while playing and only works when the Display is lit. You can Tap thrice to wake up your Device and trigger the Accelerometer.</source>
-        <translation>当生效之时或仅当屏幕点亮工作时，使用加速针可能会对电量消耗造成影响。你可以点击三次设备以触发加速针。</translation>
+        <translation>播放时使用加速传感器可能会对电量消耗造成影响。这仅在屏幕点亮时有效。你可以轻触设备三次以触发加速传感器。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="129"/>
@@ -518,7 +518,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="139"/>
         <source>Reset the timer by holding your hand in front of the screen.</source>
-        <translation>在屏幕前握手以重设定时器</translation>
+        <translation>在屏幕前举手以重设定时器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="144"/>
@@ -528,7 +528,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="150"/>
         <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
-        <translation>在定时器跑完之前短暂地显示通知。通知触发屏幕，在它的作用下，加速针读数。</translation>
+        <translation>在定时即将结束之前显示通知。通知会激活屏幕并令加速传感器读数。</translation>
     </message>
 </context>
 <context>

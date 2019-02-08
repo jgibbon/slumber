@@ -126,7 +126,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation>El temporizador se inicia automáticamente cuando detecte una reproducción. Slumber tiene que estar abierto para que esto funcione.</translation>
+        <translation>El temporizador se inicia automáticamente cuando detecta una reproducción. Slumber tiene que estar abierto para que esto funcione.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="133"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="48"/>
         <source>Show Options Button</source>
-        <translation>Mostrar botón de Opciones</translation>
+        <translation>Mostrar botón Opciones</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
@@ -204,7 +204,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
         <source>Darken main screen</source>
-        <translation>Oscurecer pantalla princial</translation>
+        <translation>Oscurecer pantalla principal</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
