@@ -1,14 +1,5 @@
 TEMPLATE = app
 
-privileged_launcher.file = privlaunch/launch.pro
-privileged_launcher.target = privileged-launcher
-
-#app_src.subdir = src
-#app_src.target = app-src
-#app_src.depends = privileged-launcher
-
-SUBDIRS = privileged_launcher #app_src
-
 # The name of your application
 TARGET = harbour-slumber
 

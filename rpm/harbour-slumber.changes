@@ -7,10 +7,6 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
-* Sun Feb 17 2019
- - remove old "Bluetooth disable" action (did only work with altered user rights)
- - feature: "Privileged Actions" subsystem / App restructuring
- - feature: New privileged Actions: Lock Screen; Stop AD; Disable Wifi; Disable BT; Enable Flight Mode
 
 * Sun Feb 03 2019 velox 0.9-2
  - bugfix: fix broken translations
