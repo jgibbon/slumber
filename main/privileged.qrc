@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>launch</file>
+    </qresource>
+</RCC>
