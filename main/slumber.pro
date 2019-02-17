@@ -15,9 +15,9 @@ OTHER_FILES += \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
 #    qml/pages/SecondPage.qml \
-    ../rpm/slumber.changes.in \
-    ../rpm/slumber.yaml \
-    ../rpm/slumber.spec \
+    ../rpm/harbour-slumber.changes \
+    ../rpm/harbour-slumber.yaml \
+    ../rpm/harbour-slumber.spec \
     translations/*.ts \
     qml/lib/AccelerometerTrigger.qml \
     qml/lib/CountDownTimer.qml \
