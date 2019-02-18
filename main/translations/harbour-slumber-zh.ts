@@ -53,22 +53,22 @@
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="168"/>
+        <location filename="../qml/pages/FirstPage.qml" line="169"/>
         <source>Tap to restart,</source>
         <translation>点击以重新开始</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="168"/>
+        <location filename="../qml/pages/FirstPage.qml" line="169"/>
         <source>Tap to start,</source>
         <translation>点击以开始</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="178"/>
+        <location filename="../qml/pages/FirstPage.qml" line="180"/>
         <source>pull down for options</source>
         <translation>下拉以设置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="178"/>
+        <location filename="../qml/pages/FirstPage.qml" line="180"/>
         <source>pull up or down to stop</source>
         <translation>上拉或下拉以停止</translation>
     </message>
