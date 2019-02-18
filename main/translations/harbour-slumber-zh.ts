@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="81"/>
+        <location filename="../qml/pages/FirstPage.qml" line="51"/>
         <source>Options</source>
         <translation>选项</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="85"/>
-        <location filename="../qml/pages/FirstPage.qml" line="97"/>
+        <location filename="../qml/pages/FirstPage.qml" line="55"/>
+        <location filename="../qml/pages/FirstPage.qml" line="67"/>
         <source>Stop Timer</source>
         <translation>停止定时器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="105"/>
+        <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to restart,</source>
         <translation>点击以重新开始</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to start,</source>
         <translation>点击以开始</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull down for options</source>
         <translation>下拉以设置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull up or down to stop</source>
         <translation>上拉或下拉以停止</translation>
     </message>
@@ -449,7 +449,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="107"/>
         <source>Granting rights failed. Did you enable Developer Mode and enter the right password?</source>
-        <translation>授权失败。是否以启用开发者模式并输入正确的密码?</translation>
+        <translation>授权失败。是否已启用开发者模式并输入正确的密码?</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="118"/>

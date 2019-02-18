@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="81"/>
+        <location filename="../qml/pages/FirstPage.qml" line="51"/>
         <source>Options</source>
         <translation>Opties</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="85"/>
-        <location filename="../qml/pages/FirstPage.qml" line="97"/>
+        <location filename="../qml/pages/FirstPage.qml" line="55"/>
+        <location filename="../qml/pages/FirstPage.qml" line="67"/>
         <source>Stop Timer</source>
         <translation>Timer stoppen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="105"/>
+        <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to restart,</source>
         <translation>Tik voor opnieuw te beginnen,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to start,</source>
         <translation>Tik voor te beginnen,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull down for options</source>
         <translation>trek omlaag voor opties</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull up or down to stop</source>
         <translation>Trek omhoog of omlaag voor te stoppen</translation>
     </message>
@@ -383,7 +383,7 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="366"/>
         <source>Privileged Actions</source>
         <extracomment>Button Text: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Geprivilegieerde acties</translation>
         <extra-Context>Button Text: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
@@ -438,84 +438,84 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="55"/>
         <source>Privileged Actions</source>
         <extracomment>Page Header: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Geprivilegieerde acties</translation>
         <extra-Context>Page Header: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="74"/>
         <source>You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you&apos;ll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ge moet de ontwikkelaarsmodus inschakelen en geprivilegieerde toegangsrechten eenmalig verlenen door uw root-wachtwoord in te geven. Slumber gaat dit wachtwoord niet opslaan, en ge gaat de toegewezen rechten kunnen herintrekken op eender welke moment. De ontwikkelaarsmodus moet niet meer ingeschakeld zijn van zodra dat deze rechten zijn verleend.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="107"/>
         <source>Granting rights failed. Did you enable Developer Mode and enter the right password?</source>
-        <translation type="unfinished"></translation>
+        <translation>Toewijzen van rechten mislukt. Hebt ge de ontwikkelaarsmodus ingeschakeld en het juste wachtwoord ingegeven?</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="118"/>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="119"/>
         <source>root password</source>
-        <translation type="unfinished"></translation>
+        <translation>root-wachtwoord</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="157"/>
         <source>Privileged access rights are granted. Revoke them by pressing the button below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Geprivilegieerde toegangsrechten zijn toegewezen. Trekt ze terug in door op de knop hieronder te tikken.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="164"/>
         <source>Revoke rights</source>
         <extracomment>Button Text: click to remove privileged rights</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Rechten herintrekken</translation>
         <extra-Context>Button Text: click to remove privileged rights</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="179"/>
         <source>System</source>
         <extracomment>Section Header: System commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Systeem</translation>
         <extra-Context>Section Header: System commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="185"/>
         <source>Lock Screen</source>
         <extracomment>Text Switch: Action &quot;Lock the screen&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Vergrendelscherm</translation>
         <extra-Text>Switch: Action &quot;Lock the screen&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="195"/>
         <source>Stop Alien Dalvik</source>
         <extracomment>Text Switch: Action &quot;Stop Alien Dalvik service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Alien Dalvik stoppen</translation>
         <extra-Text>Switch: Action &quot;Stop Alien Dalvik service&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="206"/>
         <source>Connectivity</source>
         <extracomment>Section Header: Connectivity commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Connectiviteit</translation>
         <extra-Context>Section Header: Connectivity commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="211"/>
         <source>Enable Airplane Mode</source>
         <extracomment>Text Switch: Action &quot;Enable Airplane Mode&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Vliegmodus inschakelen</translation>
         <extra-Text>Switch: Action &quot;Enable Airplane Mode&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="222"/>
         <source>Disable Wifi</source>
         <extracomment>Text Switch: Action &quot;Disable Wifi/wlan&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Wifi uitschakelen</translation>
         <extra-Text>Switch: Action &quot;Disable Wifi/wlan&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="233"/>
         <source>Disable Bluetooth</source>
         <extracomment>Text Switch: Action &quot;Disable Bluetooth&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Bluetooth uitschakelen</translation>
         <extra-Text>Switch: Action &quot;Disable Bluetooth&quot;</extra-Text>
     </message>
 </context>

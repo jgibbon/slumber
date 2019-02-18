@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="81"/>
+        <location filename="../qml/pages/FirstPage.qml" line="51"/>
         <source>Options</source>
         <translation>Možnosti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="85"/>
-        <location filename="../qml/pages/FirstPage.qml" line="97"/>
+        <location filename="../qml/pages/FirstPage.qml" line="55"/>
+        <location filename="../qml/pages/FirstPage.qml" line="67"/>
         <source>Stop Timer</source>
         <translation>Ustavi odštevanje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="105"/>
+        <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to restart,</source>
         <translation>Pritisni za ponoven zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to start,</source>
         <translation>Pritisni za zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull down for options</source>
         <translation>za možnosti potegni navzdol</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull up or down to stop</source>
         <translation>za ustavitev potegni navzgor ali navzdol</translation>
     </message>

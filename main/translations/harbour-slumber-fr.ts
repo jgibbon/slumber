@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="81"/>
+        <location filename="../qml/pages/FirstPage.qml" line="51"/>
         <source>Options</source>
         <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="85"/>
-        <location filename="../qml/pages/FirstPage.qml" line="97"/>
+        <location filename="../qml/pages/FirstPage.qml" line="55"/>
+        <location filename="../qml/pages/FirstPage.qml" line="67"/>
         <source>Stop Timer</source>
         <translation>Arrêter le minuteur</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="105"/>
+        <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to restart,</source>
         <translation>Appuyez pour recommencer,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to start,</source>
         <translation>Appuyez pour commencer,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull down for options</source>
         <translation>tirez vers le bas pour afficher les paramètres.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull up or down to stop</source>
         <translation>tirez vers le haut ou le bas pour arrêter.</translation>
     </message>
@@ -515,7 +515,7 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="233"/>
         <source>Disable Bluetooth</source>
         <extracomment>Text Switch: Action &quot;Disable Bluetooth&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Désactiver le Bluetooth</translation>
         <extra-Text>Switch: Action &quot;Disable Bluetooth&quot;</extra-Text>
     </message>
 </context>

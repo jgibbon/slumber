@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="81"/>
+        <location filename="../qml/pages/FirstPage.qml" line="51"/>
         <source>Options</source>
         <translation>Beállítások</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="85"/>
-        <location filename="../qml/pages/FirstPage.qml" line="97"/>
+        <location filename="../qml/pages/FirstPage.qml" line="55"/>
+        <location filename="../qml/pages/FirstPage.qml" line="67"/>
         <source>Stop Timer</source>
         <translation>Időzítő leállítása</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="105"/>
+        <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to restart,</source>
         <translation>Érintsd meg az újraindításhoz,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="197"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to start,</source>
         <translation>Érintsd meg az indításhoz,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull down for options</source>
         <translation>húzd lefelé az beállításokhoz</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="205"/>
+        <location filename="../qml/pages/FirstPage.qml" line="178"/>
         <source>pull up or down to stop</source>
         <translation>húzd le vagy fel a megállításhoz</translation>
     </message>
@@ -515,7 +515,7 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="233"/>
         <source>Disable Bluetooth</source>
         <extracomment>Text Switch: Action &quot;Disable Bluetooth&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Bluetooth kikapcsolása</translation>
         <extra-Text>Switch: Action &quot;Disable Bluetooth&quot;</extra-Text>
     </message>
 </context>
