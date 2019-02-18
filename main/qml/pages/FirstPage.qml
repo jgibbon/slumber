@@ -165,6 +165,7 @@ Page {
                 font.pixelSize: Theme.fontSizeSmall
                 anchors.horizontalCenter: parent.horizontalCenter
                 color: Theme.secondaryHighlightColor
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: (sleepTimer.running? qsTr("Tap to restart,"):qsTr("Tap to start,"))
             }
             Text
@@ -175,6 +176,7 @@ Page {
                 font.pixelSize: Theme.fontSizeSmall
                 anchors.horizontalCenter: parent.horizontalCenter
                 color: Theme.secondaryHighlightColor
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: '\n' + (sleepTimer.running? qsTr("pull up or down to stop"):qsTr("pull down for options"))
             }
         }
