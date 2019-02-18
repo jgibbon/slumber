@@ -91,32 +91,32 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Névjegy</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation type="unfinished"></translation>
+        <translation>slumber Beállítások</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation type="unfinished"></translation>
+        <translation>Elalvás ez után: </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation type="unfinished"></translation>
+        <translation>Kérlek állítsd az időzítőt 0:00-nál hosszabbra</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation type="unfinished"></translation>
+        <translation>Kijelző ébrentartása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>A kijelző világos marad, amíg az időzítő fut.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
@@ -131,12 +131,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
         <source>Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Műveletek</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Configure Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Műveletek beállítása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="139"/>
@@ -161,12 +161,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="187"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Megjelenés</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="192"/>
         <source>Configure Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Megjelenés beállítása</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="201"/>

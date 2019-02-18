@@ -91,87 +91,87 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Acerca</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opciones de slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation type="unfinished"></translation>
+        <translation>Dormir después de</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation type="unfinished"></translation>
+        <translation>Por favor configure un tiempo mayor de 0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantener pantalla encendida</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantiene la pantalla encendida mientras el temporizador está en ejecución.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar temporizador al detectar reproducción</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>El temporizador se inicia automáticamente cuando detecta una reproducción. Slumber tiene que estar abierto para que esto funcione.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
         <source>Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Acciones</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Configure Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurar acciones</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="139"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation type="unfinished"></translation>
+        <translation>Las acciones del temporizador como &quot;Pausar multimedia&quot; se ejecutan cuando éste se acaba.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="154"/>
         <source>Timer Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Reinicio del temporizador</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="157"/>
         <source>Configure Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurar reinicio</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="164"/>
         <source>Reset the timer while you are awake.</source>
-        <translation type="unfinished"></translation>
+        <translation>Reiniciar el temporizador mientras Usted está despierto.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="187"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Apariencia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="192"/>
         <source>Configure Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurar apariencia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="201"/>
         <source>Change this application&apos;s look and feel.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar el aspecto y uso de la aplicación.</translation>
     </message>
 </context>
 <context>

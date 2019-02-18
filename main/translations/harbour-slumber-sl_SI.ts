@@ -91,87 +91,87 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Možnosti</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaustavi predvajanje po</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosimo, nastavite odštevalni čas daljši od 0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation type="unfinished"></translation>
+        <translation>Ohrani vklopljen zaslon</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Med odštevanjem ohrani vklopljen zaslon </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Ob zaznavi predvajanja zaženi časovnik</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ob zaznavi predvajanja samodejno zaženi časovnik. Za delovanje te možnosti mora biti Slumber zagnan.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
         <source>Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Dejanja</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Configure Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Prilagodi dejanja</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="139"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dejanja, ki se izvedejo po izteku odštevalnika (na primer &quot;Zaustavi predvajanje VLC&quot;).</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="154"/>
         <source>Timer Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponastavi </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="157"/>
         <source>Configure Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve za ponastavitev</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="164"/>
         <source>Reset the timer while you are awake.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponastavi odštevalnik ko ste še budni</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="187"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Videz</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="192"/>
         <source>Configure Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve videza</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="201"/>
         <source>Change this application&apos;s look and feel.</source>
-        <translation type="unfinished"></translation>
+        <translation>Spremeni videz in občutek aplikacije</translation>
     </message>
 </context>
 <context>

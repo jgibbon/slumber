@@ -91,32 +91,32 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcje drzemki</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation type="unfinished"></translation>
+        <translation>Sen po</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation type="unfinished"></translation>
+        <translation>Proszę ustaw Timer na dłużej niż 0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation type="unfinished"></translation>
+        <translation>Zostaw włączony ekran</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Utrzymuje podświetlony ekran, gdy timer jest uruchomiony</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
@@ -131,47 +131,47 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
         <source>Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Akcje</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Configure Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfiguracja akcji</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="139"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akcje timera jak &quot;Wstrzymaj Media&quot; wykonywane są kiedy timer skończy odliczać.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="154"/>
         <source>Timer Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Reset czasu</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="157"/>
         <source>Configure Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfiguracja resetu</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="164"/>
         <source>Reset the timer while you are awake.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zresetuj timer kiedy się obudzisz</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="187"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Wygląd</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="192"/>
         <source>Configure Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfiguracja wyglądu</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="201"/>
         <source>Change this application&apos;s look and feel.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień wygląd i zachowanie tej aplikacji.</translation>
     </message>
 </context>
 <context>

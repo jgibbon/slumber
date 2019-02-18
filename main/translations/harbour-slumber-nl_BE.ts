@@ -91,87 +91,87 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opties voor slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation type="unfinished"></translation>
+        <translation>Slaap na</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation type="unfinished"></translation>
+        <translation>Stel den timer in op langer dan 0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation type="unfinished"></translation>
+        <translation>Hou scherm aan</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Houdt uw scherm aan terwijl den timer loopt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Timer starten wanneer dat afspelen wordt gedetecteerd</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>Start den timer automatisch wanneer dat afspelen wordt gedetecteerd. Dit werkt enkel wanneer dat Slumber is geopend.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
         <source>Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Acties</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Configure Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Acties configureren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="139"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation type="unfinished"></translation>
+        <translation>Timeracties gelijk ‘Media pauzeren’ worden uitgevoerd wanneer dat den timer afloopt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="154"/>
         <source>Timer Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Timer opnieuw instellen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="157"/>
         <source>Configure Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Opnieuw instellen configureren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="164"/>
         <source>Reset the timer while you are awake.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stel den timer opnieuw in terwijl ge wakker zijt.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="187"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Uiterlijk</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="192"/>
         <source>Configure Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Uiterlijk configureren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="201"/>
         <source>Change this application&apos;s look and feel.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pas het uiterlijk van deze toepassing aan.</translation>
     </message>
 </context>
 <context>

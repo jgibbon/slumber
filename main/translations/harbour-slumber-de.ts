@@ -91,87 +91,87 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="32"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="43"/>
         <source>slumber Options</source>
-        <translation type="unfinished"></translation>
+        <translation>slumber Einstellungen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="79"/>
         <source>Sleep after</source>
-        <translation type="unfinished"></translation>
+        <translation>Schlummere nach</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="95"/>
         <source>Please set Timer longer than 0:00</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte den Timer auf länger als 0:00 setzen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keep Display on</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildschirm angeschaltet lassen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lässt deinen Bildschirm nicht ausgehen, solange der Timer läuft</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Starte Timer, sobald Abspielen erkannt wird</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>Startet den Timer automatisch, sobald Abspielen erkannt wird. Slumber muss geöffnet sein, damit dies funktioniert.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
         <source>Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktionen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Configure Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktionen konfigurieren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="139"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktionen (wie &quot;Medien pausieren&quot;) werden ausgeführt, wenn der Timer abläuft.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="154"/>
         <source>Timer Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Timer auf Anfang</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="157"/>
         <source>Configure Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Reset konfigurieren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="164"/>
         <source>Reset the timer while you are awake.</source>
-        <translation type="unfinished"></translation>
+        <translation>Setze den Timer auf Anfang, während du wach bist</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="187"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Aussehen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="192"/>
         <source>Configure Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Oberfläche konfigurieren</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="201"/>
         <source>Change this application&apos;s look and feel.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändere das Aussehen dieses Programms</translation>
     </message>
 </context>
 <context>
@@ -383,7 +383,7 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="366"/>
         <source>Privileged Actions</source>
         <extracomment>Button Text: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Privilegierte Aktionen</translation>
         <extra-Context>Button Text: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
@@ -438,84 +438,84 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="55"/>
         <source>Privileged Actions</source>
         <extracomment>Page Header: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Privilegierte Aktionen</translation>
         <extra-Context>Page Header: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="74"/>
         <source>You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you&apos;ll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du musst den Entwicklermodus aktivieren und einmalig privilegierte Zugriffsrechte gewähren, indem du dein Rootpasswort zur Verfügung stellst. Slumber wird dieses Passwort nicht speichern und du kannst die Rechte jederzeit zurückziehen. Slumber benötigt den Entwicklermodus nach Gewährung der Rechte nicht weiter.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="107"/>
         <source>Granting rights failed. Did you enable Developer Mode and enter the right password?</source>
-        <translation type="unfinished"></translation>
+        <translation>Gewähren der Rechte fehlgeschlagen. Hast du den Entwicklermodus aktiviert und das richtige Passwort eingegeben?</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="118"/>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="119"/>
         <source>root password</source>
-        <translation type="unfinished"></translation>
+        <translation>Rootpasswort</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="157"/>
         <source>Privileged access rights are granted. Revoke them by pressing the button below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Privilegierte Rechte sind gewährt. Ziehe sie zurück, indem du den folgenden Knopf drückst.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="164"/>
         <source>Revoke rights</source>
         <extracomment>Button Text: click to remove privileged rights</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Rechte zurückziehen</translation>
         <extra-Context>Button Text: click to remove privileged rights</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="179"/>
         <source>System</source>
         <extracomment>Section Header: System commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>System</translation>
         <extra-Context>Section Header: System commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="185"/>
         <source>Lock Screen</source>
         <extracomment>Text Switch: Action &quot;Lock the screen&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Bildschirmsperre</translation>
         <extra-Text>Switch: Action &quot;Lock the screen&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="195"/>
         <source>Stop Alien Dalvik</source>
         <extracomment>Text Switch: Action &quot;Stop Alien Dalvik service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Alien Dalvik stoppen</translation>
         <extra-Text>Switch: Action &quot;Stop Alien Dalvik service&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="206"/>
         <source>Connectivity</source>
         <extracomment>Section Header: Connectivity commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Verbindungen</translation>
         <extra-Context>Section Header: Connectivity commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="211"/>
         <source>Enable Airplane Mode</source>
         <extracomment>Text Switch: Action &quot;Enable Airplane Mode&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Flugzeugmodus einschalten</translation>
         <extra-Text>Switch: Action &quot;Enable Airplane Mode&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="222"/>
         <source>Disable Wifi</source>
         <extracomment>Text Switch: Action &quot;Disable Wifi/wlan&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>WLAN ausschalten</translation>
         <extra-Text>Switch: Action &quot;Disable Wifi/wlan&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="233"/>
         <source>Disable Bluetooth</source>
         <extracomment>Text Switch: Action &quot;Disable Bluetooth&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Bluetooth ausschalten</translation>
         <extra-Text>Switch: Action &quot;Disable Bluetooth&quot;</extra-Text>
     </message>
 </context>
