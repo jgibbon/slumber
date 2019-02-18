@@ -8,7 +8,7 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Sun Feb 03 2019 velox 0.10-1
+* Mon Feb 18 2019 velox 0.10-1
  - packaging/meta data: OBS compatibility
  - user request: main page hint font size increased (previously hard to read in chinese)
  - enhancement: restore volume faster on cancel
