@@ -121,7 +121,7 @@ Page {
 
                 wrapMode: 'WrapAtWordBoundaryOrAnywhere'
                 text:qsTr('Using the Accelerometer may have an impact on power consumption while playing and only works when the Display is lit. You can Tap thrice to wake up your Device and trigger the Accelerometer.')
-                color: Theme.secondaryColor
+                color: Theme.highlightColor
             }
 
 
