@@ -17,10 +17,10 @@ Launcher {
             commands.push('dbus-send --system --type=method_call --print-reply --dest=net.connman / net.connman.Manager.SetProperty string:\"OfflineMode\" variant:boolean:true')
         }
         if(options.timerDisableWLANEnabled) {
-            commands.push('dbus-send --system --type=method_call --print-reply --dest=net.connman /net/connman/technology/wifi net.connman.Technology.SetProperty string:\"Powered\" variant:boolean:false')
+            commands.push('dbus-send --system --type=method_call --print-reply --dest=net.connman /net/connman/technology/wifi net.connman.Technology.SetProperty string:"Powered" variant:boolean:false')
         }
         if(options.timerDisableBluetoothEnabled) {
-            commands.push('dbus-send --system --print-reply --dest=net.connman /net/connman/technology/bluetooth net.connman.Technology.SetProperty string:\"Powered\" variant:boolean:false')
+            commands.push('dbus-send --system --print-reply --dest=net.connman /net/connman/technology/bluetooth net.connman.Technology.SetProperty string:"Powered" variant:boolean:false')
         }
 
 

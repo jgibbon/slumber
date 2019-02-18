@@ -3,6 +3,7 @@
 #include <QCommandLineParser>
 #include <QDebug>
 #include <QTextStream>
+#include <QRegExp>
 
 
 #include <unistd.h> // getppid…
@@ -31,15 +32,25 @@ int main(int argc, char *argv[])
     // get parent process:
     QProcess *proc = new QProcess();
 
+
     int parentId = getppid();
+    // parent check 1: from command line/sdk deployment
     proc->start(QString("readlink -f /proc/%1/exe").arg(parentId));
     proc->waitForFinished();
     QString parentName = QString::fromLocal8Bit(proc->readAll());
-    out  << "parent: " << parentName;
-    if(parentName == "/usr/bin/harbour-slumber\n") {
+    bool parentIsValid = parentName == "/usr/bin/harbour-slumber\n";
+
+    if(!parentIsValid) {
+        proc->start(QString("pstree -pA %1").arg(parentId));
+        proc->waitForFinished();
+        parentName = QString::fromLocal8Bit(proc->readAll());
+        QRegExp rx("harbour-slumber\\((\\d+)\\)");
+        parentIsValid = rx.indexIn(parentName) != -1;
+    }
+
+    if(parentIsValid) {
         if(args.length() > 0) {
             QString program = parser.positionalArguments().at(0);
-//            out << "program: " << program;
             proc->start(program);
             proc->waitForFinished(-1);
             QByteArray bytes = proc->readAllStandardOutput();
@@ -50,9 +61,9 @@ int main(int argc, char *argv[])
             out << erroutput;
 
         } else {
-            out << "no program specified!";
+            out << "no program specified!\n";
         }
     } else {
-        out << "Authentication error.";
+        out << "Authentication error.\n";
     }
 }
