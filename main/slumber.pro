@@ -8,7 +8,7 @@ CONFIG += sailfishapp
 SOURCES += src/slumber.cpp \
     src/lib/volumecontrol.cpp \
     src/lib/launcher.cpp
-
+QT += dbus
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
