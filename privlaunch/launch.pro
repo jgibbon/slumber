@@ -1,16 +1,8 @@
-#CONFIG += sailfishapp
-#QT += dbus core quick
 
-#QT -= gui
-
-#TARGET = harbour-slumber-launch
 TEMPLATE = app
 
 SOURCES += \
     privlaunch.cpp
-
-#target.path=/usr/share/harbour-slumber/lib
-#INSTALLS += target
 
 defineReplace(copyToDir) {
     files = $$1
@@ -23,9 +15,6 @@ defineReplace(copyToDir) {
     return($$LINK)
 }
 
-#defineReplace(copyToBuilddir) {
-#    return($$copyToDir($$1, $$OUT_PWD))
-#}
 defineReplace(copyToMainSrcdir) {
     return($$copyToDir($$1, $$_PRO_FILE_PWD_/../main/))
 }
