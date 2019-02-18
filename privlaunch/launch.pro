@@ -1,5 +1,5 @@
 #CONFIG += sailfishapp
-QT += dbus core quick
+#QT += dbus core quick
 
 #QT -= gui
 

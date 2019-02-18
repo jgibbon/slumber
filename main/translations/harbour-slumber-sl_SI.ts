@@ -37,38 +37,38 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="112"/>
+        <location filename="../qml/pages/FirstPage.qml" line="81"/>
         <source>Options</source>
         <translation>Možnosti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="116"/>
-        <location filename="../qml/pages/FirstPage.qml" line="128"/>
+        <location filename="../qml/pages/FirstPage.qml" line="85"/>
+        <location filename="../qml/pages/FirstPage.qml" line="97"/>
         <source>Stop Timer</source>
         <translation>Ustavi odštevanje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="136"/>
+        <location filename="../qml/pages/FirstPage.qml" line="105"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="228"/>
+        <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to restart,</source>
         <translation>Pritisni za ponoven zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="228"/>
+        <location filename="../qml/pages/FirstPage.qml" line="197"/>
         <source>Tap to start,</source>
         <translation>Pritisni za zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="236"/>
+        <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull down for options</source>
         <translation>za možnosti potegni navzdol</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="236"/>
+        <location filename="../qml/pages/FirstPage.qml" line="205"/>
         <source>pull up or down to stop</source>
         <translation>za ustavitev potegni navzgor ali navzdol</translation>
     </message>
