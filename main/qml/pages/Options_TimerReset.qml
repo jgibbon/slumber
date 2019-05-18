@@ -139,21 +139,55 @@ Page {
                 description: qsTr('Reset the timer by holding your hand in front of the screen.')
             }
 
-            TextSwitch {
-                id:timerNotificationEnabledSwitch
-                text: qsTr( "Notification")
+            SectionHeader {
+                // SectionHeader Other
+                //: SectionHeader Other
+                text: qsTr("Other")
+            }
 
-                checked: options.timerNotificationTriggerEnabled
+            TextSwitch {
+                id:timerAmazfishButtonResetEnabledSwitch
+                // TextSwitch: Reset by pressing Amazfish watch button
+                //: TextSwitch: Reset by pressing Amazfish watch button
+                text: qsTr( "Amazfish button press")
+
+                checked: options.timerAmazfishButtonResetEnabled
                 onClicked: {
-                    options.timerNotificationTriggerEnabled = checked
+                    options.timerAmazfishButtonResetEnabled = checked
                 }
-                description: qsTr('Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.')
+                // TextSwitch description: Amazfish
+                //: TextSwitch description: Amazfish
+                description: qsTr('Reset the timer by pressing the button on a device connected to the Amazfish application.')
+            }
+
+            Slider {
+                id: timerAmazfishButtonResetPressesSlider
+                width: parent.width
+                anchors.horizontalCenter: parent.horizontalCenter
+                minimumValue: 1
+                maximumValue: 5
+                stepSize: 1
+                enabled: options.timerAmazfishButtonResetEnabled
+//                opacity: options.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
+                label: qsTr('Number of Amazfish button presses to reset timer')
+                // Slider Value: Press Amazfish watch button x times to reset
+                //: Slider Value: Press Amazfish watch button x times to reset
+                valueText: qsTr('Press %L1 time', '', value).arg(value)
+//                            label:
+                onValueChanged: {
+                    options.timerAmazfishButtonResetPresses = value
+                }
+                Component.onCompleted: {
+                    value = options.timerAmazfishButtonResetPresses
+                }
+
             }
 
             Item {
                 width:parent.width
                 height: Theme.paddingLarge
             }
+
         }
     }
 }

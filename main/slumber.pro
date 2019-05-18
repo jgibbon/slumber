@@ -82,7 +82,8 @@ DISTFILES += \
     qml/lib/ActionLaunchProgram.qml \
     qml/lib/MprisPlayingScanner.qml \
     qml/pages/Options_TimerEnd_Privileged.qml \
-    qml/lib/ActionPrivilegedLauncher.qml
+    qml/lib/ActionPrivilegedLauncher.qml \
+    qml/lib/ActionDBusDisconnectBluetooth.qml
 
 HEADERS += \
     src/lib/volumecontrol.h \

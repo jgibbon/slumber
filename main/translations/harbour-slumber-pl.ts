@@ -53,22 +53,22 @@
         <translation>drzemka</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="169"/>
+        <location filename="../qml/pages/FirstPage.qml" line="170"/>
         <source>Tap to restart,</source>
         <translation>Dotknij aby zrestartować,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="169"/>
+        <location filename="../qml/pages/FirstPage.qml" line="170"/>
         <source>Tap to start,</source>
         <translation>Dotknij aby uruchomić,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="180"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>pull down for options</source>
         <translation>przeciągnij w dół aby zobaczyć opcje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="180"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>pull up or down to stop</source>
         <translation>przeciągnij w górę lub w dół aby zatrzymać</translation>
     </message>
@@ -220,214 +220,270 @@
 <context>
     <name>Options_TimerEnd</name>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="41"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="43"/>
         <source>slumber Actions</source>
         <translation>Akcje drzemki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="63"/>
-        <source>Pause Kodi</source>
-        <translation>Wstrzymaj Kodi</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="71"/>
-        <source>Pauses Kodi on your local network</source>
-        <translation>Wstrzymuje Kodi w lokalnej sieci</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="46"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="48"/>
         <source>when the timer runs out</source>
         <translation>kiedy timer się zatrzyma</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="52"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="54"/>
         <source>Pause local media</source>
         <translation>Wstrzymaj lokalne media</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="58"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="60"/>
         <source>Only works in native Applications</source>
         <translation>Działa wyłącznie z natywnymi aplikacjami</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="101"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="102"/>
-        <source>IP or host:port for Kodi</source>
-        <translation>IP albo host:port dla Kodi</translation>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="65"/>
+        <source>Pause Kodi</source>
+        <translation>Wstrzymaj Kodi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="122"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="123"/>
-        <source>Kodi username</source>
-        <translation>Nazwa użytkownika Kodi</translation>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="73"/>
+        <source>Pauses Kodi on your local network</source>
+        <translation>Wstrzymuje Kodi w lokalnej sieci</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="143"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="144"/>
-        <source>Kodi password</source>
-        <translation>Hasło Kodi</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="165"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="299"/>
-        <source>Check Host</source>
-        <translation>Sprawdź Hosta</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="176"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="310"/>
-        <source>Host works fine!</source>
-        <translation>Host działa dobrze!</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="179"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="313"/>
-        <source>No response from host</source>
-        <translation>Brak odpowiedzi od hosta</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="181"/>
-        <source>Kodi not found on host</source>
-        <translation>Kodi nie znaleziono na hoście</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="183"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="317"/>
-        <source>Username/Password incorrect</source>
-        <translation>Nazwa użytkownika/Hasło nieprawisłowe</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="185"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="319"/>
-        <source>Unknown Error</source>
-        <translation>Nieznany błąd</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="210"/>
-        <source>You can try to ping the current Kodi configuration</source>
-        <translation>Można spróbować pingnąć obecną konfigurację Kadi</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="233"/>
-        <source>Pause VLC</source>
-        <translation>Wstrzymaj VLC</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="85"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="87"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
         <translation>(Porada: Jeśli używasz aplikacji kodimote, nie musisz tego włączać. To działa jako &quot;lokalny&quot; odtwarzać.)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="241"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="103"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="104"/>
+        <source>IP or host:port for Kodi</source>
+        <translation>IP albo host:port dla Kodi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="124"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="125"/>
+        <source>Kodi username</source>
+        <translation>Nazwa użytkownika Kodi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="145"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="146"/>
+        <source>Kodi password</source>
+        <translation>Hasło Kodi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="167"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="343"/>
+        <source>Check Host</source>
+        <translation>Sprawdź Hosta</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="178"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="354"/>
+        <source>Host works fine!</source>
+        <translation>Host działa dobrze!</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="181"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="357"/>
+        <source>No response from host</source>
+        <translation>Brak odpowiedzi od hosta</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="183"/>
+        <source>Kodi not found on host</source>
+        <translation>Kodi nie znaleziono na hoście</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="185"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="361"/>
+        <source>Username/Password incorrect</source>
+        <translation>Nazwa użytkownika/Hasło nieprawisłowe</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="187"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="363"/>
+        <source>Unknown Error</source>
+        <translation>Nieznany błąd</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="212"/>
+        <source>You can try to ping the current Kodi configuration</source>
+        <translation>Można spróbować pingnąć obecną konfigurację Kadi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="232"/>
+        <source>Secondary Action</source>
+        <extracomment>ComboBox Kodi secondary Action on reset</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="247"/>
+        <source>None</source>
+        <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="254"/>
+        <source>Suspend Kodi System</source>
+        <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="261"/>
+        <source>Shutdown Kodi System</source>
+        <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
+        <source>Pause VLC</source>
+        <translation>Wstrzymaj VLC</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="285"/>
         <source>Pauses VLC on your local network</source>
         <translation>Wstrzymaj VLC w twojej sieci lokalnej</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="255"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="256"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="299"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="300"/>
         <source>IP or host:port for VLC</source>
         <translation>IP lub host:port dla VLC</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="278"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="321"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="322"/>
         <source>VLC password</source>
         <translation>Hasło VLC</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="315"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="359"/>
         <source>VLC not found on host</source>
         <translation>VLC nie znaleziono na hoście</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="344"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="388"/>
         <source>You can try to ping the current VLC configuration</source>
         <translation>Można spróbować pingnąć obecną konfigurację VLC</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="377"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="410"/>
+        <source>Disconnect Bluetooth Devices</source>
+        <extracomment>Switch: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="420"/>
+        <source>Disconnects active Bluetooth connections</source>
+        <extracomment>TextSwitch Description: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
+        <source>Only disconnect Audio Devices</source>
+        <extracomment>TextSwitch: Do not disconnect all Bluetooth devices, only Audio</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
+        <source>Limits Bluetooth disconnects to audio devices like Speakers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
         <source>ten seconds before end</source>
         <translation>dziesięć sekund przed końcem </translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="388"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="464"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Miganie ekranem głównym kiedy Timer kończy odliczać</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="487"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
+        <source>Notification</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="566"/>
         <source>Fade out when falling asleep</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="507"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="572"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="511"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="576"/>
         <source>Reset Volume afterwards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="533"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="393"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="480"/>
         <source>Sound Effect</source>
         <translation>Efekty dzwiękowe</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="366"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="442"/>
         <source>Privileged Actions</source>
-        <extracomment>Button Text: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
+        <extracomment>ButtonText: Privileged Actions (when the timer runs out) require administrative rights (root)</extracomment>
         <translation type="unfinished"></translation>
-        <extra-Context>Button Text: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="399"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="486"/>
         <source>To alert you that the Timer is running out</source>
         <translation>Aby powiadomić cię, że Timer kończy odliczać</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="407"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
         <source>Sound</source>
         <translation>Dźwięk</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="422"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="508"/>
         <source>cassette noise</source>
         <translation>dźwięk kasety</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="513"/>
         <source>clock ticking</source>
         <translation>tykanie zegara</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="425"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="518"/>
         <source>sail a jolla</source>
         <translation>żeglowanie małą łódką</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="534"/>
         <source>Sound Effect volume</source>
         <translation>Głośność efektów dźwiękowych</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>stop playing</source>
         <translation>zatrzymaj odtwarzanie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>play current sound</source>
         <translation>odtwarzaj bieżący dźwięk</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="382"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
         <source>Visual Indicator</source>
         <translation>Wizualny wskaźnik</translation>
     </message>
@@ -596,14 +652,37 @@
         <source>Reset the timer by holding your hand in front of the screen.</source>
         <translation>Reset timera poprzez trzymanie dłoni nad ekranem.</translation>
     </message>
+    <message numerus="yes">
+        <location filename="../qml/pages/Options_TimerReset.qml" line="175"/>
+        <source>Press %L1 time</source>
+        <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="144"/>
-        <source>Notification</source>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
+        <source>Other</source>
+        <extracomment>SectionHeader Other</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="150"/>
-        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="152"/>
+        <source>Amazfish button press</source>
+        <extracomment>TextSwitch: Reset by pressing Amazfish watch button</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="160"/>
+        <source>Reset the timer by pressing the button on a device connected to the Amazfish application.</source>
+        <extracomment>TextSwitch description: Amazfish</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="172"/>
+        <source>Number of Amazfish button presses to reset timer</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

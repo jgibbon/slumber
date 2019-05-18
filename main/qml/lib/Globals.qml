@@ -28,6 +28,8 @@ Rectangle {
         property real timerMotionThreshold: 0
 
         property bool timerPauseEnabled: true
+        property bool timerAmazfishButtonResetEnabled: false
+        property int timerAmazfishButtonResetPresses: 1
 
         //privileged commands start
         property bool timerLockScreenEnabled: false
@@ -42,11 +44,16 @@ Rectangle {
         property string timerKodiPauseHost: ''
         property string timerKodiPauseUser: ''
         property string timerKodiPausePassword: ''
+        property string timerKodiSecondaryCommand: '' //System.Shutdown, System.Suspend
 
         property bool timerVLCPauseEnabled: false
         property string timerVLCPauseHost: ''
         property string timerVLCPauseUser: ''
         property string timerVLCPausePassword: ''
+
+
+        property bool timerBTDisconnectEnabled: false
+        property bool timerBTDisconnectOnlyAudioEnabled: false
 
         property bool timerNotificationTriggerEnabled: false
         property bool timerFadeEnabled: true // todo reimplement fadeout volume
@@ -83,6 +90,15 @@ Rectangle {
             sleepTimer.restart()
         }
     }
+    AmazfitButtonTrigger {
+        enabled: options.timerAmazfishButtonResetEnabled
+        onButtonPressed: {
+            console.log('well…', sleepTimer.running, presses, options.timerAmazfishButtonResetPresses, presses === options.timerAmazfishButtonResetPresses)
+            if(sleepTimer.running && presses === options.timerAmazfishButtonResetPresses) {
+                sleepTimer.restart()
+            }
+        }
+    }
 
     Item {
         id:actionPauseByPlayingVoid
@@ -98,6 +114,12 @@ Rectangle {
     ActionDBusPauseMediaplayers {
         id:actionPauseByDbus
     }
+    ActionDBusDisconnectBluetooth {
+        id: actionBt
+        enabled: options.timerBTDisconnectEnabled
+        onlyDisconnectAudioDevices: options.timerBTDisconnectOnlyAudioEnabled
+    }
+
 //    ActionDisableBluetooth {
 //        id: actionDisableBluetooth
 //        enabled: options.timerDisableBluetoothEnabled
@@ -113,6 +135,7 @@ Rectangle {
         host: options.timerKodiPauseHost
         user: options.timerKodiPauseUser
         password: options.timerKodiPausePassword
+        secondaryCommand: options.timerKodiSecondaryCommand
     }
 
     ActionNetworkVLC{
@@ -171,6 +194,7 @@ Rectangle {
                     actionPauseByPlayingVoid.pause()
                 });
             }
+            actionBt.pause();
             actionPauseKodi.action(function(o, success){
                 console.log('Kodi: success', success)
             });

@@ -13,3 +13,6 @@ app_src.depends = privileged-launcher
 SUBDIRS += \
     app_src \
     privileged_launcher
+
+DISTFILES += \
+    main/qml/lib/AmazfitButtonTrigger.qml

@@ -146,6 +146,7 @@ Page {
             height: pageHeader.height
 
             onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {options:options, firstPage: page})
+            onPressAndHold: sleepTimer.triggered()
         }
 
 

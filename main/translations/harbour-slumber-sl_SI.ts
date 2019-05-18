@@ -53,22 +53,22 @@
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="169"/>
+        <location filename="../qml/pages/FirstPage.qml" line="170"/>
         <source>Tap to restart,</source>
         <translation>Pritisni za ponoven zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="169"/>
+        <location filename="../qml/pages/FirstPage.qml" line="170"/>
         <source>Tap to start,</source>
         <translation>Pritisni za zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="180"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>pull down for options</source>
         <translation>za možnosti potegni navzdol</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="180"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>pull up or down to stop</source>
         <translation>za ustavitev potegni navzgor ali navzdol</translation>
     </message>
@@ -220,214 +220,270 @@
 <context>
     <name>Options_TimerEnd</name>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="41"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="43"/>
         <source>slumber Actions</source>
         <translation>Dejanja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="63"/>
-        <source>Pause Kodi</source>
-        <translation>Ustavi predvajanje Kodi</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="71"/>
-        <source>Pauses Kodi on your local network</source>
-        <translation>Ustavi predvajanje Kodi na lokalni mreži</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="46"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="48"/>
         <source>when the timer runs out</source>
         <translation>Ko se odštevalnik izteče</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="52"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="54"/>
         <source>Pause local media</source>
         <translation>Začasno ustavi predvajanje lokalnih datotek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="58"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="60"/>
         <source>Only works in native Applications</source>
         <translation>Deluje le z Jolla aplikacijami.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="101"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="102"/>
-        <source>IP or host:port for Kodi</source>
-        <translation>IP ali gostitelj:vrata za Kodi</translation>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="65"/>
+        <source>Pause Kodi</source>
+        <translation>Ustavi predvajanje Kodi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="122"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="123"/>
-        <source>Kodi username</source>
-        <translation>Kodi uporabniško ime</translation>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="73"/>
+        <source>Pauses Kodi on your local network</source>
+        <translation>Ustavi predvajanje Kodi na lokalni mreži</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="143"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="144"/>
-        <source>Kodi password</source>
-        <translation>Kodi geslo</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="165"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="299"/>
-        <source>Check Host</source>
-        <translation>Preveri gostitelja</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="176"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="310"/>
-        <source>Host works fine!</source>
-        <translation>Gostitelj deluje brez težav!</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="179"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="313"/>
-        <source>No response from host</source>
-        <translation>Ni odziva gostitelja</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="181"/>
-        <source>Kodi not found on host</source>
-        <translation>Kodi ni nameščen na gostitelju</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="183"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="317"/>
-        <source>Username/Password incorrect</source>
-        <translation>Nepravilno uporabniško ime in/ali geslo</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="185"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="319"/>
-        <source>Unknown Error</source>
-        <translation>Neznana napaka</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="210"/>
-        <source>You can try to ping the current Kodi configuration</source>
-        <translation>Lako poskusite pingati trenuntni Kodi naslov</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="233"/>
-        <source>Pause VLC</source>
-        <translation>Ustavi predvajanje VLC</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="85"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="87"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
         <translation>(Namig: če uporabljate aplikacijo Kodimote, te nastavitve ne potrebujete, ker deluje kot &quot;lokalni&quot; predvajalnik.)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="241"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="103"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="104"/>
+        <source>IP or host:port for Kodi</source>
+        <translation>IP ali gostitelj:vrata za Kodi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="124"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="125"/>
+        <source>Kodi username</source>
+        <translation>Kodi uporabniško ime</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="145"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="146"/>
+        <source>Kodi password</source>
+        <translation>Kodi geslo</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="167"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="343"/>
+        <source>Check Host</source>
+        <translation>Preveri gostitelja</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="178"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="354"/>
+        <source>Host works fine!</source>
+        <translation>Gostitelj deluje brez težav!</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="181"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="357"/>
+        <source>No response from host</source>
+        <translation>Ni odziva gostitelja</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="183"/>
+        <source>Kodi not found on host</source>
+        <translation>Kodi ni nameščen na gostitelju</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="185"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="361"/>
+        <source>Username/Password incorrect</source>
+        <translation>Nepravilno uporabniško ime in/ali geslo</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="187"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="363"/>
+        <source>Unknown Error</source>
+        <translation>Neznana napaka</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="212"/>
+        <source>You can try to ping the current Kodi configuration</source>
+        <translation>Lako poskusite pingati trenuntni Kodi naslov</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="232"/>
+        <source>Secondary Action</source>
+        <extracomment>ComboBox Kodi secondary Action on reset</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="247"/>
+        <source>None</source>
+        <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="254"/>
+        <source>Suspend Kodi System</source>
+        <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="261"/>
+        <source>Shutdown Kodi System</source>
+        <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
+        <source>Pause VLC</source>
+        <translation>Ustavi predvajanje VLC</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="285"/>
         <source>Pauses VLC on your local network</source>
         <translation>Ustavi predvajanje VLC na lokalni mreži</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="255"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="256"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="299"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="300"/>
         <source>IP or host:port for VLC</source>
         <translation>IP ali gostitelj: vrata za VLC</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="278"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="321"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="322"/>
         <source>VLC password</source>
         <translation>VLC geslo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="315"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="359"/>
         <source>VLC not found on host</source>
         <translation>VLC ni nameščen na gostitelju</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="344"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="388"/>
         <source>You can try to ping the current VLC configuration</source>
         <translation>Lako poskusite pingati trenuntni VLC naslov</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="377"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="410"/>
+        <source>Disconnect Bluetooth Devices</source>
+        <extracomment>Switch: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="420"/>
+        <source>Disconnects active Bluetooth connections</source>
+        <extracomment>TextSwitch Description: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
+        <source>Only disconnect Audio Devices</source>
+        <extracomment>TextSwitch: Do not disconnect all Bluetooth devices, only Audio</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
+        <source>Limits Bluetooth disconnects to audio devices like Speakers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
         <source>ten seconds before end</source>
         <translation>10 sekund pred koncem</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="388"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="464"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>Pred iztekom odštevalnika bo zaslon utripnil</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="487"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
+        <source>Notification</source>
+        <translation>Obvestilo</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
+        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
+        <translation>Prikaže obvestilo malo pred iztekom časovnika. Če zaslon ni vklopljen se bo vklopil ter omogočil senzor pospeška.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="566"/>
         <source>Fade out when falling asleep</source>
         <translation>Počasi znižuj glasnost</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="507"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="572"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation>Zmanjša glasnost na 0 (približno zadnjih 10 sekund)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="511"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="576"/>
         <source>Reset Volume afterwards</source>
         <translation>Po koncu ponastavi glasnost</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="533"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Ponastavi glasnost sistemskih zvokov na prejšnje vrednosti. Nastavitev je priporočena za večino uporabnikov.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="393"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="480"/>
         <source>Sound Effect</source>
         <translation>Zvočni učinek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="366"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="442"/>
         <source>Privileged Actions</source>
-        <extracomment>Button Text: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
+        <extracomment>ButtonText: Privileged Actions (when the timer runs out) require administrative rights (root)</extracomment>
         <translation>Privilegirana dejanja</translation>
-        <extra-Context>Button Text: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="399"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="486"/>
         <source>To alert you that the Timer is running out</source>
         <translation>Opozorilo, da se odštevanje izteka</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="407"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="494"/>
         <source>Sound</source>
         <translation>Zvok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="422"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="508"/>
         <source>cassette noise</source>
         <translation>šum kasetofona</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="513"/>
         <source>clock ticking</source>
         <translation>tiktakanje ure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="425"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="518"/>
         <source>sail a jolla</source>
         <translation>šumenje valov</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="534"/>
         <source>Sound Effect volume</source>
         <translation>Glasnost zvočnega učinka</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>stop playing</source>
         <translation>ustavi predvajanje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="547"/>
         <source>play current sound</source>
         <translation>predvajaj izbrani zvok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="382"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="458"/>
         <source>Visual Indicator</source>
         <translation>Vizualno opozarjanje</translation>
     </message>
@@ -444,7 +500,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="74"/>
         <source>You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you&apos;ll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Za dodelitev priviligiranih dovoljenj je potrebno omogočiti Razvojni način ter določiti korensko geslo. Slumber korenskega gesla ne hrani, priviligiran dostop pa lahko kadarkoli prekličete. Ko so priviligirana dovoljena dodeljena lahko Razvojni način izključite, Slumber ga za svoje delovanje ne potrebuje več.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="107"/>
@@ -596,15 +652,39 @@
         <source>Reset the timer by holding your hand in front of the screen.</source>
         <translation>Za ponastavitev odštevalnika za trenutek zadržite roko pred zaslonom</translation>
     </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="144"/>
-        <source>Notification</source>
-        <translation>Obvestilo</translation>
+    <message numerus="yes">
+        <location filename="../qml/pages/Options_TimerReset.qml" line="175"/>
+        <source>Press %L1 time</source>
+        <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="150"/>
-        <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
-        <translation>Prikaže obvestilo malo pred iztekom časovnika. Če zaslon ni vklopljen se bo vklopil ter omogočil senzor pospeška.</translation>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
+        <source>Other</source>
+        <extracomment>SectionHeader Other</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="152"/>
+        <source>Amazfish button press</source>
+        <extracomment>TextSwitch: Reset by pressing Amazfish watch button</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="160"/>
+        <source>Reset the timer by pressing the button on a device connected to the Amazfish application.</source>
+        <extracomment>TextSwitch description: Amazfish</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="172"/>
+        <source>Number of Amazfish button presses to reset timer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

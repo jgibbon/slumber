@@ -2,16 +2,19 @@ import QtQuick 2.0
 
 Item {
     id:actionNetwork
-
+    property int totalRetries: 4
+    property int doneRetries: 0
     property string user
     property string password
     property string host
     property bool useHttps
     property bool enabled
     property string httpAction:'GET'
+    property string httpPostActionMimeType: 'application/x-www-form-urlencoded'
 
     property string pathPing
     property string pathAction
+    property string paramsAction //post for kodi…
 
     property string pingExpectedSubstr
     property string actionExpectedSubstr
@@ -34,6 +37,7 @@ Item {
 
     function ping(callback){
         request(urlbase + pathPing, function(o){
+            console.log(JSON.stringify(o));
             if(callback){
                 callback(o, actionExpectedSubstr ? (o.responseText.indexOf(pingExpectedSubstr) > -1) : true);
             }
@@ -41,17 +45,34 @@ Item {
     }
 
 
-    function request(url, callback) {
+    function request(url, callback, forceAction, forceParams) {
         var xhr = new XMLHttpRequest();
+        var action = forceAction || httpAction
         xhr.onreadystatechange = (function(myxhr) {
             return function() {
                 if(myxhr.readyState === XMLHttpRequest.DONE) {
-                    callback(myxhr);
+                    console.log('response', myxhr.responseText);
+
+                    console.log('--> headers', myxhr.getAllResponseHeaders());
+                    console.log('--> status', myxhr.status, myxhr.statusText);
+                    if(myxhr.status === 0 && doneRetries < totalRetries) {
+                        doneRetries = doneRetries + 1;
+                        console.log('oh, brute force resend!');
+                        request(url, callback, forceAction, forceParams);
+                    } else {
+                        doneRetries = 0;
+                        callback(myxhr);
+                    }
                 }
             }
         })(xhr);
-        xhr.open(httpAction, url, true);
-        xhr.send('');
+        console.log('request', forceAction||httpAction, url, forceParams || '');
+        xhr.open(action, url, true);
+        if(action === 'POST') {
+            xhr.setRequestHeader('Content-Type', actionNetwork.httpPostActionMimeType);
+        }
+
+        xhr.send(forceParams || '');
     }
 
 }
