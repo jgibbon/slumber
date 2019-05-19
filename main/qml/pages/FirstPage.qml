@@ -41,7 +41,7 @@ Page {
             NumberAnimation { duration: 1000 }
         }
         PullDownMenu {
-
+            quickSelect: true
             onActiveChanged: {
                 globals.accelerometerTrigger.paused = active
             }
@@ -59,6 +59,7 @@ Page {
         }
         PushUpMenu {
             visible: sleepTimer.running
+            quickSelect: true
             onActiveChanged: {
                 globals.accelerometerTrigger.paused = active
             }

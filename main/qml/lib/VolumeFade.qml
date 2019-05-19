@@ -51,12 +51,13 @@ Item {
     }
     Timer {
         id: resetTimer
-        interval: 450
+        interval: 450 // some players take a while to pause. Not ideal.
         onTriggered: {
             VolumeControl.volume = resetToVolume
-            if(root.isDone) {
+            if(isDone) {
                 volumeResetDone()
             }
+
         }
     }
 

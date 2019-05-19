@@ -168,8 +168,7 @@ Page {
                 maximumValue: 5
                 stepSize: 1
                 enabled: options.timerAmazfishButtonResetEnabled
-//                opacity: options.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
-                label: qsTr('Number of Amazfish button presses to reset timer')
+                opacity: options.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
                 // Slider Value: Press Amazfish watch button x times to reset
                 //: Slider Value: Press Amazfish watch button x times to reset
                 valueText: qsTr('Press %L1 time', '', value).arg(value)
@@ -182,6 +181,22 @@ Page {
                 }
 
             }
+
+            Label {
+                width: parent.width-Theme.itemSizeSmall
+                visible: options.timerMotionEnabled
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeExtraSmall
+                verticalAlignment: Text.AlignBottom
+                opacity: options.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
+
+
+                wrapMode: 'WrapAtWordBoundaryOrAnywhere'
+                text: qsTr('Number of Amazfish button presses to reset timer')
+                color: Theme.highlightColor
+            }
+
+
 
             Item {
                 width:parent.width

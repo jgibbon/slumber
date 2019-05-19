@@ -8,6 +8,9 @@ Item {
     property bool onlyDisconnectAudioDevices: true
     function pause(cb){
         if(!enabled) {
+            if(cb) {
+                cb();
+            }
             return
         }
 

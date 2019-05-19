@@ -7,11 +7,14 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
-* Sun May 18 2019 velox 0.11-1
+* Sun May 19 2019 velox 0.11-2
  - feature: reset timer with button press on Amazfish-connected device
  - feature: optional second Kodi action: Suspend/Shutdown (Not supported on every Kodi configuration)
+ - enhancement: enable "quick select" for main page pull menus
  - bugfix/enhancement: support Kodi 18 (leia) API change
  - appearance: move notification setting to "Actions" settings page
+ - appearance: make "playback detected" notification inline
+ - some translation updates (thank you, translation team!)
 
 * Mon Feb 18 2019 velox 0.10-1
  - packaging/meta data: OBS compatibility

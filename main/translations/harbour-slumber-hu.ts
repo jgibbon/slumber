@@ -43,32 +43,32 @@
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="55"/>
-        <location filename="../qml/pages/FirstPage.qml" line="67"/>
+        <location filename="../qml/pages/FirstPage.qml" line="68"/>
         <source>Stop Timer</source>
         <translation>Időzítő leállítása</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="75"/>
+        <location filename="../qml/pages/FirstPage.qml" line="76"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to restart,</source>
         <translation>Érintsd meg az újraindításhoz,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to start,</source>
         <translation>Érintsd meg az indításhoz,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull down for options</source>
         <translation>húzd lefelé az beállításokhoz</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull up or down to stop</source>
         <translation>húzd le vagy fel a megállításhoz</translation>
     </message>
@@ -76,12 +76,7 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
-        <source>%1 Playback detected: Timer autostart</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
         <source>Autostart: %1 is playing</source>
         <translation type="unfinished"></translation>
     </message>
@@ -653,7 +648,7 @@
         <translation>Az időzítő visszaállítása a kezed képernyő előtti tartásával.</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/Options_TimerReset.qml" line="175"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="174"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
         <translation type="unfinished">
@@ -679,7 +674,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="172"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
         <source>Number of Amazfish button presses to reset timer</source>
         <translation type="unfinished"></translation>
     </message>

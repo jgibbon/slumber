@@ -19,7 +19,6 @@ Item {
 
                 function buttonPressed(presses) {
                     if(trigger.enabled) {
-                        console.log('amazfit buttonPress', presses);
                         trigger.buttonPressed(presses);
                     }
                 }

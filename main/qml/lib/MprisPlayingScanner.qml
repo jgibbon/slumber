@@ -114,16 +114,10 @@ Item {
 
     Notification {
         id: notificationComponent
-        appName: 'slumber'
-        body: qsTr('%1 Playback detected: Timer autostart').arg(scanner.mprisPlayingName)
         expireTimeout: 3000
-        category: "x-nemo.example"
-        replacesId: 1
-        summary: 'slumber'
-        itemCount: 1
-        maxContentLines: 3
-        previewSummary: 'slumber'
-        previewBody: qsTr('Autostart: %1 is playing').arg(scanner.mprisPlayingName)
+        replacesId: 0
+        icon: 'image://theme/icon-m-night'
+        previewBody: 'slumber '+ qsTr('Autostart: %1 is playing').arg(scanner.mprisPlayingName)
 
     }
     Component.onDestruction: notificationComponent.close()

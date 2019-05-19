@@ -43,32 +43,32 @@
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="55"/>
-        <location filename="../qml/pages/FirstPage.qml" line="67"/>
+        <location filename="../qml/pages/FirstPage.qml" line="68"/>
         <source>Stop Timer</source>
         <translation>Timer anhalten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="75"/>
+        <location filename="../qml/pages/FirstPage.qml" line="76"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to restart,</source>
         <translation>Patsche, um neuzustarten,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to start,</source>
         <translation>Patsche, um herunterzuzählen,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull down for options</source>
         <translation>ziehe herunter für Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull up or down to stop</source>
         <translation>ziehe hoch oder herunter zum stoppen</translation>
     </message>
@@ -76,12 +76,7 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
-        <source>%1 Playback detected: Timer autostart</source>
-        <translation>%1 Abspielen erkannt: Timer autostart</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
         <source>Autostart: %1 is playing</source>
         <translation>Autostart: %1 spielt ab</translation>
     </message>
@@ -653,7 +648,7 @@
         <translation>Starte den Timer neu, indem du die Hand vor den Näherungssensor hältst.</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/Options_TimerReset.qml" line="175"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="174"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
         <translation>
@@ -680,7 +675,7 @@
         <translation>Setze den Zähler zurück, indem Du den Knopf auf einem mit der Amazfish-Anwendung verbundenen Gerät drückst.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="172"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
         <source>Number of Amazfish button presses to reset timer</source>
         <translation>Anzahl der Amazfish-Knopfdrücke, um den Zähler zurückzusetzen</translation>
     </message>

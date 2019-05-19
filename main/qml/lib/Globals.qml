@@ -93,7 +93,7 @@ Rectangle {
     AmazfitButtonTrigger {
         enabled: options.timerAmazfishButtonResetEnabled
         onButtonPressed: {
-            console.log('well…', sleepTimer.running, presses, options.timerAmazfishButtonResetPresses, presses === options.timerAmazfishButtonResetPresses)
+//            console.log('well…', sleepTimer.running, presses, options.timerAmazfishButtonResetPresses, presses === options.timerAmazfishButtonResetPresses)
             if(sleepTimer.running && presses === options.timerAmazfishButtonResetPresses) {
                 sleepTimer.restart()
             }
@@ -120,10 +120,6 @@ Rectangle {
         onlyDisconnectAudioDevices: options.timerBTDisconnectOnlyAudioEnabled
     }
 
-//    ActionDisableBluetooth {
-//        id: actionDisableBluetooth
-//        enabled: options.timerDisableBluetoothEnabled
-//    }
     ActionPrivilegedLauncher {
         id: actionPrivilegedLauncher
         options: options
@@ -155,7 +151,10 @@ Rectangle {
               We don't want BT/network/… to be disabled before this is done, or
               it will start with 0 volume on next connect.
             */
-            actionPrivilegedLauncher.pause()
+
+            actionBt.pause(function btCallback(){
+                actionPrivilegedLauncher.pause()
+            });
         }
     }
     TimerNotificationTrigger {
@@ -178,7 +177,6 @@ Rectangle {
                     fadeOutSound.play();
                 }
                 if(options.timerFadeEnabled) {
-                    console.log('starting fade')
                     volumeFade.start();
                 }
             }
@@ -194,7 +192,6 @@ Rectangle {
                     actionPauseByPlayingVoid.pause()
                 });
             }
-            actionBt.pause();
             actionPauseKodi.action(function(o, success){
                 console.log('Kodi: success', success)
             });
@@ -207,11 +204,14 @@ Rectangle {
             if(options.timerFadeEnabled && options.timerFadeResetEnabled) {
                 volumeFade.finish() // triggers BT after it's done
             } else { // disable bt directly
-                actionPrivilegedLauncher.pause()
+                actionBt.pause(function btCallback(){
+                    actionPrivilegedLauncher.pause()
+                });
             }
         }
         onReset: {
-            console.log('reset whole timer');
+            console.log((sleepTimer.running ? 'reset' : 'start') + ' timer');
+
 
             fadeOutSound.stop();
             if(options.timerFadeEnabled) {

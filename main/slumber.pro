@@ -83,7 +83,8 @@ DISTFILES += \
     qml/lib/MprisPlayingScanner.qml \
     qml/pages/Options_TimerEnd_Privileged.qml \
     qml/lib/ActionPrivilegedLauncher.qml \
-    qml/lib/ActionDBusDisconnectBluetooth.qml
+    qml/lib/ActionDBusDisconnectBluetooth.qml \
+    qml/lib/AmazfitButtonTrigger.qml
 
 HEADERS += \
     src/lib/volumecontrol.h \

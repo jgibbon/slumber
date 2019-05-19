@@ -43,32 +43,32 @@
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="55"/>
-        <location filename="../qml/pages/FirstPage.qml" line="67"/>
+        <location filename="../qml/pages/FirstPage.qml" line="68"/>
         <source>Stop Timer</source>
         <translation>停止定时器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="75"/>
+        <location filename="../qml/pages/FirstPage.qml" line="76"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to restart,</source>
         <translation>点击以重新开始</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to start,</source>
         <translation>点击以开始</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull down for options</source>
         <translation>下拉以设置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull up or down to stop</source>
         <translation>上拉或下拉以停止</translation>
     </message>
@@ -76,12 +76,7 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
-        <source>%1 Playback detected: Timer autostart</source>
-        <translation>检测到 %1 播放: 定时器自动启动</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
         <source>Autostart: %1 is playing</source>
         <translation>自动启动: %1 正在播放</translation>
     </message>
@@ -316,25 +311,25 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="232"/>
         <source>Secondary Action</source>
         <extracomment>ComboBox Kodi secondary Action on reset</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>间接操作</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="247"/>
         <source>None</source>
         <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>无</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="254"/>
         <source>Suspend Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>中止kodi系统</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="261"/>
         <source>Shutdown Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>关闭Kodi系统</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
@@ -372,24 +367,24 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="410"/>
         <source>Disconnect Bluetooth Devices</source>
         <extracomment>Switch: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>断开蓝牙设备</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="420"/>
         <source>Disconnects active Bluetooth connections</source>
         <extracomment>TextSwitch Description: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>断开活动蓝牙连接</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
         <source>Only disconnect Audio Devices</source>
         <extracomment>TextSwitch: Do not disconnect all Bluetooth devices, only Audio</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>仅断开音频设备</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>Limits Bluetooth disconnects to audio devices like Speakers</source>
-        <translation type="unfinished"></translation>
+        <translation>只断开音频设备的蓝牙连接，例如扬声器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
@@ -653,35 +648,35 @@
         <translation>在屏幕前举手以重设定时器</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/Options_TimerReset.qml" line="175"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="174"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>按 %L1 次</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
         <source>Other</source>
         <extracomment>SectionHeader Other</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>其它</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="152"/>
         <source>Amazfish button press</source>
         <extracomment>TextSwitch: Reset by pressing Amazfish watch button</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Amazfish按键按压</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="160"/>
         <source>Reset the timer by pressing the button on a device connected to the Amazfish application.</source>
         <extracomment>TextSwitch description: Amazfish</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>通过按下连接到Amazfish应用程序的设备上的按钮重置计时器。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="172"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
         <source>Number of Amazfish button presses to reset timer</source>
-        <translation type="unfinished"></translation>
+        <translation>按下Amazfish按键以重置计时器的次数</translation>
     </message>
 </context>
 <context>
