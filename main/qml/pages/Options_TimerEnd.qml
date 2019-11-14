@@ -577,7 +577,12 @@ Page {
 
                 visible: timerFadeEnabledSwitch.checked
                 height: timerFadeEnabledSwitch.checked ? timerFadeResetEnabledSwitch.implicitHeight:0;
-                opacity: checked ? 1:0;
+                opacity: visible ? 1:0;
+                onHeightChanged: {
+                    if(height > 0) {
+                        listView.scrollToBottom()
+                    }
+                }
 
                 checked: options.timerFadeResetEnabled
                 onClicked: {
