@@ -30,6 +30,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import Nemo.DBus 2.0
 import "pages"
 
 import "cover"
@@ -56,4 +57,28 @@ ApplicationWindow
     }
     allowedOrientations: Orientation.All
     _defaultPageOrientations: Orientation.All
+
+
+    DBusAdaptor {
+        id: dbus
+
+        service: 'de.gibbon.slumber'
+        iface: 'de.gibbon.slumber'
+        path: '/de/gibbon/slumber'
+
+        xml: '  <interface name="de.gibbon.slumber">\n' +
+             '    <method name="startTimer" >\n' +
+             '    </method>' +
+             '    <method name="stopTimer" >\n' +
+             '    </method>' +
+             '    <signal name="Triggered" >\n' +
+             '    </signal>\n' +
+             '  </interface>\n'
+        function startTimer(){
+            sleepTimer.restart();
+        }
+        function stopTimer(){
+            sleepTimer.stop();
+        }
+    }
 }

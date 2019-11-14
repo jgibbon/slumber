@@ -186,6 +186,8 @@ Rectangle {
         }
         onTriggered: {
             console.log('sleep timer fired!');
+            dbus.emitSignal('Triggered');
+
             if(options.timerPauseEnabled) {
                 actionPauseByDbus.pause(function(){ //only use the fallback after async mpris scanning is done
                     //gpodder, maybe others

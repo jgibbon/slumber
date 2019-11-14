@@ -311,25 +311,25 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="232"/>
         <source>Secondary Action</source>
         <extracomment>ComboBox Kodi secondary Action on reset</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Sekundarno dejanje</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="247"/>
         <source>None</source>
         <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Nič</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="254"/>
         <source>Suspend Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Začasno ustavi Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="261"/>
         <source>Shutdown Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ugasni Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
@@ -367,24 +367,24 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="410"/>
         <source>Disconnect Bluetooth Devices</source>
         <extracomment>Switch: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Prekini Bluetooth povezave</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="420"/>
         <source>Disconnects active Bluetooth connections</source>
         <extracomment>TextSwitch Description: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Prekini aktivne Bluetooth povezave</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
         <source>Only disconnect Audio Devices</source>
         <extracomment>TextSwitch: Do not disconnect all Bluetooth devices, only Audio</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Prekini le aktivne zvočne povezave</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>Limits Bluetooth disconnects to audio devices like Speakers</source>
-        <translation type="unfinished"></translation>
+        <translation>Omeji Bluetooth povezave na zvočne naprave, kot na primer zvočniki</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
@@ -422,7 +422,7 @@
         <translation>Po koncu ponastavi glasnost</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Ponastavi glasnost sistemskih zvokov na prejšnje vrednosti. Nastavitev je priporočena za večino uporabnikov.</translation>
     </message>
@@ -651,35 +651,35 @@
         <location filename="../qml/pages/Options_TimerReset.qml" line="174"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
         <source>Other</source>
         <extracomment>SectionHeader Other</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ostalo</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="152"/>
         <source>Amazfish button press</source>
         <extracomment>TextSwitch: Reset by pressing Amazfish watch button</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Gumb ure Amazfit</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="160"/>
         <source>Reset the timer by pressing the button on a device connected to the Amazfish application.</source>
         <extracomment>TextSwitch description: Amazfish</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Z določenim številom pritiskov na gumb ure Amazfit se ponastavi časovnik na napravi, ki je povezana z uro.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
         <source>Number of Amazfish button presses to reset timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Število pritiskov na gumb za ponastavitev časovnika</translation>
     </message>
 </context>
 <context>

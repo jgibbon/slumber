@@ -422,7 +422,7 @@
         <translation>Återställ volymen efteråt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Återställ systemvolymen till föregående nivå efteråt. Bör i de flesta falla vara aktiverad.</translation>
     </message>

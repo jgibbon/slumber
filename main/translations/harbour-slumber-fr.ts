@@ -422,7 +422,7 @@
         <translation>Restaurer le volume après-coup</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Restaure le volume système après la fin du décompte. Utile dans la plupart des cas.</translation>
     </message>

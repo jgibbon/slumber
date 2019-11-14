@@ -311,25 +311,25 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="232"/>
         <source>Secondary Action</source>
         <extracomment>ComboBox Kodi secondary Action on reset</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Acción secundaria</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="247"/>
         <source>None</source>
         <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ninguno</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="254"/>
         <source>Suspend Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Suspender sistema Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="261"/>
         <source>Shutdown Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Apagar sistema Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
@@ -367,24 +367,24 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="410"/>
         <source>Disconnect Bluetooth Devices</source>
         <extracomment>Switch: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Desconectar dispositivos Bluetooth</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="420"/>
         <source>Disconnects active Bluetooth connections</source>
         <extracomment>TextSwitch Description: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Desconectar conexiones Bluetooth activas</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
         <source>Only disconnect Audio Devices</source>
         <extracomment>TextSwitch: Do not disconnect all Bluetooth devices, only Audio</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Desconectar sólo dispositivos de audio</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>Limits Bluetooth disconnects to audio devices like Speakers</source>
-        <translation type="unfinished"></translation>
+        <translation>Limita las desconexiones de Bluetooth a dispositivos de audio como los altavoces</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
@@ -422,7 +422,7 @@
         <translation>Reiniciar volumen después</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Reiniciar después el volumen del sistema al nivel previo. Debería activarse en la mayoría de los casos de uso.</translation>
     </message>
@@ -651,33 +651,33 @@
         <location filename="../qml/pages/Options_TimerReset.qml" line="174"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Pulsar %L1 vez</numerusform>
+            <numerusform>Pulsar %L1 veces</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
         <source>Other</source>
         <extracomment>SectionHeader Other</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Otro</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="152"/>
         <source>Amazfish button press</source>
         <extracomment>TextSwitch: Reset by pressing Amazfish watch button</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pulsar botón Amazfish</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="160"/>
         <source>Reset the timer by pressing the button on a device connected to the Amazfish application.</source>
         <extracomment>TextSwitch description: Amazfish</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Reinicia el temporizador al pulsar el botón en un dispositivo conectado a la aplicación Amazfish.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
         <source>Number of Amazfish button presses to reset timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Número de veces que hay que pulsar el botón Amazfish para reiniciar temporizador</translation>
     </message>
 </context>
 <context>

@@ -7,9 +7,15 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Thu Nov 14 2019 velox 0.12-1
+ - bugfix: fix settings page for volume restoration
+ - feature: add simple dbus interface
+ - a lot of translation updates (thanks, translation team!)
+
 * Sun May 19 2019 velox 0.11-2
  - feature: reset timer with button press on Amazfish-connected device
  - feature: optional second Kodi action: Suspend/Shutdown (Not supported on every Kodi configuration)
+ - feature: disconnect (audio) bluetooth devices without fully shutting down BT
  - enhancement: enable "quick select" for main page pull menus
  - bugfix/enhancement: support Kodi 18 (leia) API change
  - appearance: move notification setting to "Actions" settings page

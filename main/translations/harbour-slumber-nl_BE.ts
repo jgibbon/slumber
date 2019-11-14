@@ -422,7 +422,7 @@
         <translation>Stel volume nadien opnieuw in</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Herstelt nadien systeemvolume naar vorig niveau. Voor de meeste gebruiken moet dit ingeschakeld zijn.</translation>
     </message>

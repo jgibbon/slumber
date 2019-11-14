@@ -422,7 +422,7 @@
         <translation>Восстановление громкости</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Восстанавливает громкость системы до предыдущего уровня. Должно быть включено в большинстве случаев.</translation>
     </message>

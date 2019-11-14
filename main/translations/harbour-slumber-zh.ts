@@ -422,7 +422,7 @@
         <translation>之后重设音量</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>在之后重设系统音量到以前的大小。应当在大部分使用情景中被激活。</translation>
     </message>
