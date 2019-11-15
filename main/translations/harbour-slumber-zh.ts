@@ -11,17 +11,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="35"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
-        <translation>Slumber是一个睡眠定时器软件，帮助你听东西的时候毫无顾忌地打盹</translation>
+        <translation>Slumber是一个睡眠定时器软件，帮助你听东西的时候毫无顾忌地打盹。</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="43"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
-        <translation>如果你需要新功能或发现哪里出现问题，欢迎在TMO发帖</translation>
+        <translation>如果你需要新功能或发现任何地方问题，欢迎在 TMO 发帖。</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="52"/>
         <source>TMO Thread for slumber</source>
-        <translation>Slumber的TMO帖子</translation>
+        <translation>Slumber 的 TMO 帖子</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="58"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="62"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
-        <translation>感谢所有用户的建议，特别是帮助过我的人：</translation>
+        <translation>感谢所有用户的建议，尤其是那些帮助过我的人：</translation>
     </message>
 </context>
 <context>
@@ -121,7 +121,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation>当检测到播放，自动启动计时器。否则必须打开Slumber 以执行此操作。</translation>
+        <translation>当检测到播放，自动启动计时器。否则必须打开 Slumber 以执行此操作。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
@@ -237,23 +237,23 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="65"/>
         <source>Pause Kodi</source>
-        <translation>暂停Kodi播放器</translation>
+        <translation>暂停 Kodi 播放器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="73"/>
         <source>Pauses Kodi on your local network</source>
-        <translation>暂停本地网络上的Kodi播放器</translation>
+        <translation>暂停本地网络上的 Kodi 播放器</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="87"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
-        <translation>(提示：如果你使用kodimote，你无需激活它，它会作为本地播放器运行）</translation>
+        <translation>(提示：如果你使用 kodimote，你无需激活它，它会作为本地播放器运行）</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="103"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="104"/>
         <source>IP or host:port for Kodi</source>
-        <translation>IP或主机:Kodi接口</translation>
+        <translation>IP或主机: Kodi 接口</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="124"/>
@@ -288,7 +288,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="183"/>
         <source>Kodi not found on host</source>
-        <translation>没有在主机上发现kodi</translation>
+        <translation>没有在主机上发现 kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="185"/>
@@ -305,7 +305,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="212"/>
         <source>You can try to ping the current Kodi configuration</source>
-        <translation>你可以尝试查验前的kodi设置</translation>
+        <translation>你可以尝试查验前的 kodi 设置</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="232"/>
@@ -323,13 +323,13 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="254"/>
         <source>Suspend Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
-        <translation>中止kodi系统</translation>
+        <translation>中止 kodi 系统</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="261"/>
         <source>Shutdown Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
-        <translation>关闭Kodi系统</translation>
+        <translation>关闭 Kodi 系统</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
@@ -339,13 +339,13 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="285"/>
         <source>Pauses VLC on your local network</source>
-        <translation>在本地网络停止VLC </translation>
+        <translation>在本地网络停止 VLC </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="299"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="300"/>
         <source>IP or host:port for VLC</source>
-        <translation>IP或主机:VLC接口</translation>
+        <translation>IP或主机: VLC 接口</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="321"/>
@@ -356,12 +356,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="359"/>
         <source>VLC not found on host</source>
-        <translation>没有在主机上找到VLC </translation>
+        <translation>没有在主机上找到 VLC </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="388"/>
         <source>You can try to ping the current VLC configuration</source>
-        <translation>你可以尝试查验目前的VLC配置</translation>
+        <translation>你可以尝试查验目前的 VLC 配置</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="410"/>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="518"/>
         <source>sail a jolla</source>
-        <translation>划小船</translation>
+        <translation>划小船（Jolla）</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="534"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="74"/>
         <source>You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you&apos;ll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.</source>
-        <translation>你需要一次启用开发者模式并通过root密码授予特许访问权限。Slumber不会储存密码，而且你随时都可以撤销授权。授予要求的特许权限后，无需一直启用开发者模式。</translation>
+        <translation>你需要一次启用开发者模式并通过 root 密码授予特许访问权限。Slumber 不会储存密码，并且你随时都可以撤销授权。授予要求的特许权限后，无需一直启用开发者模式。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="107"/>
@@ -559,7 +559,7 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="222"/>
         <source>Disable Wifi</source>
         <extracomment>Text Switch: Action &quot;Disable Wifi/wlan&quot;</extracomment>
-        <translation>禁用Wif或Wlan</translation>
+        <translation>禁用 Wifi 或 Wlan</translation>
         <extra-Text>Switch: Action &quot;Disable Wifi/wlan&quot;</extra-Text>
     </message>
     <message>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="32"/>
         <source>slumber Reset</source>
-        <translation>重置slumber</translation>
+        <translation>重置 slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="35"/>
@@ -671,12 +671,12 @@
         <location filename="../qml/pages/Options_TimerReset.qml" line="160"/>
         <source>Reset the timer by pressing the button on a device connected to the Amazfish application.</source>
         <extracomment>TextSwitch description: Amazfish</extracomment>
-        <translation>通过按下连接到Amazfish应用程序的设备上的按钮重置计时器。</translation>
+        <translation>通过按下连接到 Amazfish 软件的设备上的按钮以重置计时器。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
         <source>Number of Amazfish button presses to reset timer</source>
-        <translation>按下Amazfish按键以重置计时器的次数</translation>
+        <translation>重置计时器需要按下 Amazfish 按键的次数</translation>
     </message>
 </context>
 <context>
