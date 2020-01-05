@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
     <name>About</name>
     <message>
@@ -43,32 +41,32 @@
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="55"/>
-        <location filename="../qml/pages/FirstPage.qml" line="68"/>
+        <location filename="../qml/pages/FirstPage.qml" line="67"/>
         <source>Stop Timer</source>
         <translation>Остановить таймер</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="76"/>
+        <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="171"/>
+        <location filename="../qml/pages/FirstPage.qml" line="170"/>
         <source>Tap to restart,</source>
         <translation>Тапните для перезапуска,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="171"/>
+        <location filename="../qml/pages/FirstPage.qml" line="170"/>
         <source>Tap to start,</source>
         <translation>Тапните для запуска,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="182"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>pull down for options</source>
         <translation>потяните вниз, там настройки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="182"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>pull up or down to stop</source>
         <translation>потяните вверх или вниз для остановки</translation>
     </message>
@@ -76,9 +74,14 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
+        <source>%1 Playback detected: Timer autostart</source>
+        <translation>%1 Обнаружено воспроизведение. Автозапуск таймера</translation>
+    </message>
+    <message>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
         <source>Autostart: %1 is playing</source>
-        <translation type="unfinished"></translation>
+        <translation>Автозапуск: % 1 играет</translation>
     </message>
 </context>
 <context>
@@ -116,12 +119,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Start Timer if Playback is detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Таймер запуска при обнаружении воспроизведения</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматический запуск таймера при обнаружении воспроизведения. Сон должен быть открыт для этого, чтобы работать.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="129"/>
@@ -311,25 +314,25 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="232"/>
         <source>Secondary Action</source>
         <extracomment>ComboBox Kodi secondary Action on reset</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Вторичное действие</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="247"/>
         <source>None</source>
         <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ничего</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="254"/>
         <source>Suspend Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Приостановить Kodi System</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="261"/>
         <source>Shutdown Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Выключить Kodi System</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="277"/>
@@ -367,24 +370,24 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="410"/>
         <source>Disconnect Bluetooth Devices</source>
         <extracomment>Switch: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Отключить Bluetooth устройства</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="420"/>
         <source>Disconnects active Bluetooth connections</source>
         <extracomment>TextSwitch Description: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Отключить активные Bluetooth соединения</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="427"/>
         <source>Only disconnect Audio Devices</source>
         <extracomment>TextSwitch: Do not disconnect all Bluetooth devices, only Audio</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Отключить только Аудио устройства</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="435"/>
         <source>Limits Bluetooth disconnects to audio devices like Speakers</source>
-        <translation type="unfinished"></translation>
+        <translation>Пределы Bluetooth отключений на аудиоустройства, такие как динамики</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="453"/>
@@ -399,12 +402,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="469"/>
         <source>Notification</source>
-        <translation type="unfinished"></translation>
+        <translation>Уведомление</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="475"/>
         <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображение уведомления незадолго до истечения времени таймера. Уведомления активируют экран и, вместе с ним, показания акселерометра.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="566"/>
@@ -422,7 +425,7 @@
         <translation>Восстановление громкости</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Восстанавливает громкость системы до предыдущего уровня. Должно быть включено в большинстве случаев.</translation>
     </message>
@@ -435,7 +438,7 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="442"/>
         <source>Privileged Actions</source>
         <extracomment>ButtonText: Privileged Actions (when the timer runs out) require administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Привилегированные действия</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="486"/>
@@ -489,84 +492,84 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="55"/>
         <source>Privileged Actions</source>
         <extracomment>Page Header: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Привилегированные действия</translation>
         <extra-Context>Page Header: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="74"/>
         <source>You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you&apos;ll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вам необходимо включить Режим разработчика и предоставить привилегированные права доступа один раз, указав свой пароль root. Slumber не сохранит этот пароль, и вы сможете отозвать предоставленные права в любое время. Slumber не требует, чтобы Режим разработчика оставался включенным после предоставления этих привилегий.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="107"/>
         <source>Granting rights failed. Did you enable Developer Mode and enter the right password?</source>
-        <translation type="unfinished"></translation>
+        <translation>Предоставление прав не удалось. Вы включили режим разработчика и ввели правильный пароль?</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="118"/>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="119"/>
         <source>root password</source>
-        <translation type="unfinished"></translation>
+        <translation>пароль root</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="157"/>
         <source>Privileged access rights are granted. Revoke them by pressing the button below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Привилегированные права доступа предоставляются. Отмените их, нажав кнопку ниже.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="164"/>
         <source>Revoke rights</source>
         <extracomment>Button Text: click to remove privileged rights</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Отозвать права</translation>
         <extra-Context>Button Text: click to remove privileged rights</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="179"/>
         <source>System</source>
         <extracomment>Section Header: System commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Система</translation>
         <extra-Context>Section Header: System commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="185"/>
         <source>Lock Screen</source>
         <extracomment>Text Switch: Action &quot;Lock the screen&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Экран блокировки</translation>
         <extra-Text>Switch: Action &quot;Lock the screen&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="195"/>
         <source>Stop Alien Dalvik</source>
         <extracomment>Text Switch: Action &quot;Stop Alien Dalvik service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Остановить Alien Dalvik</translation>
         <extra-Text>Switch: Action &quot;Stop Alien Dalvik service&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="206"/>
         <source>Connectivity</source>
         <extracomment>Section Header: Connectivity commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Связь</translation>
         <extra-Context>Section Header: Connectivity commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="211"/>
         <source>Enable Airplane Mode</source>
         <extracomment>Text Switch: Action &quot;Enable Airplane Mode&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Включить Режим полёта</translation>
         <extra-Text>Switch: Action &quot;Enable Airplane Mode&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="222"/>
         <source>Disable Wifi</source>
         <extracomment>Text Switch: Action &quot;Disable Wifi/wlan&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Отключить Wi-Fi</translation>
         <extra-Text>Switch: Action &quot;Disable Wifi/wlan&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="233"/>
         <source>Disable Bluetooth</source>
         <extracomment>Text Switch: Action &quot;Disable Bluetooth&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Отключить Bluetooth</translation>
         <extra-Text>Switch: Action &quot;Disable Bluetooth&quot;</extra-Text>
     </message>
 </context>
@@ -648,37 +651,33 @@
         <translation>Сбрасывает таймер при обнаружении вашей руки перед экраном.</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/Options_TimerReset.qml" line="174"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="175"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>Нажмите % L1 раз</numerusform><numerusform>Нажмите% L1 раза</numerusform><numerusform>Нажмите% L1 раз</numerusform><numerusform>Press %L1 time</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
         <source>Other</source>
         <extracomment>SectionHeader Other</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Другие</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="152"/>
         <source>Amazfish button press</source>
         <extracomment>TextSwitch: Reset by pressing Amazfish watch button</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Нажми кнопку Amazfish</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="160"/>
         <source>Reset the timer by pressing the button on a device connected to the Amazfish application.</source>
         <extracomment>TextSwitch description: Amazfish</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Сбросьте таймер, нажав кнопку на устройстве, подключенном к приложению Amazfish.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="172"/>
         <source>Number of Amazfish button presses to reset timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество нажатий кнопки Amazfish для сброса таймера</translation>
     </message>
 </context>
 <context>
@@ -687,7 +686,7 @@
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
         <source>Timer triggering soon</source>
-        <translation type="unfinished"></translation>
+        <translation>Таймер сработает в ближайшее время</translation>
     </message>
 </context>
 <context>
