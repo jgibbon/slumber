@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sl_SI" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="sl_SI">
 <context>
     <name>About</name>
     <message>
@@ -41,32 +43,32 @@
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="55"/>
-        <location filename="../qml/pages/FirstPage.qml" line="67"/>
+        <location filename="../qml/pages/FirstPage.qml" line="68"/>
         <source>Stop Timer</source>
         <translation>Ustavi odštevanje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="75"/>
+        <location filename="../qml/pages/FirstPage.qml" line="76"/>
         <source>slumber</source>
         <translation>slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to restart,</source>
         <translation>Pritisni za ponoven zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="170"/>
+        <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to start,</source>
         <translation>Pritisni za zagon,</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull down for options</source>
         <translation>za možnosti potegni navzdol</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="182"/>
         <source>pull up or down to stop</source>
         <translation>za ustavitev potegni navzgor ali navzdol</translation>
     </message>
@@ -74,12 +76,7 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="118"/>
-        <source>%1 Playback detected: Timer autostart</source>
-        <translation>Predvajanje %1 zaznano: časovnik je samodejno zagnan</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="126"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
         <source>Autostart: %1 is playing</source>
         <translation>Samodejni zagon: %1 se predvaja</translation>
     </message>
@@ -425,7 +422,7 @@
         <translation>Po koncu ponastavi glasnost</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="586"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="591"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>Ponastavi glasnost sistemskih zvokov na prejšnje vrednosti. Nastavitev je priporočena za večino uporabnikov.</translation>
     </message>
@@ -651,10 +648,15 @@
         <translation>Za ponastavitev odštevalnika za trenutek zadržite roko pred zaslonom</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/Options_TimerReset.qml" line="175"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="174"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
-        <translation><numerusform>Pritisni gumb %L1-krat</numerusform><numerusform>Pritisni gumb %L1-krat</numerusform><numerusform>Pritisni gumb %L1-krat</numerusform><numerusform>Pritisni gumb %L1-krat</numerusform></translation>
+        <translation>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
+            <numerusform>Pritisni gumb %L1-krat</numerusform>
+        </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerReset.qml" line="145"/>
@@ -675,7 +677,7 @@
         <translation>Z določenim številom pritiskov na gumb ure Amazfit Bip se ponastavi časovnik na napravi, ki je povezana z uro.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerReset.qml" line="172"/>
+        <location filename="../qml/pages/Options_TimerReset.qml" line="195"/>
         <source>Number of Amazfish button presses to reset timer</source>
         <translation>Število pritiskov na gumb za ponastavitev časovnika</translation>
     </message>

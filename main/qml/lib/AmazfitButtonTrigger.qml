@@ -8,21 +8,41 @@ Item {
     Loader {
         active: trigger.enabled
         sourceComponent: Component {
-            DBusInterface {
-                id: profiled
+            Item {
 
-                service: 'uk.co.piggz.amazfish'
-                iface: 'uk.co.piggz.amazfish'
-                path: '/'
+                DBusInterface {
+                    id: pre1 // pre amazfish 1.0
 
-                signalsEnabled: true
+                    service: 'uk.co.piggz.amazfish'
+                    iface: 'uk.co.piggz.amazfish'
+                    path: '/'
 
-                function buttonPressed(presses) {
-                    if(trigger.enabled) {
-                        trigger.buttonPressed(presses);
+                    signalsEnabled: true
+
+                    function buttonPressed(presses) {
+                        if(trigger.enabled) {
+                            trigger.buttonPressed(presses);
+                        }
+                    }
+                }
+
+                DBusInterface {
+                    id: amazfish1 // amazfish 1.0
+
+                    service: 'uk.co.piggz.amazfish'
+                    iface: 'uk.co.piggz.amazfish'
+                    path: '/application'
+
+                    signalsEnabled: true
+
+                    function buttonPressed(presses) {
+                        if(trigger.enabled) {
+                            trigger.buttonPressed(presses);
+                        }
                     }
                 }
             }
+
         }
     }
 }

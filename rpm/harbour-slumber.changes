@@ -7,10 +7,15 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
-* Thu Nov 14 2019 velox 0.12-1
- - bugfix: fix settings page for volume restoration
- - feature: add simple dbus interface
- - a lot of translation updates (thanks, translation team!)
+
+* Mon Jan 06 2020 velox 0.12-2
+ - enhancement: support changed Amazfish 1.0 interface
+ - translation updates sl, ru (thanks, translation team!)
+
+ * Thu Nov 14 2019 velox 0.12-1
+  - bugfix: fix settings page for volume restoration
+  - feature: add simple dbus interface
+  - a lot of translation updates (thanks, translation team!)
 
 * Sun May 19 2019 velox 0.11-2
  - feature: reset timer with button press on Amazfish-connected device
