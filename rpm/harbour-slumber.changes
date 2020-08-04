@@ -8,6 +8,11 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Tue Aug 04 2020 velox 0.13-1
+ - feature: ofono restart privileged action
+ - performance: minimal code optimization
+ - translation updates
+
 * Mon Jan 06 2020 velox 0.12-2
  - enhancement: support changed Amazfish 1.0 interface
  - translation updates sl, ru (thanks, translation team!)
