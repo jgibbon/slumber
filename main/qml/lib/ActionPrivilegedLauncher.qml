@@ -22,6 +22,9 @@ Launcher {
         if(options.timerDisableBluetoothEnabled) {
             commands.push('dbus-send --system --print-reply --dest=net.connman /net/connman/technology/bluetooth net.connman.Technology.SetProperty string:"Powered" variant:boolean:false')
         }
+        if(options.timerRestartOfonoEnabled) {
+            commands.push('/bin/systemctl restart ofono')
+        }
 
 
         var commandCount = commands.length;

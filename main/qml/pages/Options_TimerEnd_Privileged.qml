@@ -237,6 +237,19 @@ Page {
                         options.timerDisableBluetoothEnabled = checked
                     }
                 }
+                TextSwitch {
+                    //: Text Switch: Action "Restart ofono Service"
+                    //~ Text Switch: Action "Restart ofono Service"
+                    text: qsTr( "Restart ofono Service")
+                    enabled: page.rightsGranted
+                    checked: options.timerRestartOfonoEnabled
+                    onClicked: {
+                        options.timerRestartOfonoEnabled = checked
+                    }
+                    //: Text Switch description: Action "Restart ofono Service"
+                    //~ Text Switch description: Action "Restart ofono Service"
+                    description: qsTr( "On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.")
+                }
 
             }
 

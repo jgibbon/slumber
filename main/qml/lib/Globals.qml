@@ -37,6 +37,7 @@ Rectangle {
         property bool timerAirplaneModeEnabled: false
         property bool timerDisableWLANEnabled: false
         property bool timerDisableBluetoothEnabled: false
+        property bool timerRestartOfonoEnabled: false
         //privileged commands end
 //        property var timerActionRunCommands: []//todo
 
