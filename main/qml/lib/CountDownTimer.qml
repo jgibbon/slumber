@@ -5,7 +5,7 @@ import QtQuick 2.0
     -
 
 */
-Rectangle {
+Item {
     id:timerComponent
     property alias interval: countdownTimer.interval
     property alias repeat: countdownTimer.repeat
