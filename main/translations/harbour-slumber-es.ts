@@ -60,7 +60,7 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="171"/>
         <source>Tap to start,</source>
-        <translation>Presiona para iniciar,</translation>
+        <translation>Pulsa para iniciar,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="182"/>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Keeps your Display lit while the timer is running.</source>
-        <translation>Mantiene la pantalla encendida mientras el temporizador está en ejecución.</translation>
+        <translation>Mantiene la pantalla encendida mientras el temporizador se está ejecutando.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="115"/>
@@ -184,7 +184,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="44"/>
         <source>Show a rotating indicator on the main screen while the timer is running.</source>
-        <translation>Mostrar un indicador rotando en la pantalla principal mientras el temporizador está en ejecución.</translation>
+        <translation>Mostrar un indicador rotando en la pantalla principal mientras el temporizador se está ejecutando.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="48"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="54"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
-        <translation>Mostrar un acceso directo a Opciones en la pantalla principal mientras el temporizador está en ejecución. De otro modo, deberás detenerlo para llegar aquí.</translation>
+        <translation>Mostrar un acceso directo a Opciones en la pantalla principal mientras el temporizador se está ejecuando. De otro modo, deberás detenerlo para llegar aquí.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="58"/>
@@ -204,7 +204,7 @@
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="119"/>
         <source>Use darker colours while the timer is running</source>
-        <translation>Usar colores oscuros mientras el temporizador está en ejecución</translation>
+        <translation>Usar colores oscuros mientras el temporizador se está ejecutando</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="138"/>
@@ -253,7 +253,7 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="103"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="104"/>
         <source>IP or host:port for Kodi</source>
-        <translation>IP ó servidor:puerto para Kodi</translation>
+        <translation>IP o servidor:puerto para Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="124"/>
@@ -271,7 +271,7 @@
         <location filename="../qml/pages/Options_TimerEnd.qml" line="167"/>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="343"/>
         <source>Check Host</source>
-        <translation>Verificar servidor</translation>
+        <translation>Comprobar servidor</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="178"/>
@@ -409,7 +409,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="566"/>
         <source>Fade out when falling asleep</source>
-        <translation>Se desvanece al quedarte dormido</translation>
+        <translation>Atenuación al quedarte dormido</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="572"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="107"/>
         <source>Granting rights failed. Did you enable Developer Mode and enter the right password?</source>
-        <translation>Error al dar permisos. ¿Activaste el modo de desarrollador e introduciste la contraseña de forma correcta?</translation>
+        <translation>Error al dar permisos. ¿Has activado el modo de desarrollador y has introducido la contraseña de forma correcta?</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="118"/>
@@ -568,6 +568,20 @@
         <extracomment>Text Switch: Action &quot;Disable Bluetooth&quot;</extracomment>
         <translation>Desactivar bluetooth</translation>
         <extra-Text>Switch: Action &quot;Disable Bluetooth&quot;</extra-Text>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="243"/>
+        <source>Restart ofono Service</source>
+        <extracomment>Text Switch: Action &quot;Restart ofono Service&quot;</extracomment>
+        <translation type="unfinished"></translation>
+        <extra-Text>Switch: Action &quot;Restart ofono Service&quot;</extra-Text>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="251"/>
+        <source>On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.</source>
+        <extracomment>Text Switch description: Action &quot;Restart ofono Service&quot;</extracomment>
+        <translation type="unfinished"></translation>
+        <extra-Text>Switch description: Action &quot;Restart ofono Service&quot;</extra-Text>
     </message>
 </context>
 <context>
@@ -686,7 +700,7 @@
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="42"/>
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="51"/>
         <source>Timer triggering soon</source>
-        <translation>El temporizador se apaga en breve</translation>
+        <translation>El temporizador va a apagarse pronto</translation>
     </message>
 </context>
 <context>

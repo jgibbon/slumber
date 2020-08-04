@@ -569,6 +569,20 @@
         <translation>Bluetooth ausschalten</translation>
         <extra-Text>Switch: Action &quot;Disable Bluetooth&quot;</extra-Text>
     </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="243"/>
+        <source>Restart ofono Service</source>
+        <extracomment>Text Switch: Action &quot;Restart ofono Service&quot;</extracomment>
+        <translation>Ofono-Dienst neustarten</translation>
+        <extra-Text>Switch: Action &quot;Restart ofono Service&quot;</extra-Text>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="251"/>
+        <source>On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.</source>
+        <extracomment>Text Switch description: Action &quot;Restart ofono Service&quot;</extracomment>
+        <translation>Bei einigen Kombinationen von Geräten und Bluetoothzubehör bleibt ofono nach einer Trennung manchmal bei 100% Prozessorlast hängen. Benutze dies zur Umgehung des Problems.</translation>
+        <extra-Text>Switch description: Action &quot;Restart ofono Service&quot;</extra-Text>
+    </message>
 </context>
 <context>
     <name>Options_TimerReset</name>
