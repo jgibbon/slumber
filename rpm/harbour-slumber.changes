@@ -11,6 +11,7 @@
 * Tue Aug 04 2020 velox 0.13-1
  - feature: ofono restart privileged action
  - performance: minimal code optimization
+ - enhancement: change volume fade easing
  - translation updates
 
 * Mon Jan 06 2020 velox 0.12-2

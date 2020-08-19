@@ -67,6 +67,7 @@ Item {
         property: "volume";
         from:0
         to: 0;
+        easing.type: Easing.InCubic
         duration:root.duration
         onStarted: {
             isIdle = false
