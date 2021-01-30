@@ -76,9 +76,14 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="26"/>
         <source>Autostart: %1 is playing</source>
         <translation>Samodejni zagon: %1 se predvaja</translation>
+    </message>
+    <message>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="30"/>
+        <source>stopped…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -124,47 +129,57 @@
         <translation>Ob zaznavi predvajanja samodejno zaženi časovnik. Za delovanje te možnosti mora biti Slumber zagnan.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="129"/>
+        <location filename="../qml/pages/Options.qml" line="125"/>
+        <source>Stop Timer if Playback is stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="132"/>
+        <source>Automatically stop timer when playback stop or pause is detected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="140"/>
         <source>Actions</source>
         <translation>Dejanja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="132"/>
+        <location filename="../qml/pages/Options.qml" line="143"/>
         <source>Configure Actions</source>
         <translation>Prilagodi dejanja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="139"/>
+        <location filename="../qml/pages/Options.qml" line="150"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
         <translation>Dejanja, ki se izvedejo po izteku odštevalnika (na primer &quot;Zaustavi predvajanje VLC&quot;).</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="154"/>
+        <location filename="../qml/pages/Options.qml" line="165"/>
         <source>Timer Reset</source>
         <translation>Odštevalnik</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="157"/>
+        <location filename="../qml/pages/Options.qml" line="168"/>
         <source>Configure Reset</source>
         <translation>Ponastavitev odštevalnika</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="164"/>
+        <location filename="../qml/pages/Options.qml" line="175"/>
         <source>Reset the timer while you are awake.</source>
         <translation>Ponastavi odštevalnik ko ste še budni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="187"/>
+        <location filename="../qml/pages/Options.qml" line="198"/>
         <source>Appearance</source>
         <translation>Videz</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="192"/>
+        <location filename="../qml/pages/Options.qml" line="203"/>
         <source>Configure Appearance</source>
         <translation>Nastavitve videza</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="201"/>
+        <location filename="../qml/pages/Options.qml" line="212"/>
         <source>Change this application&apos;s look and feel.</source>
         <translation>Spremeni videz in občutek aplikacije</translation>
     </message>
@@ -573,14 +588,14 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="243"/>
         <source>Restart ofono Service</source>
         <extracomment>Text Switch: Action &quot;Restart ofono Service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ponovno zaženi ofono servis</translation>
         <extra-Text>Switch: Action &quot;Restart ofono Service&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="251"/>
         <source>On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.</source>
         <extracomment>Text Switch description: Action &quot;Restart ofono Service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pri nekaterih kombinacijah naprav in bluetooth pripomočkov se ofono po prekinitvi povezave zatakne in porablja 100% procesorskega časa. Uporabite to kot rešitev.</translation>
         <extra-Text>Switch description: Action &quot;Restart ofono Service&quot;</extra-Text>
     </message>
 </context>

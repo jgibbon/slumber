@@ -120,6 +120,17 @@ Page {
                 }
                 description: qsTr('Automatically start timer when playback is detected. Slumber has to be open for this to work.')
             }
+            TextSwitch {
+                id:timerAutostopOnPlaybackStopEnabledSwitch
+                text: qsTr('Stop Timer if Playback is stopped')
+                enabled: timerAutostartOnPlaybackDetectionEnabledSwitch.checked
+
+                checked: options.timerAutostopOnPlaybackStop
+                onClicked: {
+                    options.timerAutostopOnPlaybackStop = checked
+                }
+                description: qsTr('Automatically stop timer when playback stop or pause is detected.')
+            }
 
                 Column {
                     width: parent.width

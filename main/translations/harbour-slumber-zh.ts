@@ -76,9 +76,14 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="26"/>
         <source>Autostart: %1 is playing</source>
         <translation>自动启动: %1 正在播放</translation>
+    </message>
+    <message>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="30"/>
+        <source>stopped…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -124,47 +129,57 @@
         <translation>当检测到播放，自动启动计时器。否则必须打开 Slumber 以执行此操作。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="129"/>
+        <location filename="../qml/pages/Options.qml" line="125"/>
+        <source>Stop Timer if Playback is stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="132"/>
+        <source>Automatically stop timer when playback stop or pause is detected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="140"/>
         <source>Actions</source>
         <translation>操作</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="132"/>
+        <location filename="../qml/pages/Options.qml" line="143"/>
         <source>Configure Actions</source>
         <translation>设置操作</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="139"/>
+        <location filename="../qml/pages/Options.qml" line="150"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
         <translation>当定时结束时执行“停止媒体”等定时功能</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="154"/>
+        <location filename="../qml/pages/Options.qml" line="165"/>
         <source>Timer Reset</source>
         <translation>定时器重设</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="157"/>
+        <location filename="../qml/pages/Options.qml" line="168"/>
         <source>Configure Reset</source>
         <translation>设置重设</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="164"/>
+        <location filename="../qml/pages/Options.qml" line="175"/>
         <source>Reset the timer while you are awake.</source>
         <translation>当你醒来后，重设定时器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="187"/>
+        <location filename="../qml/pages/Options.qml" line="198"/>
         <source>Appearance</source>
         <translation>外观</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="192"/>
+        <location filename="../qml/pages/Options.qml" line="203"/>
         <source>Configure Appearance</source>
         <translation>设置外观</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="201"/>
+        <location filename="../qml/pages/Options.qml" line="212"/>
         <source>Change this application&apos;s look and feel.</source>
         <translation>更改软件的外观感受</translation>
     </message>
@@ -573,14 +588,14 @@
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="243"/>
         <source>Restart ofono Service</source>
         <extracomment>Text Switch: Action &quot;Restart ofono Service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>重启 ofono 服务</translation>
         <extra-Text>Switch: Action &quot;Restart ofono Service&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="251"/>
         <source>On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.</source>
         <extracomment>Text Switch description: Action &quot;Restart ofono Service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>在某些设备和蓝牙配件的组合上，ofono 有时会在断开连接后卡在100%的CPU负载上。请使用此方法解决。</translation>
         <extra-Text>Switch description: Action &quot;Restart ofono Service&quot;</extra-Text>
     </message>
 </context>

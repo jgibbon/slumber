@@ -76,9 +76,14 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="26"/>
         <source>Autostart: %1 is playing</source>
         <translation>Démarrage auto : %1 est en train d&apos;être joué</translation>
+    </message>
+    <message>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="30"/>
+        <source>stopped…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -124,47 +129,57 @@
         <translation>Le minuteur se lance automatiquement dès qu&apos;une appli de lecture musicale entre en action. Slumber doit être actif pour que cela fonctionne.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="129"/>
+        <location filename="../qml/pages/Options.qml" line="125"/>
+        <source>Stop Timer if Playback is stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="132"/>
+        <source>Automatically stop timer when playback stop or pause is detected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="140"/>
         <source>Actions</source>
         <translation>Actions</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="132"/>
+        <location filename="../qml/pages/Options.qml" line="143"/>
         <source>Configure Actions</source>
         <translation>Configurer les actions</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="139"/>
+        <location filename="../qml/pages/Options.qml" line="150"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
         <translation>Les différentes actions possibles, comme mettre en pause la musique lorsque le minuteur arrive à son terme.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="154"/>
+        <location filename="../qml/pages/Options.qml" line="165"/>
         <source>Timer Reset</source>
         <translation>Réinitialisation</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="157"/>
+        <location filename="../qml/pages/Options.qml" line="168"/>
         <source>Configure Reset</source>
         <translation>Configurer la réinitialisation</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="164"/>
+        <location filename="../qml/pages/Options.qml" line="175"/>
         <source>Reset the timer while you are awake.</source>
         <translation>Les moyens de réinitialiser le minuteur si vous n&apos;avez pas encore trouvé le sommeil.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="187"/>
+        <location filename="../qml/pages/Options.qml" line="198"/>
         <source>Appearance</source>
         <translation>Aspect</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="192"/>
+        <location filename="../qml/pages/Options.qml" line="203"/>
         <source>Configure Appearance</source>
         <translation>Configurer l&apos;aspect</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="201"/>
+        <location filename="../qml/pages/Options.qml" line="212"/>
         <source>Change this application&apos;s look and feel.</source>
         <translation>Modifie l&apos;apparence générale de l&apos;application.</translation>
     </message>

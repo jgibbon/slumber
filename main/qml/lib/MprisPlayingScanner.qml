@@ -5,6 +5,7 @@ import Nemo.Notifications 1.0
 Item {
     id: scanner
     property bool enabled: true //generally enabled
+    property bool reverseEnabled: true
     Component.onCompleted: {
         playerQuery.query();
     }
@@ -17,12 +18,20 @@ Item {
     }
 
     signal triggered()
+    signal reverseTriggered()
 
     onMprisIsPlayingChanged: {
+        console.log("mpris change playing", mprisIsPlaying)
         if(mprisIsPlaying && enabled) {
-            notificationComponent.publish()
+            notificationComponent.previewBody = 'slumber '+ qsTr('Autostart: %1 is playing').arg(scanner.mprisPlayingName);
+            notificationComponent.publish();
             triggered()
+        } else if(!mprisIsPlaying && reverseEnabled) {
+            notificationComponent.previewBody = 'slumber '+ qsTr('stopped…');
+            notificationComponent.publish();
+            reverseTriggered();
         }
+
     }
 
     ListModel {
@@ -117,7 +126,7 @@ Item {
         expireTimeout: 3000
         replacesId: 0
         icon: 'image://theme/icon-m-night'
-        previewBody: 'slumber '+ qsTr('Autostart: %1 is playing').arg(scanner.mprisPlayingName)
+//        previewBody:
 
     }
     Component.onDestruction: notificationComponent.close()

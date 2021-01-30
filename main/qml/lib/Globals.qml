@@ -67,6 +67,7 @@ Rectangle {
         property real timerFadeSoundEffectVolume: 0.5
 
         property bool timerAutostartOnPlaybackDetection: false
+        property bool timerAutostopOnPlaybackStop: true
 
 
         property real viewDarkenMainScreenAmount: 0.7
@@ -288,13 +289,18 @@ Rectangle {
     }
     Loader {
         active: options.timerAutostartOnPlaybackDetection
+        asynchronous: true
         sourceComponent: scannerComponent
         Component {
             id: scannerComponent
             MprisPlayingScanner {
-                enabled: !sleepTimer.running && options.timerAutostartOnPlaybackDetection
+                enabled: !sleepTimer.running
+                reverseEnabled: options.timerAutostopOnPlaybackStop
                 onTriggered: {
                     sleepTimer.start()
+                }
+                onReverseTriggered: {
+                    sleepTimer.stop()
                 }
             }
         }

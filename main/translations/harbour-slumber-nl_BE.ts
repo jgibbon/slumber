@@ -76,9 +76,14 @@
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="120"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="26"/>
         <source>Autostart: %1 is playing</source>
         <translation>Autostart: %1 wordt afgespeeld</translation>
+    </message>
+    <message>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="30"/>
+        <source>stopped…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -124,47 +129,57 @@
         <translation>Start den timer automatisch wanneer dat afspelen wordt gedetecteerd. Dit werkt enkel wanneer dat Slumber is geopend.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="129"/>
+        <location filename="../qml/pages/Options.qml" line="125"/>
+        <source>Stop Timer if Playback is stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="132"/>
+        <source>Automatically stop timer when playback stop or pause is detected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="140"/>
         <source>Actions</source>
         <translation>Acties</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="132"/>
+        <location filename="../qml/pages/Options.qml" line="143"/>
         <source>Configure Actions</source>
         <translation>Acties configureren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="139"/>
+        <location filename="../qml/pages/Options.qml" line="150"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
         <translation>Timeracties gelijk ‘Media pauzeren’ worden uitgevoerd wanneer dat den timer afloopt.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="154"/>
+        <location filename="../qml/pages/Options.qml" line="165"/>
         <source>Timer Reset</source>
         <translation>Timer opnieuw instellen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="157"/>
+        <location filename="../qml/pages/Options.qml" line="168"/>
         <source>Configure Reset</source>
         <translation>Opnieuw instellen configureren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="164"/>
+        <location filename="../qml/pages/Options.qml" line="175"/>
         <source>Reset the timer while you are awake.</source>
         <translation>Stel den timer opnieuw in terwijl ge wakker zijt.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="187"/>
+        <location filename="../qml/pages/Options.qml" line="198"/>
         <source>Appearance</source>
         <translation>Uiterlijk</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="192"/>
+        <location filename="../qml/pages/Options.qml" line="203"/>
         <source>Configure Appearance</source>
         <translation>Uiterlijk configureren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="201"/>
+        <location filename="../qml/pages/Options.qml" line="212"/>
         <source>Change this application&apos;s look and feel.</source>
         <translation>Pas het uiterlijk van deze toepassing aan.</translation>
     </message>
