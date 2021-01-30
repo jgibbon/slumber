@@ -166,6 +166,10 @@ Rectangle {
         }
 
     }
+    Timer {
+        id: justTriggeredTimer
+        interval: 500
+    }
 
     CountDownTimer {
         id: sleepTimer
@@ -189,7 +193,7 @@ Rectangle {
         onTriggered: {
             console.log('sleep timer fired!');
             dbus.emitSignal('Triggered');
-
+            justTriggeredTimer.start()
             if(options.timerPauseEnabled) {
                 actionPauseByDbus.pause(function(){ //only use the fallback after async mpris scanning is done
                     //gpodder, maybe others
@@ -295,7 +299,7 @@ Rectangle {
             id: scannerComponent
             MprisPlayingScanner {
                 enabled: !sleepTimer.running
-                reverseEnabled: options.timerAutostopOnPlaybackStop
+                reverseEnabled: options.timerAutostopOnPlaybackStop && !justTriggeredTimer.running
                 onTriggered: {
                     sleepTimer.start()
                 }
