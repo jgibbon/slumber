@@ -17,9 +17,12 @@ Item {
     }
 
     function start() {
-           audiofadeout.from = VolumeControl.volume
-           audiofadeout.start()
-      }
+        resetToVolume = VolumeControl.getVolume()
+        if(resetToVolume > 1) {
+            audiofadeout.from = resetToVolume
+            audiofadeout.start()
+        }
+    }
     function reset(forceReset) {
         if(forceReset) {
             resetTimer.interval = 2; //cancel fast
@@ -27,37 +30,41 @@ Item {
             resetTimer.interval = resetTimerInterval; // finish slowly
         }
 
-       if(!root.isIdle) {
-          if(doReset || forceReset) {
-            resetTimer.start()
-          }
-           audiofadeout.stop()
-       }
-     }
+        if(!root.isIdle) {
+            audiofadeout.stop()
+            if(doReset || forceReset) {
+                resetTimer.start()
+            }
+        }
+    }
     function finish(){ //called when sleep timer is triggered to reset and fire event
         isDone = true;
         reset()
     }
 
-    Item {
+    QtObject {
         id: volumeSet
-        property int volume: VolumeControl.volume
-        onVolumeChanged: {
-            if(!isIdle) {
-                VolumeControl.volume = volume
-            }
-        }
-
+        property int volume: resetToVolume
     }
+    Timer {
+        id: setTimer
+        interval: 250
+        repeat: true
+        running: !isIdle
+        onTriggered: {
+            VolumeControl.setVolume(volumeSet.volume);
+        }
+    }
+
     Timer {
         id: resetTimer
         interval: 450 // some players take a while to pause. Not ideal.
         onTriggered: {
-            VolumeControl.volume = resetToVolume
+            VolumeControl.setVolume(resetToVolume)
+            resetToVolume = -1
             if(isDone) {
                 volumeResetDone()
             }
-
         }
     }
 
@@ -67,11 +74,10 @@ Item {
         property: "volume";
         from:0
         to: 0;
-        easing.type: Easing.InCubic
+        easing.type: Easing.Linear
         duration:root.duration
         onStarted: {
             isIdle = false
-            resetToVolume = VolumeControl.volume
         }
         onStopped: {
             reset()

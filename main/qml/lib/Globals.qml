@@ -218,9 +218,6 @@ Rectangle {
             }
         }
         onReset: {
-            console.log((sleepTimer.running ? 'reset' : 'start') + ' timer');
-
-
             fadeOutSound.stop();
             if(options.timerFadeEnabled) {
                 volumeFade.reset(true); //reset volume even if not enabled in options

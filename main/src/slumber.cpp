@@ -33,16 +33,20 @@
 #include <QtQuick>
 
 #include <sailfishapp.h>
-#include "lib/volumecontrol.h"
+//#include "lib/volumecontrol.h"
 #include "lib/launcher.h"
+#include "lib/volumefade.h"
+#include "lib/pavolume.h"
 
 
 int main(int argc, char *argv[])
 {
 
 
-    VolumeControl vc;
-    vc.init();
+    PAVolume::registerMetaTypes();
+
+    VolumeFade vc;
+
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
 
 //    QScopedPointer<QGuiApplication> app(Sailfish::createApplication(argc, argv));
@@ -50,6 +54,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<Launcher>("Launcher", 1 , 0 , "Launcher");
     v->rootContext()->setContextProperty("VolumeControl", &vc);
+//    v->rootContext()->setContextProperty("Volume", &fader);
     // Start the application.
     v->setSource(SailfishApp::pathTo("qml/harbour-slumber.qml"));
     v->show();

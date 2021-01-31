@@ -6,8 +6,9 @@ TARGET = harbour-slumber
 CONFIG += sailfishapp
 
 SOURCES += src/slumber.cpp \
-    src/lib/volumecontrol.cpp \
-    src/lib/launcher.cpp
+    src/lib/pavolume.cpp \
+    src/lib/launcher.cpp \
+    src/lib/volumefade.cpp
 QT += core qml dbus
 
 OTHER_FILES += \
@@ -87,8 +88,9 @@ DISTFILES += \
     qml/lib/AmazfitButtonTrigger.qml
 
 HEADERS += \
-    src/lib/volumecontrol.h \
-    src/lib/launcher.h
+    src/lib/pavolume.h \
+    src/lib/launcher.h \
+    src/lib/volumefade.h
 
 RESOURCES += \
     privileged.qrc

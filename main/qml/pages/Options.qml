@@ -64,7 +64,7 @@ Page {
 
                             selectedHour = 0
                             selectedMinute = 0
-                            options.timerSeconds = 30
+                            options.timerSeconds = 15
 
                             return;
                         }

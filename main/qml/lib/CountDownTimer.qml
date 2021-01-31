@@ -46,13 +46,11 @@ Item {
         repeat: false
         running: false
         onTriggered: {
-
             timerComponent.nearlyDone = false;
             timerComponent.triggered()
-
         }
         onIntervalChanged: {
-            milliSecondsLeft= interval
+            milliSecondsLeft = interval
             if(running){
                 restart()
             }
@@ -62,7 +60,6 @@ Item {
     Timer {
         id: nearlyDoneTimer
         running: countdownTimer.running
-        repeat: true
         interval: countdownTimer.interval - triggerBeforeIntervalDuration
         onTriggered: {
             timerComponent.triggerBeforeInterval();
