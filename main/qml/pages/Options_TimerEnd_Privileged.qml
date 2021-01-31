@@ -1,10 +1,6 @@
-import QtQuick 2.5
+import QtQuick 2.6
 import Sailfish.Silica 1.0
-
-import QtMultimedia 5.0
-
 import Launcher 1.0
-
 import "../lib/"
 
 

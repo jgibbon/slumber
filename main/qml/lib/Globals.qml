@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtMultimedia 5.0
+import QtQuick 2.6
+import QtMultimedia 5.6
 
 Rectangle {
     property alias options: options

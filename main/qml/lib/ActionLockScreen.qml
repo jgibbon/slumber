@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.6
 
 import Nemo.DBus 2.0
 //this only works if no window is in foreground -.-

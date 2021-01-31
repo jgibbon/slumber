@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.6
 
 import QtQuick.LocalStorage 2.0
 import "PersistentObjectStore.js" as Store

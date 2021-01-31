@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.6
 /*Todo:
  - Use just one Timer (1s loop)
     - set new end date on (re)start
