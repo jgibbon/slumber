@@ -4,13 +4,14 @@
 SleepTimer::SleepTimer(QObject *parent, ApplicationSettings *appsettings) : QTimer(parent),
   settings(appsettings),
   finalizing(false),
-  finalizeMilliseconds(1000)
+  finalizeMilliseconds(10000)
 {
     tickTimer = new QTimer(this);
     tickTimer->setInterval(1000);
     connect(tickTimer, SIGNAL(timeout()), this, SLOT(onTickTimeout()));
 
     setSingleShot(true);
+    setTimerType(Qt::PreciseTimer);
     setInterval(settings->getTimerSeconds() * 1000);
 
     connect(this, SIGNAL(timeout()), this, SLOT(onTimeout()));
@@ -57,6 +58,12 @@ void SleepTimer::setInterval(int value)
             stop();
         }
         QTimer::setInterval(value);
+        if(value > 1000000) { // is this even necessary?
+            setTimerType(Qt::PreciseTimer);
+        } else {
+            setTimerType(Qt::CoarseTimer);
+        }
+        updateRemainingTime();
 
         qDebug() << "setInterval" << interval();
         emit intervalChanged();
@@ -102,6 +109,7 @@ void SleepTimer::onTickTimeout()
 {
     if(isActive()) {
         updateRemainingTime();
+        qDebug() << "tick timeout" << remainingMilliseconds;
         if(!finalizing && remainingMilliseconds < finalizeMilliseconds) {
             finalizing = true;
             emit finalizingChanged();
@@ -127,7 +135,7 @@ void SleepTimer::setIntervalFromSettings()
 void SleepTimer::updateRemainingTime()
 {
     int mseconds = remainingTime();
-    if(mseconds == -1) {
+    if(mseconds <= 0) {
         mseconds = interval();
     }
     if(mseconds != remainingMilliseconds) {
@@ -136,9 +144,9 @@ void SleepTimer::updateRemainingTime()
         int seconds = qRound(secondsDouble);
         if(seconds != remainingSeconds) {
             remainingSeconds = seconds;
+            emit remainingTimeChanged();
             emit remainingSecondsChanged();
         }
 
-        emit remainingTimeChanged();
     }
 }

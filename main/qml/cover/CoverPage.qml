@@ -32,7 +32,6 @@ import QtQuick 2.6
 import Sailfish.Silica 1.0
 import '../lib'
 CoverBackground {
-    property CountDownTimer timer
     Image {
         opacity: 0.2
         source: "../assets/moon.png"
@@ -44,12 +43,11 @@ CoverBackground {
 //        x:0
     }
     TimerProgressButton {
-        timer: sleepTimer
         timeFormatShort: settings.viewTimeFormatShort
-        value: sleepTimer.milliSecondsLeft / (settings.timerSeconds*1000)
+        value: SleepTimer.remainingSeconds / settings.timerSeconds
 //        textcolor: Theme.primaryColor
 //        secondarytextcolor: Theme.secondaryColor
-        running: sleepTimer.running
+        running: SleepTimer.running
         anchors.centerIn: parent;
         width: parent.width - Theme.paddingMedium * 2
         busyindicator.visible: false
@@ -60,12 +58,12 @@ CoverBackground {
     CoverActionList {
         id: coverActionIdle
 
-        enabled: !sleepTimer.running
+        enabled: !SleepTimer.running
 
         CoverAction {
             iconSource: "image://theme/icon-cover-play"
             onTriggered: {
-                sleepTimer.start()
+                SleepTimer.start()
             }
         }
 
@@ -73,19 +71,19 @@ CoverBackground {
     CoverActionList {
         id: coverActionRunning
 
-        enabled: sleepTimer.running
+        enabled: SleepTimer.running
 
         CoverAction {
             iconSource: "image://theme/icon-cover-refresh"
             onTriggered: {
-                sleepTimer.start()
+                SleepTimer.start()
             }
         }
 
         CoverAction {
             iconSource: "image://theme/icon-cover-cancel"
             onTriggered: {
-                sleepTimer.stop()
+                SleepTimer.stop()
             }
         }
     }

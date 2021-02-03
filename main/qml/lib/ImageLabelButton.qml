@@ -29,7 +29,7 @@ BackgroundItem {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
             horizontalAlignment: 'AlignHCenter'
-            //text:formatMSeconds(sleepTimer.milliSecondsLeft)
+            //text:formatMSeconds(SleepTimer.remainingTime)
             font.pixelSize: sleepTimerWidget.isSmall ? Theme.fontSizeSmall : Theme.fontSizeMedium
         }
         //Rectangle { anchors.fill: parent; color: "red"; opacity: 0.3; z:-1; }

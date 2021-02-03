@@ -4,7 +4,6 @@ import Sailfish.Silica 1.0
 Item {
     id:sleepTimerWidget
 
-    property CountDownTimer timer
     property real value: 0.0
     property bool running: true
     property bool timeFormatShort: false //one line
@@ -16,10 +15,10 @@ Item {
 
     height: width
 
-    property int minutesLeft: (timer.milliSecondsLeft / 60000)
+    property int minutesLeft: (SleepTimer.remainingSeconds / 60)
     property int selectedHour: Math.floor(minutesLeft /60);
     property int selectedMinute: minutesLeft - selectedHour * 60
-    property int selectedSecond: (timer.milliSecondsLeft / 1000) - (selectedMinute) * 60  - (selectedHour) * 3600
+    property int selectedSecond: (SleepTimer.remainingSeconds) - (selectedMinute) * 60  - (selectedHour) * 3600
     property real busysize: width * 0.8
     property real busyborder: width * 0.02
     property real progresssize: width

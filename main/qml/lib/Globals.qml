@@ -2,37 +2,33 @@ import QtQuick 2.6
 import QtMultimedia 5.6
 
 Item {
-    property alias sleepTimer: sleepTimer
-//    property alias appstate: appstate
     property alias accelerometerTrigger: accelerometerTrigger
 
-    //    property alias volume: volume
     property alias fadeOutSound: fadeOutSound
-    //    property alias audiofadeout: audiofadeout
     property alias actionPauseKodi: actionPauseKodi
     property alias actionPauseVLC: actionPauseVLC
 
 
     ScreenBlank {
-        enabled: settings.timerInhibitScreensaverEnabled && sleepTimer.running
+        enabled: settings.timerInhibitScreensaverEnabled && SleepTimer.running
     }
 
     AccelerometerTrigger {
         id: accelerometerTrigger
         paused: false
         triggerThreshold: settings.timerMotionThreshold
-        active: settings.timerMotionEnabled && settings.timerMotionThreshold && sleepTimer.running && !paused
-        proximityActive: settings.timerWaveMotionEnabled && sleepTimer.running
+        active: settings.timerMotionEnabled && settings.timerMotionThreshold && SleepTimer.running && !paused
+        proximityActive: settings.timerWaveMotionEnabled && SleepTimer.running
         onTriggered: function(){
-            sleepTimer.restart()
+            SleepTimer.start()
         }
     }
     AmazfitButtonTrigger {
         enabled: settings.timerAmazfishButtonResetEnabled
         onButtonPressed: {
-//            console.log('well…', sleepTimer.running, presses, settings.timerAmazfishButtonResetPresses, presses === settings.timerAmazfishButtonResetPresses)
-            if(sleepTimer.running && presses === settings.timerAmazfishButtonResetPresses) {
-                sleepTimer.restart()
+//            console.log('well…', SleepTimer.running, presses, settings.timerAmazfishButtonResetPresses, presses === settings.timerAmazfishButtonResetPresses)
+            if(SleepTimer.running && presses === settings.timerAmazfishButtonResetPresses) {
+                SleepTimer.start()
             }
         }
     }
@@ -79,7 +75,7 @@ Item {
     }
     VolumeFade {
         id: volumeFade
-        duration: sleepTimer.triggerBeforeIntervalDuration
+        duration: SleepTimer.finalizeMilliseconds
         doReset: settings.timerFadeResetEnabled
         onVolumeResetDone: {
             /*
@@ -89,42 +85,26 @@ Item {
             */
             actionBt.pause(function btCallback(){
                 actionPrivilegedLauncher.pause()
-                sleepTimer.stop()
+                SleepTimer.stop()
             });
         }
     }
     TimerNotificationTrigger {
         id: timerNotificationTrigger
         onTriggered: function(){
-            sleepTimer.stop()
+            SleepTimer.stop()
         }
 
     }
-    Timer {
+    Timer { // dont display mpris notification if we stopped it ourselves
         id: justTriggeredTimer
         interval: 500
     }
 
-    CountDownTimer {
-        id: sleepTimer
-        interval: settings.timerSeconds * 1000
-        enabled: true
-        property double targetVolume: 1
-        triggerBeforeIntervalDuration: 10000
-        onTriggerBeforeInterval: { // ten seconds before triggering
-            if(settings.timerFadeEnabled) {
-                if(settings.timerFadeSoundEffectEnabled) {
-                    fadeOutSound.play();
-                }
-                if(settings.timerFadeEnabled) {
-                    volumeFade.start();
-                }
-            }
-            if(settings.timerNotificationTriggerEnabled) {
-                timerNotificationTrigger.start()
-            }
-        }
-        onTriggered: {
+
+    Connections {
+        target: SleepTimer
+        onTimeout: {
             console.log('sleep timer fired!');
             dbus.emitSignal('Triggered');
             justTriggeredTimer.start()
@@ -147,79 +127,94 @@ Item {
             } else { // disable bt directly
                 actionBt.pause(function btCallback(){
                     actionPrivilegedLauncher.pause()
-                    sleepTimer.stop()
+                    SleepTimer.stop()
                 });
             }
         }
-        onReset: {
-            fadeOutSound.stop();
-            if(settings.timerFadeEnabled) {
-                volumeFade.reset(true); //reset volume even if not enabled in options
+
+        onFinalizingChanged: {
+            if(SleepTimer.finalizing) {
+                if(settings.timerFadeEnabled) {
+                    if(settings.timerFadeSoundEffectEnabled) {
+                        fadeOutSound.play();
+                    }
+                    if(settings.timerFadeEnabled) {
+                        volumeFade.start();
+                    }
+                }
+                if(settings.timerNotificationTriggerEnabled) {
+                    timerNotificationTrigger.start()
+                }
+            } else {
+                fadeOutSound.stop();
+                if(settings.timerFadeEnabled) {
+                    volumeFade.reset(true); //reset volume even if not enabled in options
+                }
+                timerNotificationTrigger.reset()
             }
-            timerNotificationTrigger.reset()
         }
-
-        Item {
-            id: fadeOutSound
-            property string file: settings.timerFadeSoundEffectFile
-            property SoundEffect effect
-
-            onFileChanged: {
-                stop()
-                if(file === "cassette-noise") {
-                    effect = fadeOutSoundCassette;
-                } else if(file === "clock-ticking") {
-                    effect = fadeOutSoundTicking;
-                } else if(file === "sea-waves") {
-                    effect = fadeOutSoundSea;
-                }
-            }
-
-            function play(){
-                stop()
-                if(effect){
-                    effect.play()
-                }
-            }
-            function stop(){
-                fadeOutSoundCassette.stop()
-                fadeOutSoundTicking.stop()
-                fadeOutSoundSea.stop()
-            }
+    }
 
 
-            SoundEffect {
-                id:fadeOutSoundCassette
-                category: 'slumber'
-                source: '../assets/sound/cassette-noise.wav'
-                volume: settings.timerFadeSoundEffectVolume
-                onPlayingChanged: {
-                    if(!playing) { accelerometerTrigger.paused = false}
-                }
-            }
+    Item {
+        id: fadeOutSound
+        property string file: settings.timerFadeSoundEffectFile
+        property SoundEffect effect
 
-
-            SoundEffect {
-                id:fadeOutSoundTicking
-                category: 'slumber'
-                source: '../assets/sound/clock-ticking.wav'
-                volume: settings.timerFadeSoundEffectVolume
-                onPlayingChanged: {
-                    if(!playing) { accelerometerTrigger.paused = false}
-                }
-            }
-
-            SoundEffect {
-                id:fadeOutSoundSea
-                category: 'slumber'
-                source: '../assets/sound/sea-waves.wav'
-                volume: settings.timerFadeSoundEffectVolume
-                onPlayingChanged: {
-                    if(!playing) { accelerometerTrigger.paused = false}
-                }
+        onFileChanged: {
+            stop()
+            if(file === "cassette-noise") {
+                effect = fadeOutSoundCassette;
+            } else if(file === "clock-ticking") {
+                effect = fadeOutSoundTicking;
+            } else if(file === "sea-waves") {
+                effect = fadeOutSoundSea;
             }
         }
 
+        function play(){
+            stop()
+            if(effect){
+                effect.play()
+            }
+        }
+        function stop(){
+            fadeOutSoundCassette.stop()
+            fadeOutSoundTicking.stop()
+            fadeOutSoundSea.stop()
+        }
+
+
+        SoundEffect {
+            id:fadeOutSoundCassette
+            category: 'slumber'
+            source: '../assets/sound/cassette-noise.wav'
+            volume: settings.timerFadeSoundEffectVolume
+            onPlayingChanged: {
+                if(!playing) { accelerometerTrigger.paused = false}
+            }
+        }
+
+
+        SoundEffect {
+            id:fadeOutSoundTicking
+            category: 'slumber'
+            source: '../assets/sound/clock-ticking.wav'
+            volume: settings.timerFadeSoundEffectVolume
+            onPlayingChanged: {
+                if(!playing) { accelerometerTrigger.paused = false}
+            }
+        }
+
+        SoundEffect {
+            id:fadeOutSoundSea
+            category: 'slumber'
+            source: '../assets/sound/sea-waves.wav'
+            volume: settings.timerFadeSoundEffectVolume
+            onPlayingChanged: {
+                if(!playing) { accelerometerTrigger.paused = false}
+            }
+        }
     }
     Loader {
         active: settings.timerAutostartOnPlaybackDetection
@@ -228,13 +223,13 @@ Item {
         Component {
             id: scannerComponent
             MprisPlayingScanner {
-                enabled: !sleepTimer.running
+                enabled: !SleepTimer.running
                 reverseEnabled: settings.timerAutostopOnPlaybackStop && !justTriggeredTimer.running
                 onTriggered: {
-                    sleepTimer.start()
+                    SleepTimer.start()
                 }
                 onReverseTriggered: {
-                    sleepTimer.stop()
+                    SleepTimer.stop()
                 }
             }
         }

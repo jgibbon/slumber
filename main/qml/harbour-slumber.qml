@@ -45,15 +45,9 @@ ApplicationWindow
         id: globals
     }
 
-    property alias sleepTimer: globals.sleepTimer
-
 
     initialPage: Component { FirstPage { } }
-    cover:Component {
-        CoverPage {
-            timer: globals.sleepTimer
-        }
-    }
+    cover: Component { CoverPage {} }
     allowedOrientations: Orientation.All
     _defaultPageOrientations: Orientation.All
 
@@ -74,10 +68,10 @@ ApplicationWindow
              '    </signal>\n' +
              '  </interface>\n'
         function startTimer(){
-            sleepTimer.restart();
+            SleepTimer.start();
         }
         function stopTimer(){
-            sleepTimer.stop();
+            SleepTimer.stop();
         }
     }
 

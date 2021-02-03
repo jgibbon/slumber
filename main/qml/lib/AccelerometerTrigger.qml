@@ -41,7 +41,7 @@ Item {
 
     Accelerometer {
         id: accel
-//        active: settings.timerMotionEnabled && settings.timerMotionThreshold && sleepTimer.running
+//        active: settings.timerMotionEnabled && settings.timerMotionThreshold && SleepTimer.running
         property var acc: {//last values
             x:0
             y:0

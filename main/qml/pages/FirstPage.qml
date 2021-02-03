@@ -6,7 +6,7 @@ import "../lib/"
 
 Page {
     id: page
-    property bool isDarkScreen:  settings.viewDarkenMainSceen && (sleepTimer.running ) && !clickArea.pressed;
+    property bool isDarkScreen:  settings.viewDarkenMainSceen && (SleepTimer.running ) && !clickArea.pressed;
     onIsDarkScreenChanged: {
         if(isDarkScreen && Theme.colorScheme === Theme.DarkOnLight) {
             palette.colorScheme = Theme.LightOnDark
@@ -32,12 +32,12 @@ Page {
         anchors.fill: parent
         color:palette.highlightBackgroundColor
         opacity: 0
-        visible: sleepTimer.nearlyDone && settings.timerFadeVisualEffectEnabled
+        visible: SleepTimer.finalizing && settings.timerFadeVisualEffectEnabled
         SequentialAnimation on opacity {
 
             PropertyAnimation {from:0; to: 0.8; duration: 1000 }
             PropertyAnimation {from:0.8; to: 0; duration: 1000 }
-            running: (sleepTimer.nearlyDone) && settings.timerFadeVisualEffectEnabled && Qt.application.active
+            running: (SleepTimer.finalizing) && settings.timerFadeVisualEffectEnabled && Qt.application.active
             loops: Animation.Infinite
         }
     }
@@ -57,18 +57,18 @@ Page {
             }
 
             MenuItem {
-                visible: !sleepTimer.running
+                visible: !SleepTimer.running
                 text: qsTr("Options")
                 onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage:page, globals: globals})
             }
             MenuItem {
                 text: qsTr("Stop Timer")
-                visible: sleepTimer.running
-                onClicked: sleepTimer.stop()
+                visible: SleepTimer.running
+                onClicked: SleepTimer.stop()
             }
         }
         PushUpMenu {
-            visible: sleepTimer.running
+            visible: SleepTimer.running
             quickSelect: true
             onActiveChanged: {
                 globals.accelerometerTrigger.paused = active
@@ -76,7 +76,7 @@ Page {
 
             MenuItem {
                 text: qsTr("Stop Timer")
-                onClicked: sleepTimer.stop()
+                onClicked: SleepTimer.stop()
             }
         }
 
@@ -161,17 +161,16 @@ Page {
 
             TimerProgressButton {
                 width: Screen.width / 2
-                running: sleepTimer.running
+                running: SleepTimer.running
                 anchors.centerIn: parent
                 timeFormatShort: settings.viewTimeFormatShort
-                timer: sleepTimer
-                value: sleepTimer.milliSecondsLeft / (settings.timerSeconds*1000)
+                value: SleepTimer.remainingSeconds / (settings.timerSeconds)
                 fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*1.2 : Theme.fontSizeMedium
                 lineHeight: Screen.sizeCategory >= Screen.Large ? 0.8 : 1.0
             }
 
             onClicked: {
-                sleepTimer.start()
+                SleepTimer.start()
             }
             onPressAndHold: {
                 var minutes = (settings.timerSeconds / 60);
@@ -216,7 +215,7 @@ Page {
             height: pageHeader.height
 
             onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage: page})
-            onPressAndHold: sleepTimer.triggered()
+            onPressAndHold: SleepTimer.triggered()
         }
 
 
@@ -236,7 +235,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 color: palette.secondaryHighlightColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: (sleepTimer.running? qsTr("Tap to restart,"):qsTr("Tap to start,"))
+                text: (SleepTimer.running? qsTr("Tap to restart,"):qsTr("Tap to start,"))
             }
             Text
             {
@@ -247,7 +246,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 color: palette.secondaryHighlightColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: '\n' + (sleepTimer.running? qsTr("pull up or down to stop"):qsTr("pull down for options"))
+                text: '\n' + (SleepTimer.running? qsTr("pull up or down to stop"):qsTr("pull down for options"))
             }
         }
 
