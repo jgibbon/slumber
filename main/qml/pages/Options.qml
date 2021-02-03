@@ -8,12 +8,7 @@ import "../lib/"
 
 Page {
     id: page
-
-    property Options options
     property FirstPage firstPage
-
-
-
 
     allowedOrientations: firstPage.allowedOrientations
     orientation: firstPage.orientation
@@ -29,7 +24,7 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("About")
-                onClicked: pageStack.push(Qt.resolvedUrl("About.qml"), {options:options, firstPage:firstPage})
+                onClicked: pageStack.push(Qt.resolvedUrl("About.qml"), {firstPage:firstPage})
             }
         }
         VerticalScrollDecorator{
@@ -76,12 +71,12 @@ Page {
                 }
 
                 label: qsTr("Sleep after")
-                value: (options.timerSeconds === 30)?'30s':selectedHour+ ':'+ ("0"+selectedMinute).slice(-2)
+                value: (options.timerSeconds === 15)?'15s':selectedHour+ ':'+ ("0"+selectedMinute).slice(-2)
                 onClicked: openTimeDialog()
                 Component.onCompleted: {
-                    if(options.timerSeconds === 30){
+                    if(options.timerSeconds === 15){
                         selectedHour = 0;
-                        selectedMinute = 0.5
+                        selectedMinute = 0.25
                         return;
                     }
                     var minutes = (options.timerSeconds / 60);
@@ -142,7 +137,7 @@ Page {
                         text: qsTr("Configure Actions");
                         width: parent.width - (Theme.horizontalPageMargin * 2)
                         x: Theme.horizontalPageMargin
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd.qml"), {options:options, firstPage:firstPage})
+                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd.qml"), {firstPage:firstPage})
                         icon.source: "image://theme/icon-m-moon"
                     }
                     Label {
@@ -167,7 +162,7 @@ Page {
                         text: qsTr("Configure Reset");
                         width: parent.width - (Theme.horizontalPageMargin * 2)
                         x: Theme.horizontalPageMargin
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerReset.qml"), {options:options, firstPage:firstPage})
+                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerReset.qml"), {firstPage:firstPage})
                         icon.source: "image://theme/icon-m-refresh"
                     }
                     Label {
@@ -201,7 +196,7 @@ Page {
                     HighlightImageButton {
                         text: qsTr("Configure Appearance");
                         icon.source: "image://theme/icon-m-ambience"
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_Appearance.qml"), {options:options, firstPage:firstPage})
+                        onClicked: pageStack.push(Qt.resolvedUrl("Options_Appearance.qml"), {firstPage:firstPage})
 
                         width: parent.width - (Theme.horizontalPageMargin * 2)
                         x: Theme.horizontalPageMargin

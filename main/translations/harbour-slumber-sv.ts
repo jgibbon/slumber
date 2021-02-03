@@ -4,32 +4,32 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="28"/>
+        <location filename="../qml/pages/About.qml" line="27"/>
         <source>/ˈslʌmbə/</source>
         <translation>/ˈslʌmbə/</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="35"/>
+        <location filename="../qml/pages/About.qml" line="34"/>
         <source>Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.</source>
         <translation>Slumber är en insomningstimer som låter dig slumra till utan för mycket krångel, medan du lyssnar på något.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="43"/>
+        <location filename="../qml/pages/About.qml" line="42"/>
         <source>If you need a feature or found something that is not working, feel free to post at TMO:</source>
         <translation>Om du saknar någon funktion eller hittat något som inte fungerar, får du gärna posta ett inlägg på TMO:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="52"/>
+        <location filename="../qml/pages/About.qml" line="51"/>
         <source>TMO Thread for slumber</source>
         <translation>TMO-tråd för slumber</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="58"/>
+        <location filename="../qml/pages/About.qml" line="57"/>
         <source>Thanks!</source>
         <translation>Tack!</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="62"/>
+        <location filename="../qml/pages/About.qml" line="61"/>
         <source>Thanks to all users suggesting things and everyone helping me out, especially:</source>
         <translation>Tack till alla användare som föreslår saker och till alla som hjälper mig, särskilt:</translation>
     </message>
@@ -37,40 +37,40 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="51"/>
+        <location filename="../qml/pages/FirstPage.qml" line="61"/>
         <source>Options</source>
-        <translation>Inställningar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="55"/>
-        <location filename="../qml/pages/FirstPage.qml" line="68"/>
+        <location filename="../qml/pages/FirstPage.qml" line="65"/>
+        <location filename="../qml/pages/FirstPage.qml" line="78"/>
         <source>Stop Timer</source>
-        <translation>Stoppa tiduret</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="76"/>
+        <location filename="../qml/pages/FirstPage.qml" line="86"/>
         <source>slumber</source>
-        <translation>slumber</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="171"/>
+        <location filename="../qml/pages/FirstPage.qml" line="239"/>
         <source>Tap to restart,</source>
-        <translation>Tryck för att starta om,</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="171"/>
+        <location filename="../qml/pages/FirstPage.qml" line="239"/>
         <source>Tap to start,</source>
-        <translation>Tryck för att starta,</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="182"/>
-        <source>pull down for options</source>
-        <translation>dra ner för alternativ</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/FirstPage.qml" line="182"/>
+        <location filename="../qml/pages/FirstPage.qml" line="250"/>
         <source>pull up or down to stop</source>
-        <translation>Dra ner eller upp för att stoppa</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="250"/>
+        <source>pull down for options</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -89,97 +89,97 @@
 <context>
     <name>Options</name>
     <message>
-        <location filename="../qml/pages/Options.qml" line="31"/>
+        <location filename="../qml/pages/Options.qml" line="26"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="42"/>
+        <location filename="../qml/pages/Options.qml" line="37"/>
         <source>slumber Options</source>
         <translation>slumber-inställningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="78"/>
+        <location filename="../qml/pages/Options.qml" line="73"/>
         <source>Sleep after</source>
         <translation>Sov efter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="94"/>
+        <location filename="../qml/pages/Options.qml" line="89"/>
         <source>Please set Timer longer than 0:00</source>
         <translation>Ange en tid längre än 0:00</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="103"/>
+        <location filename="../qml/pages/Options.qml" line="98"/>
         <source>Keep Display on</source>
         <translation>Håll skärmen tänd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="109"/>
+        <location filename="../qml/pages/Options.qml" line="104"/>
         <source>Keeps your Display lit while the timer is running.</source>
         <translation>Håller skärmen tänd medan nedräkning pågår.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="114"/>
+        <location filename="../qml/pages/Options.qml" line="109"/>
         <source>Start Timer if Playback is detected</source>
         <translation>Starta tiduret om uppspelning identifieras</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="120"/>
+        <location filename="../qml/pages/Options.qml" line="115"/>
         <source>Automatically start timer when playback is detected. Slumber has to be open for this to work.</source>
         <translation>Starta tiduret automatiskt när uppspelning identifieras. Slumber måste vara startad för att detta skall fungera.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="124"/>
+        <location filename="../qml/pages/Options.qml" line="119"/>
         <source>Stop Timer if Playback is stopped</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="131"/>
+        <location filename="../qml/pages/Options.qml" line="126"/>
         <source>Automatically stop timer when playback stop or pause is detected.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="139"/>
+        <location filename="../qml/pages/Options.qml" line="134"/>
         <source>Actions</source>
         <translation>Åtgärder</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="142"/>
+        <location filename="../qml/pages/Options.qml" line="137"/>
         <source>Configure Actions</source>
         <translation>Åtgärder</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="149"/>
+        <location filename="../qml/pages/Options.qml" line="144"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the Timer runs out.</source>
         <translation>Tidtagningsåtgärder som &quot;Pausa media&quot; verkställs när tiden gått ut.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="164"/>
+        <location filename="../qml/pages/Options.qml" line="159"/>
         <source>Timer Reset</source>
         <translation>Tidursåterställning</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="167"/>
+        <location filename="../qml/pages/Options.qml" line="162"/>
         <source>Configure Reset</source>
         <translation>Återställning</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="174"/>
+        <location filename="../qml/pages/Options.qml" line="169"/>
         <source>Reset the timer while you are awake.</source>
         <translation>Återställ tiduret medan du är vaken.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="197"/>
+        <location filename="../qml/pages/Options.qml" line="192"/>
         <source>Appearance</source>
         <translation>Utseende</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="202"/>
+        <location filename="../qml/pages/Options.qml" line="197"/>
         <source>Configure Appearance</source>
         <translation>Utseende</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="211"/>
+        <location filename="../qml/pages/Options.qml" line="206"/>
         <source>Change this application&apos;s look and feel.</source>
         <translation>Ändra programmets utseende och känsla.</translation>
     </message>
@@ -187,42 +187,42 @@
 <context>
     <name>Options_Appearance</name>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="26"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="24"/>
         <source>slumber Appearance</source>
         <translation>slumber-utseende</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="31"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="29"/>
         <source>Show indicator</source>
         <translation>Visa indikator</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="37"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="35"/>
         <source>Show a rotating indicator on the main screen while the timer is running.</source>
         <translation>Visa roterande indikator i huvudfönstret medan nedräkning pågår.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="41"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="39"/>
         <source>Show Options Button</source>
         <translation>Visa knapp för Inställningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="47"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="45"/>
         <source>Show a shortcut to Options on the main screen while the timer is running. Otherwise, you&apos;d have to stop the timer first to get here.</source>
         <translation>Visa en genväg till Inställningar, i huvudfönstret, medan nedräkning pågår. Annars måste du stoppa nedräkningen innan du kan komma dit.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="51"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="49"/>
         <source>Darken main screen</source>
         <translation>Dämpa huvudfönstret</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="112"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="108"/>
         <source>Use darker colours while the timer is running</source>
         <translation>Gör skärmen mörkare medan nedräkning pågår.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Appearance.qml" line="131"/>
+        <location filename="../qml/pages/Options_Appearance.qml" line="127"/>
         <source>Display compact time format</source>
         <translation>Visa kompakt tidsformat</translation>
     </message>
@@ -721,55 +721,55 @@
 <context>
     <name>TimerProgressButton</name>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="143"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="129"/>
         <source>s</source>
         <translation>s</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="157"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="143"/>
         <source>Hour</source>
         <translation>Timma</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="158"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="144"/>
         <source>Hours</source>
         <translation>Timmar</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="159"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="145"/>
         <source>Minute</source>
         <translation>Minut</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="160"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="146"/>
         <source>Minutes</source>
         <translation>Minuter</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="161"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="147"/>
         <source>Second</source>
         <translation>Sekund</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="162"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="148"/>
         <source>Seconds</source>
         <translation>Sekunder</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="164"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="165"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="150"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="151"/>
         <source>Hrs</source>
         <translation>Tim</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="166"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="167"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="152"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="153"/>
         <source>Min</source>
         <translation>Min</translation>
     </message>
     <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="168"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="169"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="154"/>
+        <location filename="../qml/lib/TimerProgressButton.qml" line="155"/>
         <source>Sec</source>
         <translation>Sek</translation>
     </message>

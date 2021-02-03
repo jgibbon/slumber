@@ -6,7 +6,6 @@ import "../lib/"
 Page {
     id: page
 
-    property Options options
     property FirstPage firstPage
 
     allowedOrientations: firstPage.allowedOrientations

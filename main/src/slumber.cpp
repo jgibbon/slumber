@@ -37,23 +37,33 @@
 #include "lib/launcher.h"
 #include "lib/volumefade.h"
 #include "lib/pavolume.h"
+#include "lib/sleeptimer.h"
+#include "lib/applicationsettings.h"
 
 
 int main(int argc, char *argv[])
 {
-
-
     PAVolume::registerMetaTypes();
 
-    VolumeFade vc;
+    const char *uri = "de.gibbon.slumber";
 
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
 
 //    QScopedPointer<QGuiApplication> app(Sailfish::createApplication(argc, argv));
     QScopedPointer<QQuickView> v(SailfishApp::createView());
 
+    QQuickView *viewData = v.data();
+    QQmlContext *context = viewData->rootContext();
+    VolumeFade *vc = new VolumeFade(viewData);
+
+    ApplicationSettings *appSettings = new ApplicationSettings(viewData);
+    context->setContextProperty("options", appSettings);
+    qmlRegisterUncreatableType<ApplicationSettings>(uri, 1, 0, "Options", QString());
+
+    SleepTimer *sleeptimer = new SleepTimer(viewData);
     qmlRegisterType<Launcher>("Launcher", 1 , 0 , "Launcher");
-    v->rootContext()->setContextProperty("VolumeControl", &vc);
+    context->setContextProperty("VolumeControl", vc);
+    context->setContextProperty("SleepTimer", sleeptimer);
 //    v->rootContext()->setContextProperty("Volume", &fader);
     // Start the application.
     v->setSource(SailfishApp::pathTo("qml/harbour-slumber.qml"));

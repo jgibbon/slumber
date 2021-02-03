@@ -1,10 +1,10 @@
 import QtQuick 2.6
+import QtQuick.LocalStorage 2.0
 
 
-PersistentObject {
-    id: options
+QtObject {
+    id: legacyoptions
     objectName: 'options'
-    doPersist: true
 
     //timer
     property bool timerEnabled: false
@@ -27,7 +27,7 @@ PersistentObject {
     property bool timerDisableBluetoothEnabled: false
     property bool timerRestartOfonoEnabled: false
     //privileged commands end
-//        property var timerActionRunCommands: []//todo
+    //        property var timerActionRunCommands: []//todo
 
     property bool timerKodiPauseEnabled: false
     property string timerKodiPauseHost: ''
@@ -64,4 +64,38 @@ PersistentObject {
     property bool viewActiveIndicatorEnabled: true
     property bool viewActiveOptionsButtonEnabled: false
 
+    property Timer autoDestructTimer: Timer {
+        interval: 200
+        onTriggered: {
+            options.legacySettingsPossiblyAvailable = false;
+        }
+    }
+
+    Component.onCompleted: {
+        console.log("legacy options import!");
+        var settings = ['Talefish','1.0','Settings'];
+        var db = LocalStorage.openDatabaseSync(settings[0],settings[1],settings[2], 5000);
+
+        db.transaction(
+                    function (tx) {
+
+                        // Load fields
+                        for (var fieldName in legacyoptions) {
+                            //values starting with 'on' should be blatantly ignored
+                            if ( fieldName in options && fieldName.lastIndexOf('on', 0) !== 0) {
+
+                                var rs = tx.executeSql('SELECT value FROM settings WHERE settingsName=? AND keyName=?;', [legacyoptions.objectName, fieldName]);
+
+                                if (rs.rows.length > 0) {
+                                    //obj[fieldName] = JSON.parse(rs.rows.item(0).value);
+                                    var value = JSON.parse(rs.rows.item(0).value);
+                                    console.log("legacy settings import: set ", fieldName, "to", value);
+                                    options[fieldName] = value;
+
+                                }
+                            }
+                        }
+                        autoDestructTimer.start();
+                    });
+    }
 }

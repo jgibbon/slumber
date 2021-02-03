@@ -2,7 +2,6 @@ import QtQuick 2.6
 import QtMultimedia 5.6
 
 Item {
-    property alias options: options
     property alias sleepTimer: sleepTimer
 //    property alias appstate: appstate
     property alias accelerometerTrigger: accelerometerTrigger
@@ -13,9 +12,6 @@ Item {
     property alias actionPauseKodi: actionPauseKodi
     property alias actionPauseVLC: actionPauseVLC
 
-    Options {
-        id: options
-    }
 
     ScreenBlank {
         enabled: options.timerInhibitScreensaverEnabled && sleepTimer.running
@@ -63,7 +59,6 @@ Item {
 
     ActionPrivilegedLauncher {
         id: actionPrivilegedLauncher
-        options: options
     }
 
     ActionNetworkKodi{
@@ -92,9 +87,9 @@ Item {
               We don't want BT/network/… to be disabled before this is done, or
               it will start with 0 volume on next connect.
             */
-
             actionBt.pause(function btCallback(){
                 actionPrivilegedLauncher.pause()
+                sleepTimer.stop()
             });
         }
     }
@@ -147,12 +142,12 @@ Item {
             });
 
             timerNotificationTrigger.reset()
-            sleepTimer.stop()
             if(options.timerFadeEnabled && options.timerFadeResetEnabled) {
                 volumeFade.finish() // triggers BT after it's done
             } else { // disable bt directly
                 actionBt.pause(function btCallback(){
                     actionPrivilegedLauncher.pause()
+                    sleepTimer.stop()
                 });
             }
         }
@@ -168,7 +163,6 @@ Item {
             id: fadeOutSound
             property string file: options.timerFadeSoundEffectFile
             property SoundEffect effect
-            property alias volume: options.timerFadeSoundEffectVolume
 
             onFileChanged: {
                 stop()

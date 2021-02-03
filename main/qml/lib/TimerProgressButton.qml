@@ -9,8 +9,8 @@ Item {
     property bool running: true
     property bool timeFormatShort: false //one line
     property bool timeFomatAbbreviateIfLong: true //
-    property color textcolor: Theme.highlightColor
-    property color secondarytextcolor: Theme.secondaryHighlightColor
+    property color textcolor: palette.highlightColor
+    property color secondarytextcolor: palette.secondaryHighlightColor
 
     property int milliSecondsLeft: 0
 
@@ -29,39 +29,33 @@ Item {
 
     property alias busyindicator: busyindicatorrect
     anchors.horizontalCenter: parent.horizontalCenter
-
+    Rectangle {
+        color: Qt.rgba(0,0,0,0)
+        border {
+            color: Theme.rgba(palette.highlightBackgroundColor, 0.2)
+            width: progressborder
+        }
+        radius: width/2
+        height: progresssize
+        width: progresssize
+    }
     Item {
         id: progressCircleContainer
         width: sleepTimerWidget.width
         height: sleepTimerWidget.height
         rotation:  (sleepTimerWidget.value * 180) -180
+        Behavior on rotation { NumberAnimation { duration: 200 }}
 
-        property real widthbase: value
-        ProgressCircle {
-            height: progresssize
-            width: progresssize
-            value: 0
-            borderWidth: progressborder
-            progressColor: 'transparent'
-            backgroundColor: Theme.highlightBackgroundColor
-            opacity: 0.2
-            onValueChanged: {
-                if (value < _previousValue) {
-                }
-                inAlternateCycle = true
-                _previousValue = value
-            }
-        }
         ProgressCircle {
             id: progressCircle
-
+            visible: sleepTimerWidget.running
             height: progresssize
             width: progresssize
             value: 1 - sleepTimerWidget.value
             borderWidth: progressborder
-            progressColor: Theme.highlightColor
+            progressColor: palette.highlightColor
 
-            Behavior on value { FadeAnimation { id: valueFadeAnimation }}
+            Behavior on value { NumberAnimation { duration: 200 }}
             backgroundColor: 'transparent'
             inAlternateCycle: true
             onValueChanged: {
@@ -72,8 +66,7 @@ Item {
 
     }
 
-    Rectangle {
-        color: 'transparent'
+    Item {
         id: busyindicatorrect
         visible: options.viewActiveIndicatorEnabled
         anchors.centerIn: parent
@@ -97,16 +90,11 @@ Item {
             width: busysize
             value: 0.25
             borderWidth: busyborder
-            progressColor: Theme.highlightColor
+            progressColor: palette.highlightColor
 
             backgroundColor: 'transparent'
             inAlternateCycle: true
-            onValueChanged: {
-                inAlternateCycle = true
-                _previousValue = value
-            }
         }
-
     }
 
 
@@ -115,8 +103,6 @@ Item {
     Item{
         id: textItem
 
-        //            _backgroundColor: Theme.highlightColor
-        property bool displayPercentage: false //sleepTimerWidget.value != 1
         width: progressCircleContainer.width
         height: sleepTimerWidget.timeFormatShort ? displayText.height : longDisplayText.height
 
@@ -179,7 +165,7 @@ Item {
 
 
 
-            property bool showSecond: selectedSecond || running
+            property bool showSecond: selectedSecond || running || milliSecondsLeft === 0
 
             anchors.centerIn: parent
             color: textcolor

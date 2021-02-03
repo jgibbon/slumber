@@ -6,6 +6,7 @@ Item {
     property var services: []
     property bool enabled: true
     property bool onlyDisconnectAudioDevices: true
+    property var callback;
     function pause(cb){
         if(!enabled) {
             if(cb) {
@@ -13,10 +14,11 @@ Item {
             }
             return
         }
+        callback = cb;
 
         console.log('bt list')
 //        deviceQuery.typedCall('ListNames', undefined, replyFactory(cb), function(err){console.log('error query', err)})
-        deviceQuery.typedCall('GetManagedObjects', undefined, replyFactory(cb), function(err){console.log('error query', err)})
+        disconnectDelay.start()
     }
     function replyFactory(cb) {
         return function filterDbusServices(dbusReply) {
@@ -49,6 +51,13 @@ Item {
             if(cb) {
                 cb();
             }
+        }
+    }
+    Timer {
+        id: disconnectDelay
+        interval: 200
+        onTriggered: {
+            deviceQuery.typedCall('GetManagedObjects', undefined, replyFactory(callback), function(err){console.log('error query', err)})
         }
     }
 

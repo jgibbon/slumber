@@ -4,7 +4,6 @@ import Launcher 1.0
 Launcher {
     id:root
     property bool enabled
-    property var options
     function pause(){
         var commands = [];
         if(options.timerLockScreenEnabled) {

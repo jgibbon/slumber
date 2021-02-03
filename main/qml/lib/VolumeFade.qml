@@ -60,8 +60,17 @@ Item {
         id: resetTimer
         interval: 450 // some players take a while to pause. Not ideal.
         onTriggered: {
+            console.log("resetting volume")
             VolumeControl.setVolume(resetToVolume)
+            console.log("done resetting volume")
             resetToVolume = -1
+            doneTimer.start()
+        }
+    }
+    Timer {
+        id: doneTimer
+        interval: 80
+        onTriggered: {
             if(isDone) {
                 volumeResetDone()
             }

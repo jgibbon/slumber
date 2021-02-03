@@ -7,11 +7,21 @@ import "../lib/"
 Page {
     id: page
     property bool isDarkScreen:  options.viewDarkenMainSceen && (sleepTimer.running ) && !clickArea.pressed;
-    BackgroundItem {
+    onIsDarkScreenChanged: {
+        if(isDarkScreen && Theme.colorScheme === Theme.DarkOnLight) {
+            palette.colorScheme = Theme.LightOnDark
+            palette.highlightColor = Theme.highlightFromColor(Theme.highlightColor, Theme.LightOnDark)
+        } else {
+            palette.colorScheme = Theme.colorScheme;
+            palette.highlightColor = Theme.highlightColor;
+        }
+    }
+
+    Rectangle {
         anchors.fill: parent
         opacity: page.isDarkScreen ? options.viewDarkenMainScreenAmount*0.8 : 0
 
-        _backgroundColor:'black'
+        color: Qt.rgba(0,0,0,1)
 
         Behavior on opacity {
             NumberAnimation { duration: 1000 }
@@ -20,7 +30,7 @@ Page {
     Rectangle {
         id: nearlyDoneIndicator
         anchors.fill: parent
-        color:Theme.highlightBackgroundColor
+        color:palette.highlightBackgroundColor
         opacity: 0
         visible: sleepTimer.nearlyDone && options.timerFadeVisualEffectEnabled
         SequentialAnimation on opacity {
@@ -49,7 +59,7 @@ Page {
             MenuItem {
                 visible: !sleepTimer.running
                 text: qsTr("Options")
-                onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {options:options, firstPage:page, globals: globals})
+                onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage:page, globals: globals})
             }
             MenuItem {
                 text: qsTr("Stop Timer")
@@ -77,20 +87,80 @@ Page {
             anchors.right: options.viewActiveOptionsButtonEnabled? optionsButton.left: parent.right
 
         }
+//        Column {
+//            anchors.top: pageHeader.bottom
+//            width: parent.width
+//            Label {
+//                font.pixelSize: Theme.fontSizeTiny
+//                text: "interval:" + SleepTimer.interval
+//            }
+//            Label {
+//                font.pixelSize: Theme.fontSizeTiny
+//                text: "remaining:" + SleepTimer.remainingTime
+//            }
+//            Label {
+//                font.pixelSize: Theme.fontSizeTiny
+//                text: "remaining s:" + SleepTimer.remainingSeconds
+//            }
+//            Label {
+//                font.pixelSize: Theme.fontSizeTiny
+//                text: "running:" + SleepTimer.running
+//            }
+//            Label {
+//                font.pixelSize: Theme.fontSizeTiny
+//                text: "finalizing:" + SleepTimer.finalizing
+//            }
+//            Label {
+//                font.pixelSize: Theme.fontSizeTiny
+//                text: "finalizeMilliseconds:" + SleepTimer.finalizeMilliseconds
+//            }
+//            Connections {
+//                target: SleepTimer
+//                onRemainingTimeChanged: {
+//                    console.log("remaining time changed", SleepTimer.remainingTime, SleepTimer.remainingSeconds);
 
-        Image {
-            opacity: 0.3
-            source: "../assets/moon.png"
-            smooth: false
-            y: 0-(implicitHeight/ 3)
-            x: 0-(implicitWidth / 9)
-        }
+//                }
+//                onIntervalChanged: {
+//                    console.log("interval changed", SleepTimer.interval);
+//                }
+//                onFinalizingChanged: {
+//                    console.log("finalizing changed", SleepTimer.finalizing);
+//                }
+//                onFinalizeMillisecondsChanged: {
+//                    console.log("finalizeMilliseconds changed", SleepTimer.finalizeMilliseconds);
+//                }
+//                onIsActiveChanged: {
+//                    console.log("active changed", SleepTimer.running);
+//                }
+//                onTimeout: {
+//                    console.log("timeout");
+//                }
+
+//            }
+
+//            Component.onCompleted: {
+//                SleepTimer.interval = 10000;
+//                SleepTimer.finalizeMilliseconds = 5000;
+//                SleepTimer.start();
+
+//            }
+
+//        }
+
+//        Image {
+//            opacity: 0.3
+//            source: "../assets/moon.png"
+//            smooth: false
+//            cache: false
+//            y: 0-(implicitHeight/ 3)
+//            x: 0-(implicitWidth / 9)
+//        }
         BackgroundItem {
             id: clickArea
             anchors.fill: parent
 
             TimerProgressButton {
-                width: parent.width < parent.height? (parent.width / 2) : (parent.height / 2)
+                width: Screen.width / 2
                 running: sleepTimer.running
                 anchors.centerIn: parent
                 timeFormatShort: options.viewTimeFormatShort
@@ -98,7 +168,6 @@ Page {
                 value: sleepTimer.milliSecondsLeft / (options.timerSeconds*1000)
                 fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*1.2 : Theme.fontSizeMedium
                 lineHeight: Screen.sizeCategory >= Screen.Large ? 0.8 : 1.0
-
             }
 
             onClicked: {
@@ -146,12 +215,12 @@ Page {
             anchors.right: parent.right
             height: pageHeader.height
 
-            onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {options:options, firstPage: page})
+            onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage: page})
             onPressAndHold: sleepTimer.triggered()
         }
 
 
-        Item{
+        Item {
             width: parent.width
             height: text2.height
 
@@ -162,11 +231,10 @@ Page {
 
             Text
             {
-
                 id:text1
                 font.pixelSize: Theme.fontSizeSmall
                 anchors.horizontalCenter: parent.horizontalCenter
-                color: Theme.secondaryHighlightColor
+                color: palette.secondaryHighlightColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: (sleepTimer.running? qsTr("Tap to restart,"):qsTr("Tap to start,"))
             }
@@ -177,7 +245,7 @@ Page {
 
                 font.pixelSize: Theme.fontSizeSmall
                 anchors.horizontalCenter: parent.horizontalCenter
-                color: Theme.secondaryHighlightColor
+                color: palette.secondaryHighlightColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: '\n' + (sleepTimer.running? qsTr("pull up or down to stop"):qsTr("pull down for options"))
             }

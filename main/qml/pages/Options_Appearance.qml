@@ -5,8 +5,6 @@ import "../lib/"
 
 Page {
     id: page
-
-    property Options options
     property FirstPage firstPage
 
     allowedOrientations: firstPage.allowedOrientations
@@ -87,8 +85,6 @@ Page {
                             anchors.horizontalCenter: parent.horizontalCenter
 //                            label:
                             onValueChanged: {
-                                //                        console.log('clicked')
-                                //                        console.log(value, options.viewDarkenMainScreenAmount, (value * 0.9) + 0.1);
                                 options.viewDarkenMainScreenAmount = (value * 0.9) + 0.1
 
                             }

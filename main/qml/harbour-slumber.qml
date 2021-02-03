@@ -45,7 +45,6 @@ ApplicationWindow
         id: globals
     }
 
-    property alias options: globals.options
     property alias sleepTimer: globals.sleepTimer
 
 
@@ -81,4 +80,12 @@ ApplicationWindow
             sleepTimer.stop();
         }
     }
+
+    // import old sqlite settings once
+    Loader {
+        active: options.legacySettingsPossiblyAvailable
+        asynchronous: true
+        source: Qt.resolvedUrl("./lib/LegacyOptions.qml")
+    }
+
 }

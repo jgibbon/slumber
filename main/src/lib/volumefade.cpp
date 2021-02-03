@@ -68,7 +68,7 @@ uint VolumeFade::getVolume()
 
 void VolumeFade::setVolume(uint volume)
 {
-    // qDebug() << "set volume" << volume;
+     qDebug() << "set volume" << volume;
     QVariant var;
     PAVolumeArray t;
     PAVolume vv(0, volume);

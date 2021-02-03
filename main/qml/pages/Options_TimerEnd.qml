@@ -6,7 +6,7 @@ import "../lib/"
 
 Page {
     id: page
-    property Options options
+
     property FirstPage firstPage
 
     allowedOrientations: firstPage.allowedOrientations
@@ -438,7 +438,7 @@ Page {
                 //: ButtonText: Privileged Actions (when the timer runs out) require administrative rights (root)
                 text: qsTr("Privileged Actions");
                 icon.source: "image://theme/icon-m-developer-mode"
-                onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd_Privileged.qml"), {options:options, firstPage:firstPage})
+                onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd_Privileged.qml"), {firstPage:firstPage})
 
                 width: parent.width - (Theme.horizontalPageMargin * 2)
                 x: Theme.horizontalPageMargin
