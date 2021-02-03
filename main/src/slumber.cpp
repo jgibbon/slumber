@@ -54,14 +54,15 @@ int main(int argc, char *argv[])
 
     QQuickView *viewData = v.data();
     QQmlContext *context = viewData->rootContext();
+
     VolumeFade *vc = new VolumeFade(viewData);
-
     ApplicationSettings *appSettings = new ApplicationSettings(viewData);
-    context->setContextProperty("options", appSettings);
-    qmlRegisterUncreatableType<ApplicationSettings>(uri, 1, 0, "Options", QString());
+    SleepTimer *sleeptimer = new SleepTimer(viewData, appSettings);
 
-    SleepTimer *sleeptimer = new SleepTimer(viewData);
-    qmlRegisterType<Launcher>("Launcher", 1 , 0 , "Launcher");
+    qmlRegisterUncreatableType<ApplicationSettings>(uri, 1, 0, "Settings", QString());
+
+    qmlRegisterType<Launcher>(uri, 1 , 0 , "Launcher");
+    context->setContextProperty("settings", appSettings);
     context->setContextProperty("VolumeControl", vc);
     context->setContextProperty("SleepTimer", sleeptimer);
 //    v->rootContext()->setContextProperty("Volume", &fader);

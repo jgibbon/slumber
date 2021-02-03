@@ -6,7 +6,7 @@ import "../lib/"
 
 Page {
     id: page
-    property bool isDarkScreen:  options.viewDarkenMainSceen && (sleepTimer.running ) && !clickArea.pressed;
+    property bool isDarkScreen:  settings.viewDarkenMainSceen && (sleepTimer.running ) && !clickArea.pressed;
     onIsDarkScreenChanged: {
         if(isDarkScreen && Theme.colorScheme === Theme.DarkOnLight) {
             palette.colorScheme = Theme.LightOnDark
@@ -19,7 +19,7 @@ Page {
 
     Rectangle {
         anchors.fill: parent
-        opacity: page.isDarkScreen ? options.viewDarkenMainScreenAmount*0.8 : 0
+        opacity: page.isDarkScreen ? settings.viewDarkenMainScreenAmount*0.8 : 0
 
         color: Qt.rgba(0,0,0,1)
 
@@ -32,12 +32,12 @@ Page {
         anchors.fill: parent
         color:palette.highlightBackgroundColor
         opacity: 0
-        visible: sleepTimer.nearlyDone && options.timerFadeVisualEffectEnabled
+        visible: sleepTimer.nearlyDone && settings.timerFadeVisualEffectEnabled
         SequentialAnimation on opacity {
 
             PropertyAnimation {from:0; to: 0.8; duration: 1000 }
             PropertyAnimation {from:0.8; to: 0; duration: 1000 }
-            running: (sleepTimer.nearlyDone) && options.timerFadeVisualEffectEnabled && Qt.application.active
+            running: (sleepTimer.nearlyDone) && settings.timerFadeVisualEffectEnabled && Qt.application.active
             loops: Animation.Infinite
         }
     }
@@ -45,7 +45,7 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
-        opacity: page.isDarkScreen ? ((1-options.viewDarkenMainScreenAmount))*0.75 + 0.25 : 1
+        opacity: page.isDarkScreen ? ((1-settings.viewDarkenMainScreenAmount))*0.75 + 0.25 : 1
 
         Behavior on opacity {
             NumberAnimation { duration: 1000 }
@@ -84,7 +84,7 @@ Page {
         PageHeader {
             id: pageHeader
             title: qsTr("slumber")
-            anchors.right: options.viewActiveOptionsButtonEnabled? optionsButton.left: parent.right
+            anchors.right: settings.viewActiveOptionsButtonEnabled? optionsButton.left: parent.right
 
         }
 //        Column {
@@ -163,9 +163,9 @@ Page {
                 width: Screen.width / 2
                 running: sleepTimer.running
                 anchors.centerIn: parent
-                timeFormatShort: options.viewTimeFormatShort
+                timeFormatShort: settings.viewTimeFormatShort
                 timer: sleepTimer
-                value: sleepTimer.milliSecondsLeft / (options.timerSeconds*1000)
+                value: sleepTimer.milliSecondsLeft / (settings.timerSeconds*1000)
                 fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*1.2 : Theme.fontSizeMedium
                 lineHeight: Screen.sizeCategory >= Screen.Large ? 0.8 : 1.0
             }
@@ -174,9 +174,9 @@ Page {
                 sleepTimer.start()
             }
             onPressAndHold: {
-                var minutes = (options.timerSeconds / 60);
+                var minutes = (settings.timerSeconds / 60);
                 var selectedHour, selectedMinute
-                if(options.timerSeconds === 30){
+                if(settings.timerSeconds === 30){
                     selectedHour = 0;
                     selectedMinute = 0.5
                 } else {
@@ -193,13 +193,13 @@ Page {
                     if(!dialog.hour && !dialog.minute) {//don't set zero-length timer, but don't make a fuss about it
                         selectedHour = 0
                         selectedMinute = 0
-                        options.timerSeconds = 30
+                        settings.timerSeconds = 30
                         return;
                     }
 
                     selectedHour = dialog.hour
                     selectedMinute = dialog.minute
-                    options.timerSeconds = (selectedHour * 60 + selectedMinute)*60;
+                    settings.timerSeconds = (selectedHour * 60 + selectedMinute)*60;
 
                 })
             }
@@ -207,7 +207,7 @@ Page {
 
         IconButton {
             id: optionsButton
-            property bool active:  options.viewActiveOptionsButtonEnabled
+            property bool active:  settings.viewActiveOptionsButtonEnabled
             visible: active
             icon.source: "image://theme/icon-m-developer-mode"
 

@@ -14,24 +14,24 @@ Item {
 
 
     ScreenBlank {
-        enabled: options.timerInhibitScreensaverEnabled && sleepTimer.running
+        enabled: settings.timerInhibitScreensaverEnabled && sleepTimer.running
     }
 
     AccelerometerTrigger {
         id: accelerometerTrigger
         paused: false
-        triggerThreshold: options.timerMotionThreshold
-        active: options.timerMotionEnabled && options.timerMotionThreshold && sleepTimer.running && !paused
-        proximityActive: options.timerWaveMotionEnabled && sleepTimer.running
+        triggerThreshold: settings.timerMotionThreshold
+        active: settings.timerMotionEnabled && settings.timerMotionThreshold && sleepTimer.running && !paused
+        proximityActive: settings.timerWaveMotionEnabled && sleepTimer.running
         onTriggered: function(){
             sleepTimer.restart()
         }
     }
     AmazfitButtonTrigger {
-        enabled: options.timerAmazfishButtonResetEnabled
+        enabled: settings.timerAmazfishButtonResetEnabled
         onButtonPressed: {
-//            console.log('well…', sleepTimer.running, presses, options.timerAmazfishButtonResetPresses, presses === options.timerAmazfishButtonResetPresses)
-            if(sleepTimer.running && presses === options.timerAmazfishButtonResetPresses) {
+//            console.log('well…', sleepTimer.running, presses, settings.timerAmazfishButtonResetPresses, presses === settings.timerAmazfishButtonResetPresses)
+            if(sleepTimer.running && presses === settings.timerAmazfishButtonResetPresses) {
                 sleepTimer.restart()
             }
         }
@@ -53,8 +53,8 @@ Item {
     }
     ActionDBusDisconnectBluetooth {
         id: actionBt
-        enabled: options.timerBTDisconnectEnabled
-        onlyDisconnectAudioDevices: options.timerBTDisconnectOnlyAudioEnabled
+        enabled: settings.timerBTDisconnectEnabled
+        onlyDisconnectAudioDevices: settings.timerBTDisconnectOnlyAudioEnabled
     }
 
     ActionPrivilegedLauncher {
@@ -63,24 +63,24 @@ Item {
 
     ActionNetworkKodi{
         id: actionPauseKodi
-        enabled: options.timerKodiPauseEnabled
-        host: options.timerKodiPauseHost
-        user: options.timerKodiPauseUser
-        password: options.timerKodiPausePassword
-        secondaryCommand: options.timerKodiSecondaryCommand
+        enabled: settings.timerKodiPauseEnabled
+        host: settings.timerKodiPauseHost
+        user: settings.timerKodiPauseUser
+        password: settings.timerKodiPausePassword
+        secondaryCommand: settings.timerKodiSecondaryCommand
     }
 
     ActionNetworkVLC{
         id: actionPauseVLC
-        enabled: options.timerVLCPauseEnabled
-        host: options.timerVLCPauseHost
-        user: options.timerVLCPauseUser
-        password: options.timerVLCPausePassword
+        enabled: settings.timerVLCPauseEnabled
+        host: settings.timerVLCPauseHost
+        user: settings.timerVLCPauseUser
+        password: settings.timerVLCPausePassword
     }
     VolumeFade {
         id: volumeFade
         duration: sleepTimer.triggerBeforeIntervalDuration
-        doReset: options.timerFadeResetEnabled
+        doReset: settings.timerFadeResetEnabled
         onVolumeResetDone: {
             /*
               There is a delay to reset volume for "slower" media players.
@@ -107,20 +107,20 @@ Item {
 
     CountDownTimer {
         id: sleepTimer
-        interval: options.timerSeconds * 1000
+        interval: settings.timerSeconds * 1000
         enabled: true
         property double targetVolume: 1
         triggerBeforeIntervalDuration: 10000
         onTriggerBeforeInterval: { // ten seconds before triggering
-            if(options.timerFadeEnabled) {
-                if(options.timerFadeSoundEffectEnabled) {
+            if(settings.timerFadeEnabled) {
+                if(settings.timerFadeSoundEffectEnabled) {
                     fadeOutSound.play();
                 }
-                if(options.timerFadeEnabled) {
+                if(settings.timerFadeEnabled) {
                     volumeFade.start();
                 }
             }
-            if(options.timerNotificationTriggerEnabled) {
+            if(settings.timerNotificationTriggerEnabled) {
                 timerNotificationTrigger.start()
             }
         }
@@ -128,7 +128,7 @@ Item {
             console.log('sleep timer fired!');
             dbus.emitSignal('Triggered');
             justTriggeredTimer.start()
-            if(options.timerPauseEnabled) {
+            if(settings.timerPauseEnabled) {
                 actionPauseByDbus.pause(function(){ //only use the fallback after async mpris scanning is done
                     //gpodder, maybe others
                     actionPauseByPlayingVoid.pause()
@@ -142,7 +142,7 @@ Item {
             });
 
             timerNotificationTrigger.reset()
-            if(options.timerFadeEnabled && options.timerFadeResetEnabled) {
+            if(settings.timerFadeEnabled && settings.timerFadeResetEnabled) {
                 volumeFade.finish() // triggers BT after it's done
             } else { // disable bt directly
                 actionBt.pause(function btCallback(){
@@ -153,7 +153,7 @@ Item {
         }
         onReset: {
             fadeOutSound.stop();
-            if(options.timerFadeEnabled) {
+            if(settings.timerFadeEnabled) {
                 volumeFade.reset(true); //reset volume even if not enabled in options
             }
             timerNotificationTrigger.reset()
@@ -161,7 +161,7 @@ Item {
 
         Item {
             id: fadeOutSound
-            property string file: options.timerFadeSoundEffectFile
+            property string file: settings.timerFadeSoundEffectFile
             property SoundEffect effect
 
             onFileChanged: {
@@ -192,7 +192,7 @@ Item {
                 id:fadeOutSoundCassette
                 category: 'slumber'
                 source: '../assets/sound/cassette-noise.wav'
-                volume: options.timerFadeSoundEffectVolume
+                volume: settings.timerFadeSoundEffectVolume
                 onPlayingChanged: {
                     if(!playing) { accelerometerTrigger.paused = false}
                 }
@@ -203,7 +203,7 @@ Item {
                 id:fadeOutSoundTicking
                 category: 'slumber'
                 source: '../assets/sound/clock-ticking.wav'
-                volume: options.timerFadeSoundEffectVolume
+                volume: settings.timerFadeSoundEffectVolume
                 onPlayingChanged: {
                     if(!playing) { accelerometerTrigger.paused = false}
                 }
@@ -213,7 +213,7 @@ Item {
                 id:fadeOutSoundSea
                 category: 'slumber'
                 source: '../assets/sound/sea-waves.wav'
-                volume: options.timerFadeSoundEffectVolume
+                volume: settings.timerFadeSoundEffectVolume
                 onPlayingChanged: {
                     if(!playing) { accelerometerTrigger.paused = false}
                 }
@@ -222,14 +222,14 @@ Item {
 
     }
     Loader {
-        active: options.timerAutostartOnPlaybackDetection
+        active: settings.timerAutostartOnPlaybackDetection
         asynchronous: true
         sourceComponent: scannerComponent
         Component {
             id: scannerComponent
             MprisPlayingScanner {
                 enabled: !sleepTimer.running
-                reverseEnabled: options.timerAutostopOnPlaybackStop && !justTriggeredTimer.running
+                reverseEnabled: settings.timerAutostopOnPlaybackStop && !justTriggeredTimer.running
                 onTriggered: {
                     sleepTimer.start()
                 }

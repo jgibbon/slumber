@@ -1,5 +1,5 @@
 import QtQuick 2.6
-import Launcher 1.0
+import de.gibbon.slumber 1.0
 
 
 Launcher {

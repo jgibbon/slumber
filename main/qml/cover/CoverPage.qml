@@ -45,8 +45,8 @@ CoverBackground {
     }
     TimerProgressButton {
         timer: sleepTimer
-        timeFormatShort: options.viewTimeFormatShort
-        value: sleepTimer.milliSecondsLeft / (options.timerSeconds*1000)
+        timeFormatShort: settings.viewTimeFormatShort
+        value: sleepTimer.milliSecondsLeft / (settings.timerSeconds*1000)
 //        textcolor: Theme.primaryColor
 //        secondarytextcolor: Theme.secondaryColor
         running: sleepTimer.running

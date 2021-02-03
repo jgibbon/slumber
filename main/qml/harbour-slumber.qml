@@ -36,7 +36,7 @@ import "pages"
 import "cover"
 import "lib"
 
-import Launcher 1.0
+import de.gibbon.slumber 1.0
 
 ApplicationWindow
 {
@@ -83,7 +83,7 @@ ApplicationWindow
 
     // import old sqlite settings once
     Loader {
-        active: options.legacySettingsPossiblyAvailable
+        active: settings.legacySettingsPossiblyAvailable
         asynchronous: true
         source: Qt.resolvedUrl("./lib/LegacyOptions.qml")
     }

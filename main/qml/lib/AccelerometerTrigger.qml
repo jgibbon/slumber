@@ -41,7 +41,7 @@ Item {
 
     Accelerometer {
         id: accel
-//        active: options.timerMotionEnabled && options.timerMotionThreshold && sleepTimer.running
+//        active: settings.timerMotionEnabled && settings.timerMotionThreshold && sleepTimer.running
         property var acc: {//last values
             x:0
             y:0
@@ -50,7 +50,7 @@ Item {
         onReadingChanged: {
             var r = accel.reading;
             amount = Math.abs(r.x - acc.x) + Math.abs(r.y-acc.y) + Math.abs(r.z-acc.z);
-            if(amount > options.timerMotionThreshold && amount > tmpmaxamount) {
+            if(amount > settings.timerMotionThreshold && amount > tmpmaxamount) {
                 tmpmaxamount = amount;
                 if(!delaytimer.running) {
                     delaytimer.start();

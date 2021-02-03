@@ -68,7 +68,7 @@ Item {
 
     Item {
         id: busyindicatorrect
-        visible: options.viewActiveIndicatorEnabled
+        visible: settings.viewActiveIndicatorEnabled
         anchors.centerIn: parent
         height: busysize
         opacity: sleepTimerWidget.running ? 1.0 : 0.0

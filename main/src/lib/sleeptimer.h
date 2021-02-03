@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QTimer>
+#include "applicationsettings.h"
 
 class SleepTimer : public QTimer
 {
@@ -15,7 +16,7 @@ class SleepTimer : public QTimer
     Q_PROPERTY(int remainingSeconds READ getRemainingSeconds NOTIFY remainingSecondsChanged)
 
 public:
-    explicit SleepTimer(QObject *parent = nullptr);
+    explicit SleepTimer(QObject *parent = nullptr, ApplicationSettings *appsettings = nullptr);
     ~SleepTimer();
 
     Q_INVOKABLE void start();
@@ -40,10 +41,12 @@ signals:
 private slots:
     void onTickTimeout();
     void onTimeout();
+    void setIntervalFromSettings();
 private:
     void updateRemainingTime();
 
 private:
+    ApplicationSettings *settings;
     QTimer *tickTimer;
     bool finalizing;
     int finalizeMilliseconds;

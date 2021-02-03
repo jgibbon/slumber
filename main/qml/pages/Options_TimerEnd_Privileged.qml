@@ -1,6 +1,6 @@
 import QtQuick 2.6
 import Sailfish.Silica 1.0
-import Launcher 1.0
+import de.gibbon.slumber 1.0
 import "../lib/"
 
 
@@ -115,7 +115,7 @@ Page {
                         label: qsTr('root password')
                         text: ''
                         onTextChanged: {
-    //                        options.timerKodiPauseHost = text
+    //                        settings.timerKodiPauseHost = text
                         }
 
                         EnterKey.iconSource: !!text ? "image://theme/icon-m-enter-next":"image://theme/icon-m-enter-close"
@@ -180,9 +180,9 @@ Page {
                     //~ Text Switch: Action "Lock the screen"
                     text: qsTr( "Lock Screen")
                     enabled: page.rightsGranted
-                    checked: options.timerLockScreenEnabled
+                    checked: settings.timerLockScreenEnabled
                     onClicked: {
-                        options.timerLockScreenEnabled = checked
+                        settings.timerLockScreenEnabled = checked
                     }
                 }
                 TextSwitch {
@@ -190,9 +190,9 @@ Page {
                     //~ Text Switch: Action "Stop Alien Dalvik service"
                     text: qsTr( "Stop Alien Dalvik")
                     enabled: page.rightsGranted
-                    checked: options.timerStopAlienEnabled
+                    checked: settings.timerStopAlienEnabled
                     onClicked: {
-                        options.timerStopAlienEnabled = checked
+                        settings.timerStopAlienEnabled = checked
                     }
                 }
 
@@ -206,9 +206,9 @@ Page {
                     //~ Text Switch: Action "Enable Airplane Mode"
                     text: qsTr( "Enable Airplane Mode")
                     enabled: page.rightsGranted
-                    checked: options.timerAirplaneModeEnabled
+                    checked: settings.timerAirplaneModeEnabled
                     onClicked: {
-                        options.timerAirplaneModeEnabled = checked
+                        settings.timerAirplaneModeEnabled = checked
                     }
                 }
 
@@ -217,9 +217,9 @@ Page {
                     //~ Text Switch: Action "Disable Wifi/wlan"
                     text: qsTr( "Disable Wifi")
                     enabled: page.rightsGranted
-                    checked: options.timerDisableWLANEnabled
+                    checked: settings.timerDisableWLANEnabled
                     onClicked: {
-                        options.timerDisableWLANEnabled = checked
+                        settings.timerDisableWLANEnabled = checked
                     }
                 }
 
@@ -228,9 +228,9 @@ Page {
                     //~ Text Switch: Action "Disable Bluetooth"
                     text: qsTr( "Disable Bluetooth")
                     enabled: page.rightsGranted
-                    checked: options.timerDisableBluetoothEnabled
+                    checked: settings.timerDisableBluetoothEnabled
                     onClicked: {
-                        options.timerDisableBluetoothEnabled = checked
+                        settings.timerDisableBluetoothEnabled = checked
                     }
                 }
                 TextSwitch {
@@ -238,9 +238,9 @@ Page {
                     //~ Text Switch: Action "Restart ofono Service"
                     text: qsTr( "Restart ofono Service")
                     enabled: page.rightsGranted
-                    checked: options.timerRestartOfonoEnabled
+                    checked: settings.timerRestartOfonoEnabled
                     onClicked: {
-                        options.timerRestartOfonoEnabled = checked
+                        settings.timerRestartOfonoEnabled = checked
                     }
                     //: Text Switch description: Action "Restart ofono Service"
                     //~ Text Switch description: Action "Restart ofono Service"

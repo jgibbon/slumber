@@ -1,7 +1,8 @@
 #include "sleeptimer.h"
 #include <QDebug>
 
-SleepTimer::SleepTimer(QObject *parent) : QTimer(parent),
+SleepTimer::SleepTimer(QObject *parent, ApplicationSettings *appsettings) : QTimer(parent),
+  settings(appsettings),
   finalizing(false),
   finalizeMilliseconds(1000)
 {
@@ -10,8 +11,13 @@ SleepTimer::SleepTimer(QObject *parent) : QTimer(parent),
     connect(tickTimer, SIGNAL(timeout()), this, SLOT(onTickTimeout()));
 
     setSingleShot(true);
+    setInterval(settings->getTimerSeconds() * 1000);
+
     connect(this, SIGNAL(timeout()), this, SLOT(onTimeout()));
+
+    connect(settings, SIGNAL(timerSecondsChanged()), this, SLOT(setIntervalFromSettings()));
 }
+
 SleepTimer::~SleepTimer()
 {
 }
@@ -111,6 +117,11 @@ void SleepTimer::onTimeout()
         finalizing = false;
         emit finalizingChanged();
     }
+}
+
+void SleepTimer::setIntervalFromSettings()
+{
+    this->setInterval(settings->getTimerSeconds() * 1000);
 }
 
 void SleepTimer::updateRemainingTime()

@@ -50,9 +50,9 @@ Page {
                 id:timerpauseEnabledSwitch
                 text: qsTr( "Pause local media")
 
-                checked: options.timerPauseEnabled
+                checked: settings.timerPauseEnabled
                 onClicked: {
-                    options.timerPauseEnabled = checked
+                    settings.timerPauseEnabled = checked
                 }
                 description: qsTr('Only works in native Applications')
             }
@@ -61,9 +61,9 @@ Page {
                 id:timerkodipauseEnabledSwitch
                 text: qsTr( "Pause Kodi")
 
-                checked: options.timerKodiPauseEnabled
+                checked: settings.timerKodiPauseEnabled
                 onClicked: {
-                    options.timerKodiPauseEnabled = checked
+                    settings.timerKodiPauseEnabled = checked
 
 
                 }
@@ -80,7 +80,7 @@ Page {
                 Label {
                     id:timerkodimoteLabel
 
-//                    visible: timerkodipauseEnabledSwitch.checked// && options.timerKodiPauseHost
+//                    visible: timerkodipauseEnabledSwitch.checked// && settings.timerKodiPauseHost
                     text: qsTr("(Hint: If you use kodimote, you don't need to enable this. It works as a 'local' player.)")
                     color: Theme.highlightColor
 
@@ -99,9 +99,9 @@ Page {
 //                    visible: timerkodipauseEnabledSwitch.checked
                     placeholderText: qsTr('IP or host:port for Kodi')
                     label: qsTr('IP or host:port for Kodi')
-                    text: options.timerKodiPauseHost
+                    text: settings.timerKodiPauseHost
                     onTextChanged: {
-                        options.timerKodiPauseHost = text
+                        settings.timerKodiPauseHost = text
                     }
 
                     EnterKey.iconSource: !!text ? "image://theme/icon-m-enter-next":"image://theme/icon-m-enter-close"
@@ -115,15 +115,15 @@ Page {
                 TextField {
                     id: timerkodiPauseUserField
                     width: parent.width
-                    visible: options.timerKodiPauseHost !== ''
+                    visible: settings.timerKodiPauseHost !== ''
 
                     EnterKey.iconSource: "image://theme/icon-m-enter-next"
                     placeholderText: qsTr('Kodi username')
                     label: qsTr('Kodi username')
-                    text: options.timerKodiPauseUser
+                    text: settings.timerKodiPauseUser
 
                     onTextChanged: {
-                        options.timerKodiPauseUser = text
+                        settings.timerKodiPauseUser = text
                     }
                     EnterKey.onClicked: {
                         if(!!text){
@@ -137,14 +137,14 @@ Page {
                     id: timerkodiPausePasswordField
                     width: parent.width
                     echoMode: TextInput.Password
-                    visible: (options.timerKodiPauseHost !== '') && !!(options.timerKodiPauseUser !== '')
+                    visible: (settings.timerKodiPauseHost !== '') && !!(settings.timerKodiPauseUser !== '')
                     EnterKey.iconSource: "image://theme/icon-m-enter-close"
                     placeholderText: qsTr('Kodi password')
                     label: qsTr('Kodi password')
-                    text: options.timerKodiPausePassword
+                    text: settings.timerKodiPausePassword
 
                     onTextChanged: {
-                        options.timerKodiPausePassword = text
+                        settings.timerKodiPausePassword = text
                     }
                     EnterKey.onClicked: {
                         timerkodiPausePasswordField.focus = false
@@ -160,7 +160,7 @@ Page {
                     Button {
 
                         id: timerkodiPauseTestButton
-                        visible: options.timerKodiPauseHost !== ''
+                        visible: settings.timerKodiPauseHost !== ''
                         text: qsTr('Check Host')
                         anchors.leftMargin: Theme.paddingLarge
                         anchors.rightMargin: Theme.paddingLarge
@@ -205,7 +205,7 @@ Page {
                 Label {
                     id:timerkodiPingLabel
 
-                    visible: options.timerKodiPauseHost !== ''
+                    visible: settings.timerKodiPauseHost !== ''
                     text: qsTr("You can try to ping the current Kodi configuration")
                     color: Theme.secondaryColor
 
@@ -230,10 +230,10 @@ Page {
                     property var actions: ['', 'System.Suspend', 'System.Shutdown']
                     currentIndex: -1
                     function activate(id) {
-                        options.timerKodiSecondaryCommand = actions[id];
+                        settings.timerKodiSecondaryCommand = actions[id];
                     }
                     Component.onCompleted: {
-                        currentIndex = actions.indexOf(options.timerKodiSecondaryCommand);
+                        currentIndex = actions.indexOf(settings.timerKodiSecondaryCommand);
                     }
 
                     menu: ContextMenu {
@@ -273,9 +273,9 @@ Page {
                 id:timerVLCpauseEnabledSwitch
                 text: qsTr( "Pause VLC")
 
-                checked: options.timerVLCPauseEnabled
+                checked: settings.timerVLCPauseEnabled
                 onClicked: {
-                    options.timerVLCPauseEnabled = checked
+                    settings.timerVLCPauseEnabled = checked
 
 
                 }
@@ -295,9 +295,9 @@ Page {
                     width: parent.width
                     placeholderText: qsTr('IP or host:port for VLC')
                     label: qsTr('IP or host:port for VLC')
-                    text: options.timerVLCPauseHost
+                    text: settings.timerVLCPauseHost
                     onTextChanged: {
-                        options.timerVLCPauseHost = text
+                        settings.timerVLCPauseHost = text
                     }
 
                     EnterKey.iconSource: !!text ? "image://theme/icon-m-enter-next":"image://theme/icon-m-enter-close"
@@ -313,14 +313,14 @@ Page {
                     id: timerVLCPausePasswordField
                     width: parent.width
                     echoMode: TextInput.Password
-                    visible: (options.timerVLCPauseHost !== "")
+                    visible: (settings.timerVLCPauseHost !== "")
                     EnterKey.iconSource: "image://theme/icon-m-enter-close"
                     placeholderText: qsTr('VLC password')
                     label: qsTr('VLC password')
-                    text: options.timerVLCPausePassword
+                    text: settings.timerVLCPausePassword
 
                     onTextChanged: {
-                        options.timerVLCPausePassword = text
+                        settings.timerVLCPausePassword = text
                     }
                     EnterKey.onClicked: {
                         timerVLCPausePasswordField.focus = false
@@ -336,7 +336,7 @@ Page {
                     Button {
 
                         id: timerVLCPauseTestButton
-                        visible: options.timerVLCPauseHost !== ""
+                        visible: settings.timerVLCPauseHost !== ""
                         text: qsTr('Check Host')
                         anchors.leftMargin: Theme.paddingLarge
                         anchors.rightMargin: Theme.paddingLarge
@@ -381,7 +381,7 @@ Page {
                 Label {
                     id:timerVLCPingLabel
 
-                    visible: options.timerVLCPauseHost !== ""
+                    visible: settings.timerVLCPauseHost !== ""
                     text: qsTr("You can try to ping the current VLC configuration")
                     color: Theme.secondaryColor
 
@@ -406,9 +406,9 @@ Page {
                 //: Switch: Action "Disconnect Bluetooth Devices"
                 text: qsTr( "Disconnect Bluetooth Devices")
 
-                checked: options.timerBTDisconnectEnabled
+                checked: settings.timerBTDisconnectEnabled
                 onClicked: {
-                    options.timerBTDisconnectEnabled = checked
+                    settings.timerBTDisconnectEnabled = checked
 
 
                 }
@@ -422,10 +422,10 @@ Page {
                 // TextSwitch: Do not disconnect all Bluetooth devices, only Audio
                 //: TextSwitch: Do not disconnect all Bluetooth devices, only Audio
                 text: qsTr( "Only disconnect Audio Devices")
-                enabled: options.timerBTDisconnectEnabled
-                checked: options.timerBTDisconnectOnlyAudioEnabled
+                enabled: settings.timerBTDisconnectEnabled
+                checked: settings.timerBTDisconnectOnlyAudioEnabled
                 onClicked: {
-                    options.timerBTDisconnectOnlyAudioEnabled = checked
+                    settings.timerBTDisconnectOnlyAudioEnabled = checked
 
 
                 }
@@ -454,9 +454,9 @@ Page {
                 id:timerFadeVisualEffectEnabledSwitch
                 text: qsTr('Visual Indicator')
 
-                checked: options.timerFadeVisualEffectEnabled
+                checked: settings.timerFadeVisualEffectEnabled
                 onClicked: {
-                    options.timerFadeVisualEffectEnabled = checked
+                    settings.timerFadeVisualEffectEnabled = checked
                 }
                 description: qsTr('Flashes the main screen before the Timer is running out')
             }
@@ -465,9 +465,9 @@ Page {
                 id:timerNotificationEnabledSwitch
                 text: qsTr( "Notification")
 
-                checked: options.timerNotificationTriggerEnabled
+                checked: settings.timerNotificationTriggerEnabled
                 onClicked: {
-                    options.timerNotificationTriggerEnabled = checked
+                    settings.timerNotificationTriggerEnabled = checked
                 }
                 description: qsTr('Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.')
             }
@@ -476,9 +476,9 @@ Page {
                 id:timerFadeSoundEnabledSwitch
                 text: qsTr('Sound Effect')
 
-                checked: options.timerFadeSoundEffectEnabled
+                checked: settings.timerFadeSoundEffectEnabled
                 onClicked: {
-                    options.timerFadeSoundEffectEnabled = checked
+                    settings.timerFadeSoundEffectEnabled = checked
                 }
                 description: qsTr('To alert you that the Timer is running out')
             }
@@ -492,11 +492,11 @@ Page {
                 property var sounds: ['cassette-noise', 'clock-ticking', 'sea-waves']
                 currentIndex: -1
                 function activate(id) {
-                    options.timerFadeSoundEffectFile = sounds[id];
-                    options.timerFadeSoundEffectEnabled = true;
+                    settings.timerFadeSoundEffectFile = sounds[id];
+                    settings.timerFadeSoundEffectEnabled = true;
                 }
                 Component.onCompleted: {
-                    currentIndex = sounds.indexOf(options.timerFadeSoundEffectFile);
+                    currentIndex = sounds.indexOf(settings.timerFadeSoundEffectFile);
                 }
 
                 menu: ContextMenu {
@@ -527,10 +527,10 @@ Page {
 
                 width: parent.width
 //                anchors.horizontalCenter: parent.horizontalCenter
-                value: options.timerFadeSoundEffectVolume
+                value: settings.timerFadeSoundEffectVolume
                 label: qsTr("Sound Effect volume")
                 onValueChanged: {
-                    options.timerFadeSoundEffectVolume = value
+                    settings.timerFadeSoundEffectVolume = value
                 }
             }
             Item {
@@ -562,9 +562,9 @@ Page {
                 id:timerFadeEnabledSwitch
                 text: qsTr('Fade out when falling asleep')
 
-                checked: options.timerFadeEnabled
+                checked: settings.timerFadeEnabled
                 onClicked: {
-                    options.timerFadeEnabled = checked
+                    settings.timerFadeEnabled = checked
                 }
                 description: qsTr('Lowers System Volume to 0 (ca the last 10 seconds of the timer)')
             }
@@ -581,9 +581,9 @@ Page {
                     }
                 }
 
-                checked: options.timerFadeResetEnabled
+                checked: settings.timerFadeResetEnabled
                 onClicked: {
-                    options.timerFadeResetEnabled = checked
+                    settings.timerFadeResetEnabled = checked
                 }
                 description: qsTr('Reset System Volume to previous level afterwards. Should be enabled for most use cases.')
             }

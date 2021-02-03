@@ -58,28 +58,28 @@ Page {
 
                             selectedHour = 0
                             selectedMinute = 0
-                            options.timerSeconds = 15
+                            settings.timerSeconds = 15
 
                             return;
                         }
 
                         selectedHour = dialog.hour
                         selectedMinute = dialog.minute
-                        options.timerSeconds = (selectedHour * 60 + selectedMinute)*60;
+                        settings.timerSeconds = (selectedHour * 60 + selectedMinute)*60;
 
                     })
                 }
 
                 label: qsTr("Sleep after")
-                value: (options.timerSeconds === 15)?'15s':selectedHour+ ':'+ ("0"+selectedMinute).slice(-2)
+                value: (settings.timerSeconds === 15)?'15s':selectedHour+ ':'+ ("0"+selectedMinute).slice(-2)
                 onClicked: openTimeDialog()
                 Component.onCompleted: {
-                    if(options.timerSeconds === 15){
+                    if(settings.timerSeconds === 15){
                         selectedHour = 0;
                         selectedMinute = 0.25
                         return;
                     }
-                    var minutes = (options.timerSeconds / 60);
+                    var minutes = (settings.timerSeconds / 60);
                     selectedHour =  Math.floor(minutes /60);
                     selectedMinute = minutes - selectedHour * 60;
                 }
@@ -97,9 +97,9 @@ Page {
                 id:timerDisableScreensaverEnabledSwitch
                 text: qsTr('Keep Display on')
 
-                checked: options.timerInhibitScreensaverEnabled
+                checked: settings.timerInhibitScreensaverEnabled
                 onClicked: {
-                    options.timerInhibitScreensaverEnabled = checked
+                    settings.timerInhibitScreensaverEnabled = checked
                 }
                 description: qsTr('Keeps your Display lit while the timer is running.')
             }
@@ -108,9 +108,9 @@ Page {
                 id:timerAutostartOnPlaybackDetectionEnabledSwitch
                 text: qsTr('Start Timer if Playback is detected')
 
-                checked: options.timerAutostartOnPlaybackDetection
+                checked: settings.timerAutostartOnPlaybackDetection
                 onClicked: {
-                    options.timerAutostartOnPlaybackDetection = checked
+                    settings.timerAutostartOnPlaybackDetection = checked
                 }
                 description: qsTr('Automatically start timer when playback is detected. Slumber has to be open for this to work.')
             }
@@ -119,9 +119,9 @@ Page {
                 text: qsTr('Stop Timer if Playback is stopped')
                 enabled: timerAutostartOnPlaybackDetectionEnabledSwitch.checked
 
-                checked: options.timerAutostopOnPlaybackStop
+                checked: settings.timerAutostopOnPlaybackStop
                 onClicked: {
-                    options.timerAutostopOnPlaybackStop = checked
+                    settings.timerAutostopOnPlaybackStop = checked
                 }
                 description: qsTr('Automatically stop timer when playback stop or pause is detected.')
             }

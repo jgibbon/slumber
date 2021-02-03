@@ -55,10 +55,10 @@ Page {
                             //v0.1 - 0.3 transition, there were other values
                             var oldVals = [8],
                                 newVals = [20],
-                                oldIndex = oldVals.indexOf(options.timerMotionThreshold);
+                                oldIndex = oldVals.indexOf(settings.timerMotionThreshold);
                             if(oldIndex > -1){
                                 console.log('Replacing deprecated accelerometer setting ', oldVals[oldIndex], 'with', newVals[oldIndex]);
-                                options.timerMotionThreshold = newVals[oldIndex];
+                                settings.timerMotionThreshold = newVals[oldIndex];
                             }
                             //end value transition
 
@@ -84,16 +84,16 @@ Page {
                             onClicked: {
 
                                 if(index === 0) {
-                                    options.timerMotionThreshold = 0;
-                                    options.timerMotionEnabled = false;
+                                    settings.timerMotionThreshold = 0;
+                                    settings.timerMotionEnabled = false;
                                 } else {
-                                    options.timerMotionThreshold = model.value;
-                                    options.timerMotionEnabled = true;
+                                    settings.timerMotionThreshold = model.value;
+                                    settings.timerMotionEnabled = true;
                                 }
                             }
 
                             Component.onCompleted: {
-                                if(model.value === options.timerMotionThreshold || model.value === 0 && !options.timerMotionEnabled) {
+                                if(model.value === settings.timerMotionThreshold || model.value === 0 && !settings.timerMotionEnabled) {
                                     timerreset.currentIndex = index
                                 }
 
@@ -110,7 +110,7 @@ Page {
 
             Label {
                 width: parent.width-Theme.itemSizeSmall
-                visible: options.timerMotionEnabled
+                visible: settings.timerMotionEnabled
                 x: Theme.paddingLarge
                 font.pixelSize: Theme.fontSizeExtraSmall
                 verticalAlignment: Text.AlignBottom
@@ -129,9 +129,9 @@ Page {
                 id:timerWaveMotionEnabledSwitch
                 text: qsTr( "Wave in front of screen")
 
-                checked: options.timerWaveMotionEnabled
+                checked: settings.timerWaveMotionEnabled
                 onClicked: {
-                    options.timerWaveMotionEnabled = checked
+                    settings.timerWaveMotionEnabled = checked
                 }
                 description: qsTr('Reset the timer by holding your hand in front of the screen.')
             }
@@ -148,9 +148,9 @@ Page {
                 //: TextSwitch: Reset by pressing Amazfish watch button
                 text: qsTr( "Amazfish button press")
 
-                checked: options.timerAmazfishButtonResetEnabled
+                checked: settings.timerAmazfishButtonResetEnabled
                 onClicked: {
-                    options.timerAmazfishButtonResetEnabled = checked
+                    settings.timerAmazfishButtonResetEnabled = checked
                 }
                 // TextSwitch description: Amazfish
                 //: TextSwitch description: Amazfish
@@ -164,28 +164,28 @@ Page {
                 minimumValue: 1
                 maximumValue: 5
                 stepSize: 1
-                enabled: options.timerAmazfishButtonResetEnabled
-                opacity: options.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
+                enabled: settings.timerAmazfishButtonResetEnabled
+                opacity: settings.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
                 // Slider Value: Press Amazfish watch button x times to reset
                 //: Slider Value: Press Amazfish watch button x times to reset
                 valueText: qsTr('Press %L1 time', '', value).arg(value)
 //                            label:
                 onValueChanged: {
-                    options.timerAmazfishButtonResetPresses = value
+                    settings.timerAmazfishButtonResetPresses = value
                 }
                 Component.onCompleted: {
-                    value = options.timerAmazfishButtonResetPresses
+                    value = settings.timerAmazfishButtonResetPresses
                 }
 
             }
 
             Label {
                 width: parent.width-Theme.itemSizeSmall
-                visible: options.timerMotionEnabled
+                visible: settings.timerMotionEnabled
                 x: Theme.paddingLarge
                 font.pixelSize: Theme.fontSizeExtraSmall
                 verticalAlignment: Text.AlignBottom
-                opacity: options.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
+                opacity: settings.timerAmazfishButtonResetEnabled ? 1.0 : 0.5
 
 
                 wrapMode: 'WrapAtWordBoundaryOrAnywhere'

@@ -67,14 +67,13 @@ QtObject {
     property Timer autoDestructTimer: Timer {
         interval: 200
         onTriggered: {
-            options.legacySettingsPossiblyAvailable = false;
+            settings.legacySettingsPossiblyAvailable = false;
         }
     }
 
     Component.onCompleted: {
         console.log("legacy options import!");
-        var settings = ['Talefish','1.0','Settings'];
-        var db = LocalStorage.openDatabaseSync(settings[0],settings[1],settings[2], 5000);
+        var db = LocalStorage.openDatabaseSync('Talefish','1.0','Settings', 5000);
 
         db.transaction(
                     function (tx) {
@@ -89,8 +88,8 @@ QtObject {
                                 if (rs.rows.length > 0) {
                                     //obj[fieldName] = JSON.parse(rs.rows.item(0).value);
                                     var value = JSON.parse(rs.rows.item(0).value);
-                                    console.log("legacy settings import: set ", fieldName, "to", value);
-                                    options[fieldName] = value;
+                                    console.log("legacy options import: set ", fieldName, "to", value);
+                                    settings[fieldName] = value;
 
                                 }
                             }

@@ -28,9 +28,9 @@ Page {
                     id:activeIndicatorEnabledSwitch
                     text: qsTr( "Show indicator")
 
-                    checked: options.viewActiveIndicatorEnabled
+                    checked: settings.viewActiveIndicatorEnabled
                     onClicked: {
-                        options.viewActiveIndicatorEnabled = checked
+                        settings.viewActiveIndicatorEnabled = checked
                     }
                     description: qsTr('Show a rotating indicator on the main screen while the timer is running.')
                 }
@@ -38,9 +38,9 @@ Page {
                     id:viewActiveOptionsButtonEnabledSwitch
                     text: qsTr( "Show Options Button")
 
-                    checked: options.viewActiveOptionsButtonEnabled
+                    checked: settings.viewActiveOptionsButtonEnabled
                     onClicked: {
-                        options.viewActiveOptionsButtonEnabled = checked
+                        settings.viewActiveOptionsButtonEnabled = checked
                     }
                     description: qsTr('Show a shortcut to Options on the main screen while the timer is running. Otherwise, you\'d have to stop the timer first to get here.')
                 }
@@ -48,9 +48,9 @@ Page {
                     id:viewDarkenMainScreenEnabledSwitch
                     text: qsTr( "Darken main screen")
 
-                    checked: options.viewDarkenMainSceen
+                    checked: settings.viewDarkenMainSceen
                     onClicked: {
-                        options.viewDarkenMainSceen = checked
+                        settings.viewDarkenMainSceen = checked
                     }
                     //                    description: qsTr('Show a shortcut to Options on the main screen while the timer is running. Otherwise, you\'d have to stop the timer first to get here.')
                 }
@@ -61,10 +61,10 @@ Page {
                     height: darkenColumn.height
                     BackgroundItem {
                         anchors.fill: darkenColumn
-                        opacity: options.viewDarkenMainScreenAmount*0.8
+                        opacity: settings.viewDarkenMainScreenAmount*0.8
 
                         _backgroundColor:'black'
-                        //        _backgroundColor: options.viewDarkenMainSceen ? 'black' : 'transparent';
+                        //        _backgroundColor: settings.viewDarkenMainSceen ? 'black' : 'transparent';
 
                         //                                Behavior on opacity {
                         //                                    NumberAnimation { duration: 1000 }
@@ -80,16 +80,16 @@ Page {
                         Slider {
                             id: darkenSlider
 
-                            opacity: ((1-options.viewDarkenMainScreenAmount))*0.75 + 0.25
+                            opacity: ((1-settings.viewDarkenMainScreenAmount))*0.75 + 0.25
                             width: parent.width
                             anchors.horizontalCenter: parent.horizontalCenter
 //                            label:
                             onValueChanged: {
-                                options.viewDarkenMainScreenAmount = (value * 0.9) + 0.1
+                                settings.viewDarkenMainScreenAmount = (value * 0.9) + 0.1
 
                             }
                             Component.onCompleted: {
-                                value = (options.viewDarkenMainScreenAmount / 0.9) - 0.1
+                                value = (settings.viewDarkenMainScreenAmount / 0.9) - 0.1
                             }
 
                         }
@@ -97,12 +97,12 @@ Page {
                         Label {
                             id: darkenLabel
                             width: parent.width-Theme.itemSizeSmall
-                            visible: options.timerMotionEnabled
+                            visible: settings.timerMotionEnabled
                             x: Theme.paddingLarge
                             font.pixelSize: Theme.fontSizeExtraSmall
                             verticalAlignment: Text.AlignBottom
 
-                            opacity: ((1-options.viewDarkenMainScreenAmount))*0.75 + 0.25
+                            opacity: ((1-settings.viewDarkenMainScreenAmount))*0.75 + 0.25
 
                             wrapMode: 'WrapAtWordBoundaryOrAnywhere'
                             text:qsTr("Use darker colours while the timer is running")
@@ -113,9 +113,9 @@ Page {
 //                            width: parent.width
 //                            opacity: darkenSlider.opacity
 //                            text: qsTr( "Only while running")
-//                            checked: options.viewDarkenMainSceenOnlyWhenRunning
+//                            checked: settings.viewDarkenMainSceenOnlyWhenRunning
 //                            onClicked: {
-//                                options.viewDarkenMainSceenOnlyWhenRunning = checked
+//                                settings.viewDarkenMainSceenOnlyWhenRunning = checked
 //                            }
 //                        }
                     }
@@ -126,9 +126,9 @@ Page {
                     id:viewTimeFormatShortEnabledSwitch
                     text: qsTr( "Display compact time format")
 
-                    checked: options.viewTimeFormatShort
+                    checked: settings.viewTimeFormatShort
                     onClicked: {
-                        options.viewTimeFormatShort = checked
+                        settings.viewTimeFormatShort = checked
                     }
                 }
             }
