@@ -1,7 +1,7 @@
-import QtQuick 2.6
+import QtQuick 2.0
 
-ActionNetwork {
-    id:actionPauseVLC
+NetworkBase {
+
     pathPing: '/requests/status.xml'
     pingExpectedSubstr: '<state>'
     pathAction: '/requests/status.xml?command=pl_pause'

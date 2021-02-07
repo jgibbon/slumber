@@ -1,26 +1,15 @@
 import QtQuick 2.6
 import Nemo.DBus 2.0
 
-Item {
+ActuatorBase {
     id: btDeviceDisconnect
     property var services: []
-    property bool enabled: true
     property bool onlyDisconnectAudioDevices: true
-    property var callback;
-    function pause(cb){
-        if(!enabled) {
-            if(cb) {
-                cb();
-            }
-            return
-        }
-        callback = cb;
-
+    function run(){
         console.log('bt list')
-//        deviceQuery.typedCall('ListNames', undefined, replyFactory(cb), function(err){console.log('error query', err)})
         disconnectDelay.start()
     }
-    function replyFactory(cb) {
+    function replyFactory() {
         return function filterDbusServices(dbusReply) {
             var devices = [];
             for (var key in dbusReply) {
@@ -47,17 +36,15 @@ Item {
                 dbif.path = el;
                 dbif.call('Disconnect', undefined);
             });
-            console.log('dbus bt disconnects done, running callback')
-            if(cb) {
-                cb();
-            }
+            console.log('dbus bt disconnects done')
+            done();
         }
     }
     Timer {
         id: disconnectDelay
         interval: 200
         onTriggered: {
-            deviceQuery.typedCall('GetManagedObjects', undefined, replyFactory(callback), function(err){console.log('error query', err)})
+            deviceQuery.typedCall('GetManagedObjects', undefined, replyFactory(), function(err){console.log('error query', err)})
         }
     }
 

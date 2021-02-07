@@ -1,6 +1,6 @@
-import QtQuick 2.6
+import QtQuick 2.0
 
-ActionNetwork {
+NetworkBase {
     id:actionPauseKodi
     property int activePlayer: 0
     property string pathGetPlayer: '/jsonrpc?request={%22jsonrpc%22:%222.0%22,%22method%22:%22Player.GetActivePlayers%22,%22id%22:1}'
@@ -44,10 +44,10 @@ ActionNetwork {
                             if(callback){
                                 callback(o, actionExpectedSubstr ? (o.responseText.indexOf(actionExpectedSubstr) > -1) : true);
                             }
-                            if(actionPauseKodi.secondaryCommand !== '') {
+                            if(secondaryCommand !== '') {
                                 secondaryActionTimer.start();
                             }
-                        }, actionPauseKodi.httpAction, actionPauseKodi.paramsAction.replace('$PLAYERID$', el.playerid));
+                        }, httpAction, paramsAction.replace('$PLAYERID$', el.playerid));
                     })
                 }
 
@@ -63,10 +63,10 @@ ActionNetwork {
         interval: 900
         onTriggered: {
             //only do shutdown if a player was active ;)
-            if(actionPauseKodi.secondaryCommand !== '') {
+            if(secondaryCommand !== '') {
                 request(urlbase + pathAction, function(o) {
                     console.log('shutdown kodi machine', o.responseText);
-                }, actionPauseKodi.httpAction, actionPauseKodi.paramsShutdownAction);
+                }, httpAction, paramsShutdownAction);
                 return;
             }
         }

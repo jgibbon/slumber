@@ -1,14 +1,13 @@
 import QtQuick 2.6
 
-Item {
-    id:actionNetwork
+ActuatorBase {
+
     property int totalRetries: 4
     property int doneRetries: 0
     property string user
     property string password
     property string host
     property bool useHttps
-    property bool enabled
     property string httpAction:'GET'
     property string httpPostActionMimeType: 'application/x-www-form-urlencoded'
 
@@ -69,10 +68,15 @@ Item {
         console.log('request', forceAction||httpAction, url, forceParams || '');
         xhr.open(action, url, true);
         if(action === 'POST') {
-            xhr.setRequestHeader('Content-Type', actionNetwork.httpPostActionMimeType);
+            xhr.setRequestHeader('Content-Type', httpPostActionMimeType);
         }
 
         xhr.send(forceParams || '');
     }
-
+    function run() {
+        action(function(o, success){
+                   console.log('network: success', success)
+               });
+        done()
+    }
 }
