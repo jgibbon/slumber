@@ -68,16 +68,24 @@ Page {
             }
         }
         PushUpMenu {
-            visible: SleepTimer.running
+            visible: SleepTimer.running || pushUpStillVisibleTimer.running
             quickSelect: true
             onActiveChanged: {
                 globals.accelerometerTrigger.paused = active
             }
 
             MenuItem {
+                enabled: SleepTimer.running
                 text: qsTr("Stop Timer")
-                onClicked: SleepTimer.stop()
+                onClicked: {
+                    pushUpStillVisibleTimer.start();
+                    SleepTimer.stop()
+                }
             }
+        }
+        Timer {
+            id: pushUpStillVisibleTimer
+            interval: 300
         }
 
         contentHeight: page.height

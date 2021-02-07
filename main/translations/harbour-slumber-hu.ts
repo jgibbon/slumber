@@ -43,32 +43,32 @@
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="65"/>
-        <location filename="../qml/pages/FirstPage.qml" line="78"/>
+        <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>Stop Timer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="86"/>
+        <location filename="../qml/pages/FirstPage.qml" line="94"/>
         <source>slumber</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="168"/>
+        <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to restart,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="168"/>
+        <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to start,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="179"/>
+        <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull up or down to stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="179"/>
+        <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull down for options</source>
         <translation type="unfinished"></translation>
     </message>
