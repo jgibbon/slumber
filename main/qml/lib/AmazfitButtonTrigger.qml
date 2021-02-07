@@ -34,6 +34,12 @@ Item {
                     path: '/application'
 
                     signalsEnabled: true
+                    function deviceEventTriggered(event) {
+                        console.log("amazfish device event", event);
+                        if(trigger.enabled && event === "EVENT_APP_MUSIC") {
+                            trigger.buttonPressed(1);
+                        }
+                    }
 
                     function buttonPressed(presses) {
                         if(trigger.enabled) {

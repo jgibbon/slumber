@@ -1,10 +1,8 @@
 import QtQuick 2.6
-import de.gibbon.slumber 1.0
+import Nemo.DBus 2.0
 
-Launcher {
-    id:root
-    property bool enabled
-    function pause(){
+ActuatorBase {
+    function run(){
         var commands = [];
         if(settings.timerLockScreenEnabled) {
             commands.push('sh -c \"\"\"dbus-send --system --type=method_call --dest=org.nemomobile.lipstick /devicelock org.nemomobile.lipstick.devicelock.setState int32:1 & dbus-send --system --dest=com.nokia.mce --print-reply --type=method_call /com/nokia/mce/request com.nokia.mce.request.req_display_state_off\"\"\"')
@@ -25,18 +23,12 @@ Launcher {
             commands.push('killall -s9 ofonod')
         }
 
-
         var commandCount = commands.length;
         for(var i=0; i<commandCount; i++) {
             console.log('launching privileged', commands[i]);
             console.log(launchPrivileged(commands[i]));
         }
+        done();
     }
+
 }
-
-
-//ActionLaunchProgram {
-//    commands: [
-//
-//    ]
-//}

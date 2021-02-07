@@ -1,13 +1,13 @@
 import QtQuick 2.6
 import Nemo.DBus 2.0
 
-Item {
-    id: musicControl
+ActuatorBase {
     property var services: []
-    function pause(cb){
-        playerQuery.typedCall('ListNames', undefined, replyFactory(cb), function(err){console.log('error query', err)})
+    function run(){
+        playerQuery.typedCall('ListNames', undefined, replyFactory(), function(err){console.log('error query', err)});
+        done();
     }
-    function replyFactory(cb) {
+    function replyFactory() {
         return function filterDbusServicesAndPause(dbusReply) {
             var filtered = dbusReply.filter(function(entry) {
                 return entry.indexOf('org.mpris.MediaPlayer2.') === 0
@@ -17,25 +17,21 @@ Item {
                 dbif.service = el;
                 dbif.call('Pause', undefined);
             });
-            console.log('mpris done, running callback')
-            if(cb) {
-                cb();
-            }
+            console.log('mpris done')
+            done()
         }
     }
 
     DBusInterface {
         id:dbif
-        service: 'org.mpris.MediaPlayer2.jolla-mediaplayer'
+        service: 'org.mpris.MediaPlayer2.jolla-mediaplayer' // this gets overridden
         path: '/org/mpris/MediaPlayer2'
         iface: 'org.mpris.MediaPlayer2.Player'
     }
     DBusInterface {
         id: playerQuery
-        bus: DBus.SessionBus
         service: 'org.freedesktop.DBus'
         iface: 'org.freedesktop.DBus'
         path: '/org/freedesktop/DBus'
-
     }
 }
