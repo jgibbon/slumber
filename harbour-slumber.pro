@@ -15,6 +15,7 @@ SUBDIRS += \
     privileged_launcher
 
 DISTFILES += \
+    main/qml/lib/ProgressShader.qml \
     main/qml/lib/actuators/DisconnectBT.qml \
     main/qml/lib/actuators/MprisPause.qml \
     main/qml/lib/actuators/NetworkBase.qml \

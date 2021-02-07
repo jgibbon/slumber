@@ -87,87 +87,17 @@ Page {
             anchors.right: settings.viewActiveOptionsButtonEnabled? optionsButton.left: parent.right
 
         }
-//        Column {
-//            anchors.top: pageHeader.bottom
-//            width: parent.width
-//            Label {
-//                font.pixelSize: Theme.fontSizeTiny
-//                text: "interval:" + SleepTimer.interval
-//            }
-//            Label {
-//                font.pixelSize: Theme.fontSizeTiny
-//                text: "remaining:" + SleepTimer.remainingTime
-//            }
-//            Label {
-//                font.pixelSize: Theme.fontSizeTiny
-//                text: "remaining s:" + SleepTimer.remainingSeconds
-//            }
-//            Label {
-//                font.pixelSize: Theme.fontSizeTiny
-//                text: "running:" + SleepTimer.running
-//            }
-//            Label {
-//                font.pixelSize: Theme.fontSizeTiny
-//                text: "finalizing:" + SleepTimer.finalizing
-//            }
-//            Label {
-//                font.pixelSize: Theme.fontSizeTiny
-//                text: "finalizeMilliseconds:" + SleepTimer.finalizeMilliseconds
-//            }
-//            Connections {
-//                target: SleepTimer
-//                onRemainingTimeChanged: {
-//                    console.log("remaining time changed", SleepTimer.remainingTime, SleepTimer.remainingSeconds);
-
-//                }
-//                onIntervalChanged: {
-//                    console.log("interval changed", SleepTimer.interval);
-//                }
-//                onFinalizingChanged: {
-//                    console.log("finalizing changed", SleepTimer.finalizing);
-//                }
-//                onFinalizeMillisecondsChanged: {
-//                    console.log("finalizeMilliseconds changed", SleepTimer.finalizeMilliseconds);
-//                }
-//                onIsActiveChanged: {
-//                    console.log("active changed", SleepTimer.running);
-//                }
-//                onTimeout: {
-//                    console.log("timeout");
-//                }
-
-//            }
-
-//            Component.onCompleted: {
-//                SleepTimer.interval = 10000;
-//                SleepTimer.finalizeMilliseconds = 5000;
-//                SleepTimer.start();
-
-//            }
-
-//        }
-
-//        Image {
-//            opacity: 0.3
-//            source: "../assets/moon.png"
-//            smooth: false
-//            cache: false
-//            y: 0-(implicitHeight/ 3)
-//            x: 0-(implicitWidth / 9)
-//        }
         BackgroundItem {
             id: clickArea
             anchors.fill: parent
 
-            TimerProgressButton {
+            TimerProgressIndicator {
                 width: Screen.width / 2
-                running: SleepTimer.running
                 anchors.centerIn: parent
-                timeFormatShort: settings.viewTimeFormatShort
-                value: SleepTimer.remainingSeconds / (settings.timerSeconds)
                 fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*1.2 : Theme.fontSizeMedium
                 lineHeight: Screen.sizeCategory >= Screen.Large ? 0.8 : 1.0
             }
+
 
             onClicked: {
                 SleepTimer.start()

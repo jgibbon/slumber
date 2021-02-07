@@ -53,22 +53,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="238"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to restart,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="238"/>
+        <location filename="../qml/pages/FirstPage.qml" line="168"/>
         <source>Tap to start,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="249"/>
+        <location filename="../qml/pages/FirstPage.qml" line="179"/>
         <source>pull up or down to stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="249"/>
+        <location filename="../qml/pages/FirstPage.qml" line="179"/>
         <source>pull down for options</source>
         <translation type="unfinished"></translation>
     </message>
@@ -719,59 +719,45 @@
     </message>
 </context>
 <context>
-    <name>TimerProgressButton</name>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="128"/>
-        <source>s</source>
-        <translation>s</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="142"/>
-        <source>Hour</source>
-        <translation>Timma</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="143"/>
-        <source>Hours</source>
-        <translation>Timmar</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="144"/>
-        <source>Minute</source>
-        <translation>Minut</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="145"/>
-        <source>Minutes</source>
-        <translation>Minuter</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="146"/>
-        <source>Second</source>
-        <translation>Sekund</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="147"/>
-        <source>Seconds</source>
-        <translation>Sekunder</translation>
-    </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="149"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="150"/>
+    <name>TimerProgressIndicator</name>
+    <message numerus="yes">
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="117"/>
         <source>Hrs</source>
-        <translation>Tim</translation>
+        <comment>short: [x] Hour(s)</comment>
+        <translation type="unfinished">
+            <numerusform>Tim</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="151"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="152"/>
+    <message numerus="yes">
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="125"/>
         <source>Min</source>
-        <translation>Min</translation>
+        <comment>short: [x] Minute(s)</comment>
+        <translation type="unfinished">
+            <numerusform>Min</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="153"/>
-        <location filename="../qml/lib/TimerProgressButton.qml" line="154"/>
+    <message numerus="yes">
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="132"/>
         <source>Sec</source>
-        <translation>Sek</translation>
+        <comment>short: [x] Seconds(s)</comment>
+        <translation type="unfinished">
+            <numerusform>Sek</numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+</context>
+<context>
+    <name>TimerText</name>
+    <message numerus="yes">
+        <location filename="../qml/lib/TimerText.qml" line="20"/>
+        <source>Sec</source>
+        <comment>short: [x] Seconds(s)</comment>
+        <translation type="unfinished">
+            <numerusform>Sek</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>

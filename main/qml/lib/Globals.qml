@@ -36,7 +36,7 @@ Item {
 
     VolumeFade {
         id: volumeFade
-        duration: SleepTimer.finalizeMilliseconds
+        duration: SleepTimer.finalizeSeconds * 1000
         doReset: settings.timerFadeResetEnabled
     }
     TimerNotificationTrigger {
@@ -97,7 +97,7 @@ Item {
 
     Connections {
         target: SleepTimer
-        onTimeout: {
+        onTriggered: {
             console.log('sleep timer fired!');
             dbus.emitSignal('Triggered');
             justTriggeredTimer.start();

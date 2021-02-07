@@ -8,11 +8,11 @@
 class SleepTimer : public QTimer
 {
     Q_OBJECT
-    Q_PROPERTY(int interval READ interval WRITE setInterval NOTIFY intervalChanged)
-    Q_PROPERTY(int finalizeMilliseconds READ getFinalizeMilliseconds WRITE setFinalizeMilliseconds NOTIFY finalizeMillisecondsChanged)
+//    Q_PROPERTY(int interval READ interval WRITE setInterval NOTIFY intervalChanged)
+    Q_PROPERTY(int finalizeSeconds READ getFinalizeSeconds WRITE setFinalizeSeconds NOTIFY finalizeMillisecondsChanged)
     Q_PROPERTY(bool running READ isActive NOTIFY isActiveChanged)
     Q_PROPERTY(bool finalizing READ getFinalizing NOTIFY finalizingChanged)
-    Q_PROPERTY(int remainingTime READ getRemainingTime NOTIFY remainingTimeChanged)
+//    Q_PROPERTY(int remainingTime READ getRemainingTime NOTIFY remainingTimeChanged)
     Q_PROPERTY(int remainingSeconds READ getRemainingSeconds NOTIFY remainingSecondsChanged)
 
 public:
@@ -23,35 +23,37 @@ public:
     Q_INVOKABLE void stop();
 
     bool getFinalizing();
-    int getFinalizeMilliseconds() const;
-    int getRemainingTime() const;
+    int getFinalizeSeconds() const;
     int getRemainingSeconds() const;
-    void setFinalizeMilliseconds(int value);
-    void setInterval(int value);
+    void setFinalizeSeconds(int value);
+    void setDurationSeconds(int value);
 
 signals:
-    void remainingTimeChanged();
+//    void remainingTimeChanged();
     void remainingSecondsChanged();
-    void intervalChanged();
+    void durationSecondsChanged();
     void finalizingChanged();
     void finalizeMillisecondsChanged();
     void isActiveChanged();
+    void triggered();
     //void reset(); we use activeChanged.
 
 private slots:
-    void onTickTimeout();
+//    void onTickTimeout();
     void onTimeout();
-    void setIntervalFromSettings();
+    void setDurationFromSettings();
 private:
-    void updateRemainingTime();
+    void resetRemainingSeconds();
 
 private:
     ApplicationSettings *settings;
-    QTimer *tickTimer;
+//    QTimer *tickTimer;
     bool finalizing;
-    int finalizeMilliseconds;
+//    int remainingTime;
     int remainingSeconds;
-    int remainingMilliseconds;
+    int finalizeSeconds;
+    int durationSeconds;
+//    int remainingMilliseconds;
 };
 
 #endif // SLEEPTIMER_H

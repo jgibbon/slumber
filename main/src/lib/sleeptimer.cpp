@@ -4,33 +4,26 @@
 SleepTimer::SleepTimer(QObject *parent, ApplicationSettings *appsettings) : QTimer(parent),
   settings(appsettings),
   finalizing(false),
-  finalizeMilliseconds(10000)
+  remainingSeconds(settings->getTimerSeconds()),
+  finalizeSeconds(10)
 {
-    tickTimer = new QTimer(this);
-    tickTimer->setInterval(1000);
-    connect(tickTimer, SIGNAL(timeout()), this, SLOT(onTickTimeout()));
 
-    setSingleShot(true);
     setTimerType(Qt::PreciseTimer);
-    setInterval(settings->getTimerSeconds() * 1000);
+    setInterval(1000);
+    setDurationFromSettings();
 
     connect(this, SIGNAL(timeout()), this, SLOT(onTimeout()));
 
-    connect(settings, SIGNAL(timerSecondsChanged()), this, SLOT(setIntervalFromSettings()));
+    connect(settings, SIGNAL(timerSecondsChanged()), this, SLOT(setDurationFromSettings()));
 }
 
 SleepTimer::~SleepTimer()
 {
 }
 
-int SleepTimer::getFinalizeMilliseconds() const
+int SleepTimer::getFinalizeSeconds() const
 {
-    return finalizeMilliseconds;
-}
-
-int SleepTimer::getRemainingTime() const
-{
-    return remainingMilliseconds;
+    return finalizeSeconds;
 }
 
 int SleepTimer::getRemainingSeconds() const
@@ -38,35 +31,38 @@ int SleepTimer::getRemainingSeconds() const
     return remainingSeconds;
 }
 
-void SleepTimer::setFinalizeMilliseconds(int value)
+void SleepTimer::setFinalizeSeconds(int value)
 {
-    if(value != finalizeMilliseconds && value < interval()) {
-        finalizeMilliseconds = value;
+    if(isActive()) {
+        stop();
+    }
+    if(value != finalizeSeconds && value < interval()) {
+        finalizeSeconds = value;
         emit finalizeMillisecondsChanged();
     }
 }
 
-void SleepTimer::setInterval(int value)
+void SleepTimer::setDurationSeconds(int value)
 {
 
-    qDebug() << "setInterval" << value << "previous" << interval();
-    qDebug() << " -> new?" << (value != interval()) << "getFinalizeMilliseconds()" << getFinalizeMilliseconds();
-    if(value != interval() && value > getFinalizeMilliseconds()) {
+    qDebug() << "setDurationSeconds" << value << "previous" << durationSeconds;
+    qDebug() << " -> new?" << (value != durationSeconds) << "getFinalizeSeconds()" << getFinalizeSeconds();
+    if(isActive()) {
+        stop();
+    }
+    if(value != interval() && value > getFinalizeSeconds()) {
 
-        qDebug() << "setInterval valid change. active?" << isActive();
+        qDebug() << "setDurationSeconds valid change. active?" << isActive();
         if(isActive()) {
             stop();
         }
-        QTimer::setInterval(value);
-        if(value > 1000000) { // is this even necessary?
-            setTimerType(Qt::PreciseTimer);
-        } else {
-            setTimerType(Qt::CoarseTimer);
-        }
-        updateRemainingTime();
+        durationSeconds = value;
+        remainingSeconds = value;
 
         qDebug() << "setInterval" << interval();
-        emit intervalChanged();
+
+        emit remainingSecondsChanged();
+        emit durationSecondsChanged();
     }
 }
 
@@ -76,22 +72,21 @@ void SleepTimer::start()
     qDebug() << "start" << "was active?" << wasActive;
     if(wasActive) {
         stop();
+    } else {
+        resetRemainingSeconds();
     }
-
-    tickTimer->start();
     QTimer::start();
-    emit isActiveChanged();
-
-    updateRemainingTime();
+    if(!wasActive) {
+        emit isActiveChanged();
+    }
 }
 
 void SleepTimer::stop()
 {
     if(isActive()) {
         QTimer::stop();
-        tickTimer->stop();
         emit isActiveChanged();
-        updateRemainingTime();
+        resetRemainingSeconds();
         if(finalizing) {
             finalizing = false;
             emit finalizingChanged();
@@ -104,49 +99,31 @@ bool SleepTimer::getFinalizing()
     return finalizing;
 }
 
-// slots
-void SleepTimer::onTickTimeout()
+void SleepTimer::setDurationFromSettings()
 {
-    if(isActive()) {
-        updateRemainingTime();
-        qDebug() << "tick timeout" << remainingMilliseconds;
-        if(!finalizing && remainingMilliseconds < finalizeMilliseconds) {
+    setDurationSeconds(settings->getTimerSeconds());
+}
+
+void SleepTimer::resetRemainingSeconds()
+{
+    if(remainingSeconds != durationSeconds) {
+        remainingSeconds = durationSeconds;
+        emit remainingSecondsChanged();
+    }
+}
+
+// slots
+void SleepTimer::onTimeout()
+{
+    remainingSeconds -= 1;
+    if(remainingSeconds == 0) {
+        stop();
+        emit triggered();
+    } else {
+        emit remainingSecondsChanged();
+        if(!finalizing && remainingSeconds < finalizeSeconds) {
             finalizing = true;
             emit finalizingChanged();
         }
-    }
-}
-void SleepTimer::onTimeout()
-{
-    tickTimer->stop();
-    emit isActiveChanged();
-    updateRemainingTime();
-    if(finalizing) {
-        finalizing = false;
-        emit finalizingChanged();
-    }
-}
-
-void SleepTimer::setIntervalFromSettings()
-{
-    this->setInterval(settings->getTimerSeconds() * 1000);
-}
-
-void SleepTimer::updateRemainingTime()
-{
-    int mseconds = remainingTime();
-    if(mseconds <= 0) {
-        mseconds = interval();
-    }
-    if(mseconds != remainingMilliseconds) {
-        remainingMilliseconds = mseconds;
-        double secondsDouble = mseconds / 1000.0;
-        int seconds = qRound(secondsDouble);
-        if(seconds != remainingSeconds) {
-            remainingSeconds = seconds;
-            emit remainingTimeChanged();
-            emit remainingSecondsChanged();
-        }
-
     }
 }

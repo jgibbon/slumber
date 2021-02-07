@@ -42,17 +42,12 @@ CoverBackground {
         anchors.centerIn: parent;
 //        x:0
     }
-    TimerProgressButton {
-        timeFormatShort: settings.viewTimeFormatShort
-        value: SleepTimer.remainingSeconds / settings.timerSeconds
-//        textcolor: Theme.primaryColor
-//        secondarytextcolor: Theme.secondaryColor
-        running: SleepTimer.running
+    TimerProgressIndicator {
         anchors.centerIn: parent;
         width: parent.width - Theme.paddingMedium * 2
-        busyindicator.visible: false
         textcolor: Theme.primaryColor
-        secondarytextcolor: Theme.primaryColor
+        secondarytextcolor: Theme.secondaryColor
+        viewActiveIndicatorEnabled: false
     }
 
     CoverActionList {
