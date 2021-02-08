@@ -64,8 +64,6 @@ Page {
                 checked: settings.timerKodiPauseEnabled
                 onClicked: {
                     settings.timerKodiPauseEnabled = checked
-
-
                 }
                 description: qsTr('Pauses Kodi on your local network')
 
@@ -447,7 +445,43 @@ Page {
 
 
             SectionHeader {
-                text: qsTr('ten seconds before end')
+                text: qsTr('Finalize')
+            }
+            Label {
+                width: parent.width - (Theme.horizontalPageMargin * 2)
+                x: Theme.horizontalPageMargin
+                wrapMode: Text.Wrap
+                text: qsTr("You can set a custom duration at the end of the timer in which some finalizing actions happen, for example to get your attention in case you didn't fall asleep, yet.")
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryHighlightColor
+            }
+
+            Slider {
+                id: finalizingSlider
+                width: parent.width
+//                anchors.horizontalCenter: parent.horizontalCenter
+                minimumValue: 5
+                maximumValue: 45
+                stepSize: 1
+                value: settings.timerFinalizingSeconds
+                valueText: value+"s"
+                label: qsTr("Finalize duration")
+                animateValue: false
+                onPressedChanged: {
+                    if(!pressed) {
+
+                        console.log('val change', value)
+                        settings.timerFinalizingSeconds = value
+
+                        console.log('val change2', value)
+                        // in case the value couldn't be set (too big)
+                        value = settings.timerFinalizingSeconds
+                        console.log('val change3', value)
+                    }
+                }
+
+                onValueChanged: {
+                }
             }
 
             TextSwitch {
@@ -555,7 +589,9 @@ Page {
                         globals.fadeOutSound.play()
                     }
                 }
-
+                Component.onDestruction:{
+                    globals.fadeOutSound.stop();
+                }
             }
 
             TextSwitch {

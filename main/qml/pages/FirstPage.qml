@@ -59,7 +59,7 @@ Page {
             MenuItem {
                 visible: !SleepTimer.running
                 text: qsTr("Options")
-                onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage:page, globals: globals})
+                onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage:page})
             }
             MenuItem {
                 text: qsTr("Stop Timer")

@@ -5,7 +5,7 @@ SleepTimer::SleepTimer(QObject *parent, ApplicationSettings *appsettings) : QTim
   settings(appsettings),
   finalizing(false),
   remainingSeconds(settings->getTimerSeconds()),
-  finalizeSeconds(10)
+  finalizeSeconds(settings->getTimerFinalizingSeconds())
 {
 
     setTimerType(Qt::PreciseTimer);
@@ -15,6 +15,7 @@ SleepTimer::SleepTimer(QObject *parent, ApplicationSettings *appsettings) : QTim
     connect(this, SIGNAL(timeout()), this, SLOT(onTimeout()));
 
     connect(settings, SIGNAL(timerSecondsChanged()), this, SLOT(setDurationFromSettings()));
+    connect(settings, SIGNAL(timerFinalizingSecondsChanged()), this, SLOT(setFinalizingDurationFromSettings()));
 }
 
 SleepTimer::~SleepTimer()
@@ -103,6 +104,10 @@ void SleepTimer::setDurationFromSettings()
 {
     setDurationSeconds(settings->getTimerSeconds());
 }
+void SleepTimer::setFinalizingDurationFromSettings()
+{
+    setFinalizeSeconds(settings->getTimerFinalizingSeconds());
+}
 
 void SleepTimer::resetRemainingSeconds()
 {
@@ -121,7 +126,7 @@ void SleepTimer::onTimeout()
         emit triggered();
     } else {
         emit remainingSecondsChanged();
-        if(!finalizing && remainingSeconds < finalizeSeconds) {
+        if(!finalizing && remainingSeconds <= finalizeSeconds) {
             finalizing = true;
             emit finalizingChanged();
         }

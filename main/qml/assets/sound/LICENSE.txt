@@ -1,6 +1,6 @@
 cassette-noise.wav
- is based on "TapeNoise 02" by freesound.org user micadoe
-	http://www.freesound.org/people/micadoe/sounds/178911/ 
+ is based on "TapeNoise1.wav" by freesound.org user Zabuhailo
+	https://freesound.org/people/Zabuhailo/sounds/174918/ 
  both the source and this derivative work are licensed as CC0
         http://creativecommons.org/publicdomain/zero/1.0/
 

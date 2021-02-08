@@ -255,245 +255,255 @@
         <translation>暂停 Kodi 播放器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="70"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="68"/>
         <source>Pauses Kodi on your local network</source>
         <translation>暂停本地网络上的 Kodi 播放器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="84"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="82"/>
         <source>(Hint: If you use kodimote, you don&apos;t need to enable this. It works as a &apos;local&apos; player.)</source>
         <translation>(提示：如果你使用 kodimote，你无需激活它，它会作为本地播放器运行）</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="100"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="101"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="98"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="99"/>
         <source>IP or host:port for Kodi</source>
         <translation>IP或主机: Kodi 接口</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="121"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="122"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="119"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="120"/>
         <source>Kodi username</source>
         <translation>Kodi 用户名</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="142"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="143"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="140"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="141"/>
         <source>Kodi password</source>
         <translation>Kodi 密码</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="164"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="340"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="162"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="338"/>
         <source>Check Host</source>
         <translation>检查主机</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="175"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="351"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="173"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="349"/>
         <source>Host works fine!</source>
         <translation>主机运行正常</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="178"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="354"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="176"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="352"/>
         <source>No response from host</source>
         <translation>主机无响应</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="180"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="178"/>
         <source>Kodi not found on host</source>
         <translation>没有在主机上发现 kodi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="182"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="358"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="180"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="356"/>
         <source>Username/Password incorrect</source>
         <translation>用户名或密码不正确</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="184"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="360"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="182"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="358"/>
         <source>Unknown Error</source>
         <translation>未知错误</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="209"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="207"/>
         <source>You can try to ping the current Kodi configuration</source>
         <translation>你可以尝试查验前的 kodi 设置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="229"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="227"/>
         <source>Secondary Action</source>
         <extracomment>ComboBox Kodi secondary Action on reset</extracomment>
         <translation>间接操作</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="244"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="242"/>
         <source>None</source>
         <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
         <translation>无</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="251"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="249"/>
         <source>Suspend Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
         <translation>中止 kodi 系统</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="258"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="256"/>
         <source>Shutdown Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
         <translation>关闭 Kodi 系统</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="274"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="272"/>
         <source>Pause VLC</source>
         <translation>停止 VLC</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="282"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="280"/>
         <source>Pauses VLC on your local network</source>
         <translation>在本地网络停止 VLC </translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="296"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="297"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="294"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="295"/>
         <source>IP or host:port for VLC</source>
         <translation>IP或主机: VLC 接口</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="318"/>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="319"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="316"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="317"/>
         <source>VLC password</source>
         <translation>VLC 密码</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="356"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="354"/>
         <source>VLC not found on host</source>
         <translation>没有在主机上找到 VLC </translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="385"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="383"/>
         <source>You can try to ping the current VLC configuration</source>
         <translation>你可以尝试查验目前的 VLC 配置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="407"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="405"/>
         <source>Disconnect Bluetooth Devices</source>
         <extracomment>Switch: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
         <translation>断开蓝牙设备</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="417"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="415"/>
         <source>Disconnects active Bluetooth connections</source>
         <extracomment>TextSwitch Description: Action &quot;Disconnect Bluetooth Devices&quot;</extracomment>
         <translation>断开活动蓝牙连接</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="424"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="422"/>
         <source>Only disconnect Audio Devices</source>
         <extracomment>TextSwitch: Do not disconnect all Bluetooth devices, only Audio</extracomment>
         <translation>仅断开音频设备</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="432"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="430"/>
         <source>Limits Bluetooth disconnects to audio devices like Speakers</source>
         <translation>只断开音频设备的蓝牙连接，例如扬声器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="450"/>
-        <source>ten seconds before end</source>
-        <translation>结束之前10秒</translation>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="448"/>
+        <source>Finalize</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="461"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="454"/>
+        <source>You can set a custom duration at the end of the timer in which some finalizing actions happen, for example to get your attention in case you didn&apos;t fall asleep, yet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="495"/>
         <source>Flashes the main screen before the Timer is running out</source>
         <translation>在定时结束之前闪烁主屏幕</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="466"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="500"/>
         <source>Notification</source>
         <translation>通知</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="472"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="506"/>
         <source>Display a Notification shortly before the Timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
         <translation>在定时即将结束之前显示通知。通知会激活屏幕并令加速传感器读数。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="563"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="599"/>
         <source>Fade out when falling asleep</source>
         <translation>当睡着时渐弱</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="569"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="605"/>
         <source>Lowers System Volume to 0 (ca the last 10 seconds of the timer)</source>
         <translation>减弱系统音量到0（在定时器最后10秒内）</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="573"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="609"/>
         <source>Reset Volume afterwards</source>
         <translation>之后重设音量</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="588"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="624"/>
         <source>Reset System Volume to previous level afterwards. Should be enabled for most use cases.</source>
         <translation>在之后重设系统音量到以前的大小。应当在大部分使用情景中被激活。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="477"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="511"/>
         <source>Sound Effect</source>
         <translation>声音效果</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="439"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="437"/>
         <source>Privileged Actions</source>
         <extracomment>ButtonText: Privileged Actions (when the timer runs out) require administrative rights (root)</extracomment>
         <translation>特许操作</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="483"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="468"/>
+        <source>Finalize duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="517"/>
         <source>To alert you that the Timer is running out</source>
         <translation>定时结束时发出提示音</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="491"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="525"/>
         <source>Sound</source>
         <translation>声音</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="505"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="539"/>
         <source>cassette noise</source>
         <translation>磁带噪音</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="510"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="544"/>
         <source>clock ticking</source>
         <translation>时钟滴答声</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="515"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="549"/>
         <source>sail a jolla</source>
         <translation>划小船（Jolla）</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="531"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="565"/>
         <source>Sound Effect volume</source>
         <translation>声效大小</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="544"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="578"/>
         <source>stop playing</source>
         <translation>停止播放</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="544"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="578"/>
         <source>play current sound</source>
         <translation>播放目前的声音</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerEnd.qml" line="455"/>
+        <location filename="../qml/pages/Options_TimerEnd.qml" line="489"/>
         <source>Visual Indicator</source>
         <translation>虚拟指示器</translation>
     </message>

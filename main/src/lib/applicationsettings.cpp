@@ -37,9 +37,22 @@ int ApplicationSettings::getTimerSeconds() const
 }
 void ApplicationSettings::setTimerSeconds(int value)
 {
-  if(getTimerSeconds() != value) {
+  if(getTimerSeconds() != value && value > getTimerFinalizingSeconds()) {
     settings.setValue("timerSeconds", value);
     emit timerSecondsChanged();
+  }
+}
+
+int ApplicationSettings::getTimerFinalizingSeconds() const
+{
+    return settings.value("timerFinalizingSeconds", 10).toInt();
+}
+
+void ApplicationSettings::setTimerFinalizingSeconds(int value)
+{
+  if(getTimerFinalizingSeconds() != value && value < getTimerSeconds()) {
+    settings.setValue("timerFinalizingSeconds", value);
+    emit timerFinalizingSecondsChanged();
   }
 }
 

@@ -42,6 +42,7 @@ private slots:
 //    void onTickTimeout();
     void onTimeout();
     void setDurationFromSettings();
+    void setFinalizingDurationFromSettings();
 private:
     void resetRemainingSeconds();
 

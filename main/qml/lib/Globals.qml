@@ -162,6 +162,7 @@ Item {
             category: 'slumber'
             source: '../assets/sound/cassette-noise.wav'
             volume: settings.timerFadeSoundEffectVolume
+            loops: SoundEffect.Infinite
             onPlayingChanged: {
                 if(!playing) { accelerometerTrigger.paused = false}
             }
@@ -172,6 +173,7 @@ Item {
             id:fadeOutSoundTicking
             category: 'slumber'
             source: '../assets/sound/clock-ticking.wav'
+            loops: SoundEffect.Infinite
             volume: settings.timerFadeSoundEffectVolume
             onPlayingChanged: {
                 if(!playing) { accelerometerTrigger.paused = false}
@@ -182,6 +184,7 @@ Item {
             id:fadeOutSoundSea
             category: 'slumber'
             source: '../assets/sound/sea-waves.wav'
+            loops: SoundEffect.Infinite
             volume: settings.timerFadeSoundEffectVolume
             onPlayingChanged: {
                 if(!playing) { accelerometerTrigger.paused = false}
