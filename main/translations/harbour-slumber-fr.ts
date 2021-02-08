@@ -39,38 +39,38 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="61"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="65"/>
         <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>Stop Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrêter le minuteur</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="94"/>
         <source>slumber</source>
-        <translation type="unfinished"></translation>
+        <translation>slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to restart,</source>
-        <translation type="unfinished"></translation>
+        <translation>Appuyez pour recommencer,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to start,</source>
-        <translation type="unfinished"></translation>
+        <translation>Appuyez pour commencer,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull up or down to stop</source>
-        <translation type="unfinished"></translation>
+        <translation>tirez vers le haut ou le bas pour arrêter.</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull down for options</source>
-        <translation type="unfinished"></translation>
+        <translation>tirez vers le bas pour afficher les paramètres.</translation>
     </message>
 </context>
 <context>
@@ -735,7 +735,7 @@
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <translation type="unfinished">
-            <numerusform>h.</numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -744,7 +744,7 @@
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
         <translation type="unfinished">
-            <numerusform>min.</numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -753,19 +753,7 @@
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
         <translation type="unfinished">
-            <numerusform>sec.</numerusform>
             <numerusform></numerusform>
-        </translation>
-    </message>
-</context>
-<context>
-    <name>TimerText</name>
-    <message numerus="yes">
-        <location filename="../qml/lib/TimerText.qml" line="20"/>
-        <source>Sec</source>
-        <comment>short: [x] Seconds(s)</comment>
-        <translation type="unfinished">
-            <numerusform>sec.</numerusform>
             <numerusform></numerusform>
         </translation>
     </message>

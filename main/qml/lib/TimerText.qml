@@ -17,7 +17,7 @@ Text {
             bottom: parent.bottom
             bottomMargin: sleepTimerWidget.fontSize * 0.1
         }
-        text: qsTr("Sec", "short: [x] Seconds(s)", parent.value);
+
         color: secondarytextcolor
         font.pixelSize: Theme.fontSizeTiny
     }

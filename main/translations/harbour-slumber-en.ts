@@ -758,16 +758,4 @@
         </translation>
     </message>
 </context>
-<context>
-    <name>TimerText</name>
-    <message numerus="yes">
-        <location filename="../qml/lib/TimerText.qml" line="20"/>
-        <source>Sec</source>
-        <comment>short: [x] Seconds(s)</comment>
-        <translation type="unfinished">
-            <numerusform>Sec</numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-</context>
 </TS>

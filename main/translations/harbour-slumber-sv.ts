@@ -39,38 +39,38 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="61"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="65"/>
         <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>Stop Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Stoppa tiduret</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="94"/>
         <source>slumber</source>
-        <translation type="unfinished"></translation>
+        <translation>slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to restart,</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryck för att starta om,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to start,</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryck för att starta,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull up or down to stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Dra ner eller upp för att stoppa</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull down for options</source>
-        <translation type="unfinished"></translation>
+        <translation>dra ner för alternativ</translation>
     </message>
 </context>
 <context>
@@ -83,7 +83,7 @@
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="30"/>
         <source>stopped…</source>
-        <translation type="unfinished"></translation>
+        <translation>stoppad...</translation>
     </message>
 </context>
 <context>
@@ -131,12 +131,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="119"/>
         <source>Stop Timer if Playback is stopped</source>
-        <translation type="unfinished"></translation>
+        <translation>Stoppa tiduret om uppspelningen stoppas</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="126"/>
         <source>Automatically stop timer when playback stop or pause is detected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Soppa tiduret automatiskt när uppspelning stoppas eller pausas.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="134"/>
@@ -735,7 +735,7 @@
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <translation type="unfinished">
-            <numerusform>Tim</numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -744,7 +744,7 @@
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
         <translation type="unfinished">
-            <numerusform>Min</numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -753,19 +753,7 @@
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
         <translation type="unfinished">
-            <numerusform>Sek</numerusform>
             <numerusform></numerusform>
-        </translation>
-    </message>
-</context>
-<context>
-    <name>TimerText</name>
-    <message numerus="yes">
-        <location filename="../qml/lib/TimerText.qml" line="20"/>
-        <source>Sec</source>
-        <comment>short: [x] Seconds(s)</comment>
-        <translation type="unfinished">
-            <numerusform>Sek</numerusform>
             <numerusform></numerusform>
         </translation>
     </message>

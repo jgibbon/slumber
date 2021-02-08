@@ -39,38 +39,38 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="61"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Možnosti</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="65"/>
         <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>Stop Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustavi odštevanje</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="94"/>
         <source>slumber</source>
-        <translation type="unfinished"></translation>
+        <translation>slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to restart,</source>
-        <translation type="unfinished"></translation>
+        <translation>Pritisni za ponoven zagon,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to start,</source>
-        <translation type="unfinished"></translation>
+        <translation>Pritisni za zagon,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull up or down to stop</source>
-        <translation type="unfinished"></translation>
+        <translation>za ustavitev potegni navzgor ali navzdol</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull down for options</source>
-        <translation type="unfinished"></translation>
+        <translation>za možnosti potegni navzdol</translation>
     </message>
 </context>
 <context>
@@ -83,7 +83,7 @@
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="30"/>
         <source>stopped…</source>
-        <translation type="unfinished"></translation>
+        <translation>zaustavljeno ...</translation>
     </message>
 </context>
 <context>
@@ -131,12 +131,12 @@
     <message>
         <location filename="../qml/pages/Options.qml" line="119"/>
         <source>Stop Timer if Playback is stopped</source>
-        <translation type="unfinished"></translation>
+        <translation>Če je predvajanje zaustavljeno, ustavi časovnik</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="126"/>
         <source>Automatically stop timer when playback stop or pause is detected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ob zaznani zaustavitvi ali premoru samodejno ustavi časovnik.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="134"/>
@@ -737,7 +737,7 @@
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <translation type="unfinished">
-            <numerusform>U</numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -748,7 +748,7 @@
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
         <translation type="unfinished">
-            <numerusform>M</numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -759,21 +759,7 @@
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
         <translation type="unfinished">
-            <numerusform>S</numerusform>
             <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-</context>
-<context>
-    <name>TimerText</name>
-    <message numerus="yes">
-        <location filename="../qml/lib/TimerText.qml" line="20"/>
-        <source>Sec</source>
-        <comment>short: [x] Seconds(s)</comment>
-        <translation type="unfinished">
-            <numerusform>S</numerusform>
             <numerusform></numerusform>
             <numerusform></numerusform>
             <numerusform></numerusform>

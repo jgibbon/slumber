@@ -39,38 +39,38 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="61"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>选项</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="65"/>
         <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>Stop Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>停止定时器</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="94"/>
         <source>slumber</source>
-        <translation type="unfinished"></translation>
+        <translation>slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to restart,</source>
-        <translation type="unfinished"></translation>
+        <translation>点击以重新开始</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to start,</source>
-        <translation type="unfinished"></translation>
+        <translation>点击以开始</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull up or down to stop</source>
-        <translation type="unfinished"></translation>
+        <translation>上拉或下拉以停止</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull down for options</source>
-        <translation type="unfinished"></translation>
+        <translation>下拉以设置</translation>
     </message>
 </context>
 <context>
@@ -734,7 +734,7 @@
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <translation type="unfinished">
-            <numerusform>小时</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -742,7 +742,7 @@
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
         <translation type="unfinished">
-            <numerusform>分钟</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -750,18 +750,7 @@
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
         <translation type="unfinished">
-            <numerusform>秒</numerusform>
-        </translation>
-    </message>
-</context>
-<context>
-    <name>TimerText</name>
-    <message numerus="yes">
-        <location filename="../qml/lib/TimerText.qml" line="20"/>
-        <source>Sec</source>
-        <comment>short: [x] Seconds(s)</comment>
-        <translation type="unfinished">
-            <numerusform>秒</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>

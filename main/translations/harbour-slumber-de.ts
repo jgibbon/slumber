@@ -39,38 +39,38 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="61"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="65"/>
         <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>Stop Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Timer anhalten</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="94"/>
         <source>slumber</source>
-        <translation type="unfinished"></translation>
+        <translation>slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to restart,</source>
-        <translation type="unfinished"></translation>
+        <translation>Patsche, um neuzustarten,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="176"/>
         <source>Tap to start,</source>
-        <translation type="unfinished"></translation>
+        <translation>Patsche, um herunterzuzählen,</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull up or down to stop</source>
-        <translation type="unfinished"></translation>
+        <translation>ziehe hoch oder herunter zum stoppen</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="187"/>
         <source>pull down for options</source>
-        <translation type="unfinished"></translation>
+        <translation>ziehe herunter für Einstellungen</translation>
     </message>
 </context>
 <context>
@@ -404,12 +404,12 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="448"/>
         <source>Finalize</source>
-        <translation type="unfinished"></translation>
+        <translation>Finalisierung</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="454"/>
         <source>You can set a custom duration at the end of the timer in which some finalizing actions happen, for example to get your attention in case you didn&apos;t fall asleep, yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du kannst einen Zeitraum am Timerende festlegen, in dem finalisierende Aktionen passieren, zum Beispiel, um deine Aufmerksamkeit zu bekommen, falls du noch nicht eingeschlafen bist.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="495"/>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="468"/>
         <source>Finalize duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Finalisierungsdauer</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="517"/>
@@ -734,39 +734,27 @@
         <location filename="../qml/lib/TimerProgressIndicator.qml" line="117"/>
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Std</numerusform>
-            <numerusform></numerusform>
+            <numerusform>Std</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/lib/TimerProgressIndicator.qml" line="125"/>
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Min</numerusform>
-            <numerusform></numerusform>
+            <numerusform>Min</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/lib/TimerProgressIndicator.qml" line="132"/>
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Sek</numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-</context>
-<context>
-    <name>TimerText</name>
-    <message numerus="yes">
-        <location filename="../qml/lib/TimerText.qml" line="20"/>
-        <source>Sec</source>
-        <comment>short: [x] Seconds(s)</comment>
-        <translation type="unfinished">
             <numerusform>Sek</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
 </context>
