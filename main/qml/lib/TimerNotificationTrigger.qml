@@ -39,15 +39,17 @@ Item {
     Notification {
         id: notificationComponent
         appName: 'slumber'
+        //: System notification text
         body: qsTr('Timer triggering soon')
         expireTimeout: 10000
-        category: "x-nemo.example"
+        category: 'x-nemo.example'
         replacesId: 1
         summary: 'slumber'
         urgency: Notification.Critical //wake display
         itemCount: 1
-        maxContentLines: 3
+        //maxContentLines: 3
         previewSummary: 'slumber'
+        //: System notification text
         previewBody: qsTr('Timer triggering soon')
 //        onClicked: {
 //            console.log('noti clicked')

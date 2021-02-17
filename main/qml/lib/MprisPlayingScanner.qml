@@ -21,12 +21,14 @@ Item {
     signal reverseTriggered()
 
     onMprisIsPlayingChanged: {
-        console.log("mpris change playing", mprisIsPlaying)
+        console.log('mpris change playing', mprisIsPlaying)
         if(mprisIsPlaying && enabled) {
+            //: Notification text: %1 is the identifier of the current media player. This string is prefixed with "slumber ": "slumber Autostart: …"
             notificationComponent.previewBody = 'slumber '+ qsTr('Autostart: %1 is playing').arg(scanner.mprisPlayingName);
             notificationComponent.publish();
             triggered()
         } else if(!mprisIsPlaying && reverseEnabled) {
+            //: Notification text: Current media player has stopped. This string is prefixed with "slumber ": "slumber stopped…"
             notificationComponent.previewBody = 'slumber '+ qsTr('stopped…');
             notificationComponent.publish();
             reverseTriggered();

@@ -1,5 +1,5 @@
 import QtQuick 2.6
-import Nemo.DBus 2.0
+import de.gibbon.slumber 1.0
 
 ActuatorBase {
     function run(){
@@ -26,9 +26,11 @@ ActuatorBase {
         var commandCount = commands.length;
         for(var i=0; i<commandCount; i++) {
             console.log('launching privileged', commands[i]);
-            console.log(launchPrivileged(commands[i]));
+            console.log(launcher.launchPrivileged(commands[i]));
         }
         done();
     }
-
+    Launcher {
+        id: launcher
+    }
 }

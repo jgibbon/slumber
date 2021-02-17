@@ -3,16 +3,12 @@ import Sailfish.Silica 1.0
 
 
 
-import "../lib/"
+import '../lib/'
 
 
 Page {
     id: page
-    property FirstPage firstPage
-
-    allowedOrientations: firstPage.allowedOrientations
-    orientation: firstPage.orientation
-
+    allowedOrientations: Orientation.All
 
     SilicaFlickable {
         id: listView
@@ -23,8 +19,9 @@ Page {
         // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
         PullDownMenu {
             MenuItem {
-                text: qsTr("About")
-                onClicked: pageStack.push(Qt.resolvedUrl("About.qml"), {firstPage:firstPage})
+                //: Menu Entry to get to the about page
+                text: qsTr('About')
+                onClicked: pageStack.push(Qt.resolvedUrl('About.qml'))
             }
         }
         VerticalScrollDecorator{
@@ -34,11 +31,9 @@ Page {
         Column {
             width: parent.width
             id: mainColumn
-            PageHeader { title: qsTr("slumber Options") }
-
-//            SectionHeader {
-//                text: qsTr( "Timer Duration")
-//            }
+            bottomPadding: Theme.paddingLarge
+            //: Page Header option page
+            PageHeader { title: qsTr('slumber Options') }
 
             ValueButton {
                 property int selectedHour
@@ -46,7 +41,7 @@ Page {
                 onSelectedHourChanged: {}
 
                 function openTimeDialog() {
-                    var dialog = pageStack.push("Sailfish.Silica.TimePickerDialog", {
+                    var dialog = pageStack.push('Sailfish.Silica.TimePickerDialog', {
                                                     hourMode:  DateTime.TwentyFourHours,
                                                     hour: selectedHour,
                                                     minute: selectedMinute
@@ -70,8 +65,9 @@ Page {
                     })
                 }
 
-                label: qsTr("Sleep after")
-                value: (settings.timerSeconds === 15)?'15s':selectedHour+ ':'+ ("0"+selectedMinute).slice(-2)
+                //: ValueButton label. Set the timeout duration here.
+                label: qsTr('Sleep after')
+                value: (settings.timerSeconds === 15)?'15s':selectedHour+ ':'+ ('0'+selectedMinute).slice(-2)
                 onClicked: openTimeDialog()
                 Component.onCompleted: {
                     if(settings.timerSeconds === 15){
@@ -86,139 +82,61 @@ Page {
             }
             InlineNotification {
                 id: timerZeroNotification
-                text: qsTr('Please set Timer longer than 0:00')
+                //: Short error message when a 0:00 duration has been set
+                text: qsTr('Please set duration longer than 0:00')
             }
 
-//            SectionHeader {
-//                text: qsTr( "System")
-//            }
 
             TextSwitch {
                 id:timerDisableScreensaverEnabledSwitch
-                text: qsTr('Keep Display on')
+                //: TextSwitch label: keep display on whlie timer is running
+                text: qsTr('Keep display on')
 
                 checked: settings.timerInhibitScreensaverEnabled
                 onClicked: {
                     settings.timerInhibitScreensaverEnabled = checked
                 }
-                description: qsTr('Keeps your Display lit while the timer is running.')
-            }
-
-            TextSwitch {
-                id:timerAutostartOnPlaybackDetectionEnabledSwitch
-                text: qsTr('Start Timer if Playback is detected')
-
-                checked: settings.timerAutostartOnPlaybackDetection
-                onClicked: {
-                    settings.timerAutostartOnPlaybackDetection = checked
-                }
-                description: qsTr('Automatically start timer when playback is detected. Slumber has to be open for this to work.')
-            }
-            TextSwitch {
-                id:timerAutostopOnPlaybackStopEnabledSwitch
-                text: qsTr('Stop Timer if Playback is stopped')
-                enabled: timerAutostartOnPlaybackDetectionEnabledSwitch.checked
-
-                checked: settings.timerAutostopOnPlaybackStop
-                onClicked: {
-                    settings.timerAutostopOnPlaybackStop = checked
-                }
-                description: qsTr('Automatically stop timer when playback stop or pause is detected.')
-            }
-
-                Column {
-                    width: parent.width
-                    spacing: Theme.paddingMedium
-
-                    SectionHeader {
-                        text: qsTr("Actions")
-                    }
-                    HighlightImageButton {
-                        text: qsTr("Configure Actions");
-                        width: parent.width - (Theme.horizontalPageMargin * 2)
-                        x: Theme.horizontalPageMargin
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerEnd.qml"), {firstPage:firstPage})
-                        icon.source: "image://theme/icon-m-moon"
-                    }
-                    Label {
-                        text: qsTr("Timer actions like \"Pause Media\" get executed when the Timer runs out.")
-                        color: Theme.highlightColor
-
-                        font.pixelSize: Theme.fontSizeExtraSmall
-                        verticalAlignment: Text.AlignBottom
-
-
-                        wrapMode: 'WrapAtWordBoundaryOrAnywhere'
-                        width: parent.width - (Theme.horizontalPageMargin * 2)
-                        x: Theme.horizontalPageMargin
-                    }
-
-
-
-                    SectionHeader {
-                        text: qsTr("Timer Reset")
-                    }
-                    HighlightImageButton {
-                        text: qsTr("Configure Reset");
-                        width: parent.width - (Theme.horizontalPageMargin * 2)
-                        x: Theme.horizontalPageMargin
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_TimerReset.qml"), {firstPage:firstPage})
-                        icon.source: "image://theme/icon-m-refresh"
-                    }
-                    Label {
-                        text: qsTr("Reset the timer while you are awake.")
-                        color: Theme.highlightColor
-
-                        font.pixelSize: Theme.fontSizeExtraSmall
-                        verticalAlignment: Text.AlignBottom
-
-                        wrapMode: 'WrapAtWordBoundaryOrAnywhere'
-                        width: parent.width - (Theme.horizontalPageMargin * 2)
-                        x: Theme.horizontalPageMargin
-                    }
-
-
-                }
-
-
-
-
-                Column {
-                    width: parent.width
-                    spacing: Theme.paddingMedium
-
-
-                    SectionHeader {
-                        text: qsTr("Appearance")
-                        //                color: Theme.secondaryColor
-                    }
-
-                    HighlightImageButton {
-                        text: qsTr("Configure Appearance");
-                        icon.source: "image://theme/icon-m-ambience"
-                        onClicked: pageStack.push(Qt.resolvedUrl("Options_Appearance.qml"), {firstPage:firstPage})
-
-                        width: parent.width - (Theme.horizontalPageMargin * 2)
-                        x: Theme.horizontalPageMargin
-
-                    }
-                    Label {
-                        text: qsTr("Change this application's look and feel.")
-                        color: Theme.highlightColor
-
-                        font.pixelSize: Theme.fontSizeExtraSmall
-                        verticalAlignment: Text.AlignBottom
-
-                        wrapMode: 'WrapAtWordBoundaryOrAnywhere'
-                        width: parent.width - (Theme.horizontalPageMargin * 2)
-                        x: Theme.horizontalPageMargin
-                }
+                //: TextSwitch description: keep display on whlie timer is running
+                description: qsTr('Keeps your display lit while the timer is running.')
             }
 
 
-            Item {
-                width:parent.width
-                height: Theme.paddingLarge
+
+
+            SettingsGrid {
+                topPadding: Theme.paddingLarge
+                SettingsSectionButton {
+                    //: Button Text: go to timer control options (start, stop or restart the timer automatically)
+                    buttonText: qsTr('Timer Control')
+                    icon.source: 'image://theme/icon-m-play'
+                    //: Button Description: go to timer control options (start, stop or restart the timer automatically)
+                    text: qsTr('Start, stop or reset the timer automatically, for example when media playback is detected.')
+                    clickTarget: Qt.resolvedUrl('Options_TimerControl.qml')
+                }
+                SettingsSectionButton {
+                    //: Button Text: go to timer actions options (things that happen when the timer runs out)
+                    buttonText: qsTr('Actions')
+                    icon.source: 'image://theme/icon-m-moon'
+                    //: Button Description: go to timer actions options (things that happen when the timer runs out)
+                    text: qsTr('Timer actions like "Pause Media" get executed when the timer runs out.')
+                    clickTarget: Qt.resolvedUrl('Options_TimerEnd.qml')
+                }
+                SettingsSectionButton {
+                    //: Button Text: go to timer finalize options (configurable duration just before the timer runs out)
+                    buttonText: qsTr('Finalize')
+                    icon.source: 'image://theme/icon-m-timer'
+                    //: Button Description: go to timer finalize options (configurable duration just before the timer runs out)
+                    text: qsTr('You can enable some special functions for the last seconds before the timer runs out, for example fading out media volume or displaying notifications.')
+                    clickTarget: Qt.resolvedUrl('Options_Finalize.qml')
+                }
+                SettingsSectionButton {
+                    //: Button Text: go to appearance options (UI settings)
+                    buttonText: qsTr('Appearance')
+                    icon.source: 'image://theme/icon-m-ambience'
+                    //: Button Description: go to appearance options (UI settings)
+                    text: qsTr('Change this application\'s look and feel.')
+                    clickTarget: Qt.resolvedUrl('Options_Appearance.qml')
+                }
             }
         }
     }

@@ -32,6 +32,5 @@ BackgroundItem {
             //text:formatMSeconds(SleepTimer.remainingTime)
             font.pixelSize: sleepTimerWidget.isSmall ? Theme.fontSizeSmall : Theme.fontSizeMedium
         }
-        //Rectangle { anchors.fill: parent; color: "red"; opacity: 0.3; z:-1; }
 
 }

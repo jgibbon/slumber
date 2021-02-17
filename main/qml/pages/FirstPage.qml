@@ -1,20 +1,16 @@
 import QtQuick 2.6
 import Sailfish.Silica 1.0
-
-import "../lib/"
+import de.gibbon.slumber 1.0
+import '../lib/'
 
 
 Page {
     id: page
     property bool isDarkScreen:  settings.viewDarkenMainSceen && (SleepTimer.running ) && !clickArea.pressed;
-    onIsDarkScreenChanged: {
-        if(isDarkScreen && Theme.colorScheme === Theme.DarkOnLight) {
-            palette.colorScheme = Theme.LightOnDark
-            palette.highlightColor = Theme.highlightFromColor(Theme.highlightColor, Theme.LightOnDark)
-        } else {
-            palette.colorScheme = Theme.colorScheme;
-            palette.highlightColor = Theme.highlightColor;
-        }
+
+    palette {
+        colorScheme: isDarkScreen ? Theme.LightOnDark : Theme.colorScheme
+        highlightColor:  isDarkScreen ? Theme.highlightFromColor(Theme.highlightColor, Theme.LightOnDark) : Theme.highlightFromColor(Theme.highlightColor, Theme.colorScheme)
     }
 
     Rectangle {
@@ -34,10 +30,9 @@ Page {
         opacity: 0
         visible: SleepTimer.finalizing && settings.timerFadeVisualEffectEnabled
         SequentialAnimation on opacity {
-
             PropertyAnimation {from:0; to: 0.8; duration: 1000 }
             PropertyAnimation {from:0.8; to: 0; duration: 1000 }
-            running: (SleepTimer.finalizing) && settings.timerFadeVisualEffectEnabled && Qt.application.active
+            running: SleepTimer.finalizing && settings.timerFadeVisualEffectEnabled && Qt.application.state === Qt.ApplicationActive
             loops: Animation.Infinite
         }
     }
@@ -55,14 +50,15 @@ Page {
             onActiveChanged: {
                 globals.accelerometerTrigger.paused = active
             }
-
             MenuItem {
                 visible: !SleepTimer.running
-                text: qsTr("Options")
-                onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage:page})
+                //: Menu Entry to get to the options page
+                text: qsTr('Options')
+                onClicked: pageStack.push(Qt.resolvedUrl('Options.qml'))
             }
             MenuItem {
-                text: qsTr("Stop Timer")
+                //: Menu Entry to stop an active timer
+                text: qsTr('Stop Timer')
                 visible: SleepTimer.running
                 onClicked: SleepTimer.stop()
             }
@@ -76,7 +72,8 @@ Page {
 
             MenuItem {
                 enabled: SleepTimer.running
-                text: qsTr("Stop Timer")
+                //: Menu Entry to stop an active timer
+                text: qsTr('Stop Timer')
                 onClicked: {
                     pushUpStillVisibleTimer.start();
                     SleepTimer.stop()
@@ -91,24 +88,34 @@ Page {
         contentHeight: page.height
         PageHeader {
             id: pageHeader
-            title: qsTr("slumber")
-            anchors.right: settings.viewActiveOptionsButtonEnabled? optionsButton.left: parent.right
-
+            //: Page Header text on main page
+            title: qsTr('slumber')
+            anchors.right: settings.viewActiveOptionsButtonEnabled ? optionsButton.left : parent.right
+            rightMargin: settings.viewActiveOptionsButtonEnabled ? 0 : Theme.horizontalPageMargin
         }
         BackgroundItem {
             id: clickArea
             anchors.fill: parent
 
             TimerProgressIndicator {
-                width: Screen.width / 2
+                id: indicator
+                width: Screen.width
+                opacity: 0
                 anchors.centerIn: parent
                 fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*1.2 : Theme.fontSizeMedium
                 lineHeight: Screen.sizeCategory >= Screen.Large ? 0.8 : 1.0
+                animationDuration: Qt.application.state === Qt.ApplicationActive ? 200 : 0
+                ParallelAnimation {
+                    running: true
+                    NumberAnimation { target: indicator; property: 'width'; to: Screen.width / 2; duration: 600 }
+                    NumberAnimation { target: indicator; property: 'opacity'; easing.type: Easing.InCubic; to: 1.0; duration: 600; }
+                }
             }
-
 
             onClicked: {
                 SleepTimer.start()
+//                clickArc.value = Math.random();
+//                clickArc.active = !clickArc.active;
             }
             onPressAndHold: {
                 var minutes = (settings.timerSeconds / 60);
@@ -120,7 +127,7 @@ Page {
                     selectedHour =  Math.floor(minutes /60);
                     selectedMinute = minutes - selectedHour * 60;
                 }
-                var dialog = pageStack.push("Sailfish.Silica.TimePickerDialog", {
+                var dialog = pageStack.push('Sailfish.Silica.TimePickerDialog', {
                                                 hourMode:  DateTime.TwentyFourHours,
                                                 hour: selectedHour,
                                                 minute: selectedMinute
@@ -130,7 +137,7 @@ Page {
                     if(!dialog.hour && !dialog.minute) {//don't set zero-length timer, but don't make a fuss about it
                         selectedHour = 0
                         selectedMinute = 0
-                        settings.timerSeconds = 30
+                        settings.timerSeconds = 15
                         return;
                     }
 
@@ -142,53 +149,37 @@ Page {
             }
         }
 
+
         IconButton {
             id: optionsButton
             property bool active:  settings.viewActiveOptionsButtonEnabled
             visible: active
-            icon.source: "image://theme/icon-m-developer-mode"
-
-            anchors.verticalCenter: pageHeader.verticalCenter
-            anchors.right: parent.right
+            icon.source: 'image://theme/icon-m-developer-mode'
+            anchors {
+                verticalCenter: pageHeader.verticalCenter
+                right: parent.right
+                rightMargin: Theme.horizontalPageMargin
+            }
             height: pageHeader.height
-
-            onClicked: pageStack.push(Qt.resolvedUrl("Options.qml"), {firstPage: page})
+            onClicked: pageStack.push(Qt.resolvedUrl('Options.qml'))
             onPressAndHold: SleepTimer.triggered()
         }
 
-
-        Item {
+        Text {
+            font.pixelSize: Theme.fontSizeSmall
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: Theme.paddingLarge
+            }
             width: parent.width
-            height: text2.height
-
-            anchors.horizontalCenter: parent.horizontalCenter
-
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: Theme.paddingLarge
-
-            Text
-            {
-                id:text1
-                font.pixelSize: Theme.fontSizeSmall
-                anchors.horizontalCenter: parent.horizontalCenter
-                color: palette.secondaryHighlightColor
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: (SleepTimer.running? qsTr("Tap to restart,"):qsTr("Tap to start,"))
-            }
-            Text
-            {
-
-                id:text2
-
-                font.pixelSize: Theme.fontSizeSmall
-                anchors.horizontalCenter: parent.horizontalCenter
-                color: palette.secondaryHighlightColor
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: '\n' + (SleepTimer.running? qsTr("pull up or down to stop"):qsTr("pull down for options"))
-            }
+            color: palette.secondaryHighlightColor
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+            //: Short description of gestures on main page (timer running)
+            text: SleepTimer.running? qsTr('Tap to restart,\npull up or down to stop')
+                    //: Short description of gestures on main page (timer NOT running)
+                                    :qsTr('Tap to start,\npull down for options')
         }
-
-
     }
 }
 

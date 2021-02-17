@@ -60,9 +60,7 @@ Item {
         id: resetTimer
         interval: 450 // some players take a while to pause. Not ideal.
         onTriggered: {
-            console.log("resetting volume")
             VolumeControl.setVolume(resetToVolume)
-            console.log("done resetting volume")
             resetToVolume = -1
             doneTimer.start()
         }
@@ -80,7 +78,7 @@ Item {
     NumberAnimation{
         id:audiofadeout;
         target: volumeSet;
-        property: "volume";
+        property: 'volume';
         from:0
         to: 0;
         easing.type: Easing.Linear

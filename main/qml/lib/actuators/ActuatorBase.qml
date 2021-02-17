@@ -7,7 +7,7 @@ Item {
     visible: false
 
     function run() {
-        console.log("overload this run thing");
+        console.log('overload this run thing');
         done()
     }
     function done() {

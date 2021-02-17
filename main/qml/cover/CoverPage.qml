@@ -34,7 +34,7 @@ import '../lib'
 CoverBackground {
     Image {
         opacity: 0.2
-        source: "../assets/moon.png"
+        source: '../assets/moon.png'
         width: 243 / 2
         height: 256 / 2
 //        scale: 0.5
@@ -48,6 +48,8 @@ CoverBackground {
         textcolor: Theme.primaryColor
         secondarytextcolor: Theme.secondaryColor
         viewActiveIndicatorEnabled: false
+
+        animationDuration: Qt.application.state === Qt.ApplicationActive ? 0 : 200
     }
 
     CoverActionList {
@@ -56,7 +58,7 @@ CoverBackground {
         enabled: !SleepTimer.running
 
         CoverAction {
-            iconSource: "image://theme/icon-cover-play"
+            iconSource: 'image://theme/icon-cover-play'
             onTriggered: {
                 SleepTimer.start()
             }
@@ -69,14 +71,14 @@ CoverBackground {
         enabled: SleepTimer.running
 
         CoverAction {
-            iconSource: "image://theme/icon-cover-refresh"
+            iconSource: 'image://theme/icon-cover-refresh'
             onTriggered: {
                 SleepTimer.start()
             }
         }
 
         CoverAction {
-            iconSource: "image://theme/icon-cover-cancel"
+            iconSource: 'image://theme/icon-cover-cancel'
             onTriggered: {
                 SleepTimer.stop()
             }

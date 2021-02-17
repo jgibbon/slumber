@@ -1,16 +1,13 @@
 import QtQuick 2.6
 import Sailfish.Silica 1.0
 import de.gibbon.slumber 1.0
-import "../lib/"
+import '../lib/'
 
 
 Page {
     id: page
 
-    property FirstPage firstPage
-
-    allowedOrientations: firstPage.allowedOrientations
-    orientation: firstPage.orientation
+    allowedOrientations: Orientation.All
 
     property bool rightsGranted: false
     property bool rightsChecked: false
@@ -20,16 +17,6 @@ Page {
         Component.onCompleted: {
             page.rightsGranted = checkPrivilegedLauncher();
             page.rightsChecked = true;
-//            console.log('alright?', alright)
-//            if(!alright) {
-//                var result = preparePrivilegedLauncher('PW');
-//                console.log('result', result);
-
-//                alright = checkPrivilegedLauncher();
-//                console.log('alright?', alright)
-//            }
-//            result = launchPrivileged("dbus-send --system --print-reply --dest=net.connman /net/connman/technology/bluetooth net.connman.Technology.SetProperty string:\"Powered\" variant:boolean:false")
-//            console.log('does it work?', result);
         }
     }
 
@@ -43,18 +30,19 @@ Page {
         Column {
             width: parent.width
             id: mainColumn
+            bottomPadding: Theme.paddingLarge
 
             PageHeader {
 
                 //: Page Header: Like other actions (when the timer runs out), but requiring administrative rights (root)
                 //~ Context Page Header: Privileged Actions (when the timer runs out) require administrative rights (root)
-                title: qsTr("Privileged Actions")
+                title: qsTr('Privileged Actions')
             }
 
             Column {
                 width: parent.width
                 move: Transition {
-                    NumberAnimation { properties: "x,y"; duration: 300 }
+                    NumberAnimation { properties: 'x,y'; duration: 300 }
                 }
                 Column {
                     visible: page.rightsChecked && !page.rightsGranted
@@ -67,7 +55,8 @@ Page {
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         width: parent.width - (Theme.horizontalPageMargin * 2)
                         x: Theme.horizontalPageMargin
-                        text: qsTr("You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you'll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.")
+                        //: Label Text: describe root access for privileged actions
+                        text: qsTr('You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you\'ll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.')
                     }
 
                     Item {
@@ -100,7 +89,8 @@ Page {
 
                             color: Theme.highlightColor
 
-                            text: qsTr("Granting rights failed. Did you enable Developer Mode and enter the right password?");
+                            //: Label Text: Error message for privileged actions
+                            text: qsTr('Granting rights failed. Did you enable Developer Mode and enter the right password?');
                         }
                     }
 
@@ -111,14 +101,16 @@ Page {
                         width: parent.width
                         echoMode: TextInput.Password
                         inputMethodHints: Qt.ImhNoPredictiveText
+                        //: TextField placeholder: enter your root password
                         placeholderText: qsTr('root password')
+                        //: TextField label: enter your root password
                         label: qsTr('root password')
                         text: ''
                         onTextChanged: {
     //                        settings.timerKodiPauseHost = text
                         }
 
-                        EnterKey.iconSource: !!text ? "image://theme/icon-m-enter-next":"image://theme/icon-m-enter-close"
+                        EnterKey.iconSource: !!text ? 'image://theme/icon-m-enter-next':'image://theme/icon-m-enter-close'
                         EnterKey.onClicked: {
                             if(!!text){
                                 var pwCorrect = privLauncher.checkRootPassword(text);
@@ -150,7 +142,9 @@ Page {
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         width: parent.width - (Theme.horizontalPageMargin * 2)
                         x: Theme.horizontalPageMargin
-                        text: qsTr("Privileged access rights are granted. Revoke them by pressing the button below.")
+
+                        //: Label Text: Privileged actions now available
+                        text: qsTr('Privileged access rights are granted. Revoke them by pressing the button below.')
                     }
                     Button {
                         width: parent.width - (Theme.horizontalPageMargin * 2)
@@ -178,7 +172,7 @@ Page {
                 TextSwitch {
                     //: Text Switch: Action "Lock the screen"
                     //~ Text Switch: Action "Lock the screen"
-                    text: qsTr( "Lock Screen")
+                    text: qsTr( 'Lock Screen')
                     enabled: page.rightsGranted
                     checked: settings.timerLockScreenEnabled
                     onClicked: {
@@ -188,7 +182,7 @@ Page {
                 TextSwitch {
                     //: Text Switch: Action "Stop Alien Dalvik service"
                     //~ Text Switch: Action "Stop Alien Dalvik service"
-                    text: qsTr( "Stop Alien Dalvik")
+                    text: qsTr( 'Stop Alien Dalvik')
                     enabled: page.rightsGranted
                     checked: settings.timerStopAlienEnabled
                     onClicked: {
@@ -204,7 +198,7 @@ Page {
                 TextSwitch {
                     //: Text Switch: Action "Enable Airplane Mode"
                     //~ Text Switch: Action "Enable Airplane Mode"
-                    text: qsTr( "Enable Airplane Mode")
+                    text: qsTr( 'Enable Airplane Mode')
                     enabled: page.rightsGranted
                     checked: settings.timerAirplaneModeEnabled
                     onClicked: {
@@ -215,7 +209,7 @@ Page {
                 TextSwitch {
                     //: Text Switch: Action "Disable Wifi/wlan"
                     //~ Text Switch: Action "Disable Wifi/wlan"
-                    text: qsTr( "Disable Wifi")
+                    text: qsTr( 'Disable Wifi')
                     enabled: page.rightsGranted
                     checked: settings.timerDisableWLANEnabled
                     onClicked: {
@@ -226,7 +220,7 @@ Page {
                 TextSwitch {
                     //: Text Switch: Action "Disable Bluetooth"
                     //~ Text Switch: Action "Disable Bluetooth"
-                    text: qsTr( "Disable Bluetooth")
+                    text: qsTr( 'Disable Bluetooth')
                     enabled: page.rightsGranted
                     checked: settings.timerDisableBluetoothEnabled
                     onClicked: {
@@ -236,7 +230,7 @@ Page {
                 TextSwitch {
                     //: Text Switch: Action "Restart ofono Service"
                     //~ Text Switch: Action "Restart ofono Service"
-                    text: qsTr( "Restart ofono Service")
+                    text: qsTr( 'Restart ofono Service')
                     enabled: page.rightsGranted
                     checked: settings.timerRestartOfonoEnabled
                     onClicked: {
@@ -244,14 +238,9 @@ Page {
                     }
                     //: Text Switch description: Action "Restart ofono Service"
                     //~ Text Switch description: Action "Restart ofono Service"
-                    description: qsTr( "On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.")
+                    description: qsTr( 'On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.')
                 }
 
-            }
-
-            Item {
-                width:parent.width
-                height: Theme.paddingLarge
             }
         }
     }

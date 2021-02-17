@@ -3,11 +3,10 @@ import Sailfish.Silica 1.0
 
 
 Text {
-    property int value
     property alias description: subText.text
-    width: parent.width / 2
-    text: value
+    width: (parent.width - Theme.paddingSmall) / 2
     horizontalAlignment: Text.AlignRight
+    Behavior on opacity { NumberAnimation { duration: 500 } }
     Text {
         id: subText
         width: parent.width

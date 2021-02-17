@@ -1,15 +1,11 @@
 import QtQuick 2.6
 import Sailfish.Silica 1.0
 
-import "../lib/"
+import '../lib/'
 
 Page {
     id: page
-
-    property FirstPage firstPage
-
-    allowedOrientations: firstPage.allowedOrientations
-    orientation: firstPage.orientation
+    allowedOrientations: Orientation.All
 
     SilicaFlickable {
         id: listView
@@ -21,16 +17,16 @@ Page {
         Column {
             width: parent.width
             id: mainColumn
-            PageHeader { title: "About slumber" }
-
-            SectionHeader {
-                text: qsTr( "/ˈslʌmbə/")
-            }
+            bottomPadding: Theme.paddingLarge
+            //: PageHeader on about page.
+            PageHeader { title: qsTr('About slumber') }
+            SectionHeader { text:  '/ˈslʌmbə/' }
             Column {
                 width: parent.width
                 spacing: Theme.paddingMedium
                 Label {
                     id: helpTextLabel
+                    //: Description on about page.
                     text:qsTr('Slumber is a sleep timer program to help you doze off without much hassle while listening to stuff.')
                     verticalAlignment: Text.AlignBottom
                     wrapMode: 'WrapAtWordBoundaryOrAnywhere'
@@ -39,25 +35,27 @@ Page {
                 }
                 Label {
                     id: tmoLabel
+                    //: Text on about page.
                     text:qsTr('If you need a feature or found something that is not working, feel free to post at TMO:') + '<br />'
                     verticalAlignment: Text.AlignBottom
-
-
                     wrapMode: 'WrapAtWordBoundaryOrAnywhere'
                     width: parent.width - (Theme.paddingLarge * 2)
                     x: Theme.paddingLarge
                 }
                 Button {
-                    text: qsTr("TMO Thread for slumber")
+                    //: Text on about page: TMO = talk.maemo.org
+                    text: qsTr('TMO Thread for slumber')
                     onClicked: Qt.openUrlExternally('http://talk.maemo.org/showthread.php?p=1486493&goto=newpost')
                     x: Theme.paddingLarge
                 }
 
                 SectionHeader {
-                    text: qsTr( "Thanks!")
+                    //: Section Header on about page.
+                    text: qsTr( 'Thanks!')
                 }
                 Label {
                     id: thanksLabel
+                    //: Text on about page to thank contributors
                     text: qsTr('Thanks to all users suggesting things and everyone helping me out, especially:')
                           +'<br>'
                           +'<br>CepiPerez/carmenfdezb (i18n es)'

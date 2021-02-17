@@ -8,6 +8,20 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Feb 19 2021 velox 0.13-2
+ - bugfix: work around pagestack url bug in sfos 3.4
+
+* Fri Feb 19 2021 velox 0.13-1_preview
+ - feature: user-settable finalize duration (instead of 10s)
+ - feature: reset by amazfish watch music app activation
+ - performance: migrate settings to c++
+ - performance: migrate timer to c++
+ - performance: implement light weight progress indicator
+ - appearance/performance: restructure options; implement landscape variant
+ - enhancement: higher quality, looping sound effects
+ - enhancement/bugfix: new timeout action queue
+ - various string fixes, code simplifications
+
 * Tue Aug 04 2020 velox 0.13-1
  - feature: ofono restart privileged action
  - performance: minimal code optimization
@@ -18,10 +32,10 @@
  - enhancement: support changed Amazfish 1.0 interface
  - translation updates sl, ru (thanks, translation team!)
 
- * Thu Nov 14 2019 velox 0.12-1
-  - bugfix: fix settings page for volume restoration
-  - feature: add simple dbus interface
-  - a lot of translation updates (thanks, translation team!)
+* Thu Nov 14 2019 velox 0.12-1
+ - bugfix: fix settings page for volume restoration
+ - feature: add simple dbus interface
+ - a lot of translation updates (thanks, translation team!)
 
 * Sun May 19 2019 velox 0.11-2
  - feature: reset timer with button press on Amazfish-connected device

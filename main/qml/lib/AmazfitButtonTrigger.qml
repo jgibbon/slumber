@@ -5,6 +5,7 @@ Item {
     id: trigger
     property bool enabled: true
     signal buttonPressed(int presses)
+    signal musicAppActivated()
     Loader {
         active: trigger.enabled
         sourceComponent: Component {
@@ -27,7 +28,7 @@ Item {
                 }
 
                 DBusInterface {
-                    id: amazfish1 // amazfish 1.0
+                    id: amazfish1 // amazfish 1.0+
 
                     service: 'uk.co.piggz.amazfish'
                     iface: 'uk.co.piggz.amazfish'
@@ -35,14 +36,14 @@ Item {
 
                     signalsEnabled: true
                     function deviceEventTriggered(event) {
-                        console.log("amazfish device event", event);
-                        if(trigger.enabled && event === "EVENT_APP_MUSIC") {
-                            trigger.buttonPressed(1);
+                        console.log('device event', event)
+                        if(settings.timerAmazfishMusicResetEnabled && event === 'EVENT_APP_MUSIC') {
+                            trigger.musicAppActivated();
                         }
                     }
 
                     function buttonPressed(presses) {
-                        if(trigger.enabled) {
+                        if(settings.timerAmazfishButtonResetEnabled) {
                             trigger.buttonPressed(presses);
                         }
                     }

@@ -26,7 +26,7 @@ Button {
         down: background.down
         propagateComposedEvents: true
         enabled: false
-        icon.opacity: background.enabled ? 1.0 : 0.4
+        icon.opacity: background.enabled ? 1.0 : Theme.opacityLow
         anchors {
             left: parent.left
             verticalCenter: parent.verticalCenter
@@ -42,7 +42,9 @@ Button {
             leftMargin: Theme.paddingLarge
             rightMargin: background.horizontalPadding
         }
-        color: down ? Theme.highlightColor : Theme.primaryColor
+
+        opacity: background.enabled ? 1.0 : Theme.opacityLow
+//        color: down ? Theme.highlightColor : Theme.primaryColor
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
     }
 }

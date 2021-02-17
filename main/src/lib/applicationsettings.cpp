@@ -116,6 +116,20 @@ void ApplicationSettings::setTimerAmazfishButtonResetEnabled(bool value)
   }
 }
 
+bool ApplicationSettings::getTimerAmazfishMusicResetEnabled() const
+{
+    return settings.value("timerAmazfishMusicResetEnabled", false).toBool();
+}
+
+void ApplicationSettings::setTimerAmazfishMusicResetEnabled(bool value)
+{
+
+    if(getTimerAmazfishMusicResetEnabled() != value) {
+      settings.setValue("timerAmazfishMusicResetEnabled", value);
+      emit timerAmazfishMusicResetEnabledChanged();
+    }
+}
+
 int ApplicationSettings::getTimerAmazfishButtonResetPresses() const
 {
   return settings.value("timerAmazfishButtonResetPresses", 1).toInt();
