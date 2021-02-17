@@ -44,3 +44,16 @@ jobs:
         hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Create prerelease
+      if: contains(github.ref, 'pre')
+      run: |
+        set -x
+        assets=()
+        for asset in RPMS/*.rpm; do
+          assets+=("-a" "$asset")
+        done
+        tag_name="${GITHUB_REF##*/}"
+        hub release create -p "${assets[@]}" -m "$tag_name" "$tag_name"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
