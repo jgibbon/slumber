@@ -30,9 +30,9 @@ Item {
     }
     ProximitySensor {
         id: proxi
-        active: accelerometerTrigger.proximityActive
+        active: false
         onReadingChanged: {
-            var prox = (proxi.active ? (proxi.reading.near ? "Near" : "Far") : "Unknown");
+            var prox = (proxi.active ? (proxi.reading.near ? 'Near' : 'Far') : 'Unknown');
             if(prox === 'Near'){
                 accelerometerTrigger.triggered()
             }

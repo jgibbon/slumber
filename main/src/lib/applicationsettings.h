@@ -18,6 +18,7 @@ class ApplicationSettings : public QObject {
     Q_PROPERTY(float timerMotionThreshold READ getTimerMotionThreshold WRITE setTimerMotionThreshold NOTIFY timerMotionThresholdChanged)
     Q_PROPERTY(bool timerPauseEnabled READ getTimerPauseEnabled WRITE setTimerPauseEnabled NOTIFY timerPauseEnabledChanged)
     Q_PROPERTY(bool timerAmazfishButtonResetEnabled READ getTimerAmazfishButtonResetEnabled WRITE setTimerAmazfishButtonResetEnabled NOTIFY timerAmazfishButtonResetEnabledChanged)
+    Q_PROPERTY(bool timerAmazfishMusicResetEnabled READ getTimerAmazfishMusicResetEnabled WRITE setTimerAmazfishMusicResetEnabled NOTIFY timerAmazfishMusicResetEnabledChanged)
     Q_PROPERTY(int timerAmazfishButtonResetPresses READ getTimerAmazfishButtonResetPresses WRITE setTimerAmazfishButtonResetPresses NOTIFY timerAmazfishButtonResetPressesChanged)
     Q_PROPERTY(bool timerLockScreenEnabled READ getTimerLockScreenEnabled WRITE setTimerLockScreenEnabled NOTIFY timerLockScreenEnabledChanged)
     Q_PROPERTY(bool timerStopAlienEnabled READ getTimerStopAlienEnabled WRITE setTimerStopAlienEnabled NOTIFY timerStopAlienEnabledChanged)
@@ -83,6 +84,9 @@ public:
 
     bool getTimerAmazfishButtonResetEnabled() const;
     void setTimerAmazfishButtonResetEnabled(bool value);
+
+    bool getTimerAmazfishMusicResetEnabled() const;
+    void setTimerAmazfishMusicResetEnabled(bool value);
 
     int getTimerAmazfishButtonResetPresses() const;
     void setTimerAmazfishButtonResetPresses(int value);
@@ -192,6 +196,7 @@ signals:
     void timerMotionThresholdChanged();
     void timerPauseEnabledChanged();
     void timerAmazfishButtonResetEnabledChanged();
+    void timerAmazfishMusicResetEnabledChanged();
     void timerAmazfishButtonResetPressesChanged();
     void timerLockScreenEnabledChanged();
     void timerStopAlienEnabledChanged();

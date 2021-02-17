@@ -22,45 +22,50 @@ SOURCES += src/slumber.cpp \
     src/lib/sleeptimer.cpp \
     src/lib/volumefade.cpp
 
-DISTFILES += qml/cover/CoverPage.qml \
-  qml/harbour-slumber.qml \
-  qml/pages/Options_Appearance.qml \
-  qml/pages/Options_TimerEnd_Privileged.qml \
-  qml/pages/Options_TimerEnd.qml \
-  qml/pages/About.qml \
-  qml/pages/Options_TimerReset.qml \
-  qml/pages/Options.qml \
-  qml/pages/FirstPage.qml \
-  qml/js/settings.js \
-  qml/lib/actuators/VoidPlayPause.qml \
-  qml/lib/actuators/NetworkKodi.qml \
-  qml/lib/actuators/PrivilegedLauncher.qml \
-  qml/lib/actuators/NetworkBase.qml \
-  qml/lib/actuators/MprisPause.qml \
-  qml/lib/actuators/Test.qml \
-  qml/lib/actuators/DisconnectBT.qml \
-  qml/lib/actuators/ActuatorBase.qml \
-  qml/lib/actuators/NetworkVLC.qml \
-  qml/lib/InlineNotification.qml \
-  qml/lib/VolumeFade.qml \
-  qml/lib/TimerProgressIndicator.qml \
-  qml/lib/TimerText.qml \
-  qml/lib/HighlightImageButton.qml \
-  qml/lib/LegacyOptions.qml \
-  qml/lib/ImageLabelButton.qml \
-  qml/lib/MprisPlayingScanner.qml \
-  qml/lib/TimerNotificationTrigger.qml \
-  qml/lib/AccelerometerTrigger.qml \
-  qml/lib/ScreenBlank.qml \
-  qml/lib/ActuatorManager.qml \
-  qml/lib/Globals.qml \
-  qml/lib/AmazfitButtonTrigger.qml \
-  qml/assets/moon.png \
-  qml/assets/sound/cassette-noise.wav \
-  qml/assets/sound/sea-waves.wav \
-  qml/assets/sound/clock-ticking.wav \
-  qml/assets/sound/LICENSE.txt \
-  qml/assets/sound/void.mp3 \
+DISTFILES += qml/assets/moon.png \
+    qml/assets/sound/cassette-noise.wav \
+    qml/assets/sound/clock-ticking.wav \
+    qml/assets/sound/LICENSE.txt \
+    qml/assets/sound/sea-waves.wav \
+    qml/assets/sound/void.mp3 \
+    qml/cover/CoverPage.qml \
+    qml/harbour-slumber.qml \
+    qml/lib/AccelerometerTrigger.qml \
+    qml/lib/ActuatorManager.qml \
+    qml/lib/actuators/ActuatorBase.qml \
+    qml/lib/actuators/DisconnectBT.qml \
+    qml/lib/actuators/MprisPause.qml \
+    qml/lib/actuators/NetworkBase.qml \
+    qml/lib/actuators/NetworkKodi.qml \
+    qml/lib/actuators/NetworkVLC.qml \
+    qml/lib/actuators/PrivilegedLauncher.qml \
+    qml/lib/actuators/Test.qml \
+    qml/lib/actuators/VoidPlayPause.qml \
+    qml/lib/AmazfitButtonTrigger.qml \
+    qml/lib/Globals.qml \
+    qml/lib/HighlightImageButton.qml \
+    qml/lib/ImageLabelButton.qml \
+    qml/lib/InlineNotification.qml \
+    qml/lib/LegacyOptions.qml \
+    qml/lib/MprisPlayingScanner.qml \
+    qml/lib/ScreenBlank.qml \
+    qml/lib/SettingsGrid.qml \
+    qml/lib/SettingsSectionButton.qml \
+    qml/lib/SlumberCircle.qml \
+    qml/lib/TimerNotificationTrigger.qml \
+    qml/lib/TimerProgressIndicator.qml \
+    qml/lib/TimerText.qml \
+    qml/lib/VolumeFade.qml \
+    qml/pages/About.qml \
+    qml/pages/FirstPage.qml \
+    qml/pages/Options_Appearance.qml \
+    qml/pages/Options_Finalize.qml \
+    qml/pages/Options_TimerControl_Amazfish.qml \
+    qml/pages/Options_TimerControl.qml \
+    qml/pages/Options_TimerEnd_NetworkPlayers.qml \
+    qml/pages/Options_TimerEnd_Privileged.qml \
+    qml/pages/Options_TimerEnd.qml \
+    qml/pages/Options.qml
 
 
 appicons.path = /usr/share/icons/hicolor

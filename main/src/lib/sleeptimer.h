@@ -14,6 +14,7 @@ class SleepTimer : public QTimer
     Q_PROPERTY(bool finalizing READ getFinalizing NOTIFY finalizingChanged)
 //    Q_PROPERTY(int remainingTime READ getRemainingTime NOTIFY remainingTimeChanged)
     Q_PROPERTY(int remainingSeconds READ getRemainingSeconds NOTIFY remainingSecondsChanged)
+    Q_PROPERTY(double remaining READ getRemainingFactor NOTIFY remainingFactorChanged)
 
 public:
     explicit SleepTimer(QObject *parent = nullptr, ApplicationSettings *appsettings = nullptr);
@@ -27,15 +28,17 @@ public:
     int getRemainingSeconds() const;
     void setFinalizeSeconds(int value);
     void setDurationSeconds(int value);
+    double getRemainingFactor() const;
 
 signals:
-//    void remainingTimeChanged();
+    //    void remainingTimeChanged();
     void remainingSecondsChanged();
     void durationSecondsChanged();
     void finalizingChanged();
     void finalizeMillisecondsChanged();
     void isActiveChanged();
     void triggered();
+    void remainingFactorChanged();
     //void reset(); we use activeChanged.
 
 private slots:
@@ -52,6 +55,7 @@ private:
     bool finalizing;
 //    int remainingTime;
     int remainingSeconds;
+    double remainingFactor;
     int finalizeSeconds;
     int durationSeconds;
 //    int remainingMilliseconds;

@@ -4,7 +4,7 @@ import Nemo.DBus 2.0
 Item {
     property bool enabled: false
     function request(){
-        var method = "req_display"+(enabled?"":"_cancel")+"_blanking_pause";
+        var method = 'req_display'+(enabled?'':'_cancel')+'_blanking_pause';
         console.log('screen blank:', enabled, method);
         dbif.call(method, [])
     }
@@ -16,9 +16,9 @@ Item {
     DBusInterface {
         id: dbif
 
-        service: "com.nokia.mce"
-        path: "/com/nokia/mce/request"
-        iface: "com.nokia.mce.request"
+        service: 'com.nokia.mce'
+        path: '/com/nokia/mce/request'
+        iface: 'com.nokia.mce.request'
 
         bus: DBusInterface.SystemBus
     }

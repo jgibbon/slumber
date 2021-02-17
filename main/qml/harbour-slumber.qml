@@ -31,10 +31,10 @@
 import QtQuick 2.6
 import Sailfish.Silica 1.0
 import Nemo.DBus 2.0
-import "pages"
+import 'pages'
 
-import "cover"
-import "lib"
+import 'cover'
+import 'lib'
 
 import de.gibbon.slumber 1.0
 
@@ -79,7 +79,7 @@ ApplicationWindow
     Loader {
         active: settings.legacySettingsPossiblyAvailable
         asynchronous: true
-        source: Qt.resolvedUrl("./lib/LegacyOptions.qml")
+        source: Qt.resolvedUrl('./lib/LegacyOptions.qml')
     }
 
 }

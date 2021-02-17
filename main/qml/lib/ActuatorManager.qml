@@ -6,26 +6,17 @@ Item {
         currentIndex += 1;
         if(children[currentIndex]) {
             if(children[currentIndex].enabled) {
-                console.log("running actuator", currentIndex);
+                console.log('running actuator', currentIndex);
                 children[currentIndex].run();
             } else {
                 next()
             }
         } else {
-            console.log("no more actuators found");
+            console.log('no more actuators found');
             currentIndex = -1;
         }
     }
     function run() {
         next()
-    }
-
-    Component.onCompleted: {
-//        console.log("manager", children.length);
-//        var len = children.length
-//        for(var i=0; i < len; i += 1) {
-//            console.log("child", i)
-//        }
-
     }
 }

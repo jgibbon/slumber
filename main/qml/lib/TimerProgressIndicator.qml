@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 
 Item {
     id:sleepTimerWidget
-    property real value: SleepTimer.remainingSeconds / settings.timerSeconds //0.0
+    property real value: SleepTimer.remaining
     property bool running: SleepTimer.running//true
     property bool timeFormatShort: settings.viewTimeFormatShort//false //one line
     property color textcolor: palette.highlightColor
@@ -13,51 +13,32 @@ Item {
     property real busyborder: width * 0.02
     property int fontSize: Theme.fontSizeMedium
     property real lineHeight: 1.0
-    readonly property real progressborder: ((width - busysize) / 2) + busyborder*0.5
+    property real progressborderDifference: (running?0:busyborder)
+    Behavior on progressborderDifference { NumberAnimation { easing.type: Easing.InOutQuad;duration: 300;} }
+    property real progressborder: ((width - busysize) / 2) + progressborderDifference// + busyborder*progressborderFactor
     property bool viewActiveIndicatorEnabled: settings.viewActiveIndicatorEnabled
-    anchors.horizontalCenter: parent.horizontalCenter
+    property int animationDuration: 200
 
-    Rectangle {
-        color: Qt.rgba(0,0,0,0)
-        border {
-            color: Theme.rgba(palette.highlightBackgroundColor, 0.2)
-            width: progressborder
-        }
-        radius: width/2
-        anchors.fill: parent
-    }
     Item {
         id: circlesContainer
         anchors.fill: parent
-        opacity: sleepTimerWidget.running ? 1.0 : 0.0
-        visible: opacity > 0
-        Behavior on opacity { FadeAnimation { id: fadeAnimation }}
-
         Item {
             id: progressCircleContainer
             anchors.fill: parent
-            rotation:  (sleepTimerWidget.value * 180) -180
-            Behavior on rotation { NumberAnimation { duration: 200 }}
-
-            ProgressCircle {
-                id: progressCircle
+            SlumberCircle {
                 anchors.fill: parent
-                value: 1 - sleepTimerWidget.value
+                value: sleepTimerWidget.value
                 borderWidth: progressborder
-                progressColor: palette.highlightColor
-
-                Behavior on value { NumberAnimation { duration: 200 }}
-                backgroundColor: 'transparent'
-                inAlternateCycle: true
-                onValueChanged: {
-                    inAlternateCycle = true
-                    _previousValue = value //TODO check if still needed
-                }
+                backgroundColor:  Theme.rgba(palette.highlightBackgroundColor, Theme.opacityFaint)
+                valueColor: SleepTimer.running ? palette.highlightColor : Theme.rgba(palette.highlightColor, 0.0)
+                Behavior on value { NumberAnimation { duration: sleepTimerWidget.animationDuration }}
+                Behavior on valueColor { ColorAnimation { duration: sleepTimerWidget.animationDuration }}
             }
+
 
         }
         Loader {
-            active: sleepTimerWidget.viewActiveIndicatorEnabled
+            active: sleepTimerWidget.viewActiveIndicatorEnabled && sleepTimerWidget.running
             asynchronous: true
 
             anchors.centerIn: parent
@@ -69,18 +50,18 @@ Item {
                     id: busyindicatorrect
                     property int duration: 20000
                     SequentialAnimation on rotation {
-                        PropertyAnimation {from:0; to: 360; duration: busyindicatorrect.duration }
-                        running: (sleepTimerWidget.running) && Qt.application.active
+                        PropertyAnimation {from:45; to: 405; duration: busyindicatorrect.duration }
+                        running: (sleepTimerWidget.running) && Qt.application.state === Qt.ApplicationActive
                         loops: Animation.Infinite
                     }
-                    ProgressCircle {
+
+                    SlumberCircle {
                         id: busyindicator
                         anchors.fill: parent
-                        value: 0.25
+                        value: 0.75
                         borderWidth: busyborder
-                        progressColor: palette.highlightColor
+                        valueColor: palette.highlightColor
                         backgroundColor: 'transparent'
-                        inAlternateCycle: true
                     }
                 }
             }
@@ -96,7 +77,7 @@ Item {
             verticalAlignment: Text.AlignVCenter
             readonly property int seconds: SleepTimer.remainingSeconds
             color: textcolor
-            text: (seconds < 61 ? ("0"+seconds).slice(-2)+"s"
+            text: (seconds < 61 ? ('0'+seconds).slice(-2)+'s'
                                                    : Format.formatDuration(seconds, seconds > 3599 ? Formatter.Duration : Formatter.DurationShort)).replace(/:/g, '<font color="'+secondarytextcolor+'">:</font>');
             font.pixelSize: sleepTimerWidget.fontSize
         }
@@ -111,25 +92,33 @@ Item {
             readonly property int lineHeight: seconds < 3600 ? sleepTimerWidget.lineHeight: 1.0
             height: childrenRect.height
             width: sleepTimerWidget.width
+            move: Transition {
+                NumberAnimation { easing.type: Easing.InOutQuad; properties: 'y'; duration: 500; }
+            }
             TimerText {
-                visible: parent.seconds >= 3600
-                value: parseInt(longTextColumn.formattedEntries[0])
-                description: qsTr("Hrs", "short: [x] Hour(s)", value);
+                visible: opacity > 0
+                opacity: parent.seconds >= 3600 ? 1.0 : 0.0
+                text: parseInt(longTextColumn.formattedEntries[0])
+                //: "Long" duration option, the shortest variant of [x] Hour(s) you can find
+                description: qsTr('Hrs', 'short: [x] Hour(s)', value);
                 color: textcolor
                 font.pixelSize: sleepTimerWidget.fontSize
                 lineHeight: parent.lineHeight
             }
             TimerText {
-                visible: parent.seconds >= 60
-                value: parseInt(longTextColumn.formattedEntries[1])
-                description: qsTr("Min", "short: [x] Minute(s)", value);
+                visible: opacity > 0
+                opacity: parent.seconds >= 60 ? 1.0 : 0.0
+                text: parseInt(longTextColumn.formattedEntries[1])
+                //: "Long" duration option, the shortest variant of [x] Minute(s) you can find
+                description: qsTr('Min', 'short: [x] Minute(s)', value);
                 color: textcolor
                 font.pixelSize: sleepTimerWidget.fontSize
                 lineHeight: parent.lineHeight
             }
             TimerText {
-                value: parseInt(longTextColumn.formattedEntries[2])
-                description: qsTr("Sec", "short: [x] Seconds(s)", value);
+               text: parseInt(longTextColumn.formattedEntries[2])
+                //: "Long" duration option, the shortest variant of [x] Seconds(s) you can find
+                description: qsTr('Sec', 'short: [x] Seconds(s)', value);
                 color: textcolor
                 font.pixelSize: sleepTimerWidget.fontSize
                 lineHeight: parent.lineHeight

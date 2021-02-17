@@ -1,13 +1,13 @@
 import QtQuick 2.6
 import QtMultimedia 5.6
-import "actuators" as Actuator
+import 'actuators' as Actuator
 
 Item {
     property alias accelerometerTrigger: accelerometerTrigger
-
     property alias fadeOutSound: fadeOutSound
-//    property alias actionPauseKodi: actionPauseKodi
-//    property alias actionPauseVLC: actionPauseVLC
+
+    property alias actionPauseKodi: actionPauseKodi
+    property alias actionPauseVLC: actionPauseVLC
 
 
     ScreenBlank {
@@ -25,10 +25,15 @@ Item {
         }
     }
     AmazfitButtonTrigger {
-        enabled: settings.timerAmazfishButtonResetEnabled
+        enabled: settings.timerAmazfishButtonResetEnabled || settings.timerAmazfishMusicResetEnabled
         onButtonPressed: {
-//            console.log('well…', SleepTimer.running, presses, settings.timerAmazfishButtonResetPresses, presses === settings.timerAmazfishButtonResetPresses)
             if(SleepTimer.running && presses === settings.timerAmazfishButtonResetPresses) {
+                SleepTimer.start()
+            }
+
+        }
+        onMusicAppActivated: {
+            if(SleepTimer.running) {
                 SleepTimer.start()
             }
         }
@@ -54,6 +59,7 @@ Item {
             Actuator.MprisPause { enabled: settings.timerPauseEnabled }
             Actuator.VoidPlayPause { enabled: settings.timerPauseEnabled }
             Actuator.NetworkKodi {
+                id: actionPauseKodi
                 enabled: settings.timerKodiPauseEnabled
                 host: settings.timerKodiPauseHost
                 user: settings.timerKodiPauseUser
@@ -61,6 +67,7 @@ Item {
                 secondaryCommand: settings.timerKodiSecondaryCommand
             }
             Actuator.NetworkVLC {
+                id: actionPauseVLC
                 enabled: settings.timerVLCPauseEnabled
                 host: settings.timerVLCPauseHost
                 user: settings.timerVLCPauseUser
@@ -135,11 +142,11 @@ Item {
 
         onFileChanged: {
             stop()
-            if(file === "cassette-noise") {
+            if(file === 'cassette-noise') {
                 effect = fadeOutSoundCassette;
-            } else if(file === "clock-ticking") {
+            } else if(file === 'clock-ticking') {
                 effect = fadeOutSoundTicking;
-            } else if(file === "sea-waves") {
+            } else if(file === 'sea-waves') {
                 effect = fadeOutSoundSea;
             }
         }

@@ -5,6 +5,7 @@ SleepTimer::SleepTimer(QObject *parent, ApplicationSettings *appsettings) : QTim
   settings(appsettings),
   finalizing(false),
   remainingSeconds(settings->getTimerSeconds()),
+  remainingFactor(1.0),
   finalizeSeconds(settings->getTimerFinalizingSeconds())
 {
 
@@ -77,9 +78,7 @@ void SleepTimer::start()
         resetRemainingSeconds();
     }
     QTimer::start();
-    if(!wasActive) {
-        emit isActiveChanged();
-    }
+    emit isActiveChanged();
 }
 
 void SleepTimer::stop()
@@ -114,18 +113,28 @@ void SleepTimer::resetRemainingSeconds()
     if(remainingSeconds != durationSeconds) {
         remainingSeconds = durationSeconds;
         emit remainingSecondsChanged();
+        remainingFactor = 1.0;
+        emit remainingFactorChanged();
     }
+}
+
+double SleepTimer::getRemainingFactor() const
+{
+    return remainingFactor;
 }
 
 // slots
 void SleepTimer::onTimeout()
 {
     remainingSeconds -= 1;
+    remainingFactor = remainingSeconds / (double)durationSeconds;
+
     if(remainingSeconds == 0) {
         stop();
         emit triggered();
     } else {
         emit remainingSecondsChanged();
+        emit remainingFactorChanged();
         if(!finalizing && remainingSeconds <= finalizeSeconds) {
             finalizing = true;
             emit finalizingChanged();

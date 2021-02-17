@@ -33,12 +33,12 @@
 #include <QtQuick>
 
 #include <sailfishapp.h>
-//#include "lib/volumecontrol.h"
 #include "lib/launcher.h"
 #include "lib/volumefade.h"
 #include "lib/pavolume.h"
 #include "lib/sleeptimer.h"
 #include "lib/applicationsettings.h"
+//#include "lib/slumbervaluearc.h"
 
 
 int main(int argc, char *argv[])
@@ -55,17 +55,16 @@ int main(int argc, char *argv[])
     QQuickView *viewData = v.data();
     QQmlContext *context = viewData->rootContext();
 
-    VolumeFade *vc = new VolumeFade(viewData);
+    VolumeFade *vf = new VolumeFade(viewData);
     ApplicationSettings *appSettings = new ApplicationSettings(viewData);
     SleepTimer *sleeptimer = new SleepTimer(viewData, appSettings);
 
     qmlRegisterUncreatableType<ApplicationSettings>(uri, 1, 0, "Settings", QString());
-
+//    qmlRegisterType<SlumberValueArc>(uri, 1, 0, "SlumberValueArc");
     qmlRegisterType<Launcher>(uri, 1 , 0 , "Launcher");
     context->setContextProperty("settings", appSettings);
-    context->setContextProperty("VolumeControl", vc);
+    context->setContextProperty("VolumeControl", vf);
     context->setContextProperty("SleepTimer", sleeptimer);
-//    v->rootContext()->setContextProperty("Volume", &fader);
     // Start the application.
     v->setSource(SailfishApp::pathTo("qml/harbour-slumber.qml"));
     v->show();
