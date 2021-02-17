@@ -8,8 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Fri Feb 19 2021 velox 0.13-2
+* Fri Feb 19 2021 velox 0.13-3
  - bugfix: work around pagestack url bug in sfos 3.4
+ - translation updates (thanks, translation team!)
 
 * Fri Feb 19 2021 velox 0.13-1_preview
  - feature: user-settable finalize duration (instead of 10s)
