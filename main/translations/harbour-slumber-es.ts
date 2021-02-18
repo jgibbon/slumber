@@ -7,7 +7,7 @@
         <location filename="../qml/pages/About.qml" line="22"/>
         <source>About slumber</source>
         <extracomment>PageHeader on about page.</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Acerca de slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
@@ -66,14 +66,16 @@
         <source>Tap to restart,
 pull up or down to stop</source>
         <extracomment>Short description of gestures on main page (timer running)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Toca para reiniciar,
+tira hacia arriba o abajo para parar</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>Tap to start,
 pull down for options</source>
         <extracomment>Short description of gestures on main page (timer NOT running)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Toca para iniciar,
+tira hacia abajo para opciones</translation>
     </message>
 </context>
 <context>
@@ -115,19 +117,19 @@ pull down for options</source>
         <location filename="../qml/pages/Options.qml" line="86"/>
         <source>Please set duration longer than 0:00</source>
         <extracomment>Short error message when a 0:00 duration has been set</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Establece una duración superior a 0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
         <source>Timer Control</source>
         <extracomment>Button Text: go to timer control options (start, stop or restart the timer automatically)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Control del temporizador</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="113"/>
         <source>Start, stop or reset the timer automatically, for example when media playback is detected.</source>
         <extracomment>Button Description: go to timer control options (start, stop or restart the timer automatically)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>El temporizador se inicia, para o reinicia, por ejemplo cuando se detecta una reproducción multimedia.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="121"/>
@@ -145,7 +147,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options.qml" line="129"/>
         <source>You can enable some special functions for the last seconds before the timer runs out, for example fading out media volume or displaying notifications.</source>
         <extracomment>Button Description: go to timer finalize options (configurable duration just before the timer runs out)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Puedes activar algunas funciones especiales durante los últimos segundos antes de que el temporizador se acabe, como por ejemplo, bajar el volumen o mostrar notificaciones.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="93"/>
@@ -196,19 +198,19 @@ pull down for options</source>
         <location filename="../qml/pages/Options_Appearance.qml" line="30"/>
         <source>Compact time format</source>
         <extracomment>TextSwitch: Enable a short time format for the timer duration, like 1:23:45</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Formato de tiempo compacto</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="43"/>
         <source>Indicator</source>
         <extracomment>TextSwitch: Enable a rotating thing on the main page when the timer runs</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Indicador</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="59"/>
         <source>Options Button</source>
         <extracomment>TextSwitch: Enable a dedicated button to get to the settings</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Botón de opciones</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="66"/>
@@ -258,7 +260,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_Finalize.qml" line="72"/>
         <source>Lowers System Volume to 0</source>
         <extracomment>TextSwitch description: Fade out system volume while finalizing</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Baja el volumen del sistema a 0</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Finalize.qml" line="80"/>
@@ -282,7 +284,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_Finalize.qml" line="115"/>
         <source>To alert you that the timer is running out</source>
         <extracomment>TextSwitch description: Play sound effect while finalizing</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Para avisarte de que el temporizador se está acabando</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Finalize.qml" line="127"/>
@@ -336,7 +338,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_Finalize.qml" line="220"/>
         <source>Display a Notification shortly before the timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
         <extracomment>TextSwitch description: Display system notification while finalizing</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Muestra una notificación poco antes de que el temporizador se acabe. Las notificaciones activan la pantalla, y con ella, las lecturas del acelerómetro.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Finalize.qml" line="229"/>
@@ -348,7 +350,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_Finalize.qml" line="236"/>
         <source>Flashes the main screen before the timer is running out</source>
         <extracomment>TextSwitch description: flash main page a bit while finalizing</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>La pantalla principal parpadea antes de que se acabe el temporizador</translation>
     </message>
 </context>
 <context>
@@ -357,25 +359,25 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerControl.qml" line="25"/>
         <source>Control Timer</source>
         <extracomment>PageHeader: Timer control settings (automatic start/stop/restart)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Control del temporizador</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl.qml" line="31"/>
         <source>Start timer if playback is detected</source>
         <extracomment>TextSwitch: autostart on media playback</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar temporizador al detectar reproducción</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl.qml" line="38"/>
         <source>Automatically start timer when playback is detected.</source>
         <extracomment>TextSwitch description: autostart on media playback</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>El temporizador se inicia automáticamente cuando detecta la reproducción.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl.qml" line="44"/>
         <source>Stop timer if playback is stopped</source>
         <extracomment>TextSwitch: stop automatically with media playback</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Parar temporizador si se para la reproducción</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl.qml" line="52"/>
@@ -387,7 +389,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerControl.qml" line="61"/>
         <source>Reset Timer</source>
         <extracomment>section header: entries for automatically resetting the timer to start duration</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Reiniciar temporizador</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl.qml" line="72"/>
@@ -401,7 +403,7 @@ pull down for options</source>
         <source>Reset timer by moving the device</source>
         <comment>combo box: reset by moving [off]</comment>
         <extracomment>ComboBox: accelerometer – reset by moving [off]</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Reiniciar el temporizador moviendo el dispositivo</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl.qml" line="103"/>
@@ -449,7 +451,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerControl.qml" line="159"/>
         <source>Using the Accelerometer may have an impact on power consumption while playing and only works when the display is lit. If your device supports double tap to wake, you can tap thrice to wake up your device and trigger the Accelerometer. Otherwise you can show a notification in the finalizing phase to turn on the display.</source>
         <extracomment>Label text: notice about using the accelerometer</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Usar el acelerómetro durante la reproducción puede tener un impacto en el consumo de la batería y sólo funciona si la pantalla está encendida. Si tu dispositivo soporta el doble toque para activarlo, puedes tocar tres veces para que tu dispositivo salga del modo reposo y se active el acelerómetro. En caso contrario, puedes mostrar una notificación en la fase de finalización para encender la pantalla.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl.qml" line="168"/>
@@ -467,7 +469,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerControl.qml" line="194"/>
         <source>Amazfish integration</source>
         <extracomment>Button text: go to settings page to reset timer with smartwatch events from the amazfish application</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Integración con Amazfish</translation>
     </message>
 </context>
 <context>
@@ -477,14 +479,14 @@ pull down for options</source>
         <source>Amazfish Integation</source>
         <comment>header; options</comment>
         <extracomment>PageHeader: Options to reset the timer with smartwatch events from the amazfish application</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Integración con Amazfish</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl_Amazfish.qml" line="31"/>
         <source>For some smartwatch models (at least %1), Amazfish exposes button presses.</source>
         <comment>%1 is a comma separated list</comment>
         <extracomment>Label text: %1 is a comma separated list of smartwatch models</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Para algunos modelos de reloj (al menos %1), Amazfish responde a las pulsaciones de botón.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl_Amazfish.qml" line="42"/>
@@ -502,9 +504,9 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerControl_Amazfish.qml" line="67"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Pulsar %L1 vez</numerusform>
+            <numerusform>Pulsar %L1 veces</numerusform>
         </translation>
     </message>
     <message>
@@ -512,19 +514,19 @@ pull down for options</source>
         <source>For some smartwatch models (at least %1), Amazfish exposes when the music screen is opened.</source>
         <comment>%1 is a comma separated list</comment>
         <extracomment>Label text: %1 is a comma separated list of smartwatch models</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Para algunos modelos de reloj (al menos %1), Amazfish responde cuando se abre la pantalla de música.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl_Amazfish.qml" line="96"/>
         <source>Amazfish music screen activation</source>
         <extracomment>TextSwitch: Reset by activating smartwatch music screen</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Activación de pantalla de música</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl_Amazfish.qml" line="104"/>
         <source>Reset the timer by activating the music screen on a device connected to the Amazfish application.</source>
         <extracomment>TextSwitch description: Reset by activating smartwatch music screen</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Reiniciar el temporizador al activar la pantalla de música en el dispositivo conectado a la aplicación Amazfish.</translation>
     </message>
 </context>
 <context>
@@ -545,7 +547,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="59"/>
         <source>Pause Network Players</source>
         <extracomment>ButtonText: Go to &quot;pause network players&quot; (vlc/kodi) option page</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pausar reproductores en red</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="69"/>
@@ -583,7 +585,7 @@ pull down for options</source>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="21"/>
         <source>Network Players</source>
-        <translation type="unfinished"></translation>
+        <translation>Reproductores en red</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="31"/>

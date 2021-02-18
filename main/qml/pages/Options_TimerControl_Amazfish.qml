@@ -84,7 +84,7 @@ Page {
                 wrapMode: Text.Wrap
                 topPadding: Theme.paddingLarge
                 //: Label text: %1 is a comma separated list of smartwatch models
-                text: qsTr('For some smartwatch models (at least %1), Amazfish exposes when the music screen is opened.', '%1 is a comma separated list').arg('Amazfit Bip S, Amazfit GTS, Pinephone')
+                text: qsTr('For some smartwatch models (at least %1), Amazfish exposes when the music screen is opened.', '%1 is a comma separated list').arg('Amazfit Bip S, Amazfit GTS, PineTime')
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: Theme.secondaryHighlightColor
             }
