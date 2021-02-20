@@ -102,8 +102,8 @@ Page {
                 width: Screen.width
                 opacity: 0
                 anchors.centerIn: parent
-                fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge*1.2 : Theme.fontSizeMedium
-                lineHeight: Screen.sizeCategory >= Screen.Large ? 0.8 : 1.0
+                fontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeHuge : Theme.fontSizeMedium
+                secondaryFontSize: Screen.sizeCategory >= Screen.Large ? Theme.fontSizeSmall : Theme.fontSizeTiny
                 animationDuration: Qt.application.state === Qt.ApplicationActive ? 200 : 0
                 ParallelAnimation {
                     running: true
@@ -114,8 +114,6 @@ Page {
 
             onClicked: {
                 SleepTimer.start()
-//                clickArc.value = Math.random();
-//                clickArc.active = !clickArc.active;
             }
             onPressAndHold: {
                 var minutes = (settings.timerSeconds / 60);

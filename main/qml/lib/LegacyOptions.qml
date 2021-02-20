@@ -81,17 +81,23 @@ QtObject {
                         // Load fields
                         for (var fieldName in legacyoptions) {
                             //values starting with 'on' should be blatantly ignored
+
                             if ( fieldName in settings && fieldName.lastIndexOf('on', 0) !== 0) {
+                                try {
 
-                                var rs = tx.executeSql('SELECT value FROM settings WHERE settingsName=? AND keyName=?;', [legacyoptions.objectName, fieldName]);
+                                    var rs = tx.executeSql('SELECT value FROM settings WHERE settingsName=? AND keyName=?;', [legacyoptions.objectName, fieldName]);
 
-                                if (rs.rows.length > 0) {
-                                    //obj[fieldName] = JSON.parse(rs.rows.item(0).value);
-                                    var value = JSON.parse(rs.rows.item(0).value);
-                                    console.log('legacy options import: set ', fieldName, 'to', value);
-                                    settings[fieldName] = value;
+                                    if (rs.rows.length > 0) {
+                                        //obj[fieldName] = JSON.parse(rs.rows.item(0).value);
+                                        var value = JSON.parse(rs.rows.item(0).value);
+                                        console.log('legacy options import: set ', fieldName, 'to', value);
+                                        settings[fieldName] = value;
 
+                                    }
+                                } catch(e) {
+                                // no legacy options found
                                 }
+
                             }
                         }
                         autoDestructTimer.start();

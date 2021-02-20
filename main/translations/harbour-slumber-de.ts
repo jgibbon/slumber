@@ -876,7 +876,7 @@ TextField label: enter your root password</extracomment>
 <context>
     <name>TimerProgressIndicator</name>
     <message numerus="yes">
-        <location filename="../qml/lib/TimerProgressIndicator.qml" line="103"/>
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="101"/>
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Hour(s) you can find</extracomment>
@@ -886,7 +886,7 @@ TextField label: enter your root password</extracomment>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/lib/TimerProgressIndicator.qml" line="113"/>
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="111"/>
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Minute(s) you can find</extracomment>
@@ -896,7 +896,7 @@ TextField label: enter your root password</extracomment>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/lib/TimerProgressIndicator.qml" line="121"/>
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="119"/>
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Seconds(s) you can find</extracomment>

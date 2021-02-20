@@ -12,7 +12,7 @@ Item {
     property real busysize: width * 0.8
     property real busyborder: width * 0.02
     property int fontSize: Theme.fontSizeMedium
-    property real lineHeight: 1.0
+    property int secondaryFontSize: Theme.fontSizeTiny
     property real progressborderDifference: (running?0:busyborder)
     Behavior on progressborderDifference { NumberAnimation { easing.type: Easing.InOutQuad;duration: 300;} }
     property real progressborder: ((width - busysize) / 2) + progressborderDifference// + busyborder*progressborderFactor
@@ -88,9 +88,7 @@ Item {
             id: longTextColumn
             readonly property int seconds: SleepTimer.remainingSeconds
             readonly property string formattedDuration: Format.formatDuration(seconds, Formatter.Duration)
-            readonly property var formattedEntries: formattedDuration.split(':');
-            readonly property int lineHeight: seconds < 3600 ? sleepTimerWidget.lineHeight: 1.0
-            height: childrenRect.height
+            readonly property var formattedEntries: formattedDuration.split(':')
             width: sleepTimerWidget.width
             move: Transition {
                 NumberAnimation { easing.type: Easing.InOutQuad; properties: 'y'; duration: 500; }
@@ -103,7 +101,7 @@ Item {
                 description: qsTr('Hrs', 'short: [x] Hour(s)', value);
                 color: textcolor
                 font.pixelSize: sleepTimerWidget.fontSize
-                lineHeight: parent.lineHeight
+                secondaryFontSize: sleepTimerWidget.secondaryFontSize
             }
             TimerText {
                 visible: opacity > 0
@@ -113,7 +111,7 @@ Item {
                 description: qsTr('Min', 'short: [x] Minute(s)', value);
                 color: textcolor
                 font.pixelSize: sleepTimerWidget.fontSize
-                lineHeight: parent.lineHeight
+                secondaryFontSize: sleepTimerWidget.secondaryFontSize
             }
             TimerText {
                text: parseInt(longTextColumn.formattedEntries[2])
@@ -121,7 +119,7 @@ Item {
                 description: qsTr('Sec', 'short: [x] Seconds(s)', value);
                 color: textcolor
                 font.pixelSize: sleepTimerWidget.fontSize
-                lineHeight: parent.lineHeight
+                secondaryFontSize: sleepTimerWidget.secondaryFontSize
             }
         }
     }
