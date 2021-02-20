@@ -62,14 +62,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="179"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>Tap to restart,
 pull up or down to stop</source>
         <extracomment>Short description of gestures on main page (timer running)</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="183"/>
         <source>Tap to start,
 pull down for options</source>
         <extracomment>Short description of gestures on main page (timer NOT running)</extracomment>

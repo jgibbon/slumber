@@ -126,7 +126,7 @@ Page {
                     selectedMinute = minutes - selectedHour * 60;
                 }
                 var dialog = pageStack.push('Sailfish.Silica.TimePickerDialog', {
-                                                hourMode:  DateTime.TwentyFourHours,
+                                                hourMode: DateTime.TwentyFourHours,
                                                 hour: selectedHour,
                                                 minute: selectedMinute
                                             })
@@ -142,7 +142,6 @@ Page {
                     selectedHour = dialog.hour
                     selectedMinute = dialog.minute
                     settings.timerSeconds = (selectedHour * 60 + selectedMinute)*60;
-
                 })
             }
         }
@@ -150,7 +149,7 @@ Page {
 
         IconButton {
             id: optionsButton
-            property bool active:  settings.viewActiveOptionsButtonEnabled
+            property bool active: settings.viewActiveOptionsButtonEnabled
             visible: active
             icon.source: 'image://theme/icon-m-developer-mode'
             anchors {
@@ -168,8 +167,11 @@ Page {
             anchors {
                 bottom: parent.bottom
                 bottomMargin: Theme.paddingLarge
+                left: parent.left
+                leftMargin: Theme.horizontalPageMargin
+                right: parent.right
+                rightMargin: Theme.horizontalPageMargin
             }
-            width: parent.width
             color: palette.secondaryHighlightColor
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
