@@ -6,6 +6,8 @@ Text {
     id: timerText
     property alias description: subText.text
     property alias secondaryFontSize: subText.font.pixelSize
+    property int value
+    text: value
     width: (parent.width - Theme.paddingSmall) / 2
     horizontalAlignment: Text.AlignRight
     verticalAlignment: Text.AlignVCenter

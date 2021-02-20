@@ -62,14 +62,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="181"/>
+        <location filename="../qml/pages/FirstPage.qml" line="179"/>
         <source>Tap to restart,
 pull up or down to stop</source>
         <extracomment>Short description of gestures on main page (timer running)</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="183"/>
+        <location filename="../qml/pages/FirstPage.qml" line="181"/>
         <source>Tap to start,
 pull down for options</source>
         <extracomment>Short description of gestures on main page (timer NOT running)</extracomment>
@@ -874,7 +874,7 @@ TextField label: enter your root password</extracomment>
 <context>
     <name>TimerProgressIndicator</name>
     <message numerus="yes">
-        <location filename="../qml/lib/TimerProgressIndicator.qml" line="101"/>
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="100"/>
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Hour(s) you can find</extracomment>
@@ -884,7 +884,7 @@ TextField label: enter your root password</extracomment>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/lib/TimerProgressIndicator.qml" line="111"/>
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="110"/>
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Minute(s) you can find</extracomment>
@@ -894,7 +894,7 @@ TextField label: enter your root password</extracomment>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/lib/TimerProgressIndicator.qml" line="119"/>
+        <location filename="../qml/lib/TimerProgressIndicator.qml" line="118"/>
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Seconds(s) you can find</extracomment>

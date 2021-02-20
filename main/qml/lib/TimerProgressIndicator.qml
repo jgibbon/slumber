@@ -87,8 +87,7 @@ Item {
         Column {
             id: longTextColumn
             readonly property int seconds: SleepTimer.remainingSeconds
-            readonly property string formattedDuration: Format.formatDuration(seconds, Formatter.Duration)
-            readonly property var formattedEntries: formattedDuration.split(':')
+            readonly property var formattedEntries: Format.formatDuration(seconds, Formatter.Duration).split(':')
             width: sleepTimerWidget.width
             move: Transition {
                 NumberAnimation { easing.type: Easing.InOutQuad; properties: 'y'; duration: 500; }
@@ -96,7 +95,7 @@ Item {
             TimerText {
                 visible: opacity > 0
                 opacity: parent.seconds >= 3600 ? 1.0 : 0.0
-                text: parseInt(longTextColumn.formattedEntries[0])
+                value: parseInt(longTextColumn.formattedEntries[0])
                 //: "Long" duration option, the shortest variant of [x] Hour(s) you can find
                 description: qsTr('Hrs', 'short: [x] Hour(s)', value);
                 color: textcolor
@@ -106,7 +105,7 @@ Item {
             TimerText {
                 visible: opacity > 0
                 opacity: parent.seconds >= 60 ? 1.0 : 0.0
-                text: parseInt(longTextColumn.formattedEntries[1])
+                value: parseInt(longTextColumn.formattedEntries[1])
                 //: "Long" duration option, the shortest variant of [x] Minute(s) you can find
                 description: qsTr('Min', 'short: [x] Minute(s)', value);
                 color: textcolor
@@ -114,7 +113,7 @@ Item {
                 secondaryFontSize: sleepTimerWidget.secondaryFontSize
             }
             TimerText {
-               text: parseInt(longTextColumn.formattedEntries[2])
+               value: parseInt(longTextColumn.formattedEntries[2])
                 //: "Long" duration option, the shortest variant of [x] Seconds(s) you can find
                 description: qsTr('Sec', 'short: [x] Seconds(s)', value);
                 color: textcolor
