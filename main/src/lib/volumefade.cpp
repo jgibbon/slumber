@@ -56,7 +56,7 @@ uint VolumeFade::getVolume()
                 volumeArg >> startVolume;
             }
             volumeArg.endArray();
-            qDebug() << PROPERTY_VOLUME << startVolume;
+//            qDebug() << PROPERTY_VOLUME << startVolume;
         }
         else
             qWarning() << "[FAILED] getVolume[message=invalidReply]: " << reply.error();
@@ -68,7 +68,6 @@ uint VolumeFade::getVolume()
 
 void VolumeFade::setVolume(uint volume)
 {
-     qDebug() << "set volume" << volume;
     QVariant var;
     PAVolumeArray t;
     PAVolume vv(0, volume);

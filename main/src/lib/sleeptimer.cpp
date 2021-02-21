@@ -1,5 +1,4 @@
 #include "sleeptimer.h"
-#include <QDebug>
 
 SleepTimer::SleepTimer(QObject *parent, ApplicationSettings *appsettings) : QTimer(parent),
   settings(appsettings),
@@ -46,22 +45,15 @@ void SleepTimer::setFinalizeSeconds(int value)
 
 void SleepTimer::setDurationSeconds(int value)
 {
-
-    qDebug() << "setDurationSeconds" << value << "previous" << durationSeconds;
-    qDebug() << " -> new?" << (value != durationSeconds) << "getFinalizeSeconds()" << getFinalizeSeconds();
     if(isActive()) {
         stop();
     }
     if(value != interval() && value > getFinalizeSeconds()) {
-
-        qDebug() << "setDurationSeconds valid change. active?" << isActive();
         if(isActive()) {
             stop();
         }
         durationSeconds = value;
         remainingSeconds = value;
-
-        qDebug() << "setInterval" << interval();
 
         emit remainingSecondsChanged();
         emit durationSecondsChanged();
@@ -71,7 +63,6 @@ void SleepTimer::setDurationSeconds(int value)
 void SleepTimer::start()
 {
     bool wasActive = isActive();
-    qDebug() << "start" << "was active?" << wasActive;
     if(wasActive) {
         stop();
     } else {
