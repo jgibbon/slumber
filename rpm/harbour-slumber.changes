@@ -8,6 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Feb 21 2021 velox 0.13-5
+ - bugfix: Fix typo in Amazfish options
+ - bugfix: Layout issue for large screens
+ - bugfix: Fix plural display for durations
+ - maintenance: remove some debug info
+
 * Fri Feb 19 2021 velox 0.13-3
  - bugfix: work around pagestack url bug in sfos 3.4
  - translation updates (thanks, translation team!)
