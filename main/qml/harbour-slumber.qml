@@ -58,20 +58,31 @@ ApplicationWindow
         service: 'de.gibbon.slumber'
         iface: 'de.gibbon.slumber'
         path: '/de/gibbon/slumber'
+        property int timerSeconds: settings.timerSeconds
 
         xml: '  <interface name="de.gibbon.slumber">\n' +
              '    <method name="startTimer" >\n' +
+             '    </method>' +
+             '    <method name="trigger" >\n' +
              '    </method>' +
              '    <method name="stopTimer" >\n' +
              '    </method>' +
              '    <signal name="Triggered" >\n' +
              '    </signal>\n' +
+             '    <property name="timerSeconds" type="i" access="read" />\n' +
              '  </interface>\n'
         function startTimer(){
             SleepTimer.start();
         }
         function stopTimer(){
             SleepTimer.stop();
+        }
+        function trigger(){
+            console.log("trigger?")
+            if(SleepTimer.running) {
+                console.log("trigger!")
+                SleepTimer.triggered()
+            }
         }
     }
 

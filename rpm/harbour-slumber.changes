@@ -8,6 +8,11 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun May 09 2021 velox 0.14-1
+ - feature: D-Bus call for manually triggering/stopping the running timer
+ - enhancement: Stop timer if finish actions are triggered manually
+ - enhancement: Don't restore Volume if it hasn't been faded out (manual trigger)
+
 * Sun Feb 21 2021 velox 0.13-5
  - bugfix: Fix typo in Amazfish options
  - bugfix: Layout issue for large screens

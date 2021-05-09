@@ -106,6 +106,10 @@ Item {
         target: SleepTimer
         onTriggered: {
             console.log('sleep timer fired!');
+            if(SleepTimer.running) { // this can be triggered manually (and/or via dbus)
+                SleepTimer.stop();
+            }
+
             dbus.emitSignal('Triggered');
             justTriggeredTimer.start();
             actuators.run();
