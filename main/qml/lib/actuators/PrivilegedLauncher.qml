@@ -20,7 +20,7 @@ ActuatorBase {
             commands.push('dbus-send --system --print-reply --dest=net.connman /net/connman/technology/bluetooth net.connman.Technology.SetProperty string:"Powered" variant:boolean:false')
         }
         if(settings.timerRestartOfonoEnabled) {
-            commands.push('killall -s9 ofonod')
+            commands.push('killall -9 ofonod');
         }
 
         var commandCount = commands.length;
