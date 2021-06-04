@@ -1,4 +1,4 @@
-name: slumber sdk build
+name: Slumber build
 
 on:
   push:
@@ -6,9 +6,9 @@ on:
       - master
     tags:
       - '*'
-  pull_request:
-    branches:
-      - master
+  #pull_request:
+  #  branches:
+  #    - master
 
 jobs:
   build:
@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: 'true'
 
     - name: Prepare
       run: mkdir output
@@ -25,6 +27,23 @@ jobs:
       uses: coderus/github-sfos-build@master
       with:
         release: 3.4.0.24
+        
+    - name: Build i486
+      id: build_i486
+      uses: coderus/github-sfos-build@master
+      with:
+        release: 3.4.0.24
+        arch: i486
+
+    # aarch64 complains about ssl/crypto
+    # with older targets, so we use a
+    # newer release
+    - name: Build aarch64
+      id: build_aarch64
+      uses: coderus/github-sfos-build@master
+      with:
+        release: 4.0.1.45
+        arch: aarch64
       
     - name: Upload build result
       uses: actions/upload-artifact@v2
@@ -33,7 +52,7 @@ jobs:
         path: RPMS
 
     - name: Create release
-      if: contains(github.ref, 'release')
+      if: contains(github.ref, 'v')
       run: |
         set -x
         assets=()
@@ -54,6 +73,6 @@ jobs:
           assets+=("-a" "$asset")
         done
         tag_name="${GITHUB_REF##*/}"
-        hub release create -p "${assets[@]}" -m "$tag_name" "$tag_name"
+        hub release create -p "${assets[@]}" -m "$tag_name" -m "This is a pre-release for testing purposes only. It may or may not be unstable." -m "Join the Telegram group to help out: https://github.com/Wunderfitz/harbour-fernschreiber/issues/162" "$tag_name"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
