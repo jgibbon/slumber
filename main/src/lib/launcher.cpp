@@ -31,7 +31,7 @@ bool Launcher::checkPrivilegedLauncher()
 {
     QFileInfo privileged(m_privilegedLauncherLocation);
     qDebug().noquote() << "check stat: " << this->launch("stat -c %a \""+m_privilegedLauncherLocation+"\"");
-    return privileged.exists() && privileged.owner() == "root" && this->launch("stat -c %a \""+m_privilegedLauncherLocation+"\"") == "6770\n";
+    return privileged.exists() && privileged.owner() == "root" && this->launch("stat -c %a \""+m_privilegedLauncherLocation+"\"") == "6771\n";
 }
 
 QString Launcher::runDevelSu(const QString &password, const QStringList &command)
@@ -48,7 +48,7 @@ QString Launcher::runDevelSu(const QString &password, const QStringList &command
     develSuProcess.write((password + "\n").toLatin1());
     develSuProcess.waitForFinished();
 
-    if( !develSuProcess.exitCode() == 0 )
+    if( !(develSuProcess.exitCode() == 0) )
     {
         qDebug() << "Command failed:"
                  << develSuProcess.readAllStandardError();
@@ -88,7 +88,7 @@ bool Launcher::preparePrivilegedLauncher(const QString &rootpw)
     }
     QFile::copy(":/launch" , m_privilegedLauncherLocation);
     QStringList launcherPermissionCommand;
-    launcherPermissionCommand << "bash" << "-c" << "chown root " + m_privilegedLauncherLocation + "; chmod 6770 " + m_privilegedLauncherLocation + "";
+    launcherPermissionCommand << "bash" << "-c" << "chown root " + m_privilegedLauncherLocation + "; chmod 6771 " + m_privilegedLauncherLocation + "";
     this->runDevelSu(rootpw, launcherPermissionCommand);
     return checkPrivilegedLauncher();
 }

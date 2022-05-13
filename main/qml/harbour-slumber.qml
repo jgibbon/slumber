@@ -85,6 +85,14 @@ ApplicationWindow
             }
         }
     }
+    Launcher {
+        id: launcher
+    }
+    Component.onCompleted: {
+        console.log('well you.');
+        var res = launcher.launchPrivileged("whoami");
+        console.log(res);
+    }
 
     // import old sqlite settings once
     Loader {

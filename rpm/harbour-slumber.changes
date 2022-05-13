@@ -8,9 +8,13 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Fri Jun 04 2021 velox 0.14-2
- - bugfix: change ofono privileged action to work with busybox environment
- - maintenance: change github CI build
+* Sat Jun 05 2021 velox 0.14-3
+ - bugfix: more privileged launcher changes
+ - bugfix: opt out of sailjail
+
+ * Fri Jun 04 2021 velox 0.14-2
+  - bugfix: change ofono privileged action to work with busybox environment
+  - maintenance: change github CI build
 
 * Sun May 09 2021 velox 0.14-1
  - feature: D-Bus call for manually triggering/stopping the running timer

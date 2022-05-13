@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion("1.0");
     QCommandLineParser parser;
     QTextStream out(stdout);
+    setuid(geteuid());
 
     parser.setApplicationDescription("slumber helper");
     parser.addHelpOption();
@@ -39,6 +40,7 @@ int main(int argc, char *argv[])
     proc->waitForFinished();
     QString parentName = QString::fromLocal8Bit(proc->readAll());
     bool parentIsValid = parentName == "/usr/bin/harbour-slumber\n";
+    out << "Authentication \n" << parentName << "\n";
 
     if(!parentIsValid) {
         proc->start(QString("pstree -pA %1").arg(parentId));
@@ -46,11 +48,13 @@ int main(int argc, char *argv[])
         parentName = QString::fromLocal8Bit(proc->readAll());
         QRegExp rx("harbour-slumber\\((\\d+)\\)");
         parentIsValid = rx.indexIn(parentName) != -1;
-    }
 
+        out << "Authentication2 \n" << parentName << "\n";
+    }
     if(parentIsValid) {
         if(args.length() > 0) {
             QString program = parser.positionalArguments().at(0);
+//            out << program << "\n" << geteuid() << "\n";
             proc->start(program);
             proc->waitForFinished(-1);
             QByteArray bytes = proc->readAllStandardOutput();

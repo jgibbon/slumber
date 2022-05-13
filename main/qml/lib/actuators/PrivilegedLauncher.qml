@@ -22,11 +22,10 @@ ActuatorBase {
         if(settings.timerRestartOfonoEnabled) {
             commands.push('killall -9 ofonod');
         }
-
         var commandCount = commands.length;
         for(var i=0; i<commandCount; i++) {
             console.log('launching privileged', commands[i]);
-            console.log(launcher.launchPrivileged(commands[i]));
+            console.log('out:', launcher.launchPrivileged(commands[i]));
         }
         done();
     }

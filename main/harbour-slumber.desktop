@@ -11,3 +11,5 @@ Name=slumber
 # a different app name in German locale (de).
 Name[de]=slumber
 
+[X-Sailjail]
+Sandboxing=Disabled
