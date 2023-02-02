@@ -7,7 +7,7 @@
         <location filename="../qml/pages/About.qml" line="22"/>
         <source>About slumber</source>
         <extracomment>PageHeader on about page.</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>O slumber</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
@@ -82,13 +82,13 @@ pull down for options</source>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="27"/>
         <source>Autostart: %1 is playing</source>
         <extracomment>Notification text: %1 is the identifier of the current media player. This string is prefixed with &quot;slumber &quot;: &quot;slumber Autostart: …&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Autostart: %1 jest odtwarzany</translation>
     </message>
     <message>
         <location filename="../qml/lib/MprisPlayingScanner.qml" line="32"/>
         <source>stopped…</source>
         <extracomment>Notification text: Current media player has stopped. This string is prefixed with &quot;slumber &quot;: &quot;slumber stopped…&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>zatrzymany...</translation>
     </message>
 </context>
 <context>
@@ -115,7 +115,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options.qml" line="86"/>
         <source>Please set duration longer than 0:00</source>
         <extracomment>Short error message when a 0:00 duration has been set</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ustaw czas trwania dłuższy niż 0:00</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="110"/>
@@ -202,7 +202,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_Appearance.qml" line="43"/>
         <source>Indicator</source>
         <extracomment>TextSwitch: Enable a rotating thing on the main page when the timer runs</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Wskażnik</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Appearance.qml" line="59"/>
@@ -330,7 +330,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_Finalize.qml" line="213"/>
         <source>Notification</source>
         <extracomment>TextSwitch: Display system notification while finalizing</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Powiadomienie</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_Finalize.qml" line="220"/>
@@ -467,7 +467,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerControl.qml" line="194"/>
         <source>Amazfish integration</source>
         <extracomment>Button text: go to settings page to reset timer with smartwatch events from the amazfish application</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Integracja z Amazifish</translation>
     </message>
 </context>
 <context>
@@ -477,7 +477,7 @@ pull down for options</source>
         <source>Amazfish Integation</source>
         <comment>header; options</comment>
         <extracomment>PageHeader: Options to reset the timer with smartwatch events from the amazfish application</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Integracja z Amazifish</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerControl_Amazfish.qml" line="31"/>
@@ -576,7 +576,7 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerEnd.qml" line="103"/>
         <source>Privileged Actions</source>
         <extracomment>ButtonText: go to dedicated settings page for Privileged Actions; they require administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Uprzywilejowane akcje</translation>
     </message>
 </context>
 <context>
@@ -584,7 +584,7 @@ pull down for options</source>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="21"/>
         <source>Network Players</source>
-        <translation type="unfinished"></translation>
+        <translation>Odtwarzacze sieciowe</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="31"/>
@@ -698,19 +698,19 @@ Label text: VLC didn&apos;t work for some unknown reason</extracomment>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="224"/>
         <source>None</source>
         <extracomment>ContextMenu: Kodi secondary Option: None</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Żaden</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="231"/>
         <source>Suspend Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Suspend</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Uśpij system Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="238"/>
         <source>Shutdown Kodi System</source>
         <extracomment>ContextMenu: Kodi secondary Option: Shutdown</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Wyłącz system Kodi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_NetworkPlayers.qml" line="259"/>
@@ -761,20 +761,20 @@ TextField label for vlc settings</extracomment>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="39"/>
         <source>Privileged Actions</source>
         <extracomment>Page Header: Like other actions (when the timer runs out), but requiring administrative rights (root)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Uprzywilejowane akcje</translation>
         <extra-Context>Page Header: Privileged Actions (when the timer runs out) require administrative rights (root)</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="59"/>
         <source>You need to enable Developer Mode and grant privileged access rights once by supplying your root password. Slumber will not save this password and you&apos;ll be able to revoke the granted rights at any time. Slumber does not require Developer Mode to remain enabled after these privileges have been granted.</source>
         <extracomment>Label Text: describe root access for privileged actions</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Musisz włączyć tryb dewelopera i raz przyznać uprzywilejowane prawa dostępu, podając hasło roota. Slumber nie zapisze tego hasła i będziesz mógł cofnąć przyznane mu prawa w dowolnym momencie. Slumber nie wymaga, aby tryb dewelopera pozostał włączony po przyznaniu tych uprawnień. </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="93"/>
         <source>Granting rights failed. Did you enable Developer Mode and enter the right password?</source>
         <extracomment>Label Text: Error message for privileged actions</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Przyznanie praw nie powiodło się. Czy włączyłeś tryb dewelopera i wprowadziłeś prawidłowe hasło? </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="105"/>
@@ -783,61 +783,61 @@ TextField label for vlc settings</extracomment>
         <extracomment>TextField placeholder: enter your root password
 ----------
 TextField label: enter your root password</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>hasło root&apos;a</translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="147"/>
         <source>Privileged access rights are granted. Revoke them by pressing the button below.</source>
         <extracomment>Label Text: Privileged actions now available</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Nadawane są uprzywilejowane prawa dostępu. Cofnij je, naciskając przycisk poniżej. </translation>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="154"/>
         <source>Revoke rights</source>
         <extracomment>Button Text: click to remove privileged rights</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Cofnij uprzywilejowanie</translation>
         <extra-Context>Button Text: click to remove privileged rights</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="169"/>
         <source>System</source>
         <extracomment>Section Header: System commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>System</translation>
         <extra-Context>Section Header: System commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="175"/>
         <source>Lock Screen</source>
         <extracomment>Text Switch: Action &quot;Lock the screen&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ekran blokady</translation>
         <extra-Text>Switch: Action &quot;Lock the screen&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="185"/>
         <source>Stop Alien Dalvik</source>
         <extracomment>Text Switch: Action &quot;Stop Alien Dalvik service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Zatrzymaj Alien Dalvik</translation>
         <extra-Text>Switch: Action &quot;Stop Alien Dalvik service&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="196"/>
         <source>Connectivity</source>
         <extracomment>Section Header: Connectivity commands section</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Łączność</translation>
         <extra-Context>Section Header: Connectivity commands section</extra-Context>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="201"/>
         <source>Enable Airplane Mode</source>
         <extracomment>Text Switch: Action &quot;Enable Airplane Mode&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Włącz tryb samolotowy</translation>
         <extra-Text>Switch: Action &quot;Enable Airplane Mode&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="212"/>
         <source>Disable Wifi</source>
         <extracomment>Text Switch: Action &quot;Disable Wifi/wlan&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Wyłącz Wifi</translation>
         <extra-Text>Switch: Action &quot;Disable Wifi/wlan&quot;</extra-Text>
     </message>
     <message>
@@ -851,14 +851,14 @@ TextField label: enter your root password</extracomment>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="233"/>
         <source>Restart ofono Service</source>
         <extracomment>Text Switch: Action &quot;Restart ofono Service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Restart usługi ofono</translation>
         <extra-Text>Switch: Action &quot;Restart ofono Service&quot;</extra-Text>
     </message>
     <message>
         <location filename="../qml/pages/Options_TimerEnd_Privileged.qml" line="241"/>
         <source>On some combinations of devices and bluetooth accessories, ofono sometimes gets stuck at 100% CPU load after disconnecting. Use this as a workaround.</source>
         <extracomment>Text Switch description: Action &quot;Restart ofono Service&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>W przypadku niektórych kombinacji urządzeń i akcesoriów bluetooth ofono czasami blokuje się przy 100% obciążeniu procesora po odłączeniu. Użyj tego jako obejścia. </translation>
         <extra-Text>Switch description: Action &quot;Restart ofono Service&quot;</extra-Text>
     </message>
 </context>
@@ -869,7 +869,7 @@ TextField label: enter your root password</extracomment>
         <location filename="../qml/lib/TimerNotificationTrigger.qml" line="53"/>
         <source>Timer triggering soon</source>
         <extracomment>System notification text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Timer zostanie wkrótce uruchomiony</translation>
     </message>
 </context>
 <context>
@@ -879,10 +879,10 @@ TextField label: enter your root password</extracomment>
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Hour(s) you can find</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>h</numerusform>
+            <numerusform>h</numerusform>
+            <numerusform>h</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -890,10 +890,10 @@ TextField label: enter your root password</extracomment>
         <source>Min</source>
         <comment>short: [x] Minute(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Minute(s) you can find</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>min</numerusform>
+            <numerusform>min</numerusform>
+            <numerusform>min</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -901,10 +901,10 @@ TextField label: enter your root password</extracomment>
         <source>Sec</source>
         <comment>short: [x] Seconds(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Seconds(s) you can find</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>s</numerusform>
+            <numerusform>s</numerusform>
+            <numerusform>s</numerusform>
         </translation>
     </message>
 </context>
