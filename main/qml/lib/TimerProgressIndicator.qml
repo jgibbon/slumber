@@ -87,7 +87,7 @@ Item {
         Column {
             id: longTextColumn
             readonly property int seconds: SleepTimer.remainingSeconds
-            readonly property var formattedEntries: Format.formatDuration(seconds, Formatter.Duration).split(':')
+            readonly property var formattedEntries: ((seconds < 3600 ? '' : '') + Format.formatDuration(seconds, Formatter.DurationLong)).split(':')
             width: sleepTimerWidget.width
             move: Transition {
                 NumberAnimation { easing.type: Easing.InOutQuad; properties: 'y'; duration: 500; }
