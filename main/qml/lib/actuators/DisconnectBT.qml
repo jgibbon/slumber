@@ -17,7 +17,9 @@ ActuatorBase {
                 if('org.bluez.Device1' in dbusReply[key] && dbusReply[key]['org.bluez.Device1'].Paired && dbusReply[key]['org.bluez.Device1'].Connected) {
                     console.log('paired & connected device:', dbusReply[key]['org.bluez.Device1'].Name, 'type:', dbusReply[key]['org.bluez.Device1'].Icon, 'key:', key);
                     if(btDeviceDisconnect.onlyDisconnectAudioDevices) {
-                        if(dbusReply[key]['org.bluez.Device1'].Icon === 'audio-card') {
+                        var icon = dbusReply[key]['org.bluez.Device1'].Icon;
+                        // if(icon === 'audio-card' || icon === 'audio-headset') {
+                        if(icon && icon.indexOf('audio') > -1 ) {
                             console.log('audio device found')
                             devices.push(key);
                         } else {
