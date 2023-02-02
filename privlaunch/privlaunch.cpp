@@ -39,11 +39,11 @@ int main(int argc, char *argv[])
     proc->start(QString("readlink -f /proc/%1/exe").arg(parentId));
     proc->waitForFinished();
     QString parentName = QString::fromLocal8Bit(proc->readAll());
-    bool parentIsValid = parentName == "/usr/bin/harbour-slumber\n";
+    bool parentIsValid = parentName == "/usr/bin/harbour-slumber\n"; // || parentName.contains("booster-silica-qt5");
     out << "Authentication \n" << parentName << "\n";
 
     if(!parentIsValid) {
-        proc->start(QString("pstree -pA %1").arg(parentId));
+        proc->start(QString("pstree -p %1").arg(parentId));
         proc->waitForFinished();
         parentName = QString::fromLocal8Bit(proc->readAll());
         QRegExp rx("harbour-slumber\\((\\d+)\\)");

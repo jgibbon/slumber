@@ -6,7 +6,7 @@ Launcher::Launcher(QObject *parent) :
     m_process(new QProcess(this))
 {
     m_dataDirectory = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
-    m_privilegedLauncherLocation =  m_dataDirectory + "/launch";
+    m_privilegedLauncherLocation =  m_dataDirectory + "/launchy";
 }
 
 QString Launcher::launch(const QString &program)
