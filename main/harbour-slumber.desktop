@@ -12,4 +12,6 @@ Name=slumber
 Name[de]=slumber
 
 [X-Sailjail]
+OrganizationName=harbour-slumber
+ApplicationName=harbour-slumber
 Sandboxing=Disabled

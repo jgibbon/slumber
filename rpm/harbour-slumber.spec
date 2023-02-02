@@ -13,13 +13,14 @@ Name:       harbour-slumber
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Slumber Sleeptimer
-Version:    0.14
-Release:    3
+Version:    0.15
+Release:    1
 Group:      Qt/Qt
 License:    GPL2
 URL:        https://github.com/jgibbon/slumber
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-slumber.yaml
+Requires:   sailfish-version >= 4.5.0
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   qt5-qtdeclarative-import-sensors
 Requires:   nemo-qml-plugin-dbus-qt5

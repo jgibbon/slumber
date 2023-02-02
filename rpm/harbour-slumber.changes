@@ -8,6 +8,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu Feb 02 2023 velox 0.15-1
+ - bugfix: handle changed duration formatter in sfos 4.5
+ - bugfix: remove incompatible arguments (busybox) for privileged actions
+ - bugfix: handle changed bluetooth audio identifier in sfos 4.5
+ - maintenance: update transifex config format
+ - maintenance: update github action for sfos 4.5
+ - translation update pl (thank you, atlochowski!)
+
 * Sat Jun 05 2021 velox 0.14-3
  - bugfix: more privileged launcher changes
  - bugfix: opt out of sailjail
