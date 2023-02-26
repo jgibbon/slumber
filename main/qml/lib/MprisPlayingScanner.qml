@@ -12,8 +12,9 @@ Item {
 
     property bool mprisIsPlaying: false
     property string mprisPlayingService
-    property string mprisPlayingName: {
-        var match = mprisPlayingService.match(/([^.]+)$/);
+    property string mprisPlayingName
+    function getNameFromService(service) {
+        var match = service.match(/([^.]+)$/);
         return match ? match[0] : '';
     }
 
@@ -83,14 +84,21 @@ Item {
                 service: dbusService
                 path: '/org/mpris/MediaPlayer2'
                 iface: 'org.mpris.MediaPlayer2.Player'
+                property DBusInterface playerInfo: DBusInterface {
+                    service: dbif.service
+                    path: dbif.path
+                    iface: 'org.mpris.MediaPlayer2'
+                }
                 property bool isPlaying: false
                 onIsPlayingChanged: {
                     if(isPlaying) {
                         scanner.mprisPlayingService = service;
+                        scanner.mprisPlayingName =  playerInfo.getProperty('Identity') || getNameFromService(service);
                         scanner.mprisIsPlaying = true;
                     } else {
                         if(scanner.mprisPlayingService === service) {
                             scanner.mprisPlayingService = '';
+                            scanner.mprisPlayingName = '';
                             scanner.mprisIsPlaying = false;
                         }
                     }
@@ -108,6 +116,7 @@ Item {
                 Component.onDestruction: {
                     if(scanner.mprisPlayingService === service) {
                         scanner.mprisPlayingService = '';
+                        scanner.mprisPlayingName = '';
                         scanner.mprisIsPlaying = false;
                     }
                 }

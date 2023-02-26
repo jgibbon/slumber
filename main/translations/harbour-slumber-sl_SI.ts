@@ -81,13 +81,13 @@ za možnosti potegni navzdol</translation>
 <context>
     <name>MprisPlayingScanner</name>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="27"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="28"/>
         <source>Autostart: %1 is playing</source>
         <extracomment>Notification text: %1 is the identifier of the current media player. This string is prefixed with &quot;slumber &quot;: &quot;slumber Autostart: …&quot;</extracomment>
         <translation>Samodejni zagon: %1 se predvaja</translation>
     </message>
     <message>
-        <location filename="../qml/lib/MprisPlayingScanner.qml" line="32"/>
+        <location filename="../qml/lib/MprisPlayingScanner.qml" line="33"/>
         <source>stopped…</source>
         <extracomment>Notification text: Current media player has stopped. This string is prefixed with &quot;slumber &quot;: &quot;slumber stopped…&quot;</extracomment>
         <translation>zaustavljeno ...</translation>
