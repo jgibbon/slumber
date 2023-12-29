@@ -39,7 +39,7 @@ signals:
     void isActiveChanged();
     void triggered();
     void remainingFactorChanged();
-    //void reset(); we use activeChanged.
+    void restarted(); //we use activeChanged.
 
 private slots:
 //    void onTickTimeout();

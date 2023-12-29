@@ -466,7 +466,19 @@ ziehe herunter für Einstellungen</translation>
         <translation>Starte den Timer neu, indem du die Hand vor den Näherungssensor hältst.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerControl.qml" line="194"/>
+        <location filename="../qml/pages/Options_TimerControl.qml" line="183"/>
+        <source>Play sound on reset</source>
+        <extracomment>TextSwitch: Play Sound on reset</extracomment>
+        <translation>Reset-Ton</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerControl.qml" line="190"/>
+        <source>Plays a sound effect when the timer gets reset</source>
+        <extracomment>TextSwitch description: Reset timer with proximity sensor</extracomment>
+        <translation>Spiele einen Ton ab, sobald der Timer neugestartet wird</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_TimerControl.qml" line="209"/>
         <source>Amazfish integration</source>
         <extracomment>Button text: go to settings page to reset timer with smartwatch events from the amazfish application</extracomment>
         <translation>Amazfish-Integration</translation>

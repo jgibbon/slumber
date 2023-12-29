@@ -14,13 +14,12 @@ Name:       harbour-slumber
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Slumber Sleeptimer
 Version:    0.15
-Release:    1
+Release:    2
 Group:      Qt/Qt
-License:    GPL2
+License:    GPLv2
 URL:        https://github.com/jgibbon/slumber
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-slumber.yaml
-Requires:   sailfish-version >= 4.5.0
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   qt5-qtdeclarative-import-sensors
 Requires:   nemo-qml-plugin-dbus-qt5
@@ -34,6 +33,28 @@ BuildRequires:  desktop-file-utils
 %description
 Slumber is a Sleep Timer to pause your (native) media Applications or Kodi after a certain amount of time has passed. You can reset the Timer by moving your Device.
 
+# This description section includes metadata for SailfishOS:Chum, see
+# https://github.com/sailfishos-chum/main/blob/main/Metadata.md
+%if 0%{?_chum}
+Title: slumber sleep timer
+Type: desktop-application
+DeveloperName: J. Gibbon
+DescriptionMD: https://github.com/jgibbon/slumber/raw/master/README.md
+Categories:
+- Utility
+- AudioVideo
+Custom:
+  Repo: https://github.com/jgibbon/slumber.git
+PackageIcon: https://github.com/jgibbon/slumber/raw/master/main/appicons/256x256/apps/harbour-slumber.png
+Screenshots:
+ - https://github.com/jgibbon/slumber/raw/master/meta/screenshot-screenshot-actions-v02.png
+ - https://github.com/jgibbon/slumber/raw/master/meta/screenshot-screenshot-options-v02.png
+ - https://github.com/jgibbon/slumber/raw/master/meta/screenshot-screenshot-reset-v02.png
+Links:
+  Homepage: https://github.com/jgibbon/slumber
+  Bugtracker: https://github.com/jgibbon/slumber/issues
+  Donation: https://www.paypal.me/jgibbon
+%endif
 
 %prep
 %setup -q -n %{name}-%{version}

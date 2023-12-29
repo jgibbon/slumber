@@ -9,7 +9,7 @@ If your device supports it (Jolla1 does not), aliendalvik/android media players 
 Optionally, an audible notification plays for the last few seconds before pausing your media.
 
 
-Note: Sounds are CC0, not GPL. [Click here for Details.](qml/assets/sound/LICENSE.txt)
+Note: Sounds are CC0, not GPL. [Click here for Details.](main/qml/assets/sound/LICENSE.txt)
 
 [Screenshots:<br />![screenshots](https://i.imgur.com/od8Bfx4m.png)](http://i.imgur.com/od8Bfx4.png)
 

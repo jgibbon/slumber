@@ -136,6 +136,13 @@ Item {
                 timerNotificationTrigger.reset()
             }
         }
+
+        onRestarted: {
+            console.log('restarted')
+            if(settings.timerSoundOnResetEnabled) {
+                resetSound.play()
+            }
+        }
     }
 
 
@@ -202,6 +209,13 @@ Item {
             }
         }
     }
+    SoundEffect {
+        id: resetSound
+        category: 'slumber'
+        source: '../assets/sound/blip.wav'
+        volume: settings.timerFadeSoundEffectVolume
+    }
+
     Loader {
         active: settings.timerAutostartOnPlaybackDetection
         asynchronous: true

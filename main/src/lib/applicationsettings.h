@@ -13,6 +13,7 @@ class ApplicationSettings : public QObject {
     Q_PROPERTY(bool timerInhibitScreensaverEnabled READ getTimerInhibitScreensaverEnabled WRITE setTimerInhibitScreensaverEnabled NOTIFY timerInhibitScreensaverEnabledChanged)
     Q_PROPERTY(int timerSeconds READ getTimerSeconds WRITE setTimerSeconds NOTIFY timerSecondsChanged)
     Q_PROPERTY(int timerFinalizingSeconds READ getTimerFinalizingSeconds WRITE setTimerFinalizingSeconds NOTIFY timerFinalizingSecondsChanged)
+    Q_PROPERTY(bool timerSoundOnResetEnabled READ getTimerSoundOnResetEnabled WRITE setTimerSoundOnResetEnabled NOTIFY timerSoundOnResetEnabledChanged)
     Q_PROPERTY(bool timerMotionEnabled READ getTimerMotionEnabled WRITE setTimerMotionEnabled NOTIFY timerMotionEnabledChanged)
     Q_PROPERTY(bool timerWaveMotionEnabled READ getTimerWaveMotionEnabled WRITE setTimerWaveMotionEnabled NOTIFY timerWaveMotionEnabledChanged)
     Q_PROPERTY(float timerMotionThreshold READ getTimerMotionThreshold WRITE setTimerMotionThreshold NOTIFY timerMotionThresholdChanged)
@@ -70,11 +71,14 @@ public:
     int getTimerFinalizingSeconds() const;
     void setTimerFinalizingSeconds(int value);
 
-    bool getTimerMotionEnabled() const;
-    void setTimerMotionEnabled(bool value);
+    bool getTimerSoundOnResetEnabled() const;
+    void setTimerSoundOnResetEnabled(bool value);
 
     bool getTimerWaveMotionEnabled() const;
     void setTimerWaveMotionEnabled(bool value);
+
+    bool getTimerMotionEnabled() const;
+    void setTimerMotionEnabled(bool value);
 
     float getTimerMotionThreshold() const;
     void setTimerMotionThreshold(float value);
@@ -191,6 +195,7 @@ signals:
     void timerInhibitScreensaverEnabledChanged();
     void timerSecondsChanged();
     void timerFinalizingSecondsChanged();
+    void timerSoundOnResetEnabledChanged();
     void timerMotionEnabledChanged();
     void timerWaveMotionEnabledChanged();
     void timerMotionThresholdChanged();

@@ -65,6 +65,7 @@ void SleepTimer::start()
     bool wasActive = isActive();
     if(wasActive) {
         stop();
+        emit restarted();
     } else {
         resetRemainingSeconds();
     }
