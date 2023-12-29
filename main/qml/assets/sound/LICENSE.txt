@@ -16,6 +16,10 @@ sea-waves.wav
  both the source and this derivative work are licensed as CC0
         http://creativecommons.org/publicdomain/zero/1.0/
 
+blip.wav
+ is based on "Sync Blip.wav" by freesound.org user BIONN
+        https://freesound.org/people/BIONN/sounds/562773/
+
 
 Statement of Purpose
 
