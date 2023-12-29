@@ -56,6 +56,19 @@ void ApplicationSettings::setTimerFinalizingSeconds(int value)
   }
 }
 
+bool ApplicationSettings::getTimerSoundOnResetEnabled() const
+{
+    return settings.value("timerSoundOnResetEnabled", false).toBool();
+}
+
+void ApplicationSettings::setTimerSoundOnResetEnabled(bool value)
+{
+    if(getTimerSoundOnResetEnabled() != value) {
+      settings.setValue("timerSoundOnResetEnabled", value);
+      emit timerSoundOnResetEnabledChanged();
+    }
+}
+
 bool ApplicationSettings::getTimerMotionEnabled() const
 {
   return settings.value("timerMotionEnabled", false).toBool();
