@@ -1,4 +1,4 @@
-TEMPLATE = app
+#TEMPLATE = app
 
 # The name of your application
 TARGET = harbour-slumber

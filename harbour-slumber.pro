@@ -10,7 +10,7 @@ app_src.depends = privileged-launcher
 
 DISTFILES += rpm/harbour-slumber.changes \
 rpm/harbour-slumber.spec \
-rpm/harbour-slumber.yaml \
+
 
 SUBDIRS += \
     app_src \
