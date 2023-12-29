@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Dec 29 2023 velox 0.15-2
+ - feature: optional reset sound effect
+ - maintenance: Show player-supplied MPRIS Identity instead of dbus interface part if available
+
 * Thu Feb 02 2023 velox 0.15-1
  - bugfix: handle changed duration formatter in sfos 4.5
  - bugfix: remove incompatible arguments (busybox) for privileged actions
