@@ -1,8 +1,8 @@
 # slumber
-## a shakeable sleep timer for media players on SailfishOS
+## a shakeable sleep timer for almost all media players on SailfishOS
 Slumber is a sleep timer program for SailfishOS with sensors support.
 
-This means you can use the accelerometer or proximity sensor to reset the timer if the display is lit: Just place your device on your bed and slap the mattress in it's general direction to reset the timer. If the display is off, tapping the screen thrice to "wake up and reset" in one go works reasonably good as well.
+This means you can use the accelerometer or proximity sensor (or a few other means like a smart watch connected to Amazfish) to reset the timer if the display is lit: Just place your device on your bed and slap the mattress in it's general direction to reset the timer. Note: When the display is off, sensors are disabled, but there are settings to address that.
 
 It's designed to pause local media players or Kodi/VLC via network.
 If your device supports it (Jolla1 does not), aliendalvik/android media players shown on the lock screen should work, too.

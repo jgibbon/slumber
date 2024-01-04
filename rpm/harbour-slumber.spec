@@ -14,7 +14,7 @@ Name:       harbour-slumber
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Slumber Sleeptimer
 Version:    0.16
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    GPLv2
 URL:        https://github.com/jgibbon/slumber
@@ -38,13 +38,14 @@ Slumber is a Sleep Timer to pause your (native) media Applications or Kodi after
 %if 0%{?_chum}
 Title: slumber sleep timer
 Type: desktop-application
-DeveloperName: J. Gibbon
+DeveloperName: J. Gibbon (velox)
 DescriptionMD: https://github.com/jgibbon/slumber/raw/master/README.md
 Categories:
 - Utility
 - AudioVideo
 Custom:
   Repo: https://github.com/jgibbon/slumber.git
+  DescriptionMD: https://github.com/jgibbon/slumber/raw/master/README.md
 PackageIcon: https://github.com/jgibbon/slumber/raw/master/main/appicons/256x256/apps/harbour-slumber.png
 Screenshots:
  - https://github.com/jgibbon/slumber/raw/master/meta/screenshot-screenshot-actions-v02.png
