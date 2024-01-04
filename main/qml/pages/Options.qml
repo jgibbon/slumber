@@ -101,8 +101,6 @@ Page {
             }
 
 
-
-
             SettingsGrid {
                 topPadding: Theme.paddingLarge
                 SettingsSectionButton {
@@ -136,6 +134,14 @@ Page {
                     //: Button Description: go to appearance options (UI settings)
                     text: qsTr('Change this application\'s look and feel.')
                     clickTarget: Qt.resolvedUrl('Options_Appearance.qml')
+                }
+                SettingsSectionButton {
+                    //: Button Text: go to sound effect options
+                    buttonText: qsTr('Sound Effects')
+                    icon.source: 'image://theme/icon-m-alarm'
+                    //: Button Description: go to sound effect options
+                    text: qsTr('Settings for sound effects you can enable as non-visual feedback in various situations, for example while finalizing.')
+                    clickTarget: Qt.resolvedUrl('Options_SoundEffects.qml')
                 }
             }
         }

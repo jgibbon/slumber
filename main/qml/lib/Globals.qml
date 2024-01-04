@@ -140,7 +140,8 @@ Item {
         onRestarted: {
             console.log('restarted')
             if(settings.timerSoundOnResetEnabled) {
-                resetSound.play()
+                fadeOutSound.setBaseVolume();
+                resetSound.play();
             }
         }
     }
@@ -150,6 +151,11 @@ Item {
         id: fadeOutSound
         property string file: settings.timerFadeSoundEffectFile
         property SoundEffect effect
+        property real baseVolume: 1.0
+        property bool relative: settings.timerSoundEffectVolumeRelativeEnabled
+        onRelativeChanged: {
+            setBaseVolume();
+        }
 
         onFileChanged: {
             stop()
@@ -162,7 +168,20 @@ Item {
             }
         }
 
+        function setBaseVolume() {
+            if(settings.timerSoundEffectVolumeRelativeEnabled) {
+                baseVolume = volumeFade.getCurrentMediaVolume();
+            } else {
+                baseVolume = 1.0
+            }
+
+            console.log('ok, so volume may be', baseVolume, settings.timerSoundEffectVolumeRelativeEnabled)
+
+        }
+
         function play(){
+            baseVolume = 0.0
+            setBaseVolume()
             stop()
             if(effect){
                 effect.play()
@@ -175,11 +194,12 @@ Item {
         }
 
 
+
         SoundEffect {
             id:fadeOutSoundCassette
             category: 'slumber'
             source: '../assets/sound/cassette-noise.wav'
-            volume: settings.timerFadeSoundEffectVolume
+            volume: settings.timerFadeSoundEffectVolume * fadeOutSound.baseVolume
             loops: SoundEffect.Infinite
             onPlayingChanged: {
                 if(!playing) { accelerometerTrigger.paused = false}
@@ -192,7 +212,7 @@ Item {
             category: 'slumber'
             source: '../assets/sound/clock-ticking.wav'
             loops: SoundEffect.Infinite
-            volume: settings.timerFadeSoundEffectVolume
+            volume: settings.timerFadeSoundEffectVolume * fadeOutSound.baseVolume
             onPlayingChanged: {
                 if(!playing) { accelerometerTrigger.paused = false}
             }
@@ -203,17 +223,21 @@ Item {
             category: 'slumber'
             source: '../assets/sound/sea-waves.wav'
             loops: SoundEffect.Infinite
-            volume: settings.timerFadeSoundEffectVolume
+            volume: settings.timerFadeSoundEffectVolume * fadeOutSound.baseVolume
             onPlayingChanged: {
                 if(!playing) { accelerometerTrigger.paused = false}
             }
+        }
+
+        Component.onCompleted: {
+            setBaseVolume()
         }
     }
     SoundEffect {
         id: resetSound
         category: 'slumber'
         source: '../assets/sound/blip.wav'
-        volume: settings.timerFadeSoundEffectVolume
+        volume: settings.timerFadeSoundEffectVolume * fadeOutSound.baseVolume
     }
 
     Loader {

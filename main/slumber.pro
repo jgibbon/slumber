@@ -60,6 +60,7 @@ DISTFILES += qml/assets/moon.png \
     qml/pages/FirstPage.qml \
     qml/pages/Options_Appearance.qml \
     qml/pages/Options_Finalize.qml \
+    qml/pages/Options_SoundEffects.qml \
     qml/pages/Options_TimerControl_Amazfish.qml \
     qml/pages/Options_TimerControl.qml \
     qml/pages/Options_TimerEnd_NetworkPlayers.qml \

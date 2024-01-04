@@ -177,22 +177,6 @@ Page {
                     rightMargin: 0
                     width: parent.columnWidth
                 }
-                TextSwitch {
-                    id:timerSoundOnResetEnabledSwitch
-                    //: TextSwitch: Play Sound on reset
-                    text: qsTr( 'Play sound on reset')
-
-                    checked: settings.timerSoundOnResetEnabled
-                    onClicked: {
-                        settings.timerSoundOnResetEnabled = checked
-                    }
-                    //: TextSwitch description: Reset timer with proximity sensor
-                    description: qsTr('Plays a sound effect when the timer gets reset')
-                    leftMargin: 0
-                    rightMargin: 0
-                    width: parent.columnWidth
-                }
-
             }
 
             Column {

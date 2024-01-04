@@ -13,6 +13,7 @@ class ApplicationSettings : public QObject {
     Q_PROPERTY(bool timerInhibitScreensaverEnabled READ getTimerInhibitScreensaverEnabled WRITE setTimerInhibitScreensaverEnabled NOTIFY timerInhibitScreensaverEnabledChanged)
     Q_PROPERTY(int timerSeconds READ getTimerSeconds WRITE setTimerSeconds NOTIFY timerSecondsChanged)
     Q_PROPERTY(int timerFinalizingSeconds READ getTimerFinalizingSeconds WRITE setTimerFinalizingSeconds NOTIFY timerFinalizingSecondsChanged)
+    Q_PROPERTY(bool timerSoundEffectVolumeRelativeEnabled READ getTimerSoundEffectVolumeRelativeEnabled WRITE setTimerSoundEffectVolumeRelativeEnabled NOTIFY timerSoundEffectVolumeRelativeEnabledChanged)
     Q_PROPERTY(bool timerSoundOnResetEnabled READ getTimerSoundOnResetEnabled WRITE setTimerSoundOnResetEnabled NOTIFY timerSoundOnResetEnabledChanged)
     Q_PROPERTY(bool timerMotionEnabled READ getTimerMotionEnabled WRITE setTimerMotionEnabled NOTIFY timerMotionEnabledChanged)
     Q_PROPERTY(bool timerWaveMotionEnabled READ getTimerWaveMotionEnabled WRITE setTimerWaveMotionEnabled NOTIFY timerWaveMotionEnabledChanged)
@@ -70,6 +71,9 @@ public:
 
     int getTimerFinalizingSeconds() const;
     void setTimerFinalizingSeconds(int value);
+
+    bool getTimerSoundEffectVolumeRelativeEnabled() const;
+    void setTimerSoundEffectVolumeRelativeEnabled(bool value);
 
     bool getTimerSoundOnResetEnabled() const;
     void setTimerSoundOnResetEnabled(bool value);
@@ -196,6 +200,7 @@ signals:
     void timerSecondsChanged();
     void timerFinalizingSecondsChanged();
     void timerSoundOnResetEnabledChanged();
+    void timerSoundEffectVolumeRelativeEnabledChanged();
     void timerMotionEnabledChanged();
     void timerWaveMotionEnabledChanged();
     void timerMotionThresholdChanged();

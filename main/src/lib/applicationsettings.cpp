@@ -56,6 +56,19 @@ void ApplicationSettings::setTimerFinalizingSeconds(int value)
   }
 }
 
+bool ApplicationSettings::getTimerSoundEffectVolumeRelativeEnabled() const
+{
+  return settings.value("timerSoundEffectVolumeRelativeEnabled", true).toBool();
+}
+
+void ApplicationSettings::setTimerSoundEffectVolumeRelativeEnabled(bool value)
+{
+  if(getTimerSoundEffectVolumeRelativeEnabled() != value) {
+    settings.setValue("timerSoundEffectVolumeRelativeEnabled", value);
+    emit timerSoundEffectVolumeRelativeEnabledChanged();
+  }
+}
+
 bool ApplicationSettings::getTimerSoundOnResetEnabled() const
 {
     return settings.value("timerSoundOnResetEnabled", false).toBool();

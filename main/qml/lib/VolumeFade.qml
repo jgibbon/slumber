@@ -16,6 +16,12 @@ Item {
     onVolumeResetDone: {
         isDone = false
     }
+    function getCurrentMediaVolume() {
+        if(isIdle && !resetTimer.running && !doneTimer.running) {
+            return VolumeControl.getVolume() / 65536;
+        }
+        return resetToVolume;
+    }
 
     function start() {
         resetToVolume = VolumeControl.getVolume()

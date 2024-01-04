@@ -120,34 +120,46 @@ za možnosti potegni navzdol</translation>
         <translation>Prosimo, nastavite trajanje daljše od 0:00</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="110"/>
+        <location filename="../qml/pages/Options.qml" line="108"/>
         <source>Timer Control</source>
         <extracomment>Button Text: go to timer control options (start, stop or restart the timer automatically)</extracomment>
         <translation>Upravljanje odštevalnika</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="113"/>
+        <location filename="../qml/pages/Options.qml" line="111"/>
         <source>Start, stop or reset the timer automatically, for example when media playback is detected.</source>
         <extracomment>Button Description: go to timer control options (start, stop or restart the timer automatically)</extracomment>
         <translation>Samodejno začni, ustavi ali ponastavi časovnik, na primer, ko je zaznano predvajanje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="121"/>
+        <location filename="../qml/pages/Options.qml" line="119"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the timer runs out.</source>
         <extracomment>Button Description: go to timer actions options (things that happen when the timer runs out)</extracomment>
         <translation>Dejanja, ki se izvedejo po izteku odštevalnika (na primer &quot;Zaustavi predvajanje VLC&quot;).</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="126"/>
+        <location filename="../qml/pages/Options.qml" line="124"/>
         <source>Finalize</source>
         <extracomment>Button Text: go to timer finalize options (configurable duration just before the timer runs out)</extracomment>
         <translation>Zaključi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="129"/>
+        <location filename="../qml/pages/Options.qml" line="127"/>
         <source>You can enable some special functions for the last seconds before the timer runs out, for example fading out media volume or displaying notifications.</source>
         <extracomment>Button Description: go to timer finalize options (configurable duration just before the timer runs out)</extracomment>
         <translation>Ob izteku predvajanja lahko omogočite posebne funkcije, recimo samodejno zmanjševanje glasnosti ali prikaz obvestil.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="140"/>
+        <source>Sound Effects</source>
+        <extracomment>Button Text: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="143"/>
+        <source>Settings for sound effects you can enable as non-visual feedback in various situations, for example while finalizing.</source>
+        <extracomment>Button Description: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="93"/>
@@ -162,19 +174,19 @@ za možnosti potegni navzdol</translation>
         <translation>Med odštevanjem ohrani vklopljen zaslon </translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="118"/>
+        <location filename="../qml/pages/Options.qml" line="116"/>
         <source>Actions</source>
         <extracomment>Button Text: go to timer actions options (things that happen when the timer runs out)</extracomment>
         <translation>Dejanja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="134"/>
+        <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Appearance</source>
         <extracomment>Button Text: go to appearance options (UI settings)</extracomment>
         <translation>Videz</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="137"/>
+        <location filename="../qml/pages/Options.qml" line="135"/>
         <source>Change this application&apos;s look and feel.</source>
         <extracomment>Button Description: go to appearance options (UI settings)</extracomment>
         <translation>Spremeni videz in občutek aplikacije</translation>
@@ -275,82 +287,139 @@ za možnosti potegni navzdol</translation>
         <translation>Ponastavi glasnost sistemskih zvokov na prejšnje vrednosti. Nastavitev je priporočena za večino uporabnikov.</translation>
     </message>
     <message>
+        <location filename="../qml/pages/Options_Finalize.qml" line="105"/>
+        <source>Sound Effects</source>
+        <extracomment>Button Text: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/Options_Finalize.qml" line="108"/>
-        <source>Sound Effect</source>
-        <extracomment>TextSwitch: Play sound effect while finalizing</extracomment>
-        <translation>Zvočni učinek</translation>
+        <source>See sound effects options to set a sound to play while finalizing.</source>
+        <extracomment>Button Description: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="115"/>
-        <source>To alert you that the timer is running out</source>
-        <extracomment>TextSwitch description: Play sound effect while finalizing</extracomment>
-        <translation>Opozorilo, da se odštevanje izteka</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="127"/>
-        <source>Sound</source>
-        <extracomment>ComboBox: choose one of the following sounds</extracomment>
-        <translation>Zvok</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="142"/>
-        <source>cassette noise</source>
-        <extracomment>ComboBox entry: sound name</extracomment>
-        <translation>šum kasetofona</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="148"/>
-        <source>clock ticking</source>
-        <extracomment>ComboBox entry: sound name</extracomment>
-        <translation>tiktakanje ure</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="154"/>
-        <source>sail a jolla</source>
-        <extracomment>ComboBox entry: sound name</extracomment>
-        <translation>šumenje valov</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="171"/>
-        <source>Sound Effect volume</source>
-        <extracomment>Slider label: sound effect volume</extracomment>
-        <translation>Glasnost zvočnega učinka</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="187"/>
-        <source>stop playing</source>
-        <extracomment>Button Text: stop sound effect preview</extracomment>
-        <translation>ustavi predvajanje</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="189"/>
-        <source>play current sound</source>
-        <extracomment>Button Text: start sound effect preview</extracomment>
-        <translation>predvajaj izbrani zvok</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="213"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="237"/>
         <source>Notification</source>
         <extracomment>TextSwitch: Display system notification while finalizing</extracomment>
         <translation>Obvestilo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="220"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="244"/>
         <source>Display a Notification shortly before the timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
         <extracomment>TextSwitch description: Display system notification while finalizing</extracomment>
         <translation>Prikaže obvestilo malo pred iztekom odštevanja. Če zaslon ni vklopljen se bo vklopil ter omogočil senzor pospeška.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="229"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="253"/>
         <source>Visual Indicator</source>
         <extracomment>TextSwitch: flash main page a bit while finalizing</extracomment>
         <translation>Vizualno opozarjanje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="236"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="260"/>
         <source>Flashes the main screen before the timer is running out</source>
         <extracomment>TextSwitch description: flash main page a bit while finalizing</extracomment>
         <translation>Pred iztekom odštevalnika bo zaslon utripnil</translation>
+    </message>
+</context>
+<context>
+    <name>Options_SoundEffects</name>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="28"/>
+        <source>Sound Effects</source>
+        <extracomment>Page Header option page</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="37"/>
+        <source>Relative Volume</source>
+        <extracomment>TextSwitch: Sound effects volume is relative to active media volume</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="44"/>
+        <source>Set sound effect volume relative to media volume</source>
+        <extracomment>TextSwitch description: Play sound effect while finalizing</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="60"/>
+        <source>Sound Effect volume</source>
+        <extracomment>Slider label: sound effect volume</extracomment>
+        <translation>Glasnost zvočnega učinka</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="72"/>
+        <source>Finalize</source>
+        <extracomment>Section heading: finalize (configurable duration just before the timer runs out)</extracomment>
+        <translation>Zaključi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="79"/>
+        <source>Sound Effect</source>
+        <extracomment>TextSwitch: Play sound effect while finalizing</extracomment>
+        <translation>Zvočni učinek</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="86"/>
+        <source>To alert you that the timer is running out</source>
+        <extracomment>TextSwitch description: Play sound effect while finalizing</extracomment>
+        <translation>Opozorilo, da se odštevanje izteka</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="98"/>
+        <source>Sound</source>
+        <extracomment>ComboBox: choose one of the following sounds</extracomment>
+        <translation>Zvok</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="113"/>
+        <source>cassette noise</source>
+        <extracomment>ComboBox entry: sound name</extracomment>
+        <translation>šum kasetofona</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="119"/>
+        <source>clock ticking</source>
+        <extracomment>ComboBox entry: sound name</extracomment>
+        <translation>tiktakanje ure</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="125"/>
+        <source>sail a jolla</source>
+        <extracomment>ComboBox entry: sound name</extracomment>
+        <translation>šumenje valov</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="138"/>
+        <source>stop playing</source>
+        <extracomment>Button Text: stop sound effect preview</extracomment>
+        <translation>ustavi predvajanje</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="140"/>
+        <source>play current sound</source>
+        <extracomment>Button Text: start sound effect preview</extracomment>
+        <translation>predvajaj izbrani zvok</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="162"/>
+        <source>Reset</source>
+        <extracomment>Section heading: reset (play sound on reset)</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="170"/>
+        <source>Play sound on reset</source>
+        <extracomment>TextSwitch: Play Sound on reset</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="177"/>
+        <source>Plays a sound effect when the timer gets reset</source>
+        <extracomment>TextSwitch description: Reset timer with proximity sensor</extracomment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -466,19 +535,7 @@ za možnosti potegni navzdol</translation>
         <translation>Za ponastavitev odštevalnika za trenutek podržite roko pred zaslonom</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerControl.qml" line="183"/>
-        <source>Play sound on reset</source>
-        <extracomment>TextSwitch: Play Sound on reset</extracomment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerControl.qml" line="190"/>
-        <source>Plays a sound effect when the timer gets reset</source>
-        <extracomment>TextSwitch description: Reset timer with proximity sensor</extracomment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerControl.qml" line="209"/>
+        <location filename="../qml/pages/Options_TimerControl.qml" line="193"/>
         <source>Amazfish integration</source>
         <extracomment>Button text: go to settings page to reset timer with smartwatch events from the amazfish application</extracomment>
         <translation>Amazfish integracija</translation>
@@ -895,7 +952,7 @@ TextField label: enter your root password</extracomment>
         <comment>short: [x] Hour(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Hour(s) you can find</extracomment>
         <translation>
-            <numerusform>Ura</numerusform>
+            <numerusform>U</numerusform>
             <numerusform>Uri</numerusform>
             <numerusform>Ure</numerusform>
             <numerusform>Ur</numerusform>

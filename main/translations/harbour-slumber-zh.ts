@@ -120,34 +120,46 @@ pull down for options</source>
         <translation>请设置超过0:00的时长</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="110"/>
+        <location filename="../qml/pages/Options.qml" line="108"/>
         <source>Timer Control</source>
         <extracomment>Button Text: go to timer control options (start, stop or restart the timer automatically)</extracomment>
         <translation>定时器控制</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="113"/>
+        <location filename="../qml/pages/Options.qml" line="111"/>
         <source>Start, stop or reset the timer automatically, for example when media playback is detected.</source>
         <extracomment>Button Description: go to timer control options (start, stop or restart the timer automatically)</extracomment>
         <translation>自动开始、停止或重置定时器，例如检测到媒体播放时。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="121"/>
+        <location filename="../qml/pages/Options.qml" line="119"/>
         <source>Timer actions like &quot;Pause Media&quot; get executed when the timer runs out.</source>
         <extracomment>Button Description: go to timer actions options (things that happen when the timer runs out)</extracomment>
         <translation>当定时结束时执行“停止媒体”等定时功能</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="126"/>
+        <location filename="../qml/pages/Options.qml" line="124"/>
         <source>Finalize</source>
         <extracomment>Button Text: go to timer finalize options (configurable duration just before the timer runs out)</extracomment>
         <translation>完成</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="129"/>
+        <location filename="../qml/pages/Options.qml" line="127"/>
         <source>You can enable some special functions for the last seconds before the timer runs out, for example fading out media volume or displaying notifications.</source>
         <extracomment>Button Description: go to timer finalize options (configurable duration just before the timer runs out)</extracomment>
         <translation>你可以在定时器结速前最后几秒开启一些特殊功能，例如渐弱媒体音量或显示通知。</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="140"/>
+        <source>Sound Effects</source>
+        <extracomment>Button Text: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options.qml" line="143"/>
+        <source>Settings for sound effects you can enable as non-visual feedback in various situations, for example while finalizing.</source>
+        <extracomment>Button Description: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Options.qml" line="93"/>
@@ -162,19 +174,19 @@ pull down for options</source>
         <translation>当定时器运行之时保持显示常亮。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="118"/>
+        <location filename="../qml/pages/Options.qml" line="116"/>
         <source>Actions</source>
         <extracomment>Button Text: go to timer actions options (things that happen when the timer runs out)</extracomment>
         <translation>操作</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="134"/>
+        <location filename="../qml/pages/Options.qml" line="132"/>
         <source>Appearance</source>
         <extracomment>Button Text: go to appearance options (UI settings)</extracomment>
         <translation>外观</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options.qml" line="137"/>
+        <location filename="../qml/pages/Options.qml" line="135"/>
         <source>Change this application&apos;s look and feel.</source>
         <extracomment>Button Description: go to appearance options (UI settings)</extracomment>
         <translation>更改软件的外观感受</translation>
@@ -275,82 +287,139 @@ pull down for options</source>
         <translation>在之后重设系统音量到以前的大小。应当在大部分使用情景中被激活。</translation>
     </message>
     <message>
+        <location filename="../qml/pages/Options_Finalize.qml" line="105"/>
+        <source>Sound Effects</source>
+        <extracomment>Button Text: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/Options_Finalize.qml" line="108"/>
-        <source>Sound Effect</source>
-        <extracomment>TextSwitch: Play sound effect while finalizing</extracomment>
-        <translation>声音效果</translation>
+        <source>See sound effects options to set a sound to play while finalizing.</source>
+        <extracomment>Button Description: go to sound effect options</extracomment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="115"/>
-        <source>To alert you that the timer is running out</source>
-        <extracomment>TextSwitch description: Play sound effect while finalizing</extracomment>
-        <translation>提醒你定时器即将完成</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="127"/>
-        <source>Sound</source>
-        <extracomment>ComboBox: choose one of the following sounds</extracomment>
-        <translation>声音</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="142"/>
-        <source>cassette noise</source>
-        <extracomment>ComboBox entry: sound name</extracomment>
-        <translation>磁带噪音</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="148"/>
-        <source>clock ticking</source>
-        <extracomment>ComboBox entry: sound name</extracomment>
-        <translation>时钟滴答声</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="154"/>
-        <source>sail a jolla</source>
-        <extracomment>ComboBox entry: sound name</extracomment>
-        <translation>划小船（Jolla）</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="171"/>
-        <source>Sound Effect volume</source>
-        <extracomment>Slider label: sound effect volume</extracomment>
-        <translation>声效大小</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="187"/>
-        <source>stop playing</source>
-        <extracomment>Button Text: stop sound effect preview</extracomment>
-        <translation>停止播放</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="189"/>
-        <source>play current sound</source>
-        <extracomment>Button Text: start sound effect preview</extracomment>
-        <translation>播放目前的声音</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="213"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="237"/>
         <source>Notification</source>
         <extracomment>TextSwitch: Display system notification while finalizing</extracomment>
         <translation>通知</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="220"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="244"/>
         <source>Display a Notification shortly before the timer runs out. Notifications activate the Screen and, with it, Accelerometer readings.</source>
         <extracomment>TextSwitch description: Display system notification while finalizing</extracomment>
         <translation>在定时器即将结束之前显示通知。通知会激活屏幕并令加速传感器读数。</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="229"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="253"/>
         <source>Visual Indicator</source>
         <extracomment>TextSwitch: flash main page a bit while finalizing</extracomment>
         <translation>虚拟指示器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_Finalize.qml" line="236"/>
+        <location filename="../qml/pages/Options_Finalize.qml" line="260"/>
         <source>Flashes the main screen before the timer is running out</source>
         <extracomment>TextSwitch description: flash main page a bit while finalizing</extracomment>
         <translation>在定时器结束之前闪烁主屏幕</translation>
+    </message>
+</context>
+<context>
+    <name>Options_SoundEffects</name>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="28"/>
+        <source>Sound Effects</source>
+        <extracomment>Page Header option page</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="37"/>
+        <source>Relative Volume</source>
+        <extracomment>TextSwitch: Sound effects volume is relative to active media volume</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="44"/>
+        <source>Set sound effect volume relative to media volume</source>
+        <extracomment>TextSwitch description: Play sound effect while finalizing</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="60"/>
+        <source>Sound Effect volume</source>
+        <extracomment>Slider label: sound effect volume</extracomment>
+        <translation>声效大小</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="72"/>
+        <source>Finalize</source>
+        <extracomment>Section heading: finalize (configurable duration just before the timer runs out)</extracomment>
+        <translation>完成</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="79"/>
+        <source>Sound Effect</source>
+        <extracomment>TextSwitch: Play sound effect while finalizing</extracomment>
+        <translation>声音效果</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="86"/>
+        <source>To alert you that the timer is running out</source>
+        <extracomment>TextSwitch description: Play sound effect while finalizing</extracomment>
+        <translation>提醒你定时器即将完成</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="98"/>
+        <source>Sound</source>
+        <extracomment>ComboBox: choose one of the following sounds</extracomment>
+        <translation>声音</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="113"/>
+        <source>cassette noise</source>
+        <extracomment>ComboBox entry: sound name</extracomment>
+        <translation>磁带噪音</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="119"/>
+        <source>clock ticking</source>
+        <extracomment>ComboBox entry: sound name</extracomment>
+        <translation>时钟滴答声</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="125"/>
+        <source>sail a jolla</source>
+        <extracomment>ComboBox entry: sound name</extracomment>
+        <translation>划小船（Jolla）</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="138"/>
+        <source>stop playing</source>
+        <extracomment>Button Text: stop sound effect preview</extracomment>
+        <translation>停止播放</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="140"/>
+        <source>play current sound</source>
+        <extracomment>Button Text: start sound effect preview</extracomment>
+        <translation>播放目前的声音</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="162"/>
+        <source>Reset</source>
+        <extracomment>Section heading: reset (play sound on reset)</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="170"/>
+        <source>Play sound on reset</source>
+        <extracomment>TextSwitch: Play Sound on reset</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Options_SoundEffects.qml" line="177"/>
+        <source>Plays a sound effect when the timer gets reset</source>
+        <extracomment>TextSwitch description: Reset timer with proximity sensor</extracomment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -466,19 +535,7 @@ pull down for options</source>
         <translation>在屏幕前举手以重设定时器</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Options_TimerControl.qml" line="183"/>
-        <source>Play sound on reset</source>
-        <extracomment>TextSwitch: Play Sound on reset</extracomment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerControl.qml" line="190"/>
-        <source>Plays a sound effect when the timer gets reset</source>
-        <extracomment>TextSwitch description: Reset timer with proximity sensor</extracomment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Options_TimerControl.qml" line="209"/>
+        <location filename="../qml/pages/Options_TimerControl.qml" line="193"/>
         <source>Amazfish integration</source>
         <extracomment>Button text: go to settings page to reset timer with smartwatch events from the amazfish application</extracomment>
         <translation>Amazfish 整合</translation>
@@ -516,8 +573,8 @@ pull down for options</source>
         <location filename="../qml/pages/Options_TimerControl_Amazfish.qml" line="67"/>
         <source>Press %L1 time</source>
         <extracomment>Slider Value: Press Amazfish watch button x times to reset</extracomment>
-        <translation>
-            <numerusform>按下 %L1  次</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -891,8 +948,8 @@ TextField label: enter your root password</extracomment>
         <source>Hrs</source>
         <comment>short: [x] Hour(s)</comment>
         <extracomment>&quot;Long&quot; duration option, the shortest variant of [x] Hour(s) you can find</extracomment>
-        <translation>
-            <numerusform>小时</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
