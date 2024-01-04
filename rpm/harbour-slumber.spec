@@ -14,7 +14,7 @@ Name:       harbour-slumber
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Slumber Sleeptimer
 Version:    0.16
-Release:    2
+Release:    3
 Group:      Qt/Qt
 License:    GPLv2
 URL:        https://github.com/jgibbon/slumber
@@ -28,6 +28,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5DBus)
+BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
 
 %description
